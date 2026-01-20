@@ -1,0 +1,41 @@
+{
+  "player_id": "LAFC-99",
+  "events": [
+    {
+      "date": "2024-03-10",
+      "type": "brace",
+      "impact": 0.12,
+      "notes": "Scored 2 goals, high xG conversion."
+    },
+    {
+      "date": "2024-03-17",
+      "type": "assist",
+      "impact": 0.05,
+      "notes": "Primary assist and 4 key passes."
+    },
+    {
+      "date": "2024-03-24",
+      "type": "fatigue",
+      "impact": -0.08,
+      "notes": "Reduced sprint volume."
+    },
+    {
+      "date": "2024-03-31",
+      "type": "match_winner",
+      "impact": 0.1,
+      "notes": "Winner in derby."
+    },
+    {
+      "date": "2024-04-13",
+      "type": "substitution",
+      "impact": -0.04,
+      "notes": "Subbed early with tightness."
+    },
+    {
+      "date": "2024-04-27",
+      "type": "brace",
+      "impact": 0.14,
+      "notes": "Another brace plus 6 shots."
+    }
+  ]
+}
