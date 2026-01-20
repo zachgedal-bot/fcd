@@ -1,3 +1,24 @@
+// ==== Quick-edit configuration ====
+// Keep the app easy to tune by changing values here.
+const CONFIG = {
+  defaults: {
+    anchorValue: 25,
+    professionalismRisk: 40
+  },
+  projectionExpiries: [
+    { label: "30d", days: 30 },
+    { label: "90d", days: 90 },
+    { label: "End of season", days: 210 }
+  ],
+  leagueMultipliers: {
+    MLS: 0.85,
+    "Premier League": 1.35,
+    LaLiga: 1.25,
+    Bundesliga: 1.2,
+    SerieA: 1.15
+  }
+};
+
 const state = {
   playerProfile: {
     player_id: "LAFC-99",
@@ -9,8 +30,8 @@ const state = {
     contract_end_date: "2025-12-31",
     option_year_probability: 0.65
   },
-  anchorValue: 25,
-  professionalismRisk: 40,
+  anchorValue: CONFIG.defaults.anchorValue,
+  professionalismRisk: CONFIG.defaults.professionalismRisk,
   analysisText: "",
   scenarioLedger: [],
   historyData: null,
@@ -90,13 +111,7 @@ const playerProfileSchema = {
   }
 };
 
-const leagueMultipliers = {
-  MLS: 0.85,
-  "Premier League": 1.35,
-  LaLiga: 1.25,
-  Bundesliga: 1.2,
-  SerieA: 1.15
-};
+const leagueMultipliers = CONFIG.leagueMultipliers;
 
 const modeButtons = document.querySelectorAll(".mode-button");
 const modePanels = document.querySelectorAll(".mode-panel");
@@ -127,6 +142,7 @@ const elements = {
 };
 
 const formatCurrency = (value) => `€${value.toFixed(1)}m`;
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
 const getDaysBetween = (start, end) => {
   const startDate = new Date(start);
@@ -187,6 +203,7 @@ const computeMicroSignal = (events) => {
   return impactSum / recent.length;
 };
 
+// Core valuation model. Keep the math transparent and easy to tweak.
 const computeValuation = () => {
   const { playerProfile, historyData, microEvents, anchorValue, professionalismRisk } = state;
   const matches = historyData.matches;
@@ -204,10 +221,7 @@ const computeValuation = () => {
   const indexPrice = Math.max(4, baseValue / timeDecay);
   const coverageRatio = Math.min(matches.length / 10, 1);
   const riskFactor = professionalismRisk / 100;
-  const confidenceScore = Math.min(
-    100,
-    Math.max(25, 55 + coverageRatio * 28 - (1 - riskFactor) * 12)
-  );
+  const confidenceScore = clamp(55 + coverageRatio * 28 - (1 - riskFactor) * 12, 25, 100);
   const intervalWidth = 2 + (1 - coverageRatio) * 4 + (1 - riskFactor) * 3;
 
   return {
@@ -225,9 +239,7 @@ const buildProjectionRows = (valuation) => {
   const { indexPrice, confidenceScore, intervalWidth } = valuation;
   const now = new Date();
   const expiries = [
-    { label: "30d", days: 30 },
-    { label: "90d", days: 90 },
-    { label: "End of season", days: 210 },
+    ...CONFIG.projectionExpiries,
     { label: "Contract end", days: getDaysBetween(now, state.playerProfile.contract_end_date) }
   ];
 
