@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCD Analytics: Modern Football Valuation</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: "Inter", sans-serif; }
+
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 320px;
+      max-height: 400px;
+    }
+
+    @media (min-width: 768px) {
+      .chart-container { height: 380px; }
+    }
+
+    .step-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .step-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .step-card.active {
+      border-color: #10B981;
+      background-color: #F0FDF4;
+      transform: translateY(-2px);
+    }
+    .step-card.active .step-icon {
+      background-color: #10B981;
+      color: white;
+    }
+    .step-card.active .step-title {
+      color: #065F46;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      background: transparent;
+      width: 100%;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #10B981;
+      cursor: pointer;
+      margin-top: -8px;
+      box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: #cbd5e1;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-200 selection:text-emerald-900">
+
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm backdrop-blur-md bg-opacity-90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-extrabold text-slate-900 tracking-tight">FCD<span class="text-emerald-600">Analytics</span></span>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <button onclick="scrollToSection('metrics')" class="text-slate-600 hover:text-emerald-600 font-medium transition text-sm uppercase tracking-wide">Metrics</button>
+          <button onclick="scrollToSection('valuation')" class="text-slate-600 hover:text-emerald-600 font-medium transition text-sm uppercase tracking-wide">Valuation Engine</button>
+          <button onclick="scrollToSection('macro')" class="text-slate-600 hover:text-emerald-600 font-medium transition text-sm uppercase tracking-wide">Market</button>
+          <button onclick="scrollToSection('simulator')" class="px-5 py-2 rounded-full bg-slate-900 text-white font-semibold hover:bg-emerald-600 transition shadow-lg text-sm">
+            Valuation Tool
+          </button>
+        </div>
+
+        <div class="flex items-center md:hidden">
+          <button class="text-slate-500 hover:text-emerald-600 font-bold p-2">MENU</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-white relative overflow-hidden border-b border-slate-100">
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-emerald-50 to-transparent opacity-50"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 relative z-10">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-700 uppercase bg-emerald-100 rounded-full border border-emerald-200">
+          The Data Revolution
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-8 leading-tight">
+          From "Eye Test" to <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Predictive Valuation</span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-500 mb-10 leading-relaxed">
+          Football has evolved into a high-stakes asset class. We analyze the <strong>Football Club Database (FCD)</strong> reports to demonstrate how granular metrics, hidden attributes, and modeling determine the enterprise value of modern clubs and players.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <button onclick="scrollToSection('metrics')" class="px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition shadow-xl hover:-translate-y-1">
+            Explore Methodology
+          </button>
+          <button onclick="scrollToSection('simulator')" class="px-8 py-4 rounded-xl bg-white text-emerald-600 border-2 border-slate-100 font-bold hover:border-emerald-200 hover:bg-emerald-50 transition shadow-md hover:-translate-y-1">
+            Launch Simulator
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-32">
+
+    <!-- Section 1 -->
+    <section id="metrics" class="scroll-mt-24">
+      <div class="text-center md:text-left mb-12">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">1. The Foundation: Quantifying Performance</h2>
+        <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+          Traditional counting stats are often misleading. Modern valuation relies on <strong>Expected Goals (xG)</strong> and <strong>Goals Added (g+)</strong>.
+          "Hidden Attributes" like Professionalism can be major drivers of long-term development.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-slate-900">Efficiency Gap: Goals vs. xG</h3>
+            <p class="text-sm text-slate-500">Comparing raw output against underlying chance quality.</p>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="metricsChart"></canvas>
+          </div>
+
+          <div class="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-100 text-sm text-slate-600">
+            <strong>Insight:</strong> Player B scored 18 goals from 12.2 xG. That can mean regression risk or elite finishing. You need deeper context to price it.
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-slate-900">The "Hidden" Attributes</h3>
+            <p class="text-sm text-slate-500">Psychological factors driving career outcomes.</p>
+          </div>
+
+          <div class="chart-container">
+            <canvas id="attributesRadar"></canvas>
+          </div>
+
+          <div class="mt-6 p-4 bg-emerald-50 rounded-xl border border-emerald-100 text-sm text-emerald-800">
+            <strong>Key Finding:</strong> Professionalism often correlates with staying near peak longer, which shows up as lower discounting in valuation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="valuation" class="scroll-mt-24">
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">2. The Valuation Engine (FCD)</h2>
+        <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+          How do stats become currency? The workflow translates performance and risk into future cash flows, then discounts them into a decision price.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-4 space-y-4">
+          <div class="step-card active bg-white p-5 rounded-xl border border-slate-200" onclick="updateWorkflow(0, this)">
+            <div class="flex items-center gap-4">
+              <div class="step-icon w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm">1</div>
+              <div class="step-title font-bold text-slate-700">Data Ingestion</div>
+            </div>
+          </div>
+
+          <div class="step-card bg-white p-5 rounded-xl border border-slate-200" onclick="updateWorkflow(1, this)">
+            <div class="flex items-center gap-4">
+              <div class="step-icon w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm">2</div>
+              <div class="step-title font-bold text-slate-700">Intrinsic Quantification</div>
+            </div>
+          </div>
+
+          <div class="step-card bg-white p-5 rounded-xl border border-slate-200" onclick="updateWorkflow(2, this)">
+            <div class="flex items-center gap-4">
+              <div class="step-icon w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm">3</div>
+              <div class="step-title font-bold text-slate-700">Forecasting</div>
+            </div>
+          </div>
+
+          <div class="step-card bg-white p-5 rounded-xl border border-slate-200" onclick="updateWorkflow(3, this)">
+            <div class="flex items-center gap-4">
+              <div class="step-icon w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm">4</div>
+              <div class="step-title font-bold text-slate-700">NPV Decision</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden flex flex-col justify-center min-h-[300px]">
+          <div class="absolute top-0 right-0 p-32 bg-emerald-500 rounded-full filter blur-[80px] opacity-10"></div>
+
+          <div id="workflow-display" class="relative z-10">
+            <h3 class="text-2xl font-bold text-emerald-400 mb-4">Step 1: Data Ingestion</h3>
+            <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+              The FCD pulls granular data from multiple sources, then normalizes it into a single feature set.
+            </p>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Transfer data:</strong> contract length, age, prior fees, market sentiment</span></li>
+              <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Performance:</strong> xG, shot quality, g+ style contributions</span></li>
+              <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Risk:</strong> injury history proxies, professionalism proxies</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+        <div class="p-8 border-b border-slate-100 bg-slate-50 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div>
+            <h3 class="text-2xl font-bold text-slate-900">Case Study: Denis Bouanga</h3>
+            <p class="text-slate-500">A longitudinal example of performance meeting pricing.</p>
+          </div>
+          <div class="flex gap-2">
+            <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-bold text-slate-600">Origin</span>
+            <span class="px-3 py-1 bg-emerald-100 border border-emerald-200 rounded-md text-xs font-bold text-emerald-700">Peak Output</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="lg:col-span-2 p-8 border-b lg:border-b-0 lg:border-r border-slate-100">
+            <div class="chart-container">
+              <canvas id="bouangaChart"></canvas>
+            </div>
+          </div>
+          <div class="p-8 flex flex-col justify-center space-y-6">
+            <div>
+              <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">The Transaction</h4>
+              <p class="text-slate-700 leading-relaxed">
+                This demo uses placeholder values to show the relationship between output and value. Replace with real data when you wire your pipeline.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">The Return</h4>
+              <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                <div class="flex justify-between mb-2"><span class="text-slate-600">Peak Goals</span><span class="font-bold text-emerald-600">Demo</span></div>
+                <div class="flex justify-between mb-2"><span class="text-slate-600">Annual Wage</span><span class="font-bold text-slate-900">Demo</span></div>
+                <div class="flex justify-between"><span class="text-slate-600">Peak Value</span><span class="font-bold text-slate-900">Demo</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="macro" class="scroll-mt-24">
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">3. Market Dominance</h2>
+        <p class="text-lg text-slate-600 max-w-3xl leading-relaxed">
+          League economics cap club economics. Bigger broadcast pools mean bigger valuation ceilings.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+          <h3 class="text-xl font-bold text-slate-900 mb-6">Net Transfer Spend (Demo)</h3>
+          <div class="chart-container">
+            <canvas id="leagueChart"></canvas>
+          </div>
+          <p class="text-xs text-center text-slate-400 mt-4">Placeholder values for layout and interaction testing</p>
+        </div>
+
+        <div class="space-y-8">
+          <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+            <h4 class="text-lg font-bold text-emerald-800 mb-2">The Virtuous Cycle</h4>
+            <p class="text-emerald-700 text-sm leading-relaxed">
+              Revenue scale improves talent acquisition, which improves product, which improves revenue scale. Humans call this strategy. Nature calls it feedback loops.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-slate-900 mb-3">Key Differentiators</h4>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-xs font-bold mt-0.5">1</div>
+                <p class="ml-4 text-slate-600 text-sm"><strong>Broadcast Revenue:</strong> scale drives everything</p>
+              </li>
+              <li class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-xs font-bold mt-0.5">2</div>
+                <p class="ml-4 text-slate-600 text-sm"><strong>Global Reach:</strong> attention becomes money</p>
+              </li>
+              <li class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-xs font-bold mt-0.5">3</div>
+                <p class="ml-4 text-slate-600 text-sm"><strong>Multiples:</strong> stability gets priced at a premium</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="simulator" class="scroll-mt-24">
+      <div class="bg-slate-900 rounded-3xl p-8 md:p-16 text-white shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-500"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-600 rounded-full filter blur-[128px] opacity-20"></div>
+
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-emerald-400 border border-emerald-400 rounded uppercase">Interactive Tool</div>
+            <h2 class="text-3xl font-bold mb-6">Valuation Estimator</h2>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+              Adjust age, performance, and professionalism to see how the estimated value changes.
+            </p>
+
+            <div class="space-y-8">
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label class="font-semibold text-slate-300">Age</label>
+                  <span id="display-age" class="font-mono text-emerald-400">24 yrs</span>
+                </div>
+                <input type="range" id="input-age" min="17" max="36" value="24" oninput="runSimulation()">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label class="font-semibold text-slate-300">Performance (Goals Added %)</label>
+                  <span id="display-perf" class="font-mono text-emerald-400">80%</span>
+                </div>
+                <input type="range" id="input-perf" min="1" max="100" value="80" oninput="runSimulation()">
+              </div>
+
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label class="font-semibold text-slate-300">Professionalism</label>
+                  <span id="display-prof" class="font-mono text-emerald-400">15/20</span>
+                </div>
+                <input type="range" id="input-prof" min="1" max="20" value="15" oninput="runSimulation()">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center">
+            <div class="bg-white text-slate-900 rounded-2xl p-10 w-full max-w-md shadow-2xl relative">
+              <div class="text-center border-b border-slate-100 pb-6 mb-6">
+                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Estimated Market Value</div>
+                <div id="output-value" class="text-6xl font-extrabold text-slate-900 tracking-tight transition-all duration-300">€12.5M</div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-slate-500">Asset Class</span>
+                  <span id="output-class" class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700">Prime Asset</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-slate-500">Proj. Annual Wage</span>
+                  <span id="output-wage" class="font-mono font-bold text-slate-900">€3.1M</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold text-slate-500">Risk Profile</span>
+                  <span id="output-risk" class="font-bold text-emerald-600">Low</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-slate-900 font-bold mb-2">FCD Analytics</p>
+      <p class="text-slate-500 text-sm">
+        Dashboard demo using Tailwind and Chart.js.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+
+    const workflowSteps = [
+      {
+        title: "Step 1: Data Ingestion",
+        content: `
+          <p class="text-lg text-slate-300 mb-4">Pull and normalize data into a consistent feature schema.</p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Market:</strong> fee, contract, sentiment</span></li>
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Performance:</strong> xG, g+ style impact metrics</span></li>
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Risk:</strong> age, injuries, professionalism proxies</span></li>
+          </ul>
+        `
+      },
+      {
+        title: "Step 2: Intrinsic Quantification",
+        content: `
+          <p class="text-lg text-slate-300 mb-4">Translate contribution to economic units by linking impact to results and results to revenue.</p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Impact:</strong> how much the player changes win probability</span></li>
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Value:</strong> how much wins are worth to this club and league</span></li>
+          </ul>
+        `
+      },
+      {
+        title: "Step 3: Forecasting",
+        content: `
+          <p class="text-lg text-slate-300 mb-4">Project future seasons using age curves and uncertainty ranges, not a single fantasy number.</p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Age curves:</strong> position specific peaks and declines</span></li>
+            <li class="flex items-start gap-3"><span class="text-emerald-500">▸</span><span><strong>Uncertainty:</strong> outcome ranges to price risk</span></li>
+          </ul>
+        `
+      },
+      {
+        title: "Step 4: NPV Decision",
+        content: `
+          <p class="text-lg text-slate-300 mb-4">Discount expected cash flows to present value and compare to acquisition cost.</p>
+          <div class="bg-slate-800 p-4 rounded border border-slate-700 font-mono text-sm text-emerald-400">
+            NPV = sum of (cash inflows minus cash outflows) discounted by risk over time
+          </div>
+          <p class="text-sm text-slate-400 mt-2">Higher risk means higher discounting and lower present value.</p>
+        `
+      }
+    ];
+
+    function updateWorkflow(index, card) {
+      document.querySelectorAll(".step-card").forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+
+      const display = document.getElementById("workflow-display");
+      display.style.opacity = "0";
+
+      setTimeout(() => {
+        display.innerHTML = `
+          <h3 class="text-2xl font-bold text-emerald-400 mb-4">${workflowSteps[index].title}</h3>
+          ${workflowSteps[index].content}
+        `;
+        display.style.opacity = "1";
+      }, 200);
+    }
+
+    function runSimulation() {
+      const age = parseInt(document.getElementById("input-age").value, 10);
+      const perf = parseInt(document.getElementById("input-perf").value, 10);
+      const prof = parseInt(document.getElementById("input-prof").value, 10);
+
+      document.getElementById("display-age").innerText = age + " yrs";
+      document.getElementById("display-perf").innerText = perf + "%";
+      document.getElementById("display-prof").innerText = prof + "/20";
+
+      let base = 5.0;
+
+      const perfFactor = 1 + Math.pow(perf / 50, 1.6);
+
+      let ageFactor = 1.0;
+      if (age < 22) ageFactor = 0.5 + (age - 17) * 0.12;
+      else if (age <= 27) ageFactor = 1.25;
+      else ageFactor = 1.25 - ((age - 27) * 0.15);
+      if (ageFactor < 0.1) ageFactor = 0.1;
+
+      const profFactor = 0.5 + (prof / 30);
+
+      const val = base * perfFactor * ageFactor * profFactor;
+
+      document.getElementById("output-value").innerText = "€" + val.toFixed(1) + "M";
+      document.getElementById("output-wage").innerText = "€" + (val * 0.25).toFixed(1) + "M";
+
+      let className = "Average Asset";
+      let classColor = "bg-slate-100 text-slate-700";
+      if (val > 20) { className = "World Class"; classColor = "bg-purple-100 text-purple-700"; }
+      else if (val > 10) { className = "Prime Asset"; classColor = "bg-emerald-100 text-emerald-700"; }
+      else if (val < 2) { className = "Squad Decline"; classColor = "bg-red-100 text-red-700"; }
+
+      const riskEl = document.getElementById("output-risk");
+      let riskText = "Medium";
+      let riskColor = "text-amber-600";
+      if (prof < 8) { riskText = "High Character"; riskColor = "text-red-600"; }
+      else if (age > 32) { riskText = "High Age"; riskColor = "text-red-600"; }
+      else { riskText = "Low"; riskColor = "text-emerald-600"; }
+
+      const classEl = document.getElementById("output-class");
+      classEl.innerText = className;
+      classEl.className = "px-3 py-1 rounded-full text-xs font-bold " + classColor;
+
+      riskEl.innerText = riskText;
+      riskEl.className = "font-bold " + riskColor;
+    }
+
+    // Charts
+    const ctxMetrics = document.getElementById("metricsChart").getContext("2d");
+    new Chart(ctxMetrics, {
+      type: "bar",
+      data: {
+        labels: ["Player A", "Player B", "Player C", "Player D", "Bouanga"],
+        datasets: [
+          { label: "Actual Goals", data: [12, 18, 8, 15, 38], backgroundColor: "#94a3b8", borderRadius: 4, barPercentage: 0.6 },
+          { label: "xG (Expected Goals)", data: [10.5, 12.2, 14.1, 16.5, 35.8], backgroundColor: "#10b981", borderRadius: 4, barPercentage: 0.6 }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: "bottom", labels: { usePointStyle: true, font: { family: "Inter" } } } },
+        scales: {
+          y: { beginAtZero: true, grid: { color: "#f1f5f9" }, ticks: { font: { family: "Inter" } } },
+          x: { grid: { display: false }, ticks: { font: { family: "Inter" } } }
+        }
+      }
+    });
+
+    const ctxRadar = document.getElementById("attributesRadar").getContext("2d");
+    new Chart(ctxRadar, {
+      type: "radar",
+      data: {
+        labels: ["Determination", "Ambition", "Professionalism", "Loyalty", "Pressure", "Consistency"],
+        datasets: [{
+          label: "Ideal Development Profile",
+          data: [16, 17, 20, 12, 18, 17],
+          fill: true,
+          backgroundColor: "rgba(16, 185, 129, 0.2)",
+          borderColor: "#10b981",
+          pointBackgroundColor: "#10b981",
+          pointBorderColor: "#fff",
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          r: {
+            angleLines: { color: "#e2e8f0" },
+            grid: { color: "#e2e8f0" },
+            pointLabels: { font: { size: 11, family: "Inter", weight: "600" }, color: "#475569" },
+            suggestedMin: 0,
+            suggestedMax: 20,
+            ticks: { display: false }
+          }
+        }
+      }
+    });
+
+    const ctxBouanga = document.getElementById("bouangaChart").getContext("2d");
+    new Chart(ctxBouanga, {
+      type: "line",
+      data: {
+        labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+        datasets: [
+          { label: "Market Value (€M)", data: [2.5, 4.5, 8.0, 7.0, 5.0, 10.0, 12.0], borderColor: "#059669", backgroundColor: "#059669", tension: 0.4, borderWidth: 3, yAxisID: "y" },
+          { label: "Goals (All Comps)", data: [9, 12, 10, 12, 15, 38, 25], borderColor: "#3b82f6", backgroundColor: "#3b82f6", borderDash: [5, 5], tension: 0.4, borderWidth: 2, yAxisID: "y1" }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: { legend: { position: "bottom", labels: { usePointStyle: true } } },
+        scales: {
+          y: { type: "linear", display: true, position: "left", grid: { color: "#f1f5f9" }, title: { display: true, text: "Value (€M)" } },
+          y1: { type: "linear", display: true, position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "Goals" } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+
+    const ctxLeague = document.getElementById("leagueChart").getContext("2d");
+    new Chart(ctxLeague, {
+      type: "bar",
+      data: {
+        labels: ["Premier League", "Serie A", "Ligue 1", "La Liga", "Bundesliga"],
+        datasets: [{ label: "Net Spend (€bn)", data: [11.5, 1.5, 1.2, 0.8, 0.5], backgroundColor: ["#0f172a", "#94a3b8", "#94a3b8", "#94a3b8", "#94a3b8"], borderRadius: 4 }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: "y",
+        plugins: { legend: { display: false } },
+        scales: { x: { grid: { color: "#f1f5f9" } }, y: { grid: { display: false } } }
+      }
+    });
+
+    runSimulation();
+  </script>
+</body>
+</html>
