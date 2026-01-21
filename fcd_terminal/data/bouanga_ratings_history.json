@@ -1,0 +1,89 @@
+{
+  "player_id": "LAFC-99",
+  "player_name": "Denis Bouanga",
+  "season": "2024",
+  "league": "MLS",
+  "position": "LW",
+  "matches": [
+    {
+      "date": "2024-02-24",
+      "opponent": "Seattle",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "date": "2024-03-02",
+      "opponent": "Portland",
+      "minutes": 88,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "date": "2024-03-10",
+      "opponent": "Austin",
+      "minutes": 90,
+      "rating": 8.1,
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "date": "2024-03-17",
+      "opponent": "Minnesota",
+      "minutes": 90,
+      "rating": 7.5,
+      "goals": 1,
+      "assists": 1
+    },
+    {
+      "date": "2024-03-24",
+      "opponent": "San Jose",
+      "minutes": 85,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "date": "2024-03-31",
+      "opponent": "LA Galaxy",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "date": "2024-04-06",
+      "opponent": "Houston",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "date": "2024-04-13",
+      "opponent": "Vancouver",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0
+    },
+    {
+      "date": "2024-04-20",
+      "opponent": "Colorado",
+      "minutes": 87,
+      "rating": 7.6,
+      "goals": 1,
+      "assists": 1
+    },
+    {
+      "date": "2024-04-27",
+      "opponent": "Dallas",
+      "minutes": 90,
+      "rating": 8.3,
+      "goals": 2,
+      "assists": 0
+    }
+  ]
+}
