@@ -1,0 +1,149 @@
+[
+  {
+    "name": "FBref",
+    "site_url": "https://fbref.com/en/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No official public API. Requires scraping or a paid data provider."
+  },
+  {
+    "name": "Transfermarkt",
+    "site_url": "https://www.transfermarkt.us/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No official public API. Licensing required for redistribution."
+  },
+  {
+    "name": "FotMob",
+    "site_url": "https://www.fotmob.com/",
+    "api_status": "unofficial",
+    "api_url": "",
+    "notes": "No official API. Unofficial endpoints exist but are unsupported."
+  },
+  {
+    "name": "Spotrac",
+    "site_url": "https://www.spotrac.com/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API. Data access is licensed."
+  },
+  {
+    "name": "Capology",
+    "site_url": "https://www.capology.com/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API. Contact for licensing."
+  },
+  {
+    "name": "FMInside",
+    "site_url": "https://fminside.net/players",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API. Web access only."
+  },
+  {
+    "name": "Scoretrend",
+    "site_url": "https://scoretrend.net/",
+    "api_status": "unknown",
+    "api_url": "",
+    "notes": "No public API documented."
+  },
+  {
+    "name": "American Soccer Analysis (Goals Added)",
+    "site_url": "https://app.americansocceranalysis.com/#!/mls/goals-added/goalkeepers",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "Interactive tables only. No public API for g+ data."
+  },
+  {
+    "name": "American Soccer Analysis (MLS NP)",
+    "site_url": "https://app.americansocceranalysis.com/#!/mlsnp",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "Interactive tables only. No public API."
+  },
+  {
+    "name": "Statiskicks",
+    "site_url": "https://www.statiskicks.com/plataforma/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API listed."
+  },
+  {
+    "name": "WhoScored",
+    "site_url": "https://www.whoscored.com/",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API. Data is licensed."
+  },
+  {
+    "name": "Opta (Stats Perform)",
+    "site_url": "https://www.statsperform.com/opta/",
+    "api_status": "paid",
+    "api_url": "https://www.statsperform.com/opta/",
+    "notes": "Enterprise data feeds. Paid contract required."
+  },
+  {
+    "name": "RotoWire",
+    "site_url": "https://www.rotowire.com/",
+    "api_status": "paid",
+    "api_url": "https://www.rotowire.com/api/",
+    "notes": "Paid API access. Key required."
+  },
+  {
+    "name": "XG (metric, not a source)",
+    "site_url": "https://understat.com/",
+    "api_status": "unofficial",
+    "api_url": "",
+    "notes": "Use a data provider (StatsBomb, Opta) or unofficial sources."
+  },
+  {
+    "name": "FIFA All Time",
+    "site_url": "https://www.ea.com/games/ea-sports-fc",
+    "api_status": "none",
+    "api_url": "",
+    "notes": "No public API. Ratings are licensed data."
+  },
+  {
+    "name": "FC score",
+    "site_url": "https://www.fcdatabase.com/",
+    "api_status": "unknown",
+    "api_url": "",
+    "notes": "No public API documented."
+  },
+  {
+    "name": "StatsBomb Open Data",
+    "site_url": "https://github.com/statsbomb/open-data",
+    "api_status": "public",
+    "api_url": "https://github.com/statsbomb/open-data",
+    "notes": "Free historical event data. Useful for xG and g+ prototypes."
+  },
+  {
+    "name": "Football-Data.org",
+    "site_url": "https://www.football-data.org/",
+    "api_status": "public",
+    "api_url": "https://www.football-data.org/",
+    "notes": "Free tier with API key. Fixtures, tables, results."
+  },
+  {
+    "name": "TheSportsDB",
+    "site_url": "https://www.thesportsdb.com/",
+    "api_status": "public",
+    "api_url": "https://www.thesportsdb.com/api.php",
+    "notes": "Free test key and paid tiers. Teams, players, events."
+  },
+  {
+    "name": "API-Football",
+    "site_url": "https://www.api-football.com/",
+    "api_status": "paid",
+    "api_url": "https://www.api-football.com/",
+    "notes": "Paid API. Player stats and fixtures."
+  },
+  {
+    "name": "Sportmonks",
+    "site_url": "https://www.sportmonks.com/soccer-api/",
+    "api_status": "paid",
+    "api_url": "https://www.sportmonks.com/soccer-api/",
+    "notes": "Paid API. Player data, injuries, odds."
+  }
+]

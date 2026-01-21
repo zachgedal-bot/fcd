@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FCD Terminal Beta</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="ticker">
+      <div class="ticker__label">FCD TERMINAL</div>
+      <div class="ticker__track">
+        <div class="ticker__text">
+          SON (TOT) €45.2M ▲ 0.98% • SAKA (ARS) €110.2M ▲ 1.2% • SALAH (LIV) €65.4M ▼ 0.4% •
+          MITOMA (BHA) €42.0M ▲ 0.7% • FCD INDEX 1,245.20 • CONFIDENCE 94.2%
+        </div>
+      </div>
+      <div class="ticker__status">
+        <span class="dot"></span> LIVE
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand__title">FCD<span>TERMINAL</span></div>
+          <div class="brand__sub">Institutional access</div>
+        </div>
+
+        <section class="panel">
+          <div class="panel__title">Asset</div>
+          <div class="asset">
+            <div class="asset__avatar">TOT</div>
+            <div>
+              <div class="asset__name">Heung-Min Son</div>
+              <div class="asset__meta">Forward • Tottenham</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__title">Data Feeds</div>
+          <ul class="feeds" id="source-rows"></ul>
+        </section>
+
+        <section class="panel">
+          <div class="panel__title">Free Data Sandbox</div>
+          <div class="panel__controls">
+            <button class="btn" id="load-sportsdb">Load TheSportsDB</button>
+            <button class="btn" id="load-statsbomb">Load StatsBomb</button>
+          </div>
+          <div class="panel__status" id="sandbox-status">Waiting for a request.</div>
+        </section>
+      </aside>
+
+      <main class="dashboard">
+        <section class="hero">
+          <div>
+            <div class="hero__label">Live Settlement Price</div>
+            <div class="hero__price">€45,200,000</div>
+            <div class="hero__delta">+€450k (0.98%) • 24h</div>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-label">Confidence Score</div>
+              <div class="hero__stat-value">94.2%</div>
+            </div>
+            <div>
+              <div class="hero__stat-label">Implied Volatility</div>
+              <div class="hero__stat-value">Low</div>
+            </div>
+            <div class="hero__actions">
+              <button class="btn btn--green">Buy Long</button>
+              <button class="btn btn--red">Short</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="panel">
+            <div class="panel__title">Asset Fundamentals</div>
+            <div class="kv">
+              <div>
+                <span>Contract Expiry</span>
+                <strong>30 Jun 2026</strong>
+              </div>
+              <div>
+                <span>Time Decay (Theta)</span>
+                <strong class="danger">-€25k/day</strong>
+              </div>
+              <div>
+                <span>Weekly Wage</span>
+                <strong>£190,000</strong>
+              </div>
+              <div>
+                <span>Live FCD Score</span>
+                <strong class="accent">882 / 1000</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--wide">
+            <div class="panel__title">Valuation Oracle</div>
+            <canvas id="valuationChart" height="220"></canvas>
+          </div>
+
+          <div class="panel">
+            <div class="panel__title">Market Depth</div>
+            <div class="depth">
+              <div class="depth__row">
+                <span>Bid 24.5k</span>
+                <div class="depth__bar depth__bar--buy" style="width: 70%"></div>
+                <span>€45.1M</span>
+              </div>
+              <div class="depth__row">
+                <span>Bid 18.2k</span>
+                <div class="depth__bar depth__bar--buy" style="width: 55%"></div>
+                <span>€45.0M</span>
+              </div>
+              <div class="depth__row">
+                <span>Ask 12.1k</span>
+                <div class="depth__bar depth__bar--sell" style="width: 40%"></div>
+                <span>€45.2M</span>
+              </div>
+              <div class="depth__row">
+                <span>Ask 22.8k</span>
+                <div class="depth__bar depth__bar--sell" style="width: 75%"></div>
+                <span>€45.3M</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--wide">
+            <div class="panel__title">Live Free Data (Beta)</div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Name</th>
+                  <th>Team / Competition</th>
+                  <th>Detail</th>
+                </tr>
+              </thead>
+              <tbody id="live-rows">
+                <tr>
+                  <td colspan="4">Click a sandbox button to load live data.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel panel--wide">
+            <div class="panel__title">Micro-Attribution Ledger</div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Event</th>
+                  <th>Impact</th>
+                </tr>
+              </thead>
+              <tbody id="ledger-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <aside class="rightbar">
+        <section class="panel">
+          <div class="panel__title">Prediction Market</div>
+          <div class="prediction">
+            <div class="prediction__title">Will valuation exceed €50M by May 2026?</div>
+            <div class="prediction__actions">
+              <button class="btn btn--green">Yes 42%</button>
+              <button class="btn btn--red">No 58%</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__title">Future Value Expiry</div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Expiry</th>
+                <th>Proj. Value</th>
+                <th>Decay</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>May 2026</td>
+                <td class="accent">€38.5M</td>
+                <td class="danger">-0.8%</td>
+              </tr>
+              <tr>
+                <td>Dec 2026</td>
+                <td>€22.0M</td>
+                <td class="danger">-2.1%</td>
+              </tr>
+              <tr>
+                <td>Jun 2027</td>
+                <td>€0.0M</td>
+                <td class="danger">-100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
