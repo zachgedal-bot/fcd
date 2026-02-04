@@ -3,52 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FCD Terminal Beta</title>
+    <title>AthleMix | Athlete Network</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header class="ticker">
-      <div class="ticker__label">FCD TERMINAL</div>
+      <div class="ticker__label">ATHLEMIX LIVE</div>
       <div class="ticker__track">
         <div class="ticker__text">
-          SON (TOT) €45.2M ▲ 0.98% • SAKA (ARS) €110.2M ▲ 1.2% • SALAH (LIV) €65.4M ▼ 0.4% •
-          MITOMA (BHA) €42.0M ▲ 0.7% • FCD INDEX 1,245.20 • CONFIDENCE 94.2%
+          NCAA coaches online • 214 verified scouts • 38k athlete profiles • Soccer launch cohort open •
+          Women’s soccer spotlight week • AthleMix ranking index +2.4%
         </div>
       </div>
       <div class="ticker__status">
-        <span class="dot"></span> LIVE
+        <span class="dot"></span> ACTIVE
       </div>
     </header>
 
     <div class="layout">
       <aside class="sidebar">
         <div class="brand">
-          <div class="brand__title">FCD<span>TERMINAL</span></div>
-          <div class="brand__sub">Institutional access</div>
+          <div class="brand__title">Athle<span>Mix</span></div>
+          <div class="brand__sub">Athlete recruiting network</div>
         </div>
 
         <section class="panel">
-          <div class="panel__title">Asset</div>
+          <div class="panel__title">Featured athlete</div>
           <div class="asset">
-            <div class="asset__avatar">TOT</div>
+            <div class="asset__avatar">KN</div>
             <div>
-              <div class="asset__name">Heung-Min Son</div>
-              <div class="asset__meta">Forward • Tottenham</div>
+              <div class="asset__name">Kenny Nielsen</div>
+              <div class="asset__meta">Centre back • Los Angeles FC</div>
             </div>
+          </div>
+          <div class="asset__meta asset__meta--detail">
+            Irvine, CA • Class of 2024 • 6'0" • Right foot
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel__title">Data Feeds</div>
+          <div class="panel__title">Recruiting signals</div>
           <ul class="feeds" id="source-rows"></ul>
         </section>
 
         <section class="panel">
-          <div class="panel__title">Free Data Sandbox</div>
+          <div class="panel__title">Open data sandbox</div>
           <div class="panel__controls">
-            <button class="btn" id="load-sportsdb">Load TheSportsDB</button>
-            <button class="btn" id="load-statsbomb">Load StatsBomb</button>
+            <button class="btn" id="load-sportsdb">Load player pool</button>
+            <button class="btn" id="load-statsbomb">Load open competitions</button>
           </div>
           <div class="panel__status" id="sandbox-status">Waiting for a request.</div>
         </section>
@@ -57,89 +60,89 @@
       <main class="dashboard">
         <section class="hero">
           <div>
-            <div class="hero__label">Live Settlement Price</div>
-            <div class="hero__price">€45,200,000</div>
-            <div class="hero__delta">+€450k (0.98%) • 24h</div>
+            <div class="hero__label">Athlete network overview</div>
+            <div class="hero__price">AthleMix Soccer</div>
+            <div class="hero__delta">Unified athlete profiles, highlights, and recruiting</div>
           </div>
           <div class="hero__stats">
             <div>
-              <div class="hero__stat-label">Confidence Score</div>
-              <div class="hero__stat-value">94.2%</div>
+              <div class="hero__stat-label">Active athletes</div>
+              <div class="hero__stat-value">38,412</div>
             </div>
             <div>
-              <div class="hero__stat-label">Implied Volatility</div>
-              <div class="hero__stat-value">Low</div>
+              <div class="hero__stat-label">Verified coaches</div>
+              <div class="hero__stat-value">2,148</div>
             </div>
             <div class="hero__actions">
-              <button class="btn btn--green">Buy Long</button>
-              <button class="btn btn--red">Short</button>
+              <button class="btn btn--green">Create profile</button>
+              <button class="btn btn--red">Find athletes</button>
             </div>
           </div>
         </section>
 
         <section class="grid">
           <div class="panel">
-            <div class="panel__title">Asset Fundamentals</div>
+            <div class="panel__title">Athlete snapshot</div>
             <div class="kv">
               <div>
-                <span>Contract Expiry</span>
-                <strong>30 Jun 2026</strong>
+                <span>Graduation year</span>
+                <strong>2024</strong>
               </div>
               <div>
-                <span>Time Decay (Theta)</span>
-                <strong class="danger">-€25k/day</strong>
+                <span>Academic GPA</span>
+                <strong class="accent">3.7</strong>
               </div>
               <div>
-                <span>Weekly Wage</span>
-                <strong>£190,000</strong>
+                <span>Primary position</span>
+                <strong>Centre back</strong>
               </div>
               <div>
-                <span>Live FCD Score</span>
-                <strong class="accent">882 / 1000</strong>
+                <span>Player evaluation</span>
+                <strong class="accent">88 / 100</strong>
               </div>
             </div>
           </div>
 
           <div class="panel panel--wide">
-            <div class="panel__title">Valuation Oracle</div>
+            <div class="panel__title">Performance trend</div>
             <canvas id="valuationChart" height="220"></canvas>
           </div>
 
           <div class="panel">
-            <div class="panel__title">Market Depth</div>
+            <div class="panel__title">Recruiter activity</div>
             <div class="depth">
               <div class="depth__row">
-                <span>Bid 24.5k</span>
+                <span>Profile views</span>
                 <div class="depth__bar depth__bar--buy" style="width: 70%"></div>
-                <span>€45.1M</span>
+                <span>1,240</span>
               </div>
               <div class="depth__row">
-                <span>Bid 18.2k</span>
+                <span>Saved lists</span>
                 <div class="depth__bar depth__bar--buy" style="width: 55%"></div>
-                <span>€45.0M</span>
+                <span>312</span>
               </div>
               <div class="depth__row">
-                <span>Ask 12.1k</span>
+                <span>Messages</span>
                 <div class="depth__bar depth__bar--sell" style="width: 40%"></div>
-                <span>€45.2M</span>
+                <span>84</span>
               </div>
               <div class="depth__row">
-                <span>Ask 22.8k</span>
+                <span>Tryout invites</span>
                 <div class="depth__bar depth__bar--sell" style="width: 75%"></div>
-                <span>€45.3M</span>
+                <span>19</span>
               </div>
             </div>
           </div>
 
           <div class="panel panel--wide">
-            <div class="panel__title">Live Free Data (Beta)</div>
+            <div class="panel__title">Verified highlight feed</div>
             <table class="table">
               <thead>
                 <tr>
                   <th>Source</th>
-                  <th>Name</th>
-                  <th>Team / Competition</th>
-                  <th>Detail</th>
+                  <th>Athlete</th>
+                  <th>Team / League</th>
+                  <th>Highlight</th>
                 </tr>
               </thead>
               <tbody id="live-rows">
@@ -151,13 +154,13 @@
           </div>
 
           <div class="panel panel--wide">
-            <div class="panel__title">Micro-Attribution Ledger</div>
+            <div class="panel__title">Communication ledger</div>
             <table class="table">
               <thead>
                 <tr>
                   <th>Time</th>
-                  <th>Event</th>
-                  <th>Impact</th>
+                  <th>Update</th>
+                  <th>Outcome</th>
                 </tr>
               </thead>
               <tbody id="ledger-body"></tbody>
@@ -168,41 +171,41 @@
 
       <aside class="rightbar">
         <section class="panel">
-          <div class="panel__title">Prediction Market</div>
+          <div class="panel__title">Coach requests</div>
           <div class="prediction">
-            <div class="prediction__title">Will valuation exceed €50M by May 2026?</div>
+            <div class="prediction__title">Inbound coach outreach today</div>
             <div class="prediction__actions">
-              <button class="btn btn--green">Yes 42%</button>
-              <button class="btn btn--red">No 58%</button>
+              <button class="btn btn--green">Approve 12</button>
+              <button class="btn btn--red">Hold 4</button>
             </div>
           </div>
         </section>
 
         <section class="panel">
-          <div class="panel__title">Future Value Expiry</div>
+          <div class="panel__title">Upcoming showcases</div>
           <table class="table">
             <thead>
               <tr>
-                <th>Expiry</th>
-                <th>Proj. Value</th>
-                <th>Decay</th>
+                <th>Event</th>
+                <th>City</th>
+                <th>Date</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>May 2026</td>
-                <td class="accent">€38.5M</td>
-                <td class="danger">-0.8%</td>
+                <td>West Coast ID Camp</td>
+                <td class="accent">Irvine, CA</td>
+                <td>Apr 12</td>
               </tr>
               <tr>
-                <td>Dec 2026</td>
-                <td>€22.0M</td>
-                <td class="danger">-2.1%</td>
+                <td>Elite College Combine</td>
+                <td>Dallas, TX</td>
+                <td>May 6</td>
               </tr>
               <tr>
-                <td>Jun 2027</td>
-                <td>€0.0M</td>
-                <td class="danger">-100%</td>
+                <td>Women’s Soccer Summit</td>
+                <td>Orlando, FL</td>
+                <td>May 20</td>
               </tr>
             </tbody>
           </table>
