@@ -33,8 +33,8 @@
           <a href="#ground">High ground</a>
           <a href="#courtside">Courtside</a>
           <a href="#rules">House rules</a>
-          <a href="altitude_fc/altitude_fc_cards.html">The lab ↗</a>
-          <a href="index.html">← AthleMix</a>
+          <a href="altitude_fc/altitude_fc_cards.html" data-lab>The lab ↗</a>
+          <a href="index.html" data-home>← AthleMix</a>
         </nav>
       </header>
 
@@ -52,7 +52,7 @@
         </div>
         <div class="row" style="margin-bottom:12px">
           <label class="btn btn--ghost" style="text-align:center">Drop a fixtures CSV <input type="file" id="fx-file" accept=".csv" style="display:none" /></label>
-          <button class="btn btn--ghost" id="fx-reload">Reload demo lines</button>
+          <button class="btn btn--ghost" id="fx-reload">Reload lines</button>
           <button class="btn btn--ghost" id="fx-clear">Clear added lines</button>
         </div>
         <div class="scroll">
@@ -83,7 +83,7 @@
       <!-- ================= LINEUP DESK ================= -->
       <section class="table-card" id="lineups">
         <h2>Match Cards <small>real FC ratings · Altitude FC physiology · the market</small></h2>
-        <p class="lede">Pick two clubs. Each side's best XI from EA FC ratings is the reference card the market is pricing. Click players out and the projected XI rebuilds by position. The visitor's card is then run through the Altitude FC physiology for the venue altitude, its home altitude and the days since arrival (VO2max slope, high-intensity running, repeated-sprint recovery, acclimatisation), and the rating layer moves PAC, DEF, PHY and OVR. The adjusted OVR gap vs the reference becomes goals and EV. The full two-team lab with every assumption exposed is <a href="altitude_fc/altitude_fc_cards.html">here</a>.</p>
+        <p class="lede">Pick two clubs. Each side's best XI from EA FC ratings is the reference card the market is pricing. Click players out and the projected XI rebuilds by position. The visitor's card is then run through the Altitude FC physiology for the venue altitude, its home altitude and the days since arrival (VO2max slope, high-intensity running, repeated-sprint recovery, acclimatisation), and the rating layer moves PAC, DEF, PHY and OVR. The adjusted OVR gap vs the reference becomes goals and EV. The full two-team lab with every assumption exposed is <a href="altitude_fc/altitude_fc_cards.html" data-lab>here</a>.</p>
         <div class="controls">
           <label>Goals per rating point <input type="range" id="l-gpp" min="0" max="0.3" step="0.01" value="0.10" /><output id="o-gpp">0.10</output></label>
           <label>Market awareness of lineup <input type="range" id="l-aware" min="0" max="1" step="0.05" value="0" /><output id="o-aware">0.00</output></label>
@@ -187,10 +187,20 @@
 
       <footer class="foot">
         <span>Athlemix After Hours · illustrative scenario pricing</span>
-        <span>Model source: <a href="altitude_edge/">altitude_edge/</a> · <a href="index.html">AthleMix</a></span>
+        <span>Model source: <a href="altitude_edge/">altitude_edge/</a> · <a href="index.html" data-home>AthleMix</a></span>
       </footer>
     </div>
 
+    <script>
+      // Port configuration. Change these when mounting inside another app; nothing else needs editing.
+      window.AFTER_HOURS_CONFIG = {
+        gate: true,                                   // false when the host app already guards the route (recommended)
+        fixturesUrl: 'altitude_edge/fixtures_demo.json', // endpoint returning the fixtures JSON shape in INTEGRATION.md
+        dataBase: '',                                 // prefix for altitude_edge/*.json if the data folder moves, e.g. '/after-hours/'
+        homeUrl: 'index.html',                        // where the "← AthleMix" links go
+        labUrl: 'altitude_fc/altitude_fc_cards.html'
+      };
+    </script>
     <script src="after-hours.js"></script>
     <script src="after-hours-ui.js"></script>
   </body>

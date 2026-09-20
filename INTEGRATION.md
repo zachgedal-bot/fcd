@@ -24,15 +24,31 @@ Optional, for reference only (not needed at runtime): `altitude_edge/*.py`,
 
 ## Mounting it
 
+All port-specific settings live in one block at the bottom of `after-hours.html`:
+
+```html
+window.AFTER_HOURS_CONFIG = {
+  gate: true,            // set false: the host app's own account/adult guard protects the route
+  fixturesUrl: '...',    // the adapter endpoint; used by the boot load AND the Reload button
+  dataBase: '',          // prefix if altitude_edge/*.json is served from elsewhere
+  homeUrl: 'index.html', // the app's real home route, e.g. '/'
+  labUrl: 'altitude_fc/altitude_fc_cards.html'
+};
+```
+
+When `fixturesUrl` fails or returns nothing the book shows an explicit
+"Lines unavailable" row; nothing is simulated.
+
 1. Copy the files into a static folder served by the app, e.g. `public/after-hours/`, preserving `altitude_edge/` and `altitude_fc/` as subfolders next to `after-hours.html`.
 2. Add a route or link to `/after-hours/after-hours.html` from the existing navigation. Do not change existing pages.
-3. The invite gate is front-end only. Codes are in `after-hours-ui.js` (`CODES`); `?code=4090` opens it. If the app has real auth, gate the route server-side and delete the overlay.
+3. The invite gate is front-end only (browser codes and localStorage). In the app, set `gate: false` and protect the route with the app's real account and adult-access guard; hiding the nav link is not enough.
 4. If the app already restricts market pages to adult accounts, apply the same guard to this route.
 
 ## Feeding the Altitude Book from the existing odds adapter
 
-`after-hours-ui.js` loads `altitude_edge/fixtures_demo.json` on boot. Point it at
-an endpoint that returns the same shape and the book becomes live:
+Set `fixturesUrl` to an endpoint served by the app's odds adapter that returns
+this shape (an array, or `{"fixtures": [...]}`); both the boot load and the
+Reload button use it:
 
 ```json
 [
@@ -55,9 +71,9 @@ do not substitute sample data and label it live.
 
 ## Match Cards and Props Desk inputs
 
-Match Cards reads `fc_ratings_nwsl.json` and the venue table; odds are typed
-into the desk. Props Desk takes player lines typed or pasted (format in the
-page copy). Both can be fed from the adapter later through the same
+Connecting `fixturesUrl` makes only the Altitude Book live. Match Cards reads
+`fc_ratings_nwsl.json` and the venue table but its odds are typed in; Props
+Desk takes player lines typed or pasted (format in the page copy). Both can be fed from the adapter later through the same
 `window.AfterHoursModel` functions: `priceFixture`, `priceLineups`,
 `priceProps`, `adjustedCard` (see the bottom of `after-hours.js` for the API).
 

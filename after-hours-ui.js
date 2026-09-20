@@ -2,6 +2,9 @@
 (function () {
   'use strict';
   const M = window.AfterHoursModel;
+  const CFG = Object.assign({ gate: true, fixturesUrl: 'altitude_edge/fixtures_demo.json', dataBase: '', homeUrl: 'index.html', labUrl: 'altitude_fc/altitude_fc_cards.html' }, window.AFTER_HOURS_CONFIG || {});
+  document.querySelectorAll('a[data-home]').forEach(a => a.href = CFG.homeUrl);
+  document.querySelectorAll('a[data-lab]').forEach(a => a.href = CFG.labUrl);
   const $ = id => document.getElementById(id);
   const fmtP = p => (p * 100).toFixed(1);
   const fmtEV = ev => `<span class="${ev >= 0 ? 'pos' : 'neg'}">${ev >= 0 ? '+' : ''}${(ev * 100).toFixed(1)}%</span>`;
@@ -12,7 +15,7 @@
   const gate = $('gate');
   const urlCode = new URLSearchParams(location.search).get('code');
   if (urlCode && CODES.includes(urlCode.toUpperCase())) store.set('ah.member', true);
-  if (store.get('ah.member', false)) gate.classList.add('gate--open');
+  if (!CFG.gate || store.get('ah.member', false)) gate.classList.add('gate--open');
   $('gate-code').addEventListener('keydown', e => {
     if (e.key !== 'Enter') return;
     const v = e.target.value.trim().toUpperCase().replace(/\s+/g, '');
@@ -87,7 +90,8 @@
   }
   $('p-days').addEventListener('input', renderAltitude); $('p-mindiff').addEventListener('input', renderAltitude);
   $('fx-file').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { fixtures = parseCSV(t); renderAltitude(); }); });
-  $('fx-reload').addEventListener('click', () => loadJSON('altitude_edge/fixtures_demo.json').then(d => { fixtures = d; renderAltitude(); }).catch(() => {}));
+  function loadFixtures() { return loadJSON(CFG.fixturesUrl).then(d => { fixtures = Array.isArray(d) ? d : (d.fixtures || []); renderAltitude(); }).catch(err => { fixtures = []; renderAltitude(); $('altitude-body').innerHTML = `<tr><td colspan="11">Lines unavailable: ${CFG.fixturesUrl} returned ${err.message}. No odds are being simulated. Drop a CSV or add a line below.</td></tr>`; }); }
+  $('fx-reload').addEventListener('click', loadFixtures);
   $('fx-clear').addEventListener('click', () => { added = []; store.set('ah.added', added); renderAltitude(); });
   $('al-add').addEventListener('click', () => {
     const fx = { date: $('al-date').value, home: $('al-home').value, away: $('al-away').value, odds_h: $('al-oh').value, odds_d: $('al-od').value, odds_a: $('al-oa').value, days_since_arrival: $('al-days').value, venue_alt: $('al-venue').value, note: 'added on the floor' };
@@ -170,7 +174,7 @@
   for (const id of ['l-venue', 'l-days']) $(id).addEventListener('input', renderCards);
   $('l-sens').addEventListener('input', () => { $('o-sens').textContent = (+$('l-sens').value).toFixed(2); renderCards(); });
   $('l-formation').addEventListener('change', () => { renderSquad('home'); renderSquad('away'); });
-  function loadRatings() { return loadJSON('altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }); }
+  function loadRatings() { return loadJSON(CFG.dataBase + 'altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }); }
   Promise.resolve().catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; });
 
   // ---------- props desk ----------
@@ -213,8 +217,7 @@
   renderCourtside();
 
   // ---------- boot ----------
-  loadJSON('altitude_edge/venues.json').then(v => { venues = v; lookup = M.makeLookup(v); renderGround(); return loadRatings().catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; }); })
-    .then(() => loadJSON('altitude_edge/fixtures_demo.json'))
-    .then(d => { fixtures = d; renderAltitude(); })
+  loadJSON(CFG.dataBase + 'altitude_edge/venues.json').then(v => { venues = v; lookup = M.makeLookup(v); renderGround(); return loadRatings().catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; }); })
+    .then(loadFixtures)
     .catch(err => { $('altitude-body').innerHTML = `<tr><td colspan="11">Could not load altitude_edge/venues.json or fixtures (${err.message}). Serve the folder over HTTP (python3 -m http.server) rather than file://.</td></tr>`; });
 })();
