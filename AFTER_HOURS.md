@@ -13,7 +13,7 @@ The rope is cosmetic; nothing behind it is protected.
 | Desk | What it does | Model source |
 |---|---|---|
 | Altitude Book | De-vigs the closing 1X2, backs out goal expectancies, applies the visitor's high-intensity-running loss at the venue as a goal shift scaled by the residual share you believe the market has not priced, and ranks lines by EV. Drop a fixtures CSV or add lines by hand. | `altitude_edge/model.py`, `physio.py`, `venues.py` |
-| Lineup Desk | Paste each side's projected XI with ratings (EA FC, FCD score, any scale) and the reference XI the market is pricing. Weaker XI scores less and concedes more; big skews are flagged; EV vs the main line. | `altitude_edge/lineup_props.py` |
+| Lineup Desk | Pick two NWSL clubs: the desk builds each best XI from EA FC 25 ratings (`altitude_edge/fc_ratings_nwsl.json`, 347 players, 14 clubs) as the reference the market prices, you click players out, and the projected XI rebuilds by position. Weaker XI scores less and concedes more; big skews are flagged; EV vs the main line. CLI: `altitude_edge/lineup_desk.py`. | `altitude_edge/lineup_props.py`, `lineup_desk.py` |
 | Props Desk | Player shot lines to Poisson expected shots, to xG by position, to team xG, blended with the market's goal expectancies, re-priced against 1X2, totals and anytime-scorer odds. | `altitude_edge/lineup_props.py` |
 | Courtside | Per-match EV of trading NWSL live markets from the stands. | `nwsl_courtside/courtside_model.py` |
 
@@ -28,6 +28,7 @@ python3 fetch_espn.py --from 20260925 --to 20261005 --out fixtures.csv      # fi
 python3 fetch_polymarket.py --tags liga-mx col1 --out fixtures_pm.csv       # Polymarket mid prices
 python3 scan.py --fixtures fixtures.csv --params params.json --min-diff 800  # ranked discrepancies
 python3 backtest.py --results MEX.csv                                       # residual altitude effect after Pinnacle's closing line
+python3 lineup_desk.py --home "KC Current" --away "Orlando Pride" --odds 1.60 4.00 5.20 --home-out "Debinha"   # FC-ratings lineup EV
 ```
 
 The fetchers need open internet; they did not run from the authoring sandbox,

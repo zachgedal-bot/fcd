@@ -116,6 +116,32 @@
     $('l-ar').value = '';
   });
 
+  // ---------- lineup desk: FC ratings pickers ----------
+  let fc = null; const outs = { home: new Set(), away: new Set() };
+  const teamSel = { home: $('l-home-team'), away: $('l-away-team') };
+  function fillPickers() {
+    for (const side of ['home', 'away']) for (const t of Object.keys(fc.teams)) { const o = document.createElement('option'); o.value = t; o.textContent = t; teamSel[side].appendChild(o); }
+    $('l-source').textContent = fc.source + '. ' + fc.note;
+  }
+  function renderSquad(side) {
+    const el = $(`l-${side}-squad`); el.innerHTML = ''; const t = teamSel[side].value; if (!t) return;
+    const squad = fc.teams[t], f = $('l-formation').value;
+    const ref = M.bestXIByFormation(squad, f), proj = M.bestXIByFormation(squad, f, [...outs[side]]);
+    const inXI = new Set(proj.map(p => p.n));
+    for (const p of squad) {
+      const c = document.createElement('div'); const isOut = outs[side].has(p.n);
+      c.className = 'chip chip--player' + (isOut ? ' chip--out' : inXI.has(p.n) ? ' chip--xi' : '');
+      c.innerHTML = `<b>${p.ovr}</b>${p.n} <span>${p.p}</span>`; c.title = isOut ? 'marked out; click to restore' : 'click to mark out';
+      c.addEventListener('click', () => { if (isOut) outs[side].delete(p.n); else outs[side].add(p.n); renderSquad(side); });
+      el.appendChild(c);
+    }
+    const line = xi => xi.map(p => `${p.n}, ${p.p}, ${p.ovr}`).join('\n');
+    $(side === 'home' ? 'l-hp' : 'l-ap').value = line(proj); $(side === 'home' ? 'l-hr' : 'l-ar').value = line(ref);
+  }
+  for (const side of ['home', 'away']) teamSel[side].addEventListener('change', () => { outs[side].clear(); renderSquad(side); });
+  $('l-formation').addEventListener('change', () => { renderSquad('home'); renderSquad('away'); });
+  loadJSON('altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }).catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; });
+
   // ---------- props desk ----------
   const parseProps = (txt, scorers) => txt.split(/\r?\n/).map(l => l.trim()).filter(Boolean).map(l => {
     const p = l.split(',').map(s => s.trim()); const o = { name: p[0], pos: p[1] || 'MF' };

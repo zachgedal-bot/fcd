@@ -104,3 +104,8 @@ table.book tr.details td { white-space: normal; color: var(--muted); font-size: 
   .grid2 { grid-template-columns: 1fr; }
   .rules { columns: 1; }
 }
+
+.chip--player { cursor: pointer; user-select: none; }
+.chip--player:hover { border-color: var(--gold-dim); }
+.chip--xi { border-color: var(--gold-dim); background: rgba(201,162,39,0.08); }
+.chip--out { opacity: 0.45; text-decoration: line-through; border-color: var(--wine); }

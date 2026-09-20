@@ -159,6 +159,21 @@
     return { market_lambda_home: lh, market_lambda_away: la, props_xg_home: H.team_xg, props_xg_away: A.team_xg, coverage_home: H.coverage, coverage_away: A.coverage, model_lambda_home: lh2, model_lambda_away: la2, model_probs: pm, edges: edgesFrom(pm, mkt, odds), scorers };
   }
 
-  const api = { LINEUP_DEFAULT, PROPS_DEFAULT, XG_PER_SHOT, xiRating, bestXI, lineupAdjustment, priceLineups, shotsMeanFromLine, playerXg, teamXg, priceProps, defaultCoverage, PHYSIO, DEFAULT_PARAMS, hirDecrement, remaining, outcomeProbs, devig, impliedLambdas, altitudeAdjustment, priceFixture, makeLookup, norm, courtside };
+
+  // ---------- FC ratings squads ----------
+  const GROUPS = { GK: 'GK', CB: 'DF', LB: 'DF', RB: 'DF', LWB: 'DF', RWB: 'DF', CDM: 'MF', CM: 'MF', CAM: 'MF', LM: 'MF', RM: 'MF', ST: 'FW', CF: 'FW', LW: 'FW', RW: 'FW' };
+  const FORMATIONS = { '4-3-3': { GK: 1, DF: 4, MF: 3, FW: 3 }, '4-4-2': { GK: 1, DF: 4, MF: 4, FW: 2 }, '4-2-3-1': { GK: 1, DF: 4, MF: 5, FW: 1 }, '3-5-2': { GK: 1, DF: 3, MF: 5, FW: 2 }, '3-4-3': { GK: 1, DF: 3, MF: 4, FW: 3 } };
+  const playerGroup = p => GROUPS[p.p] || 'MF';
+  function bestXIByFormation(squad, formation = '4-3-3', out = []) {
+    const outn = new Set(out.map(norm));
+    const pool = squad.filter(p => !outn.has(norm(p.n))).map(p => Object.assign({}, p, { rating: p.ovr, name: p.n, pos: p.p }));
+    const need = Object.assign({}, FORMATIONS[formation]); const xi = [];
+    for (const g of Object.keys(need)) { const c = pool.filter(p => playerGroup(p) === g && !xi.includes(p)).sort((a, b) => b.ovr - a.ovr).slice(0, need[g]); xi.push(...c); need[g] -= c.length; }
+    const short = Object.values(need).reduce((a, b) => a + b, 0);
+    if (short > 0) xi.push(...pool.filter(p => !xi.includes(p) && playerGroup(p) !== 'GK').sort((a, b) => b.ovr - a.ovr).slice(0, short));
+    return xi;
+  }
+
+  const api = { GROUPS, FORMATIONS, bestXIByFormation, playerGroup, LINEUP_DEFAULT, PROPS_DEFAULT, XG_PER_SHOT, xiRating, bestXI, lineupAdjustment, priceLineups, shotsMeanFromLine, playerXg, teamXg, priceProps, defaultCoverage, PHYSIO, DEFAULT_PARAMS, hirDecrement, remaining, outcomeProbs, devig, impliedLambdas, altitudeAdjustment, priceFixture, makeLookup, norm, courtside };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.AfterHoursModel = api;
 })(typeof window !== 'undefined' ? window : globalThis);
