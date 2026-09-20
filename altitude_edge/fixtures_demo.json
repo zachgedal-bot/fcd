@@ -1,0 +1,93 @@
+[
+ {
+  "date": "2026-09-20",
+  "league": "Liga MX",
+  "home": "Toluca",
+  "away": "Santos Laguna",
+  "odds_h": "1.25",
+  "odds_d": "5.75",
+  "odds_a": "11.00",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "home price 1.25 from preview sites; draw/away back-filled from a typical 3-way book at that favourite price"
+ },
+ {
+  "date": "2026-09-20",
+  "league": "Liga MX",
+  "home": "Pachuca",
+  "away": "Tijuana",
+  "odds_h": "1.74",
+  "odds_d": "3.80",
+  "odds_a": "4.50",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "US moneyline -135 / +280 / +350"
+ },
+ {
+  "date": "2026-09-20",
+  "league": "Liga 1 Peru",
+  "home": "Sport Huancayo",
+  "away": "UTC Cajamarca",
+  "odds_h": "1.36",
+  "odds_d": "4.75",
+  "odds_a": "8.60",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "apuestas-deportivas.pe preview"
+ },
+ {
+  "date": "2026-09-21",
+  "league": "Bolivia Copa Pacena",
+  "home": "The Strongest",
+  "away": "Bolivar",
+  "odds_h": "",
+  "odds_d": "",
+  "odds_a": "",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "both La Paz; no differential"
+ },
+ {
+  "date": "2026-09-26",
+  "league": "Liga MX",
+  "home": "Cruz Azul",
+  "away": "Toluca",
+  "odds_h": "",
+  "odds_d": "",
+  "odds_a": "",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "Toluca descends ~430 m; odds not yet found"
+ },
+ {
+  "date": "2026-09-26",
+  "league": "Liga MX",
+  "home": "Santos Laguna",
+  "away": "Pachuca",
+  "odds_h": "",
+  "odds_d": "",
+  "odds_a": "",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "Pachuca descends ~1300 m; odds not yet found"
+ },
+ {
+  "date": "2026-09-26",
+  "league": "Liga MX",
+  "home": "Tigres UANL",
+  "away": "Puebla",
+  "odds_h": "",
+  "odds_d": "",
+  "odds_a": "",
+  "odds_over25": "",
+  "odds_under25": "",
+  "days_since_arrival": "1",
+  "note": "Puebla descends ~1600 m; odds not yet found"
+ }
+]

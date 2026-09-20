@@ -1,0 +1,757 @@
+{
+ "venues": {
+  "Toluca": {
+   "city": "Toluca",
+   "alt": 2670,
+   "league": "MEX"
+  },
+  "Pachuca": {
+   "city": "Pachuca",
+   "alt": 2430,
+   "league": "MEX"
+  },
+  "Puebla": {
+   "city": "Puebla",
+   "alt": 2135,
+   "league": "MEX"
+  },
+  "America": {
+   "city": "Mexico City",
+   "alt": 2240,
+   "league": "MEX"
+  },
+  "Cruz Azul": {
+   "city": "Mexico City",
+   "alt": 2240,
+   "league": "MEX"
+  },
+  "Pumas UNAM": {
+   "city": "Mexico City",
+   "alt": 2270,
+   "league": "MEX"
+  },
+  "Atlante": {
+   "city": "Mexico City",
+   "alt": 2240,
+   "league": "MEX"
+  },
+  "Queretaro": {
+   "city": "Queretaro",
+   "alt": 1820,
+   "league": "MEX"
+  },
+  "Leon": {
+   "city": "Leon",
+   "alt": 1800,
+   "league": "MEX"
+  },
+  "Guadalajara": {
+   "city": "Zapopan",
+   "alt": 1560,
+   "league": "MEX"
+  },
+  "Atlas": {
+   "city": "Guadalajara",
+   "alt": 1560,
+   "league": "MEX"
+  },
+  "Atletico San Luis": {
+   "city": "San Luis Potosi",
+   "alt": 1860,
+   "league": "MEX"
+  },
+  "Necaxa": {
+   "city": "Aguascalientes",
+   "alt": 1880,
+   "league": "MEX"
+  },
+  "Juarez": {
+   "city": "Ciudad Juarez",
+   "alt": 1140,
+   "league": "MEX"
+  },
+  "Santos Laguna": {
+   "city": "Torreon",
+   "alt": 1120,
+   "league": "MEX"
+  },
+  "Monterrey": {
+   "city": "Guadalupe",
+   "alt": 540,
+   "league": "MEX"
+  },
+  "Tigres UANL": {
+   "city": "San Nicolas de los Garza",
+   "alt": 500,
+   "league": "MEX"
+  },
+  "Tijuana": {
+   "city": "Tijuana",
+   "alt": 20,
+   "league": "MEX"
+  },
+  "Mazatlan": {
+   "city": "Mazatlan",
+   "alt": 10,
+   "league": "MEX"
+  },
+  "Always Ready": {
+   "city": "El Alto",
+   "alt": 4090,
+   "league": "BOL"
+  },
+  "Bolivar": {
+   "city": "La Paz",
+   "alt": 3637,
+   "league": "BOL"
+  },
+  "The Strongest": {
+   "city": "La Paz",
+   "alt": 3637,
+   "league": "BOL"
+  },
+  "Academia del Balompie Boliviano": {
+   "city": "La Paz",
+   "alt": 3637,
+   "league": "BOL"
+  },
+  "Nacional Potosi": {
+   "city": "Potosi",
+   "alt": 3960,
+   "league": "BOL"
+  },
+  "Real Potosi": {
+   "city": "Potosi",
+   "alt": 3960,
+   "league": "BOL"
+  },
+  "Real Oruro": {
+   "city": "Oruro",
+   "alt": 3735,
+   "league": "BOL"
+  },
+  "GV San Jose": {
+   "city": "Oruro",
+   "alt": 3735,
+   "league": "BOL"
+  },
+  "Universitario de Vinto": {
+   "city": "Vinto",
+   "alt": 2560,
+   "league": "BOL"
+  },
+  "Aurora": {
+   "city": "Cochabamba",
+   "alt": 2560,
+   "league": "BOL"
+  },
+  "Wilstermann": {
+   "city": "Cochabamba",
+   "alt": 2560,
+   "league": "BOL"
+  },
+  "Independiente Petrolero": {
+   "city": "Sucre",
+   "alt": 2800,
+   "league": "BOL"
+  },
+  "Real Tomayapo": {
+   "city": "Tarija",
+   "alt": 1850,
+   "league": "BOL"
+  },
+  "Oriente Petrolero": {
+   "city": "Santa Cruz",
+   "alt": 415,
+   "league": "BOL"
+  },
+  "Blooming": {
+   "city": "Santa Cruz",
+   "alt": 415,
+   "league": "BOL"
+  },
+  "Real Santa Cruz": {
+   "city": "Santa Cruz",
+   "alt": 415,
+   "league": "BOL"
+  },
+  "Guabira": {
+   "city": "Montero",
+   "alt": 300,
+   "league": "BOL"
+  },
+  "San Antonio Bulo Bulo": {
+   "city": "Bulo Bulo",
+   "alt": 250,
+   "league": "BOL"
+  },
+  "LDU Quito": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "ECU"
+  },
+  "Aucas": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "ECU"
+  },
+  "Universidad Catolica": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "ECU"
+  },
+  "El Nacional": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "ECU"
+  },
+  "Vinotinto": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "ECU"
+  },
+  "Independiente del Valle": {
+   "city": "Sangolqui",
+   "alt": 2517,
+   "league": "ECU"
+  },
+  "Deportivo Cuenca": {
+   "city": "Cuenca",
+   "alt": 2560,
+   "league": "ECU"
+  },
+  "Macara": {
+   "city": "Ambato",
+   "alt": 2580,
+   "league": "ECU"
+  },
+  "Tecnico Universitario": {
+   "city": "Ambato",
+   "alt": 2580,
+   "league": "ECU"
+  },
+  "Mushuc Runa": {
+   "city": "Echaleche",
+   "alt": 3250,
+   "league": "ECU"
+  },
+  "Libertad": {
+   "city": "Loja",
+   "alt": 2060,
+   "league": "ECU"
+  },
+  "Barcelona SC": {
+   "city": "Guayaquil",
+   "alt": 4,
+   "league": "ECU"
+  },
+  "Emelec": {
+   "city": "Guayaquil",
+   "alt": 4,
+   "league": "ECU"
+  },
+  "Orense": {
+   "city": "Machala",
+   "alt": 6,
+   "league": "ECU"
+  },
+  "Delfin": {
+   "city": "Manta",
+   "alt": 6,
+   "league": "ECU"
+  },
+  "Manta FC": {
+   "city": "Manta",
+   "alt": 6,
+   "league": "ECU"
+  },
+  "Millonarios": {
+   "city": "Bogota",
+   "alt": 2640,
+   "league": "COL"
+  },
+  "Santa Fe": {
+   "city": "Bogota",
+   "alt": 2640,
+   "league": "COL"
+  },
+  "Fortaleza CEIF": {
+   "city": "Bogota",
+   "alt": 2640,
+   "league": "COL"
+  },
+  "La Equidad": {
+   "city": "Bogota",
+   "alt": 2640,
+   "league": "COL"
+  },
+  "Boyaca Chico": {
+   "city": "Tunja",
+   "alt": 2820,
+   "league": "COL"
+  },
+  "Patriotas": {
+   "city": "Tunja",
+   "alt": 2820,
+   "league": "COL"
+  },
+  "Deportivo Pasto": {
+   "city": "Pasto",
+   "alt": 2527,
+   "league": "COL"
+  },
+  "Once Caldas": {
+   "city": "Manizales",
+   "alt": 2150,
+   "league": "COL"
+  },
+  "Aguilas Doradas": {
+   "city": "Rionegro",
+   "alt": 2125,
+   "league": "COL"
+  },
+  "Envigado": {
+   "city": "Envigado",
+   "alt": 1575,
+   "league": "COL"
+  },
+  "Atletico Nacional": {
+   "city": "Medellin",
+   "alt": 1495,
+   "league": "COL"
+  },
+  "Independiente Medellin": {
+   "city": "Medellin",
+   "alt": 1495,
+   "league": "COL"
+  },
+  "Deportivo Pereira": {
+   "city": "Pereira",
+   "alt": 1410,
+   "league": "COL"
+  },
+  "Deportes Tolima": {
+   "city": "Ibague",
+   "alt": 1285,
+   "league": "COL"
+  },
+  "America de Cali": {
+   "city": "Cali",
+   "alt": 995,
+   "league": "COL"
+  },
+  "Deportivo Cali": {
+   "city": "Palmira",
+   "alt": 1000,
+   "league": "COL"
+  },
+  "Atletico Bucaramanga": {
+   "city": "Bucaramanga",
+   "alt": 960,
+   "league": "COL"
+  },
+  "Llaneros": {
+   "city": "Villavicencio",
+   "alt": 467,
+   "league": "COL"
+  },
+  "Cucuta Deportivo": {
+   "city": "Cucuta",
+   "alt": 320,
+   "league": "COL"
+  },
+  "Alianza Valledupar": {
+   "city": "Valledupar",
+   "alt": 169,
+   "league": "COL"
+  },
+  "Junior": {
+   "city": "Barranquilla",
+   "alt": 18,
+   "league": "COL"
+  },
+  "Jaguares": {
+   "city": "Monteria",
+   "alt": 18,
+   "league": "COL"
+  },
+  "Union Magdalena": {
+   "city": "Santa Marta",
+   "alt": 6,
+   "league": "COL"
+  },
+  "Cienciano": {
+   "city": "Cusco",
+   "alt": 3400,
+   "league": "PER"
+  },
+  "Cusco FC": {
+   "city": "Cusco",
+   "alt": 3400,
+   "league": "PER"
+  },
+  "Deportivo Garcilaso": {
+   "city": "Cusco",
+   "alt": 3400,
+   "league": "PER"
+  },
+  "Sport Huancayo": {
+   "city": "Huancayo",
+   "alt": 3250,
+   "league": "PER"
+  },
+  "ADT": {
+   "city": "Tarma",
+   "alt": 3050,
+   "league": "PER"
+  },
+  "Los Chankas": {
+   "city": "Andahuaylas",
+   "alt": 2900,
+   "league": "PER"
+  },
+  "Ayacucho FC": {
+   "city": "Ayacucho",
+   "alt": 2760,
+   "league": "PER"
+  },
+  "UTC Cajamarca": {
+   "city": "Cajamarca",
+   "alt": 2750,
+   "league": "PER"
+  },
+  "FC Cajamarca": {
+   "city": "Cajamarca",
+   "alt": 2750,
+   "league": "PER"
+  },
+  "Comerciantes Unidos": {
+   "city": "Cutervo",
+   "alt": 2650,
+   "league": "PER"
+  },
+  "Melgar": {
+   "city": "Arequipa",
+   "alt": 2335,
+   "league": "PER"
+  },
+  "Deportivo Moquegua": {
+   "city": "Moquegua",
+   "alt": 1410,
+   "league": "PER"
+  },
+  "Juan Pablo II": {
+   "city": "Chongoyape",
+   "alt": 250,
+   "league": "PER"
+  },
+  "Alianza Lima": {
+   "city": "Lima",
+   "alt": 150,
+   "league": "PER"
+  },
+  "Universitario": {
+   "city": "Lima",
+   "alt": 150,
+   "league": "PER"
+  },
+  "Sporting Cristal": {
+   "city": "Lima",
+   "alt": 150,
+   "league": "PER"
+  },
+  "Sport Boys": {
+   "city": "Callao",
+   "alt": 5,
+   "league": "PER"
+  },
+  "Alianza Atletico": {
+   "city": "Sullana",
+   "alt": 60,
+   "league": "PER"
+  },
+  "Atletico Grau": {
+   "city": "Piura",
+   "alt": 30,
+   "league": "PER"
+  },
+  "Boca Juniors": {
+   "city": "Buenos Aires",
+   "alt": 25,
+   "league": "ARG"
+  },
+  "River Plate": {
+   "city": "Buenos Aires",
+   "alt": 25,
+   "league": "ARG"
+  },
+  "Racing Club": {
+   "city": "Avellaneda",
+   "alt": 15,
+   "league": "ARG"
+  },
+  "Independiente": {
+   "city": "Avellaneda",
+   "alt": 15,
+   "league": "ARG"
+  },
+  "San Lorenzo": {
+   "city": "Buenos Aires",
+   "alt": 25,
+   "league": "ARG"
+  },
+  "Estudiantes": {
+   "city": "La Plata",
+   "alt": 20,
+   "league": "ARG"
+  },
+  "Velez Sarsfield": {
+   "city": "Buenos Aires",
+   "alt": 25,
+   "league": "ARG"
+  },
+  "Lanus": {
+   "city": "Lanus",
+   "alt": 20,
+   "league": "ARG"
+  },
+  "Talleres": {
+   "city": "Cordoba",
+   "alt": 400,
+   "league": "ARG"
+  },
+  "Flamengo": {
+   "city": "Rio de Janeiro",
+   "alt": 5,
+   "league": "BRA"
+  },
+  "Fluminense": {
+   "city": "Rio de Janeiro",
+   "alt": 5,
+   "league": "BRA"
+  },
+  "Botafogo": {
+   "city": "Rio de Janeiro",
+   "alt": 5,
+   "league": "BRA"
+  },
+  "Vasco da Gama": {
+   "city": "Rio de Janeiro",
+   "alt": 5,
+   "league": "BRA"
+  },
+  "Palmeiras": {
+   "city": "Sao Paulo",
+   "alt": 760,
+   "league": "BRA"
+  },
+  "Corinthians": {
+   "city": "Sao Paulo",
+   "alt": 760,
+   "league": "BRA"
+  },
+  "Sao Paulo": {
+   "city": "Sao Paulo",
+   "alt": 760,
+   "league": "BRA"
+  },
+  "Santos": {
+   "city": "Santos",
+   "alt": 5,
+   "league": "BRA"
+  },
+  "Atletico Mineiro": {
+   "city": "Belo Horizonte",
+   "alt": 850,
+   "league": "BRA"
+  },
+  "Cruzeiro": {
+   "city": "Belo Horizonte",
+   "alt": 850,
+   "league": "BRA"
+  },
+  "Gremio": {
+   "city": "Porto Alegre",
+   "alt": 10,
+   "league": "BRA"
+  },
+  "Internacional": {
+   "city": "Porto Alegre",
+   "alt": 10,
+   "league": "BRA"
+  },
+  "Colo-Colo": {
+   "city": "Santiago",
+   "alt": 570,
+   "league": "CHI"
+  },
+  "Universidad de Chile": {
+   "city": "Santiago",
+   "alt": 570,
+   "league": "CHI"
+  },
+  "Universidad Catolica Chile": {
+   "city": "Santiago",
+   "alt": 570,
+   "league": "CHI"
+  },
+  "Penarol": {
+   "city": "Montevideo",
+   "alt": 40,
+   "league": "URU"
+  },
+  "Nacional": {
+   "city": "Montevideo",
+   "alt": 40,
+   "league": "URU"
+  },
+  "Montevideo City Torque": {
+   "city": "Montevideo",
+   "alt": 40,
+   "league": "URU"
+  },
+  "Olimpia": {
+   "city": "Asuncion",
+   "alt": 45,
+   "league": "PAR"
+  },
+  "Cerro Porteno": {
+   "city": "Asuncion",
+   "alt": 45,
+   "league": "PAR"
+  },
+  "Libertad Paraguay": {
+   "city": "Asuncion",
+   "alt": 45,
+   "league": "PAR"
+  },
+  "Caracas FC": {
+   "city": "Caracas",
+   "alt": 900,
+   "league": "VEN"
+  },
+  "Deportivo Tachira": {
+   "city": "San Cristobal",
+   "alt": 830,
+   "league": "VEN"
+  },
+  "Bolivia": {
+   "city": "El Alto",
+   "alt": 4090,
+   "league": "NT"
+  },
+  "Ecuador": {
+   "city": "Quito",
+   "alt": 2850,
+   "league": "NT"
+  },
+  "Colombia": {
+   "city": "Barranquilla",
+   "alt": 18,
+   "league": "NT"
+  },
+  "Peru": {
+   "city": "Lima",
+   "alt": 150,
+   "league": "NT"
+  },
+  "Mexico": {
+   "city": "Mexico City",
+   "alt": 2240,
+   "league": "NT"
+  },
+  "Argentina": {
+   "city": "Buenos Aires",
+   "alt": 25,
+   "league": "NT"
+  },
+  "Brazil": {
+   "city": "various",
+   "alt": 300,
+   "league": "NT"
+  },
+  "Chile": {
+   "city": "Santiago",
+   "alt": 570,
+   "league": "NT"
+  },
+  "Uruguay": {
+   "city": "Montevideo",
+   "alt": 40,
+   "league": "NT"
+  },
+  "Paraguay": {
+   "city": "Asuncion",
+   "alt": 45,
+   "league": "NT"
+  },
+  "Venezuela": {
+   "city": "Maturin",
+   "alt": 65,
+   "league": "NT"
+  }
+ },
+ "habitual_leagues": [
+  "BOL",
+  "COL",
+  "ECU",
+  "MEX",
+  "PER"
+ ],
+ "aliases": {
+  "club america": "America",
+  "cf america": "America",
+  "deportivo toluca": "Toluca",
+  "toluca fc": "Toluca",
+  "cf pachuca": "Pachuca",
+  "club puebla": "Puebla",
+  "pumas": "Pumas UNAM",
+  "unam": "Pumas UNAM",
+  "chivas": "Guadalajara",
+  "cd guadalajara": "Guadalajara",
+  "club tijuana": "Tijuana",
+  "xolos": "Tijuana",
+  "tigres": "Tigres UANL",
+  "cf monterrey": "Monterrey",
+  "rayados": "Monterrey",
+  "fc juarez": "Juarez",
+  "club leon": "Leon",
+  "club necaxa": "Necaxa",
+  "san luis": "Atletico San Luis",
+  "mazatlan fc": "Mazatlan",
+  "queretaro fc": "Queretaro",
+  "club bolivar": "Bolivar",
+  "abb": "Academia del Balompie Boliviano",
+  "academia del balompie": "Academia del Balompie Boliviano",
+  "liga de quito": "LDU Quito",
+  "ldu": "LDU Quito",
+  "liga deportiva universitaria": "LDU Quito",
+  "sd aucas": "Aucas",
+  "u catolica": "Universidad Catolica",
+  "universidad catolica del ecuador": "Universidad Catolica",
+  "idv": "Independiente del Valle",
+  "cs emelec": "Emelec",
+  "delfin sc": "Delfin",
+  "orense sc": "Orense",
+  "millonarios fc": "Millonarios",
+  "independiente santa fe": "Santa Fe",
+  "fortaleza": "Fortaleza CEIF",
+  "chico fc": "Boyaca Chico",
+  "boyaca chico fc": "Boyaca Chico",
+  "pasto": "Deportivo Pasto",
+  "junior fc": "Junior",
+  "junior de barranquilla": "Junior",
+  "nacional medellin": "Atletico Nacional",
+  "dim": "Independiente Medellin",
+  "america cali": "America de Cali",
+  "utc": "UTC Cajamarca",
+  "utc de cajamarca": "UTC Cajamarca",
+  "cusco": "Cusco FC",
+  "garcilaso": "Deportivo Garcilaso",
+  "huancayo": "Sport Huancayo",
+  "fbc melgar": "Melgar",
+  "universitario de deportes": "Universitario",
+  "u de chile": "Universidad de Chile",
+  "colo colo": "Colo-Colo"
+ }
+}

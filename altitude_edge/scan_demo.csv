@@ -1,0 +1,7 @@
+date,league,home,away,venue_alt,away_res_alt,alt_diff,days,away_hir_dec_pct,d_lambda_home,d_lambda_away,mkt_h,mkt_d,mkt_a,mod_h,mod_d,mod_a,best_side,best_ev,best_kelly,note
+2026-09-20,Liga 1 Peru,Sport Huancayo,UTC Cajamarca,3250,2750,500,1.0,0.44,0.002,-0.002,0.7171,0.1854,0.0975,0.7179,0.185,0.0971,home,-0.0237,0.0,apuestas-deportivas.pe preview
+2026-09-20,Liga MX,Pachuca,Tijuana,2430,20,2410,1.0,4.66,0.02,-0.02,0.5553,0.2423,0.2024,0.565,0.2399,0.1951,home,-0.0169,0.0,US moneyline -135 / +280 / +350
+2026-09-20,Liga MX,Toluca,Santos Laguna,2670,1120,1550,1.0,2.76,0.012,-0.012,0.7824,0.1461,0.0716,0.7867,0.1441,0.0693,home,-0.0167,0.0,home price 1.25 from preview sites; draw/away back-filled from a typical 3-way book at that favourite price
+2026-09-26,Liga MX,Tigres UANL,Puebla,500,2135,-1635,1.0,0.0,0.0,-0.037,,,,,,,,,,Puebla descends ~1600 m; odds not yet found
+2026-09-26,Liga MX,Cruz Azul,Toluca,2240,2670,-430,1.0,0.0,0.0,0.0,,,,,,,,,,Toluca descends ~430 m; odds not yet found
+2026-09-26,Liga MX,Santos Laguna,Pachuca,1120,2430,-1310,1.0,0.0,0.0,0.0,,,,,,,,,,Pachuca descends ~1300 m; odds not yet found
