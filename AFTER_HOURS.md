@@ -1,6 +1,6 @@
 # Athlemix After Hours
 
-The members-only back room of the FCD Terminal: `after-hours.html`. Three desks
+The members-only back room of AthleMix: `after-hours.html`. Three desks
 and a calculator, all client-side, all illustrative until backtested.
 
 Open it: serve the folder over HTTP (`python3 -m http.server`) and visit
