@@ -170,7 +170,8 @@
   for (const id of ['l-venue', 'l-days']) $(id).addEventListener('input', renderCards);
   $('l-sens').addEventListener('input', () => { $('o-sens').textContent = (+$('l-sens').value).toFixed(2); renderCards(); });
   $('l-formation').addEventListener('change', () => { renderSquad('home'); renderSquad('away'); });
-  loadJSON('altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }).catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; });
+  function loadRatings() { return loadJSON('altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }); }
+  Promise.resolve().catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; });
 
   // ---------- props desk ----------
   const parseProps = (txt, scorers) => txt.split(/\r?\n/).map(l => l.trim()).filter(Boolean).map(l => {
@@ -212,7 +213,8 @@
   renderCourtside();
 
   // ---------- boot ----------
-  loadJSON('altitude_edge/venues.json').then(v => { venues = v; lookup = M.makeLookup(v); renderGround(); return loadJSON('altitude_edge/fixtures_demo.json'); })
+  loadJSON('altitude_edge/venues.json').then(v => { venues = v; lookup = M.makeLookup(v); renderGround(); return loadRatings().catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; }); })
+    .then(() => loadJSON('altitude_edge/fixtures_demo.json'))
     .then(d => { fixtures = d; renderAltitude(); })
     .catch(err => { $('altitude-body').innerHTML = `<tr><td colspan="11">Could not load altitude_edge/venues.json or fixtures (${err.message}). Serve the folder over HTTP (python3 -m http.server) rather than file://.</td></tr>`; });
 })();
