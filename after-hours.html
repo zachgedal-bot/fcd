@@ -28,11 +28,12 @@
         </div>
         <nav class="nav">
           <a href="#altitude">Altitude book</a>
-          <a href="#lineups">Lineup desk</a>
+          <a href="#lineups">Match cards</a>
           <a href="#props">Props desk</a>
           <a href="#ground">High ground</a>
           <a href="#courtside">Courtside</a>
           <a href="#rules">House rules</a>
+          <a href="altitude_fc/altitude_fc_cards.html">The lab ↗</a>
           <a href="index.html">← AthleMix</a>
         </nav>
       </header>
@@ -81,8 +82,8 @@
 
       <!-- ================= LINEUP DESK ================= -->
       <section class="table-card" id="lineups">
-        <h2>Lineup Desk <small>projected XI vs the XI the market is pricing</small></h2>
-        <p class="lede">Pick two NWSL clubs and the desk builds each side's best XI from EA FC ratings as the reference the market is pricing. Click players to mark them out and the projected XI rebuilds from the next best by position. You can also paste your own XI with any rating scale. A weaker XI than the market assumes scores less and concedes more; the gap becomes EV. Big skews get flagged.</p>
+        <h2>Match Cards <small>real FC ratings · Altitude FC physiology · the market</small></h2>
+        <p class="lede">Pick two clubs. Each side's best XI from EA FC ratings is the reference card the market is pricing. Click players out and the projected XI rebuilds by position. The visitor's card is then run through the Altitude FC physiology for the venue altitude, its home altitude and the days since arrival (VO2max slope, high-intensity running, repeated-sprint recovery, acclimatisation), and the rating layer moves PAC, DEF, PHY and OVR. The adjusted OVR gap vs the reference becomes goals and EV. The full two-team lab with every assumption exposed is <a href="altitude_fc/altitude_fc_cards.html">here</a>.</p>
         <div class="controls">
           <label>Goals per rating point <input type="range" id="l-gpp" min="0" max="0.3" step="0.01" value="0.10" /><output id="o-gpp">0.10</output></label>
           <label>Market awareness of lineup <input type="range" id="l-aware" min="0" max="1" step="0.05" value="0" /><output id="o-aware">0.00</output></label>
@@ -95,18 +96,23 @@
           <label>Home club (EA FC 25 NWSL) <select id="l-home-team"><option value="">— pick —</option></select></label>
           <label>Away club <select id="l-away-team"><option value="">— pick —</option></select></label>
           <label>Formation <select id="l-formation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-5-2</option><option>3-4-3</option></select></label>
+          <label>Venue altitude (m, auto from home club) <input id="l-venue" type="number" step="10" placeholder="auto" /></label>
+          <label>Days since arrival <input id="l-days" type="number" step="1" value="1" /></label>
+          <label>Rating sensitivity (pts per 1% phys.) <input type="range" id="l-sens" min="0.1" max="1" step="0.05" value="0.4" /><output id="o-sens">0.40</output></label>
         </div>
+        <div class="grid2" id="l-cards" style="margin-top:12px"></div>
         <p class="lede" id="l-source"></p>
         <div class="grid2">
           <div><div class="tag" style="margin-bottom:6px">Home squad · click a player to mark her out</div><div class="chips" id="l-home-squad"></div></div>
           <div><div class="tag" style="margin-bottom:6px">Away squad · click a player to mark her out</div><div class="chips" id="l-away-squad"></div></div>
         </div>
+        <details style="margin-top:12px"><summary class="tag" style="cursor:pointer">Paste XIs by hand instead</summary>
         <div class="grid2 form" style="margin-top:12px">
           <label>Home projected XI (name, pos, rating) <textarea id="l-hp"></textarea></label>
           <label>Home reference XI or squad <textarea id="l-hr"></textarea></label>
           <label>Away projected XI <textarea id="l-ap"></textarea></label>
           <label>Away reference XI or squad <textarea id="l-ar"></textarea></label>
-        </div>
+        </div></details>
         <div class="row" style="margin-top:10px">
           <button class="btn" id="l-run">Price it</button>
           <button class="btn btn--ghost" id="l-sample">Load illustrative sample</button>

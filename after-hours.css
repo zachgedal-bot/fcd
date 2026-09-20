@@ -109,3 +109,15 @@ table.book tr.details td { white-space: normal; color: var(--muted); font-size: 
 .chip--player:hover { border-color: var(--gold-dim); }
 .chip--xi { border-color: var(--gold-dim); background: rgba(201,162,39,0.08); }
 .chip--out { opacity: 0.45; text-decoration: line-through; border-color: var(--wine); }
+
+.fccard { border: 1px solid var(--gold-dim); background: linear-gradient(160deg, rgba(42,34,48,0.7), rgba(12,10,14,0.95)); padding: 14px; }
+.fccard h3 { font-family: var(--serif); font-size: 1.35rem; margin: 0; letter-spacing: 0.06em; }
+.fccard .meta { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 2px 0 10px; }
+.fccard table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.78rem; }
+.fccard th { text-align: right; color: var(--muted); font-weight: 500; font-size: 0.62rem; letter-spacing: 0.1em; padding: 4px; border-bottom: 1px solid var(--line); }
+.fccard th:first-child, .fccard td:first-child { text-align: left; }
+.fccard td { text-align: right; padding: 5px 4px; border-bottom: 1px solid rgba(42,34,48,0.6); }
+.fccard tr.adj td { color: var(--gold); font-weight: 500; }
+.fccard .ovr { font-family: var(--serif); font-size: 2.2rem; color: var(--gold); line-height: 1; }
+.fccard .ovr small { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); margin-left: 8px; }
+.fccard .phys { margin-top: 8px; font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }

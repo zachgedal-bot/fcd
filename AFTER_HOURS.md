@@ -8,12 +8,16 @@ Open it: serve the folder over HTTP (`python3 -m http.server`) and visit
 ground in the book. `after-hours.html?code=4090` is a shareable invite link.
 The rope is cosmetic; nothing behind it is protected.
 
+## The engine
+
+`altitude_fc/` is the Altitude FC project as delivered: `altitude_model.py` (physiology layer with evidence IDs plus the FC-style rating layer), the 33-row cited evidence table, the scenario grid, the explainer and the interactive two-team lab `altitude_fc_cards.html`, linked from the After Hours nav as "The lab". Every desk below runs on that engine; `altitude_edge/physio.py` is a thin wrapper around it.
+
 ## The desks
 
 | Desk | What it does | Model source |
 |---|---|---|
-| Altitude Book | De-vigs the closing 1X2, backs out goal expectancies, applies the visitor's high-intensity-running loss at the venue as a goal shift scaled by the residual share you believe the market has not priced, and ranks lines by EV. Drop a fixtures CSV or add lines by hand. | `altitude_edge/model.py`, `physio.py`, `venues.py` |
-| Lineup Desk | Pick two NWSL clubs: the desk builds each best XI from EA FC 25 ratings (`altitude_edge/fc_ratings_nwsl.json`, 347 players, 14 clubs) as the reference the market prices, you click players out, and the projected XI rebuilds by position. Weaker XI scores less and concedes more; big skews are flagged; EV vs the main line. CLI: `altitude_edge/lineup_desk.py`. | `altitude_edge/lineup_props.py`, `lineup_desk.py` |
+| Altitude Book | De-vigs the closing 1X2, backs out goal expectancies, applies the visitor's high-intensity-running loss at the venue (Altitude FC physiology) as a goal shift scaled by the residual share you believe the market has not priced, and ranks lines by EV. Drop a fixtures CSV or add lines by hand. | `altitude_fc/altitude_model.py`, `altitude_edge/model.py`, `venues.py` |
+| Match Cards | Pick two clubs: each best XI from EA FC 25 ratings (`altitude_edge/fc_ratings_nwsl.json`, 347 NWSL players, 14 clubs) is the reference card the market prices; click players out and the projected XI rebuilds by position. The visitor's card then goes through the Altitude FC physiology (VO2max slope, HIR and repeated-sprint fractions, fast/slow acclimatisation) for the venue and arrival day, and the rating layer moves PAC, DEF, PHY and OVR. The adjusted OVR gap becomes goals and EV vs the 1X2. CLIs: `altitude_edge/match_cards.py`, `lineup_desk.py`. | `altitude_fc/altitude_model.py`, `altitude_edge/match_cards.py`, `lineup_props.py` |
 | Props Desk | Player shot lines to Poisson expected shots, to xG by position, to team xG, blended with the market's goal expectancies, re-priced against 1X2, totals and anytime-scorer odds. | `altitude_edge/lineup_props.py` |
 | Courtside | Per-match EV of trading NWSL live markets from the stands. | `nwsl_courtside/courtside_model.py` |
 
@@ -29,6 +33,7 @@ python3 fetch_polymarket.py --tags liga-mx col1 --out fixtures_pm.csv       # Po
 python3 scan.py --fixtures fixtures.csv --params params.json --min-diff 800  # ranked discrepancies
 python3 backtest.py --results MEX.csv                                       # residual altitude effect after Pinnacle's closing line
 python3 lineup_desk.py --home "KC Current" --away "Orlando Pride" --odds 1.60 4.00 5.20 --home-out "Debinha"   # FC-ratings lineup EV
+python3 match_cards.py --home "Utah Royals FC" --away "KC Current" --odds 2.60 3.40 2.60 --days 1     # cards + altitude + market
 ```
 
 The fetchers need open internet; they did not run from the authoring sandbox,

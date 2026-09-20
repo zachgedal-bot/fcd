@@ -1,5 +1,5 @@
 {
-  "_comment": "Base-case parameters for scan.py. Ranges and sources in PARAMETERS.md. Every value is a prior until backtest.py on closing-odds data replaces it.",
+  "_comment": "Base-case parameters for scan.py. physio = Altitude FC PhysParams (altitude_fc/altitude_model.py). Ranges and sources in PARAMETERS.md.",
   "k_goals_per_10pct_hir": 0.35,
   "conceded_share": 0.5,
   "residual_share": 0.25,
@@ -7,5 +7,16 @@
   "descending_goals": 0.15,
   "descending_threshold_m": 1500,
   "rho": -0.05,
-  "physio": {"threshold_m": 300, "pct_per_1000": 5.4, "never": 0.35, "fast": 0.40, "tau_fast": 2.0, "slow": 0.25, "tau_slow": 10.0, "max_pct": 30.0}
+  "physio": {
+    "vo2max_pct_per_1000m": 6.3,
+    "vo2max_threshold_m": 300.0,
+    "hir_per_vo2_fraction": 0.7,
+    "rsa_per_vo2_fraction": 0.3,
+    "sprint_pct_per_1000m": 0.3,
+    "acclim_fast_tau_days": 3.5,
+    "acclim_fast_fraction": 0.4,
+    "acclim_slow_tau_days": 21.0,
+    "acclim_slow_fraction": 0.25,
+    "individual_spread_fraction": 0.25
+  }
 }

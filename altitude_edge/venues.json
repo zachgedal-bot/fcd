@@ -475,6 +475,86 @@
    "alt": 30,
    "league": "PER"
   },
+  "Angel City FC": {
+   "city": "Los Angeles",
+   "alt": 50,
+   "league": "NWSL"
+  },
+  "Bay FC": {
+   "city": "San Jose",
+   "alt": 25,
+   "league": "NWSL"
+  },
+  "Boston Legacy FC": {
+   "city": "Boston",
+   "alt": 5,
+   "league": "NWSL"
+  },
+  "Chicago Stars FC": {
+   "city": "Bridgeview",
+   "alt": 180,
+   "league": "NWSL"
+  },
+  "Denver Summit FC": {
+   "city": "Denver",
+   "alt": 1600,
+   "league": "NWSL"
+  },
+  "Houston Dash": {
+   "city": "Houston",
+   "alt": 15,
+   "league": "NWSL"
+  },
+  "KC Current": {
+   "city": "Kansas City",
+   "alt": 270,
+   "league": "NWSL"
+  },
+  "NC Courage": {
+   "city": "Cary",
+   "alt": 120,
+   "league": "NWSL"
+  },
+  "NJ/NY Gotham": {
+   "city": "Harrison",
+   "alt": 5,
+   "league": "NWSL"
+  },
+  "Orlando Pride": {
+   "city": "Orlando",
+   "alt": 30,
+   "league": "NWSL"
+  },
+  "Portland Thorns": {
+   "city": "Portland",
+   "alt": 15,
+   "league": "NWSL"
+  },
+  "Rac. Louisville": {
+   "city": "Louisville",
+   "alt": 140,
+   "league": "NWSL"
+  },
+  "San Diego Wave": {
+   "city": "San Diego",
+   "alt": 20,
+   "league": "NWSL"
+  },
+  "Seattle Reign": {
+   "city": "Seattle",
+   "alt": 5,
+   "league": "NWSL"
+  },
+  "Utah Royals FC": {
+   "city": "Sandy",
+   "alt": 1350,
+   "league": "NWSL"
+  },
+  "Washington Spirit": {
+   "city": "Washington",
+   "alt": 5,
+   "league": "NWSL"
+  },
   "Boca Juniors": {
    "city": "Buenos Aires",
    "alt": 25,
@@ -752,6 +832,22 @@
   "fbc melgar": "Melgar",
   "universitario de deportes": "Universitario",
   "u de chile": "Universidad de Chile",
-  "colo colo": "Colo-Colo"
+  "colo colo": "Colo-Colo",
+  "kansas city current": "KC Current",
+  "gotham fc": "NJ/NY Gotham",
+  "gotham": "NJ/NY Gotham",
+  "racing louisville": "Rac. Louisville",
+  "racing louisville fc": "Rac. Louisville",
+  "north carolina courage": "NC Courage",
+  "chicago red stars": "Chicago Stars FC",
+  "chicago stars": "Chicago Stars FC",
+  "utah royals": "Utah Royals FC",
+  "angel city": "Angel City FC",
+  "boston legacy": "Boston Legacy FC",
+  "denver summit": "Denver Summit FC",
+  "seattle reign fc": "Seattle Reign",
+  "san diego wave fc": "San Diego Wave",
+  "portland thorns fc": "Portland Thorns",
+  "orlando pride": "Orlando Pride"
  }
 }

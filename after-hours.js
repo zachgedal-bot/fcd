@@ -3,15 +3,48 @@
 (function (root) {
   'use strict';
 
-  // ---------- physiology ----------
-  const PHYSIO = { threshold_m: 300, pct_per_1000: 5.4, never: 0.35, fast: 0.40, tau_fast: 2.0, slow: 0.25, tau_slow: 10.0, max_pct: 30 };
-  function remaining(days, p = PHYSIO) {
-    const d = Math.max(0, +days || 0);
-    return p.never + p.fast * Math.exp(-d / p.tau_fast) + p.slow * Math.exp(-d / p.tau_slow);
+  // ---------- physiology: Altitude FC model (altitude_fc/altitude_model.py) ----------
+  const PHYSIO = { vo2max_pct_per_1000m: 6.3, vo2max_threshold_m: 300, hir_per_vo2_fraction: 0.7, rsa_per_vo2_fraction: 0.3, sprint_pct_per_1000m: 0.3,
+    acclim_fast_tau_days: 3.5, acclim_fast_fraction: 0.40, acclim_slow_tau_days: 21.0, acclim_slow_fraction: 0.25, individual_spread_fraction: 0.25 };
+  const RATING = { baseline: 80, sensitivity: 0.4, max_delta: 15, weights: {
+    PAC: { single_sprint_speed: 0.5, repeated_sprint_recovery: 0.5 }, SHO: {}, PAS: {}, DRI: {},
+    DEF: { high_intensity_running: 0.5, repeated_sprint_recovery: 0.5 }, PHY: { vo2max: 0.3, high_intensity_running: 0.7 },
+    STAMINA: { vo2max: 0.4, high_intensity_running: 0.6 }, REPEATED_EFFORT: { repeated_sprint_recovery: 1.0 }, SPRINT_SPEED: { single_sprint_speed: 1.0 } } };
+  function acclimFraction(days, p = PHYSIO) { if (days <= 0) return 0; return p.acclim_fast_fraction * (1 - Math.exp(-days / p.acclim_fast_tau_days)) + p.acclim_slow_fraction * (1 - Math.exp(-days / p.acclim_slow_tau_days)); }
+  const vo2Deficit = (alt, p = PHYSIO) => -p.vo2max_pct_per_1000m * Math.max(0, alt - p.vo2max_threshold_m) / 1000;
+  function physEffects(matchAlt, homeAlt, days, p = PHYSIO) {
+    const vm = vo2Deficit(matchAlt, p), vh = vo2Deficit(homeAlt, p);
+    let vo2 = 0, status = 'home', acclim = 1;
+    if (matchAlt > homeAlt + 1e-9) { acclim = acclimFraction(days, p); vo2 = (vm - vh) * (1 - acclim); status = 'ascending'; }
+    else if (matchAlt < homeAlt - 1e-9) status = 'descending_or_home';
+    return { vo2max: vo2, high_intensity_running: p.hir_per_vo2_fraction * vo2, repeated_sprint_recovery: p.rsa_per_vo2_fraction * vo2,
+      single_sprint_speed: p.sprint_pct_per_1000m * (matchAlt - homeAlt) / 1000, technical_execution: null, decision_making: null,
+      _meta: { status, acclim, sleep_recovery_flag: status === 'ascending' && matchAlt - homeAlt >= 1500 && days < 14 } };
   }
-  function hirDecrement(matchAlt, resAlt, days = 1, p = PHYSIO) {
-    const delta = Math.max(0, matchAlt - resAlt - p.threshold_m);
-    return Math.min(p.max_pct, p.pct_per_1000 * delta / 1000 * remaining(days, p));
+  function ratingsFromPhys(eff, rp = RATING) {
+    const out = {};
+    for (const [cat, w] of Object.entries(rp.weights)) {
+      const ks = Object.keys(w); if (!ks.length) { out[cat] = { baseline: rp.baseline, adjusted: null, delta: null, status: 'insufficient evidence' }; continue; }
+      let pct = 0; for (const k of ks) if (eff[k] != null) pct += w[k] * eff[k];
+      const delta = Math.max(-rp.max_delta, Math.min(rp.max_delta, rp.sensitivity * pct));
+      out[cat] = { baseline: rp.baseline, adjusted: Math.round(rp.baseline + delta), delta, weighted_pct: pct, status: 'modelled' };
+    }
+    return out;
+  }
+  const hirDecrement = (matchAlt, resAlt, days = 1, p = PHYSIO) => -physEffects(matchAlt, resAlt, days, p).high_intensity_running;
+  const remaining = (days, p = PHYSIO) => 1 - acclimFraction(days, p);
+
+  // real-card adjustment (match_cards.py): six face stats + OVR
+  const FACE = ['pac', 'sho', 'pas', 'dri', 'def', 'phy'];
+  const FACE_FROM_CARD = { pac: 'PAC', def: 'DEF', phy: 'PHY' };
+  const OVR_WEIGHTS = { pac: 0.15, def: 0.15, phy: 0.30, STAMINA: 0.40 };
+  function teamCard(xi) { const c = {}; for (const k of FACE) c[k] = xi.reduce((a, p) => a + (+p[k] || 0), 0) / xi.length; c.ovr = xi.reduce((a, p) => a + (+p.ovr), 0) / xi.length; return c; }
+  function adjustedCard(card, matchAlt, homeAlt, days, sensitivity = RATING.sensitivity) {
+    const eff = physEffects(matchAlt, homeAlt, days), deltas = ratingsFromPhys(eff, Object.assign({}, RATING, { sensitivity }));
+    const adj = Object.assign({}, card);
+    for (const [face, cat] of Object.entries(FACE_FROM_CARD)) if (deltas[cat].delta != null) adj[face] = card[face] + deltas[cat].delta;
+    adj.ovr = card.ovr + OVR_WEIGHTS.pac * (adj.pac - card.pac) + OVR_WEIGHTS.def * (adj.def - card.def) + OVR_WEIGHTS.phy * (adj.phy - card.phy) + OVR_WEIGHTS.STAMINA * (deltas.STAMINA.delta || 0);
+    return { adj, eff, deltas };
   }
 
   // ---------- model ----------
@@ -174,6 +207,6 @@
     return xi;
   }
 
-  const api = { GROUPS, FORMATIONS, bestXIByFormation, playerGroup, LINEUP_DEFAULT, PROPS_DEFAULT, XG_PER_SHOT, xiRating, bestXI, lineupAdjustment, priceLineups, shotsMeanFromLine, playerXg, teamXg, priceProps, defaultCoverage, PHYSIO, DEFAULT_PARAMS, hirDecrement, remaining, outcomeProbs, devig, impliedLambdas, altitudeAdjustment, priceFixture, makeLookup, norm, courtside };
+  const api = { RATING, physEffects, ratingsFromPhys, acclimFraction, teamCard, adjustedCard, FACE, GROUPS, FORMATIONS, bestXIByFormation, playerGroup, LINEUP_DEFAULT, PROPS_DEFAULT, XG_PER_SHOT, xiRating, bestXI, lineupAdjustment, priceLineups, shotsMeanFromLine, playerXg, teamXg, priceProps, defaultCoverage, PHYSIO, DEFAULT_PARAMS, hirDecrement, remaining, outcomeProbs, devig, impliedLambdas, altitudeAdjustment, priceFixture, makeLookup, norm, courtside };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.AfterHoursModel = api;
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -63,7 +63,7 @@
       tr.innerHTML = `<td>${r.date || ''}</td><td>${r.home} v ${r.away}${a.away_descending ? '<span class="flag">descending</span>' : ''}</td><td class="num">${r.diff > 0 ? '+' : ''}${r.diff.toFixed(0)}</td><td class="num">−${a.away_hir_dec_pct.toFixed(1)}%</td><td class="num">${a.d_lambda_home >= 0 ? '+' : ''}${a.d_lambda_home.toFixed(2)} / ${a.d_lambda_away >= 0 ? '+' : ''}${a.d_lambda_away.toFixed(2)}</td><td class="num">${pair('home')}</td><td class="num">${pair('draw')}</td><td class="num">${pair('away')}</td><td>${r.best[0]} @ ${r.best[1].odds}</td><td class="num">${fmtEV(r.best[1].ev)}</td><td class="num">${(r.best[1].kelly * 100).toFixed(1)}%</td>`;
       body.appendChild(tr);
       const d = document.createElement('tr'); d.className = 'details';
-      d.innerHTML = `<td colspan="11">venue ${r.venueAlt} m · visitor lives at ${r.awayAlt} m · day ${r.days} · market λ ${r.r.market_lambda_home.toFixed(2)}–${r.r.market_lambda_away.toFixed(2)} → model λ ${r.r.model_lambda_home.toFixed(2)}–${r.r.model_lambda_away.toFixed(2)}${e.over25 ? ` · O2.5 ${fmtP(e.over25.market_p)}→${fmtP(e.over25.model_p)} EV ${fmtEV(e.over25.ev)}` : ''}${r.note ? ' · ' + r.note : ''}</td>`;
+      const vd = M.ratingsFromPhys(M.physEffects(r.venueAlt, r.awayAlt, r.days)); d.innerHTML = `<td colspan="11">venue ${r.venueAlt} m · visitor lives at ${r.awayAlt} m · day ${r.days} · visitor card STAMINA ${vd.STAMINA.adjusted} PHY ${vd.PHY.adjusted} PAC ${vd.PAC.adjusted} (80 baseline) · market λ ${r.r.market_lambda_home.toFixed(2)}–${r.r.market_lambda_away.toFixed(2)} → model λ ${r.r.model_lambda_home.toFixed(2)}–${r.r.model_lambda_away.toFixed(2)}${e.over25 ? ` · O2.5 ${fmtP(e.over25.market_p)}→${fmtP(e.over25.model_p)} EV ${fmtEV(e.over25.ev)}` : ''}${r.note ? ' · ' + r.note : ''}</td>`;
       body.appendChild(d);
     }
     for (const r of unpriced) {
@@ -101,10 +101,15 @@
   $('l-gpp').addEventListener('input', () => $('o-gpp').textContent = (+$('l-gpp').value).toFixed(2));
   $('l-aware').addEventListener('input', () => $('o-aware').textContent = (+$('l-aware').value).toFixed(2));
   $('l-run').addEventListener('click', () => {
-    const hp = parsePlayers($('l-hp').value), ap = parsePlayers($('l-ap').value);
-    if (hp.length < 5 || ap.length < 5) { $('l-out').innerHTML = '<p class="lede">Need at least five rated players a side.</p>'; return; }
     const P = Object.assign({}, M.LINEUP_DEFAULT, { goals_per_point: +$('l-gpp').value, market_awareness: +$('l-aware').value, skew_flag_points: +$('l-skew').value });
-    const r = M.priceLineups(+$('l-oh').value, +$('l-od').value, +$('l-oa').value, hp, refXI($('l-hr').value, hp), ap, refXI($('l-ar').value, ap), P);
+    const H = sideCards('home'), A = sideCards('away'); const fake = o => Array.from({ length: 11 }, () => ({ rating: o }));
+    let hp, ap, r;
+    if (H && A) { hp = fake(H.cardAdj.ovr); ap = fake(A.cardAdj.ovr); r = M.priceLineups(+$('l-oh').value, +$('l-od').value, +$('l-oa').value, hp, fake(H.cardRef.ovr), ap, fake(A.cardRef.ovr), P); }
+    else {
+      hp = parsePlayers($('l-hp').value); ap = parsePlayers($('l-ap').value);
+      if (hp.length < 5 || ap.length < 5) { $('l-out').innerHTML = '<p class="lede">Pick two clubs or paste at least five rated players a side.</p>'; return; }
+      r = M.priceLineups(+$('l-oh').value, +$('l-od').value, +$('l-oa').value, hp, refXI($('l-hr').value, hp), ap, refXI($('l-ar').value, ap), P);
+    }
     const side = (label, s, proj) => `<div><div class="k">${label} XI ${M.xiRating(proj).toFixed(1)} vs ref ${(M.xiRating(proj) - s.d_rating).toFixed(1)}</div><div class="v ${s.d_rating < 0 ? 'neg' : 'pos'}">${s.d_rating >= 0 ? '+' : ''}${s.d_rating.toFixed(2)}${s.skewed ? '<span class="flag">skewed</span>' : ''}</div><div class="k">Δλ own ${s.d_lambda_own.toFixed(2)} · opp ${s.d_lambda_opp.toFixed(2)}</div></div>`;
     $('l-out').innerHTML = `<div class="stat">${side('Home', r.home, hp)}${side('Away', r.away, ap)}<div><div class="k">λ market → model</div><div class="v">${r.market_lambda_home.toFixed(2)}–${r.market_lambda_away.toFixed(2)} → ${r.model_lambda_home.toFixed(2)}–${r.model_lambda_away.toFixed(2)}</div></div></div>
       <div class="scroll"><table class="book" style="margin-top:12px"><thead><tr><th>Side</th><th class="num">Market</th><th class="num">Model</th><th class="num">Odds</th><th class="num">EV</th><th class="num">Kelly</th></tr></thead><tbody>${Object.entries(r.edges).map(([k, e]) => `<tr class="${e.ev > 0 ? 'row--hot' : ''}"><td>${k}</td><td class="num">${fmtP(e.market_p)}%</td><td class="num">${fmtP(e.model_p)}%</td><td class="num">${e.odds}</td><td class="num">${fmtEV(e.ev)}</td><td class="num">${(e.kelly * 100).toFixed(1)}%</td></tr>`).join('')}</tbody></table></div>`;
@@ -137,8 +142,33 @@
     }
     const line = xi => xi.map(p => `${p.n}, ${p.p}, ${p.ovr}`).join('\n');
     $(side === 'home' ? 'l-hp' : 'l-ap').value = line(proj); $(side === 'home' ? 'l-hr' : 'l-ar').value = line(ref);
+    renderCards();
+  }
+  function venueAlt() { const v = num($('l-venue').value); if (v != null) return v; const t = teamSel.home.value; const L = lookup && t ? lookup(t) : null; return L ? L.alt : 0; }
+  function sideCards(side) {
+    const t = teamSel[side].value; if (!t || !fc) return null;
+    const squad = fc.teams[t], f = $('l-formation').value, days = +$('l-days').value || 0, sens = +$('l-sens').value;
+    const ref = M.bestXIByFormation(squad, f), proj = M.bestXIByFormation(squad, f, [...outs[side]]);
+    const L = lookup ? lookup(t) : null, resAlt = L ? L.alt : 0, vAlt = venueAlt();
+    const cardRef = M.teamCard(ref), cardProj = M.teamCard(proj), a = M.adjustedCard(cardProj, vAlt, resAlt, days, sens);
+    return { team: t, ref, proj, cardRef, cardProj, cardAdj: a.adj, eff: a.eff, deltas: a.deltas, resAlt, vAlt, days };
+  }
+  function renderCards() {
+    const el = $('l-cards'); el.innerHTML = '';
+    for (const side of ['home', 'away']) {
+      const s = sideCards(side); if (!s) continue;
+      const row = (label, c, cls) => `<tr class="${cls || ''}"><td>${label}</td>${M.FACE.map(k => `<td>${c[k].toFixed(1)}</td>`).join('')}<td>${c.ovr.toFixed(2)}</td></tr>`;
+      const d = s.cardAdj.ovr - s.cardRef.ovr;
+      el.innerHTML += `<div class="fccard"><h3>${s.team}</h3><div class="meta">${side} · lives at ${s.resAlt} m · venue ${s.vAlt} m · day ${s.days}${s.eff._meta.sleep_recovery_flag ? ' · <span class="flag">sleep/recovery flag</span>' : ''}</div>
+        <div class="ovr">${s.cardAdj.ovr.toFixed(1)}<small>adjusted OVR · ${d >= 0 ? '+' : ''}${d.toFixed(2)} vs reference ${s.cardRef.ovr.toFixed(1)}</small></div>
+        <table style="margin-top:10px"><thead><tr><th>XI</th>${M.FACE.map(k => `<th>${k.toUpperCase()}</th>`).join('')}<th>OVR</th></tr></thead><tbody>
+        ${row('reference', s.cardRef)}${row('projected', s.cardProj)}${row('altitude-adjusted', s.cardAdj, 'adj')}</tbody></table>
+        <div class="phys">VO2max ${s.eff.vo2max.toFixed(1)}% · high-intensity running ${s.eff.high_intensity_running.toFixed(1)}% · repeated-sprint recovery ${s.eff.repeated_sprint_recovery.toFixed(1)}% · top speed ${s.eff.single_sprint_speed >= 0 ? '+' : ''}${s.eff.single_sprint_speed.toFixed(2)}% · STAMINA ${s.deltas.STAMINA.adjusted ?? '–'} / REPEATED EFFORT ${s.deltas.REPEATED_EFFORT.adjusted ?? '–'} on an 80 baseline · ${s.eff._meta.status.replace(/_/g, ' ')}</div></div>`;
+    }
   }
   for (const side of ['home', 'away']) teamSel[side].addEventListener('change', () => { outs[side].clear(); renderSquad(side); });
+  for (const id of ['l-venue', 'l-days']) $(id).addEventListener('input', renderCards);
+  $('l-sens').addEventListener('input', () => { $('o-sens').textContent = (+$('l-sens').value).toFixed(2); renderCards(); });
   $('l-formation').addEventListener('change', () => { renderSquad('home'); renderSquad('away'); });
   loadJSON('altitude_edge/fc_ratings_nwsl.json').then(d => { fc = d; fillPickers(); const q = new URLSearchParams(location.search); for (const side of ['home', 'away']) { const t = q.get(side); if (t && fc.teams[t]) { teamSel[side].value = t; renderSquad(side); } } }).catch(() => { $('l-source').textContent = 'Could not load altitude_edge/fc_ratings_nwsl.json; paste XIs by hand.'; });
 

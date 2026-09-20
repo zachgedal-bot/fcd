@@ -13,7 +13,9 @@ residual_share = 1.0 means "the market prices altitude like any other home
 game"; 0.0 means "the market prices it perfectly". The backtest estimates it.
 """
 import math
-from physio import hir_decrement, DEFAULT as PHYSIO_DEFAULT
+from dataclasses import asdict
+from physio import hir_decrement, card_deltas, DEFAULT as _PP
+PHYSIO_DEFAULT = asdict(_PP)
 
 MAX_GOALS = 10
 

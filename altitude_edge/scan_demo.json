@@ -8,16 +8,18 @@
   "descending_threshold_m": 1500,
   "rho": -0.05,
   "physio": {
-   "threshold_m": 300,
-   "pct_per_1000": 5.4,
-   "never": 0.35,
-   "fast": 0.4,
-   "tau_fast": 2.0,
-   "slow": 0.25,
-   "tau_slow": 10.0,
-   "max_pct": 30.0
+   "vo2max_pct_per_1000m": 6.3,
+   "vo2max_threshold_m": 300.0,
+   "hir_per_vo2_fraction": 0.7,
+   "rsa_per_vo2_fraction": 0.3,
+   "sprint_pct_per_1000m": 0.3,
+   "acclim_fast_tau_days": 3.5,
+   "acclim_fast_fraction": 0.4,
+   "acclim_slow_tau_days": 21.0,
+   "acclim_slow_fraction": 0.25,
+   "individual_spread_fraction": 0.25
   },
-  "_comment": "Base-case parameters for scan.py. Ranges and sources in PARAMETERS.md. Every value is a prior until backtest.py on closing-odds data replaces it."
+  "_comment": "Base-case parameters for scan.py. physio = Altitude FC PhysParams (altitude_fc/altitude_model.py). Ranges and sources in PARAMETERS.md."
  },
  "rows": [
   {
@@ -35,14 +37,14 @@
    "result": {
     "market_lambda_home": 2.2093711728629697,
     "market_lambda_away": 0.6905595791932628,
-    "model_lambda_home": 2.2113056389364254,
-    "model_lambda_away": 0.6886251131198069,
+    "model_lambda_home": 2.2136586728629695,
+    "model_lambda_away": 0.6862720791932628,
     "model_probs": {
-     "home": 0.717885057134339,
-     "draw": 0.18504584343823768,
-     "away": 0.09706909942742328,
-     "over25": 0.5540115361403044,
-     "under25": 0.4459884638596956
+     "home": 0.7188772455969773,
+     "draw": 0.1846352194724433,
+     "away": 0.0964875349305794,
+     "over25": 0.5540114471974339,
+     "under25": 0.4459885528025661
     },
     "market_probs": {
      "home": 0.7170685293012161,
@@ -51,40 +53,40 @@
     },
     "edges": {
      "home": {
-      "model_p": 0.717885057134339,
+      "model_p": 0.7188772455969773,
       "market_p": 0.7170685293012161,
       "odds": 1.36,
-      "ev": -0.02367632229729888,
+      "ev": -0.022326945988110802,
       "kelly": 0.0
      },
      "draw": {
-      "model_p": 0.18504584343823768,
+      "model_p": 0.1846352194724433,
       "market_p": 0.18538290145505384,
       "odds": 4.75,
-      "ev": -0.12103224366837095,
+      "ev": -0.12298270750589435,
       "kelly": 0.0
      },
      "away": {
-      "model_p": 0.09706909942742328,
+      "model_p": 0.0964875349305794,
       "market_p": 0.09754856924373022,
       "odds": 8.6,
-      "ev": -0.16520574492415985,
+      "ev": -0.17020719959701713,
       "kelly": 0.0
      }
     },
     "adjustment": {
-     "away_hir_dec_pct": 0.44216367393278344,
-     "home_hir_dec_pct": 0.0,
-     "d_lambda_home_full": 0.00773786429382371,
-     "d_lambda_away_full": -0.00773786429382371,
-     "d_lambda_home": 0.0019344660734559275,
-     "d_lambda_away": -0.0019344660734559275,
+     "away_hir_dec_pct": 0.98,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.01715,
+     "d_lambda_away_full": -0.01715,
+     "d_lambda_home": 0.0042875,
+     "d_lambda_away": -0.0042875,
      "away_descending": false,
      "home_descending": false
     }
    },
    "best_side": "home",
-   "best_ev": -0.02367632229729888,
+   "best_ev": -0.022326945988110802,
    "best_kelly": 0.0
   },
   {
@@ -102,14 +104,14 @@
    "result": {
     "market_lambda_home": 1.7921481789259577,
     "market_lambda_away": 0.9953383821309422,
-    "model_lambda_home": 1.8125567960009177,
-    "model_lambda_away": 0.9749297650559822,
+    "model_lambda_home": 1.8104138039259576,
+    "model_lambda_away": 0.9770727571309422,
     "model_probs": {
-     "home": 0.5650264548265299,
-     "draw": 0.23989826208084541,
-     "away": 0.19507528309262467,
-     "over25": 0.5275565223595589,
-     "under25": 0.47244347764044115
+     "home": 0.5640072679357606,
+     "draw": 0.24015033217298015,
+     "away": 0.19584239989125923,
+     "over25": 0.5275565396247358,
+     "under25": 0.4724434603752642
     },
     "market_probs": {
      "home": 0.5553111554464165,
@@ -118,40 +120,40 @@
     },
     "edges": {
      "home": {
-      "model_p": 0.5650264548265299,
+      "model_p": 0.5640072679357606,
       "market_p": 0.5553111554464165,
       "odds": 1.74,
-      "ev": -0.016853968601837965,
+      "ev": -0.01862735379177649,
       "kelly": 0.0
      },
      "draw": {
-      "model_p": 0.23989826208084541,
+      "model_p": 0.24015033217298015,
       "market_p": 0.24225296232473673,
       "odds": 3.8,
-      "ev": -0.08838660409278742,
+      "ev": -0.08742873774267546,
       "kelly": 0.0
      },
      "away": {
-      "model_p": 0.19507528309262467,
+      "model_p": 0.19584239989125923,
       "market_p": 0.202435882228847,
       "odds": 4.5,
-      "ev": -0.12216122608318902,
+      "ev": -0.11870920048933342,
       "kelly": 0.0
      }
     },
     "adjustment": {
-     "away_hir_dec_pct": 4.664826759990865,
-     "home_hir_dec_pct": 0.0,
-     "d_lambda_home_full": 0.08163446829984013,
-     "d_lambda_away_full": -0.08163446829984013,
-     "d_lambda_home": 0.02040861707496003,
-     "d_lambda_away": -0.02040861707496003,
+     "away_hir_dec_pct": 4.175,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.0730625,
+     "d_lambda_away_full": -0.0730625,
+     "d_lambda_home": 0.018265625,
+     "d_lambda_away": -0.018265625,
      "away_descending": false,
      "home_descending": false
     }
    },
    "best_side": "home",
-   "best_ev": -0.016853968601837965,
+   "best_ev": -0.01862735379177649,
    "best_kelly": 0.0
   },
   {
@@ -169,14 +171,14 @@
    "result": {
     "market_lambda_home": 2.6135777471752184,
     "market_lambda_away": 0.6873082856972517,
-    "model_lambda_home": 2.625668160134318,
-    "model_lambda_away": 0.6752178727381521,
+    "model_lambda_home": 2.6268777471752185,
+    "model_lambda_away": 0.6740082856972517,
     "model_probs": {
-     "home": 0.7866677039131625,
-     "draw": 0.1440696675502069,
-     "away": 0.06926262853663057,
-     "over25": 0.6407175247329153,
-     "under25": 0.3592824752670847
+     "home": 0.7870945769520357,
+     "draw": 0.14387051541032245,
+     "away": 0.06903490763764189,
+     "over25": 0.6407173894725993,
+     "under25": 0.35928261052740074
     },
     "market_probs": {
      "home": 0.7823818815036947,
@@ -185,40 +187,40 @@
     },
     "edges": {
      "home": {
-      "model_p": 0.7866677039131625,
+      "model_p": 0.7870945769520357,
       "market_p": 0.7823818815036947,
       "odds": 1.25,
-      "ev": -0.01666537010854685,
+      "ev": -0.01613177880995542,
       "kelly": 0.0
      },
      "draw": {
-      "model_p": 0.1440696675502069,
+      "model_p": 0.14387051541032245,
       "market_p": 0.14605639306698887,
       "odds": 5.75,
-      "ev": -0.17159941158631042,
+      "ev": -0.1727445363906459,
       "kelly": 0.0
      },
      "away": {
-      "model_p": 0.06926262853663057,
+      "model_p": 0.06903490763764189,
       "market_p": 0.07156172542931659,
       "odds": 11.0,
-      "ev": -0.23811108609706377,
+      "ev": -0.24061601598593918,
       "kelly": 0.0
      }
     },
     "adjustment": {
-     "away_hir_dec_pct": 2.7635229620798962,
-     "home_hir_dec_pct": 0.0,
-     "d_lambda_home_full": 0.04836165183639818,
-     "d_lambda_away_full": -0.04836165183639818,
-     "d_lambda_home": 0.012090412959099545,
-     "d_lambda_away": -0.012090412959099545,
+     "away_hir_dec_pct": 3.04,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.05319999999999999,
+     "d_lambda_away_full": -0.05319999999999999,
+     "d_lambda_home": 0.013299999999999998,
+     "d_lambda_away": -0.013299999999999998,
      "away_descending": false,
      "home_descending": false
     }
    },
    "best_side": "home",
-   "best_ev": -0.01666537010854685,
+   "best_ev": -0.01613177880995542,
    "best_kelly": 0.0
   },
   {
@@ -234,8 +236,8 @@
    "note": "Puebla descends ~1600 m; odds not yet found",
    "needs_odds": true,
    "adjustment": {
-    "away_hir_dec_pct": 0.0,
-    "home_hir_dec_pct": 0.0,
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
     "d_lambda_home_full": 0.0,
     "d_lambda_away_full": -0.15,
     "d_lambda_home": 0.0,
@@ -257,8 +259,8 @@
    "note": "Toluca descends ~430 m; odds not yet found",
    "needs_odds": true,
    "adjustment": {
-    "away_hir_dec_pct": 0.0,
-    "home_hir_dec_pct": 0.0,
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
     "d_lambda_home_full": 0.0,
     "d_lambda_away_full": 0.0,
     "d_lambda_home": 0.0,
@@ -280,8 +282,8 @@
    "note": "Pachuca descends ~1300 m; odds not yet found",
    "needs_odds": true,
    "adjustment": {
-    "away_hir_dec_pct": 0.0,
-    "home_hir_dec_pct": 0.0,
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
     "d_lambda_home_full": 0.0,
     "d_lambda_away_full": 0.0,
     "d_lambda_home": 0.0,
