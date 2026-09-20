@@ -2,7 +2,7 @@
   color-scheme: dark;
   font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   background-color: #05070c;
-  color: #e6edf3;
+  color: #ecf2f8;
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top, #101729 0%, #05070c 60%);
+  background: radial-gradient(circle at top, #0f2232 0%, #05070c 55%);
   min-height: 100vh;
 }
 
@@ -20,8 +20,8 @@ body {
   align-items: center;
   gap: 16px;
   padding: 10px 16px;
-  background: #0b1020;
-  border-bottom: 1px solid #1e2636;
+  background: #0b1322;
+  border-bottom: 1px solid #1e2b3b;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -29,7 +29,7 @@ body {
 
 .ticker__label {
   font-weight: 700;
-  color: #7bdcff;
+  color: #38f0c7;
 }
 
 .ticker__track {
@@ -41,14 +41,14 @@ body {
   white-space: nowrap;
   display: inline-block;
   animation: scroll 24s linear infinite;
-  color: #9fb2c8;
+  color: #9db3c7;
 }
 
 .ticker__status {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #8ff0b6;
+  color: #7af8d3;
   font-weight: 600;
 }
 
@@ -56,8 +56,8 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #34d399;
-  box-shadow: 0 0 8px rgba(52, 211, 153, 0.6);
+  background: #25d6a6;
+  box-shadow: 0 0 8px rgba(37, 214, 166, 0.6);
 }
 
 .layout {
@@ -76,8 +76,8 @@ body {
 
 .brand {
   padding: 16px;
-  background: #0b1020;
-  border: 1px solid #1e2636;
+  background: #0b1322;
+  border: 1px solid #1e2b3b;
   border-radius: 14px;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .brand__title span {
-  color: #7bdcff;
+  color: #38f0c7;
 }
 
 .brand__sub {
@@ -99,11 +99,11 @@ body {
 }
 
 .panel {
-  background: #0b1020;
-  border: 1px solid #1e2636;
+  background: #0b1322;
+  border: 1px solid #1e2b3b;
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
+  box-shadow: 0 12px 30px rgba(2, 8, 24, 0.35);
 }
 
 .panel--wide {
@@ -125,14 +125,15 @@ body {
 }
 
 .asset__avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: #111c34;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(56, 240, 199, 0.2), rgba(62, 168, 255, 0.15));
   display: grid;
   place-items: center;
   font-weight: 700;
-  color: #7bdcff;
+  color: #38f0c7;
+  border: 1px solid rgba(56, 240, 199, 0.3);
 }
 
 .asset__name {
@@ -142,6 +143,15 @@ body {
 .asset__meta {
   font-size: 0.8rem;
   color: #8b98aa;
+}
+
+.asset__meta--detail {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(56, 240, 199, 0.08);
+  color: #c6d7e6;
+  border: 1px solid rgba(56, 240, 199, 0.18);
 }
 
 .feeds {
@@ -157,7 +167,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 8px 10px;
-  background: #0f162a;
+  background: #101c30;
   border-radius: 10px;
   font-size: 0.8rem;
   color: #c9d4e3;
@@ -169,8 +179,8 @@ body {
   text-transform: uppercase;
   padding: 3px 8px;
   border-radius: 999px;
-  background: rgba(123, 220, 255, 0.15);
-  color: #7bdcff;
+  background: rgba(56, 240, 199, 0.15);
+  color: #38f0c7;
 }
 
 .badge--public {
@@ -205,8 +215,8 @@ body {
 }
 
 .btn {
-  background: #121a31;
-  border: 1px solid #1e2636;
+  background: #122036;
+  border: 1px solid #1e2b3b;
   color: #e6edf3;
   padding: 8px 12px;
   border-radius: 8px;
@@ -215,13 +225,13 @@ body {
 }
 
 .btn:hover {
-  background: #1b2542;
+  background: #1a2d4a;
 }
 
 .btn--green {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: rgba(16, 185, 129, 0.4);
-  color: #6ee7b7;
+  background: rgba(56, 240, 199, 0.15);
+  border-color: rgba(56, 240, 199, 0.45);
+  color: #7af8d3;
 }
 
 .btn--red {
@@ -241,8 +251,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(135deg, #0c152a 0%, #0b1020 100%);
-  border: 1px solid #1e2636;
+  background: linear-gradient(135deg, rgba(13, 33, 46, 0.9) 0%, rgba(10, 18, 31, 0.95) 100%);
+  border: 1px solid #1e2b3b;
   border-radius: 18px;
 }
 
@@ -257,10 +267,11 @@ body {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 6px;
+  color: #f0f7ff;
 }
 
 .hero__delta {
-  color: #6ee7b7;
+  color: #8b98aa;
   margin-top: 6px;
   font-size: 0.9rem;
 }
@@ -310,7 +321,7 @@ body {
 }
 
 .accent {
-  color: #7bdcff;
+  color: #38f0c7;
 }
 
 .danger {

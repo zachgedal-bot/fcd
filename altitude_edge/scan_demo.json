@@ -1,0 +1,296 @@
+{
+ "params": {
+  "k_goals_per_10pct_hir": 0.35,
+  "conceded_share": 0.5,
+  "residual_share": 0.25,
+  "habituation_discount": 0.5,
+  "descending_goals": 0.15,
+  "descending_threshold_m": 1500,
+  "rho": -0.05,
+  "physio": {
+   "vo2max_pct_per_1000m": 6.3,
+   "vo2max_threshold_m": 300.0,
+   "hir_per_vo2_fraction": 0.7,
+   "rsa_per_vo2_fraction": 0.3,
+   "sprint_pct_per_1000m": 0.3,
+   "acclim_fast_tau_days": 3.5,
+   "acclim_fast_fraction": 0.4,
+   "acclim_slow_tau_days": 21.0,
+   "acclim_slow_fraction": 0.25,
+   "individual_spread_fraction": 0.25
+  },
+  "_comment": "Base-case parameters for scan.py. physio = Altitude FC PhysParams (altitude_fc/altitude_model.py). Ranges and sources in PARAMETERS.md."
+ },
+ "rows": [
+  {
+   "date": "2026-09-20",
+   "league": "Liga 1 Peru",
+   "home": "Sport Huancayo",
+   "away": "UTC Cajamarca",
+   "venue_alt": 3250,
+   "home_res_alt": 3250,
+   "away_res_alt": 2750,
+   "alt_diff": 500,
+   "days_since_arrival": 1.0,
+   "note": "apuestas-deportivas.pe preview",
+   "needs_odds": false,
+   "result": {
+    "market_lambda_home": 2.2093711728629697,
+    "market_lambda_away": 0.6905595791932628,
+    "model_lambda_home": 2.2136586728629695,
+    "model_lambda_away": 0.6862720791932628,
+    "model_probs": {
+     "home": 0.7188772455969773,
+     "draw": 0.1846352194724433,
+     "away": 0.0964875349305794,
+     "over25": 0.5540114471974339,
+     "under25": 0.4459885528025661
+    },
+    "market_probs": {
+     "home": 0.7170685293012161,
+     "draw": 0.18538290145505384,
+     "away": 0.09754856924373022
+    },
+    "edges": {
+     "home": {
+      "model_p": 0.7188772455969773,
+      "market_p": 0.7170685293012161,
+      "odds": 1.36,
+      "ev": -0.022326945988110802,
+      "kelly": 0.0
+     },
+     "draw": {
+      "model_p": 0.1846352194724433,
+      "market_p": 0.18538290145505384,
+      "odds": 4.75,
+      "ev": -0.12298270750589435,
+      "kelly": 0.0
+     },
+     "away": {
+      "model_p": 0.0964875349305794,
+      "market_p": 0.09754856924373022,
+      "odds": 8.6,
+      "ev": -0.17020719959701713,
+      "kelly": 0.0
+     }
+    },
+    "adjustment": {
+     "away_hir_dec_pct": 0.98,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.01715,
+     "d_lambda_away_full": -0.01715,
+     "d_lambda_home": 0.0042875,
+     "d_lambda_away": -0.0042875,
+     "away_descending": false,
+     "home_descending": false
+    }
+   },
+   "best_side": "home",
+   "best_ev": -0.022326945988110802,
+   "best_kelly": 0.0
+  },
+  {
+   "date": "2026-09-20",
+   "league": "Liga MX",
+   "home": "Pachuca",
+   "away": "Tijuana",
+   "venue_alt": 2430,
+   "home_res_alt": 2430,
+   "away_res_alt": 20,
+   "alt_diff": 2410,
+   "days_since_arrival": 1.0,
+   "note": "US moneyline -135 / +280 / +350",
+   "needs_odds": false,
+   "result": {
+    "market_lambda_home": 1.7921481789259577,
+    "market_lambda_away": 0.9953383821309422,
+    "model_lambda_home": 1.8104138039259576,
+    "model_lambda_away": 0.9770727571309422,
+    "model_probs": {
+     "home": 0.5640072679357606,
+     "draw": 0.24015033217298015,
+     "away": 0.19584239989125923,
+     "over25": 0.5275565396247358,
+     "under25": 0.4724434603752642
+    },
+    "market_probs": {
+     "home": 0.5553111554464165,
+     "draw": 0.24225296232473673,
+     "away": 0.202435882228847
+    },
+    "edges": {
+     "home": {
+      "model_p": 0.5640072679357606,
+      "market_p": 0.5553111554464165,
+      "odds": 1.74,
+      "ev": -0.01862735379177649,
+      "kelly": 0.0
+     },
+     "draw": {
+      "model_p": 0.24015033217298015,
+      "market_p": 0.24225296232473673,
+      "odds": 3.8,
+      "ev": -0.08742873774267546,
+      "kelly": 0.0
+     },
+     "away": {
+      "model_p": 0.19584239989125923,
+      "market_p": 0.202435882228847,
+      "odds": 4.5,
+      "ev": -0.11870920048933342,
+      "kelly": 0.0
+     }
+    },
+    "adjustment": {
+     "away_hir_dec_pct": 4.175,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.0730625,
+     "d_lambda_away_full": -0.0730625,
+     "d_lambda_home": 0.018265625,
+     "d_lambda_away": -0.018265625,
+     "away_descending": false,
+     "home_descending": false
+    }
+   },
+   "best_side": "home",
+   "best_ev": -0.01862735379177649,
+   "best_kelly": 0.0
+  },
+  {
+   "date": "2026-09-20",
+   "league": "Liga MX",
+   "home": "Toluca",
+   "away": "Santos Laguna",
+   "venue_alt": 2670,
+   "home_res_alt": 2670,
+   "away_res_alt": 1120,
+   "alt_diff": 1550,
+   "days_since_arrival": 1.0,
+   "note": "home price 1.25 from preview sites; draw/away back-filled from a typical 3-way book at that favourite price",
+   "needs_odds": false,
+   "result": {
+    "market_lambda_home": 2.6135777471752184,
+    "market_lambda_away": 0.6873082856972517,
+    "model_lambda_home": 2.6268777471752185,
+    "model_lambda_away": 0.6740082856972517,
+    "model_probs": {
+     "home": 0.7870945769520357,
+     "draw": 0.14387051541032245,
+     "away": 0.06903490763764189,
+     "over25": 0.6407173894725993,
+     "under25": 0.35928261052740074
+    },
+    "market_probs": {
+     "home": 0.7823818815036947,
+     "draw": 0.14605639306698887,
+     "away": 0.07156172542931659
+    },
+    "edges": {
+     "home": {
+      "model_p": 0.7870945769520357,
+      "market_p": 0.7823818815036947,
+      "odds": 1.25,
+      "ev": -0.01613177880995542,
+      "kelly": 0.0
+     },
+     "draw": {
+      "model_p": 0.14387051541032245,
+      "market_p": 0.14605639306698887,
+      "odds": 5.75,
+      "ev": -0.1727445363906459,
+      "kelly": 0.0
+     },
+     "away": {
+      "model_p": 0.06903490763764189,
+      "market_p": 0.07156172542931659,
+      "odds": 11.0,
+      "ev": -0.24061601598593918,
+      "kelly": 0.0
+     }
+    },
+    "adjustment": {
+     "away_hir_dec_pct": 3.04,
+     "home_hir_dec_pct": -0.0,
+     "d_lambda_home_full": 0.05319999999999999,
+     "d_lambda_away_full": -0.05319999999999999,
+     "d_lambda_home": 0.013299999999999998,
+     "d_lambda_away": -0.013299999999999998,
+     "away_descending": false,
+     "home_descending": false
+    }
+   },
+   "best_side": "home",
+   "best_ev": -0.01613177880995542,
+   "best_kelly": 0.0
+  },
+  {
+   "date": "2026-09-26",
+   "league": "Liga MX",
+   "home": "Tigres UANL",
+   "away": "Puebla",
+   "venue_alt": 500,
+   "home_res_alt": 500,
+   "away_res_alt": 2135,
+   "alt_diff": -1635,
+   "days_since_arrival": 1.0,
+   "note": "Puebla descends ~1600 m; odds not yet found",
+   "needs_odds": true,
+   "adjustment": {
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
+    "d_lambda_home_full": 0.0,
+    "d_lambda_away_full": -0.15,
+    "d_lambda_home": 0.0,
+    "d_lambda_away": -0.0375,
+    "away_descending": true,
+    "home_descending": false
+   }
+  },
+  {
+   "date": "2026-09-26",
+   "league": "Liga MX",
+   "home": "Cruz Azul",
+   "away": "Toluca",
+   "venue_alt": 2240,
+   "home_res_alt": 2240,
+   "away_res_alt": 2670,
+   "alt_diff": -430,
+   "days_since_arrival": 1.0,
+   "note": "Toluca descends ~430 m; odds not yet found",
+   "needs_odds": true,
+   "adjustment": {
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
+    "d_lambda_home_full": 0.0,
+    "d_lambda_away_full": 0.0,
+    "d_lambda_home": 0.0,
+    "d_lambda_away": 0.0,
+    "away_descending": false,
+    "home_descending": false
+   }
+  },
+  {
+   "date": "2026-09-26",
+   "league": "Liga MX",
+   "home": "Santos Laguna",
+   "away": "Pachuca",
+   "venue_alt": 1120,
+   "home_res_alt": 1120,
+   "away_res_alt": 2430,
+   "alt_diff": -1310,
+   "days_since_arrival": 1.0,
+   "note": "Pachuca descends ~1300 m; odds not yet found",
+   "needs_odds": true,
+   "adjustment": {
+    "away_hir_dec_pct": -0.0,
+    "home_hir_dec_pct": -0.0,
+    "d_lambda_home_full": 0.0,
+    "d_lambda_away_full": 0.0,
+    "d_lambda_home": 0.0,
+    "d_lambda_away": 0.0,
+    "away_descending": false,
+    "home_descending": false
+   }
+  }
+ ]
+}

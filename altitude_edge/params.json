@@ -1,0 +1,22 @@
+{
+  "_comment": "Base-case parameters for scan.py. physio = Altitude FC PhysParams (altitude_fc/altitude_model.py). Ranges and sources in PARAMETERS.md.",
+  "k_goals_per_10pct_hir": 0.35,
+  "conceded_share": 0.5,
+  "residual_share": 0.25,
+  "habituation_discount": 0.5,
+  "descending_goals": 0.15,
+  "descending_threshold_m": 1500,
+  "rho": -0.05,
+  "physio": {
+    "vo2max_pct_per_1000m": 6.3,
+    "vo2max_threshold_m": 300.0,
+    "hir_per_vo2_fraction": 0.7,
+    "rsa_per_vo2_fraction": 0.3,
+    "sprint_pct_per_1000m": 0.3,
+    "acclim_fast_tau_days": 3.5,
+    "acclim_fast_fraction": 0.4,
+    "acclim_slow_tau_days": 21.0,
+    "acclim_slow_fraction": 0.25,
+    "individual_spread_fraction": 0.25
+  }
+}

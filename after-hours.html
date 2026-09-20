@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Athlemix After Hours</title>
+    <meta name="description" content="Members-only back room: altitude book, lineup desk, props desk and the courtside calculator." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="after-hours.css" />
+  </head>
+  <body>
+    <div class="gate" id="gate">
+      <div class="gate__card">
+        <div class="gate__brand">ATHLEMIX</div>
+        <div class="gate__sub">After Hours · members only</div>
+        <input id="gate-code" placeholder="INVITE CODE" autocomplete="off" />
+        <div class="gate__err" id="gate-err"></div>
+        <div class="gate__hint">Hint: the height, in metres, of the highest ground in the book.</div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <header class="masthead">
+        <div>
+          <h1>ATHLEMIX <span>AFTER HOURS</span></h1>
+          <p>Back room · house edge, reversed · nothing here places a bet</p>
+        </div>
+        <nav class="nav">
+          <a href="#altitude">Altitude book</a>
+          <a href="#lineups">Match cards</a>
+          <a href="#props">Props desk</a>
+          <a href="#ground">High ground</a>
+          <a href="#courtside">Courtside</a>
+          <a href="#rules">House rules</a>
+          <a href="altitude_fc/altitude_fc_cards.html" data-lab>The lab ↗</a>
+          <a href="index.html" data-home>← AthleMix</a>
+        </nav>
+      </header>
+
+      <!-- ================= ALTITUDE BOOK ================= -->
+      <section class="table-card" id="altitude">
+        <h2>The Altitude Book <small>market-anchored Poisson · altitude overlay</small></h2>
+        <p class="lede">Each line: the closing 1X2 is de-vigged and turned into goal expectancies, then the visitor's high-intensity running loss at the venue is converted into goals and scaled by <em>residual share</em>, the fraction of the effect you believe the market has not priced. The gap to the market is the EV shown. Rows are ranked by the best side's EV.</p>
+        <div class="controls">
+          <label>Residual share <input type="range" id="p-residual" min="0" max="1" step="0.05" value="0.25" /><output id="o-residual">0.25</output></label>
+          <label>Goals per 10% HIR lost <input type="range" id="p-k" min="0" max="1" step="0.05" value="0.35" /><output id="o-k">0.35</output></label>
+          <label>Habituation discount <input type="range" id="p-hab" min="0" max="1" step="0.05" value="0.5" /><output id="o-hab">0.50</output></label>
+          <label>Descending penalty (goals) <input type="range" id="p-desc" min="0" max="0.5" step="0.05" value="0.15" /><output id="o-desc">0.15</output></label>
+          <label>Default days since arrival <input type="number" id="p-days" min="0" max="30" step="1" value="1" /></label>
+          <label>Min differential (m) <input type="number" id="p-mindiff" min="0" max="4000" step="100" value="400" /></label>
+        </div>
+        <div class="row" style="margin-bottom:12px">
+          <label class="btn btn--ghost" style="text-align:center">Drop a fixtures CSV <input type="file" id="fx-file" accept=".csv" style="display:none" /></label>
+          <button class="btn btn--ghost" id="fx-reload">Reload lines</button>
+          <button class="btn btn--ghost" id="fx-clear">Clear added lines</button>
+        </div>
+        <div class="scroll">
+          <table class="book" id="altitude-table">
+            <thead><tr><th>Date</th><th>Line</th><th class="num">Diff m</th><th class="num">Away HIR</th><th class="num">Δλ H / A</th><th class="num">Home</th><th class="num">Draw</th><th class="num">Away</th><th>Best</th><th class="num">EV</th><th class="num">Kelly</th></tr></thead>
+            <tbody id="altitude-body"><tr><td colspan="11">Loading lines…</td></tr></tbody>
+          </table>
+        </div>
+        <details style="margin-top:14px">
+          <summary class="tag" style="cursor:pointer">Add a line</summary>
+          <div class="form" style="margin-top:10px">
+            <div class="row">
+              <label>Date <input id="al-date" placeholder="2026-09-26" /></label>
+              <label>Home <input id="al-home" placeholder="Toluca" /></label>
+              <label>Away <input id="al-away" placeholder="Santos Laguna" /></label>
+              <label>Home odds <input id="al-oh" type="number" step="0.01" placeholder="1.74" /></label>
+              <label>Draw odds <input id="al-od" type="number" step="0.01" placeholder="3.80" /></label>
+              <label>Away odds <input id="al-oa" type="number" step="0.01" placeholder="4.50" /></label>
+              <label>Days since arrival <input id="al-days" type="number" step="1" placeholder="1" /></label>
+              <label>Venue alt override (m) <input id="al-venue" type="number" step="10" placeholder="" /></label>
+              <button class="btn" id="al-add">Add to book</button>
+            </div>
+            <div class="tag" id="al-msg"></div>
+          </div>
+        </details>
+      </section>
+
+      <!-- ================= LINEUP DESK ================= -->
+      <section class="table-card" id="lineups">
+        <h2>Match Cards <small>real FC ratings · Altitude FC physiology · the market</small></h2>
+        <p class="lede">Pick two clubs. Each side's best XI from EA FC ratings is the reference card the market is pricing. Click players out and the projected XI rebuilds by position. The visitor's card is then run through the Altitude FC physiology for the venue altitude, its home altitude and the days since arrival (VO2max slope, high-intensity running, repeated-sprint recovery, acclimatisation), and the rating layer moves PAC, DEF, PHY and OVR. The adjusted OVR gap vs the reference becomes goals and EV. The full two-team lab with every assumption exposed is <a href="altitude_fc/altitude_fc_cards.html" data-lab>here</a>.</p>
+        <div class="controls">
+          <label>Goals per rating point <input type="range" id="l-gpp" min="0" max="0.3" step="0.01" value="0.10" /><output id="o-gpp">0.10</output></label>
+          <label>Market awareness of lineup <input type="range" id="l-aware" min="0" max="1" step="0.05" value="0" /><output id="o-aware">0.00</output></label>
+          <label>Skew flag (points) <input type="number" id="l-skew" min="0" step="0.1" value="1.5" /></label>
+          <label>Home odds <input id="l-oh" type="number" step="0.01" value="1.80" /></label>
+          <label>Draw odds <input id="l-od" type="number" step="0.01" value="3.60" /></label>
+          <label>Away odds <input id="l-oa" type="number" step="0.01" value="4.20" /></label>
+        </div>
+        <div class="controls" id="l-pickers">
+          <label>Home club (EA FC 25 NWSL) <select id="l-home-team"><option value="">— pick —</option></select></label>
+          <label>Away club <select id="l-away-team"><option value="">— pick —</option></select></label>
+          <label>Formation <select id="l-formation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-5-2</option><option>3-4-3</option></select></label>
+          <label>Venue altitude (m, auto from home club) <input id="l-venue" type="number" step="10" placeholder="auto" /></label>
+          <label>Days since arrival <input id="l-days" type="number" step="1" value="1" /></label>
+          <label>Rating sensitivity (pts per 1% phys.) <input type="range" id="l-sens" min="0.1" max="1" step="0.05" value="0.4" /><output id="o-sens">0.40</output></label>
+        </div>
+        <div class="grid2" id="l-cards" style="margin-top:12px"></div>
+        <p class="lede" id="l-source"></p>
+        <div class="grid2">
+          <div><div class="tag" style="margin-bottom:6px">Home squad · click a player to mark her out</div><div class="chips" id="l-home-squad"></div></div>
+          <div><div class="tag" style="margin-bottom:6px">Away squad · click a player to mark her out</div><div class="chips" id="l-away-squad"></div></div>
+        </div>
+        <details style="margin-top:12px"><summary class="tag" style="cursor:pointer">Paste XIs by hand instead</summary>
+        <div class="grid2 form" style="margin-top:12px">
+          <label>Home projected XI (name, pos, rating) <textarea id="l-hp"></textarea></label>
+          <label>Home reference XI or squad <textarea id="l-hr"></textarea></label>
+          <label>Away projected XI <textarea id="l-ap"></textarea></label>
+          <label>Away reference XI or squad <textarea id="l-ar"></textarea></label>
+        </div></details>
+        <div class="row" style="margin-top:10px">
+          <button class="btn" id="l-run">Price it</button>
+          <button class="btn btn--ghost" id="l-sample">Load illustrative sample</button>
+        </div>
+        <div id="l-out"></div>
+      </section>
+
+      <!-- ================= PROPS DESK ================= -->
+      <section class="table-card" id="props">
+        <h2>Props Desk <small>shot lines → expected shots → xG → goals</small></h2>
+        <p class="lede">One player per line: <code>name, pos, line, over odds, under odds[, anytime scorer odds]</code> or <code>name, pos, shots=1.8</code>. Each line becomes the Poisson mean that reproduces the de-vigged over price, times an xG-per-shot by position (FW .12, AM .10, MF .08, WB .06, DF .05), summed and divided by the share of team xG the listed players carry. The props-implied goal expectancies are blended with the market's and re-priced against the main line, totals and scorer odds.</p>
+        <div class="controls">
+          <label>Blend (weight on props) <input type="range" id="pr-blend" min="0" max="1" step="0.05" value="0.5" /><output id="o-blend">0.50</output></label>
+          <label>Coverage override (0 = auto) <input type="number" id="pr-cov" min="0" max="1" step="0.05" value="0" /></label>
+          <label>Home odds <input id="pr-oh" type="number" step="0.01" value="1.80" /></label>
+          <label>Draw odds <input id="pr-od" type="number" step="0.01" value="3.60" /></label>
+          <label>Away odds <input id="pr-oa" type="number" step="0.01" value="4.20" /></label>
+          <label>Over 2.5 <input id="pr-o25" type="number" step="0.01" value="1.90" /></label>
+          <label>Under 2.5 <input id="pr-u25" type="number" step="0.01" value="1.90" /></label>
+        </div>
+        <div class="grid2 form">
+          <label>Home player lines <textarea id="pr-h"></textarea></label>
+          <label>Away player lines <textarea id="pr-a"></textarea></label>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <button class="btn" id="pr-run">Price it</button>
+          <button class="btn btn--ghost" id="pr-sample">Load illustrative sample</button>
+        </div>
+        <div id="pr-out"></div>
+      </section>
+
+      <!-- ================= HIGH GROUND ================= -->
+      <section class="table-card" id="ground">
+        <h2>The High Ground <small>home venues at 2,000 m and above</small></h2>
+        <p class="lede">The book's altitude table. Figures are approximate stadium elevations (±50 m). Teams in leagues that routinely play at altitude carry the habituation discount.</p>
+        <div class="chips" id="ground-chips"></div>
+      </section>
+
+      <!-- ================= COURTSIDE ================= -->
+      <section class="table-card" id="courtside">
+        <h2>Courtside <small>NWSL in-venue latency trade, per attended match</small></h2>
+        <p class="lede">net = goals × capture × stale liquidity × return × (1 − fee) − travel − risk. Capture is the share of goals you actually get filled on before makers cancel; stale liquidity is dollars resting at the old price when the ball crosses the line.</p>
+        <div class="controls">
+          <label>Goals per match <input type="range" id="c-goals" min="1.5" max="4" step="0.1" value="2.8" /><output id="o-goals">2.8</output></label>
+          <label>Capture rate <input type="range" id="c-f" min="0" max="1" step="0.05" value="0.35" /><output id="o-f">0.35</output></label>
+          <label>Stale liquidity per goal ($) <input type="range" id="c-L" min="0" max="5000" step="10" value="150" /><output id="o-L">150</output></label>
+          <label>Return per $ filled <input type="range" id="c-r" min="0" max="1" step="0.05" value="0.45" /><output id="o-r">0.45</output></label>
+          <label>Fee <input type="range" id="c-fee" min="0" max="0.1" step="0.001" value="0.017" /><output id="o-fee">0.017</output></label>
+          <label>Travel per match ($) <input type="range" id="c-travel" min="0" max="1500" step="25" value="700" /><output id="o-travel">700</output></label>
+          <label>Risk cost per match ($) <input type="range" id="c-risk" min="0" max="1000" step="25" value="100" /><output id="o-risk">100</output></label>
+        </div>
+        <div class="stat">
+          <div><div class="k">Gross per match</div><div class="v" id="c-gross">–</div></div>
+          <div><div class="k">Net per match</div><div class="v" id="c-net">–</div></div>
+          <div><div class="k">Break-even stale liquidity</div><div class="v" id="c-be">–</div></div>
+          <div><div class="k">40 flown matches</div><div class="v" id="c-season">–</div></div>
+        </div>
+      </section>
+
+      <!-- ================= HOUSE RULES ================= -->
+      <section class="table-card" id="rules">
+        <h2>House Rules <small>read before you sit down</small></h2>
+        <div class="rules">
+          <p><b>Every number on this floor is a model output, not a measurement.</b> The physiology anchors are peer-reviewed; the conversion from running lost to goals, the residual share, the goals-per-rating-point and the xG-per-shot defaults are assumptions until the backtest in <code>altitude_edge/backtest.py</code> says otherwise.</p>
+          <p><b>The market is the baseline.</b> Every desk starts from the de-vigged closing line and only moves it by the piece of information you are claiming the market lacks. If your residual share is 1.0 you are claiming the book prices Toluca like Tijuana. It does not.</p>
+          <p><b>Odds are what you typed.</b> Nothing here is live. Pull lines with the fetchers in <code>altitude_edge/</code> on your own machine, or drop a CSV.</p>
+          <p><b>EV before limits.</b> Bolivian, Ecuadorian and Peruvian league limits at sharp books are small. An edge you cannot get down is a hobby.</p>
+          <p><b>The rope is velvet, not a lock.</b> The invite code is a front-end nicety. Do not put anything behind it that needs protecting.</p>
+          <p><b>Courtsiding has a house too.</b> Venue terms, exchange rules and state law all apply. The calculator prices the trade; it does not bless it.</p>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>Athlemix After Hours · illustrative scenario pricing</span>
+        <span>Model source: <a href="altitude_edge/">altitude_edge/</a> · <a href="index.html" data-home>AthleMix</a></span>
+      </footer>
+    </div>
+
+    <script>
+      // Port configuration. Change these when mounting inside another app; nothing else needs editing.
+      window.AFTER_HOURS_CONFIG = {
+        gate: true,                                   // false when the host app already guards the route (recommended)
+        fixturesUrl: 'altitude_edge/fixtures_demo.json', // endpoint returning the fixtures JSON shape in INTEGRATION.md
+        dataBase: '',                                 // prefix for altitude_edge/*.json if the data folder moves, e.g. '/after-hours/'
+        homeUrl: 'index.html',                        // where the "← AthleMix" links go
+        labUrl: 'altitude_fc/altitude_fc_cards.html'
+      };
+    </script>
+    <script src="after-hours.js"></script>
+    <script src="after-hours-ui.js"></script>
+  </body>
+</html>

@@ -6,11 +6,11 @@ const loadStatsBombBtn = document.getElementById("load-statsbomb");
 const ledgerBodyEl = document.getElementById("ledger-body");
 
 const ledgerData = [
-  { time: "14:32", event: "Goal vs ARS", impact: "+€0.85M" },
-  { time: "14:05", event: "Shot on Target (0.4 xG)", impact: "+€0.12M" },
-  { time: "13:45", event: "Half Time Adjustment", impact: "-€0.05M" },
-  { time: "13:22", event: "Dispossessed (Def. 3rd)", impact: "-€0.15M" },
-  { time: "13:10", event: "Progressive Pass (+0.04 g+)", impact: "+€0.02M" },
+  { time: "09:14", event: "Coach request from UCLA", impact: "Awaiting response" },
+  { time: "08:48", event: "Highlight reel updated", impact: "Tagged 3 coaches" },
+  { time: "08:22", event: "GPA transcript verified", impact: "Academic badge awarded" },
+  { time: "07:55", event: "New showcase invite", impact: "RSVP sent" },
+  { time: "07:30", event: "Trainer recommendation added", impact: "Boosted profile rank" },
 ];
 
 function renderLedger() {
@@ -66,7 +66,7 @@ function updateSandboxStatus(message) {
 }
 
 async function loadSportsDbPlayers() {
-  updateSandboxStatus("Loading TheSportsDB players...");
+  updateSandboxStatus("Loading open player pool...");
   try {
     const response = await fetch(
       "https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?t=Arsenal"
@@ -83,16 +83,16 @@ async function loadSportsDbPlayers() {
       detail: player.strNationality || "Unknown nationality",
     }));
     renderLiveRows(rows);
-    updateSandboxStatus("Loaded TheSportsDB player list.");
+    updateSandboxStatus("Loaded open player pool.");
   } catch (error) {
-    updateSandboxStatus("Unable to load TheSportsDB data.");
+    updateSandboxStatus("Unable to load open player data.");
     liveRowsEl.innerHTML =
-      '<tr><td colspan="4">Failed to load TheSportsDB data.</td></tr>';
+      '<tr><td colspan="4">Failed to load open player data.</td></tr>';
   }
 }
 
 async function loadStatsBombCompetitions() {
-  updateSandboxStatus("Loading StatsBomb open data...");
+  updateSandboxStatus("Loading open competition list...");
   try {
     const response = await fetch(
       "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json"
@@ -109,11 +109,11 @@ async function loadStatsBombCompetitions() {
       detail: `Season: ${competition.season_name || "Unknown"}`,
     }));
     renderLiveRows(rows);
-    updateSandboxStatus("Loaded StatsBomb open data.");
+    updateSandboxStatus("Loaded open competition list.");
   } catch (error) {
-    updateSandboxStatus("Unable to load StatsBomb open data.");
+    updateSandboxStatus("Unable to load open competition data.");
     liveRowsEl.innerHTML =
-      '<tr><td colspan="4">Failed to load StatsBomb open data.</td></tr>';
+      '<tr><td colspan="4">Failed to load open competition data.</td></tr>';
   }
 }
 
@@ -124,21 +124,21 @@ function initChart() {
   new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["2020", "2021", "2022", "2023", "2024", "2025", "2026"],
+      labels: ["2019", "2020", "2021", "2022", "2023", "2024"],
       datasets: [
         {
-          label: "Market Value",
-          data: [64, 85, 75, 50, 48, 45, 42],
-          borderColor: "#7bdcff",
-          backgroundColor: "rgba(123, 220, 255, 0.08)",
+          label: "Coach interest",
+          data: [22, 40, 45, 60, 72, 88],
+          borderColor: "#38f0c7",
+          backgroundColor: "rgba(56, 240, 199, 0.12)",
           fill: true,
           tension: 0.35,
           pointRadius: 0,
         },
         {
-          label: "Projection",
-          data: [null, null, null, 50, 48, 42, 30],
-          borderColor: "rgba(248, 113, 113, 0.8)",
+          label: "Exposure index",
+          data: [null, 30, 38, 52, 63, 74],
+          borderColor: "rgba(62, 168, 255, 0.8)",
           borderDash: [6, 6],
           tension: 0.35,
           pointRadius: 0,
@@ -153,14 +153,14 @@ function initChart() {
       },
       scales: {
         x: {
-          grid: { color: "rgba(30, 38, 54, 0.6)" },
+          grid: { color: "rgba(30, 43, 59, 0.6)" },
           ticks: { color: "#8b98aa" },
         },
         y: {
-          grid: { color: "rgba(30, 38, 54, 0.6)" },
+          grid: { color: "rgba(30, 43, 59, 0.6)" },
           ticks: {
             color: "#8b98aa",
-            callback: (value) => `€${value}m`,
+            callback: (value) => `${value}%`,
           },
         },
       },

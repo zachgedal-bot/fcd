@@ -1,0 +1,9 @@
+{
+  "_comment": "Base-case parameters for courtside_model.py after the 2026-09-20 research sweep. See README.md for ranges and sources.",
+  "goals_per_match": 2.8,
+  "f_capture": {"low": 0.10, "base": 0.35, "high": 0.60},
+  "L_stale_usd": {"low": 30, "base": 150, "high": 800},
+  "r_edge": {"low": 0.25, "base": 0.45, "high": 0.70},
+  "fees": {"value": 0.017},
+  "risk_cost_per_match_usd": {"low": 50, "base": 100, "high": 400}
+}
