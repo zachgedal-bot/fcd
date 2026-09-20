@@ -58,7 +58,7 @@
     const priced = rows.filter(r => !r.skip && !r.needsOdds).sort((a, b) => Math.abs(b.best[1].ev) - Math.abs(a.best[1].ev));
     const unpriced = rows.filter(r => !r.skip && r.needsOdds).sort((a, b) => Math.abs(b.adj.d_lambda_away) + Math.abs(b.adj.d_lambda_home) - Math.abs(a.adj.d_lambda_away) - Math.abs(a.adj.d_lambda_home));
     const skipped = rows.filter(r => r.skip);
-    if (!priced.length && !unpriced.length) { body.innerHTML = '<tr><td colspan="11">No lines. Drop a CSV or add one below.</td></tr>'; }
+    if (!priced.length && !unpriced.length) { body.innerHTML = `<tr><td colspan="11">${fixtures.length ? 'No lines above the altitude threshold in the current feed.' : `The feed at ${CFG.fixturesUrl} returned no lines. No odds are being simulated.`} Drop a CSV or add a line below.</td></tr>`; }
     for (const r of priced) {
       const e = r.r.edges, a = r.r.adjustment;
       const tr = document.createElement('tr'); if (r.best[1].ev > 0) tr.className = 'row--hot';
