@@ -55,6 +55,8 @@ def main():
             rep = batch[0].get('reported_elevation_m')
             if rep is not None and not (isinstance(rep, float) and np.isnan(rep)) and abs(float(pv[0]['dem_elevation_m']) - float(rep)) <= 80:
                 chosen = dict(batch[0]); chosen.update(lat=pv[0]['lat'], lon=pv[0]['lon'], dem_elevation_m=pv[0]['dem_elevation_m'], coordinate_source='analyst provisional coordinates (agent coordinates were DEM-inconsistent)'); basis = 'provisional coordinates, agent published figure (DEM-consistent)'
+        if chosen is None and pv and not batch and not rc:
+            chosen, basis = pv[0], 'analyst provisional coordinates (DEM value; no agent record)'
         if chosen is None:
             pool = rc + batch + pv
             pool = [r for r in pool if r.get('dem_elevation_m') is not None and not (isinstance(r.get('dem_elevation_m'), float) and np.isnan(r.get('dem_elevation_m')))]
