@@ -1,7 +1,13 @@
 # LAFC attacking-direction study: verified dataset, pilot status and plan
 
-**Verdict (2026-09-29): insufficient verified data on attacking direction.** No LAFC home match in this file has a
-verified physical attacking end, so the four-group (half × toward/away from the 3252) comparison cannot be run.
+**Verdict (2026-09-29): still zero verified attacking ends, but the verification pipeline now exists and is tested.**
+`scripts/verify_directions.py` was run over all 156 home matches in this file. Every row came back
+`first_half_direction = Unverified` with `verification_note = network_blocked`, because this cloud environment's
+network policy refuses connections to `youtube.com`, `www.youtube.com`, `*.googlevideo.com`, `i.ytimg.com` and
+`googleapis.com` (the script stops searching after three consecutive network failures rather than hammer the proxy).
+No direction was estimated or guessed. Section "Attacking-direction verification" below explains how to run it where
+those hosts are reachable; the offline self-test (`scripts/selftest_verify_directions.py`) passes.
+
 Everything that does not depend on direction has been built and analysed from source-linked match reports:
 half-by-half scoring, first-half under rates, 15-minute buckets, and the 60th-minute game-state baselines.
 Those numbers are in `out/summary.md` and reproduced below.
@@ -11,13 +17,19 @@ Those numbers are in `out/summary.md` and reproduced below.
 | File | Contents |
 |---|---|
 | `data/raw_events.jsonl` | One record per LAFC home match with goal minutes, scorers, penalties/own goals, red cards, HT/FT score, attendance, kickoff, source URLs, confidence and open to-dos. |
-| `data/matches.csv` | One row per match (156): scores by half, red cards, venue, fans flag, `direction_status` (all `unavailable`). |
+| `data/matches.csv` | One row per match (156): scores by half, red cards, venue, fans flag, plus the verification columns `first_half_direction` (North / South / Unverified), `verification_source` (YouTube URL with `&t=` of the frame used), `verification_note`, `first_half_screen_direction`, `verification_confidence`. Currently all `Unverified`. |
 | `data/goals.csv` | One row per goal (498) with minute, added time, half, scorer, kind. |
-| `data/direction_labels.csv` | Empty label sheet, one row per match, to be filled from kickoff footage. |
-| `scripts/build_dataset.py` | Rebuilds the CSVs from the raw file. |
+| `data/direction_labels.csv` | Label sheet, one row per match; filled by `verify_directions.py` (coder = script) or by hand. A human `verified` row is never overwritten by the script. |
+| `scripts/build_dataset.py` | Rebuilds the CSVs from the raw file, carrying over the verification columns and existing labels. |
 | `scripts/analyze.py` | Runs the analysis; computes the four-group split automatically once labels exist. |
-| `scripts/youtube_kickoff_frames.py` | Video-to-frames pipeline for direction coding (needs YouTube access). |
-| `out/summary.md` | Current analysis output. |
+| `scripts/verify_directions.py` | **Direction verification pipeline**: YouTube search (yt-dlp) -> first 90 s of the official highlight -> OpenCV kickoff frames -> screen side -> North/South. Writes the columns below, `direction_labels.csv`, `out/verification_log.jsonl`, `out/frames/<date>/contact_sheet.jpg`, `out/direction_summary.md`. |
+| `scripts/selftest_verify_directions.py` | Offline self-test of the pipeline on synthetic broadcast footage (no network needed). |
+| `scripts/youtube_kickoff_frames.py` | Earlier frame-dump scaffold; superseded by `verify_directions.py`. |
+| `data/video_overrides.csv` (optional) | `date,video,note`: pin a match to a YouTube URL or a local clip (manual-review path). |
+| `data/kit_overrides.csv` (optional) | `date,lafc_kit`: matches where LAFC did not wear the black kit (`light` or `grey`). |
+| `out/summary.md` | Current direction-agnostic analysis output. |
+| `out/direction_summary.md` | Sequence A / Sequence B count per season from the latest verification run. |
+| `out/verification_log.jsonl` | One evidence record per processed match: queries, candidate videos and why each was accepted or rejected, frame statistics, decision. |
 
 Coverage: MLS regular season and playoffs at Banc of California / BMO Stadium, 2018 through 2025 complete
 (17 regular-season home games each season, 2020 shortened), 2026 through 9 September (11 of the season's home games;
@@ -51,10 +63,69 @@ clip of each highlight package or the kickoff of a full replay shows the end. Th
 youtube.com, googlevideo.com and every mirror tried, so the frame pipeline could not run here.
 
 **To unblock:** in the cloud environment settings, allow `www.youtube.com`, `youtube.com`, `*.googlevideo.com`,
-`i.ytimg.com`, then run `scripts/youtube_kickoff_frames.py` and code each match into `data/direction_labels.csv`
-(status `verified` only with a video URL, timestamp and the landmark seen). Two coders, log disagreements.
-Allowing `www.espn.com`, `site.api.espn.com` and `fbref.com` would also let the remaining minutes and per-match xG be
-pulled directly.
+`i.ytimg.com`, then run `scripts/verify_directions.py` as described in the next section. Allowing `www.espn.com`,
+`site.api.espn.com` and `fbref.com` would also let the remaining minutes and per-match xG be pulled directly.
+
+## Attacking-direction verification (`scripts/verify_directions.py`)
+
+What it does for each row of `data/matches.csv`:
+
+1. **Find the video.** Three yt-dlp searches (`LAFC vs <Opponent> <Month D, YYYY> highlights` and two variants).
+   A candidate is used only if its title names both LAFC and the opponent, it was uploaded between the match day and
+   14 days later, it is public, it is highlight length (< 25 min), and it comes from an official channel
+   (Major League Soccer or LAFC; `--allow-club-channels` adds the opponent's club channel, `--allow-unofficial`
+   anything). Every candidate and its verdict is written to `out/verification_log.jsonl`.
+2. **Download the opening only.** `--download-sections 0-90s` at <= 480p through ffmpeg (system ffmpeg or the
+   `imageio-ffmpeg` wheel), cached under `out/verify_cache/`.
+3. **Read the kickoff.** Frames are sampled at 2 per second. A frame counts as a kickoff wide shot when the grass
+   covers >= 35 % of it, a near-vertical white halfway line is found in the central band, and the two most common
+   kit classes on the pitch (dark / light / grey / hue bucket) each have >= 80 % of their players on opposite sides
+   of that line. LAFC are the `dark` class by default (black home kit; override per match in `kit_overrides.csv`).
+   The side LAFC defend gives the screen side they attack. At least three agreeing frames are required, any
+   conflicting frame makes the match `ambiguous_frames`, and an annotated contact sheet of every sampled frame is
+   saved to `out/frames/<date>/contact_sheet.jpg` for review.
+4. **Map screen side to the stadium.** North = the 3252 safe-standing terrace, South = the scoreboard end.
+   The mapping depends only on which sideline the main broadcast camera is on, a venue constant:
+   camera on the **west** sideline (looking east) puts the 3252 on the **left** of the screen; camera on the
+   **east** sideline puts it on the **right**. The script never assumes this. Rows carry their screen side but stay
+   `Unverified` (`camera_side_uncalibrated`) until you check one contact sheet (the north goal is the one with the
+   steep terrace behind it and the open north-east keyhole corner beside it) and run the re-map once. The benches sit
+   on the west sideline, so `west` is the expected answer if the main camera is on the bench side, but confirm it
+   from footage before using it.
+5. **Write everything back.** `matches.csv` (columns above, plus the legacy `attacking_end_1h` / `direction_status`),
+   `direction_labels.csv` (status `verified` with URL, timestamp and landmark; human labels are left alone),
+   `out/verification_log.jsonl`, and `out/direction_summary.md` with the Sequence A (1H North / 2H South) vs
+   Sequence B (1H South / 2H North) count per season.
+
+A row is `Unverified` whenever any link in that chain is missing, and `verification_note` says which:
+`no_video_found`, `no_official_video`, `restricted`, `rate_limited`, `network_blocked`, `download_error`,
+`no_wide_shot`, `no_kickoff_frame`, `kit_not_found`, `ambiguous_frames:*`, `camera_side_uncalibrated`.
+
+Run it (dependencies `yt-dlp`, `opencv-python-headless`, `pandas`, `numpy`, `imageio-ffmpeg` are pip-installed
+automatically unless `--no-install`):
+
+```bash
+cd lafc-direction
+python scripts/selftest_verify_directions.py                       # offline check of the pipeline, ~1 min
+python scripts/verify_directions.py                                 # all 156 matches; 2 s polite delay between requests
+#   -> open out/frames/<any date>/contact_sheet.jpg, decide which screen side holds the 3252 terrace
+python scripts/verify_directions.py --remap-only --camera-side west  # or east; converts stored screen sides to North/South
+python scripts/verify_directions.py --summary-only                   # reprint the per-season Sequence A / B table
+```
+
+Useful options: `--date 2024-04-27`, `--season 2023`, `--limit 10`, `--force` (redo verified rows), `--dry-run`
+(search and validate only), `--cookies cookies.txt` (bot-check or age-gated videos), `--delay 5` (slower),
+`--accept-long-videos` (full-match replays; the kickoff is then not in the first 90 s, so pair it with a
+`video_overrides.csv` local clip cut at the kickoff). Manual review: put the URL or a local clip path for a match
+in `data/video_overrides.csv` and re-run for that `--date`.
+
+Known limits, deliberately not papered over: LAFC are identified by kit class, so a match in which LAFC wore a light
+or grey kit must be listed in `kit_overrides.csv` or the side would be read for the opponent; a highlight package
+that does not open on the kickoff / line-up wide shot yields `no_kickoff_frame` (fall back to a full-match replay
+via overrides); the automated landmark check is the camera-side calibration, not per-frame terrace detection, so
+the one-time calibration is the step that makes the whole column empirical.
+
+Latest run in this environment (2026-09-29): 156 processed, 0 North, 0 South, 156 Unverified (`network_blocked`).
 
 ## What the direction-agnostic data says
 

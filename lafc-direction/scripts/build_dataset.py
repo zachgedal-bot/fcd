@@ -11,6 +11,15 @@ import json, csv, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 rows = [json.loads(l) for l in open(ROOT / "data/raw_events.jsonl")]
 
+# Columns written by scripts/verify_directions.py; carried over from the existing matches.csv so
+# that rebuilding from raw_events.jsonl never wipes verified attacking-direction evidence.
+VERIFY_COLS = ["first_half_direction", "verification_source", "verification_note",
+               "first_half_screen_direction", "verification_confidence", "attacking_end_1h", "direction_status"]
+previous = {}
+if (ROOT / "data/matches.csv").exists():
+    with open(ROOT / "data/matches.csv", newline="") as f:
+        previous = {r["date"]: r for r in csv.DictReader(f)}
+
 def half_of(g, ht):
     """Return 1 or 2 for a goal, using the minute when known, else the note/HT score."""
     m = g.get("m")
@@ -68,15 +77,30 @@ for r in rows:
     })
 
 matches.sort(key=lambda x: x["date"])
+for m in matches:
+    prev = previous.get(m["date"], {})
+    for c in VERIFY_COLS:          # assigned in this fixed order so the column layout is stable
+        if prev.get(c, "") != "":
+            m[c] = prev[c]
+        elif c not in m:
+            m[c] = "Unverified" if c == "first_half_direction" else ""
 goals.sort(key=lambda x: (x["date"], x["total_minute"] if x["total_minute"] is not None else 999))
 with open(ROOT / "data/matches.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(matches[0].keys())); w.writeheader(); w.writerows(matches)
 with open(ROOT / "data/goals.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(goals[0].keys())); w.writeheader(); w.writerows(goals)
-# direction label template: one row per match, to be filled from kickoff footage
-with open(ROOT / "data/direction_labels.csv", "w", newline="") as f:
-    w = csv.writer(f)
-    w.writerow(["date", "opponent", "competition", "attacking_end_1h", "status", "evidence_type", "video_url", "video_timestamp", "landmark", "coder", "notes"])
+# direction label sheet: one row per match. Existing rows (human or verify_directions.py labels)
+# are kept verbatim; only matches that are new to the raw file get a blank row.
+label_path = ROOT / "data/direction_labels.csv"
+label_fields = ["date", "opponent", "competition", "attacking_end_1h", "status", "evidence_type", "video_url", "video_timestamp", "landmark", "coder", "notes"]
+existing_labels = {}
+if label_path.exists():
+    with open(label_path, newline="") as f:
+        existing_labels = {r["date"]: r for r in csv.DictReader(f)}
+with open(label_path, "w", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=label_fields)
+    w.writeheader()
     for m in matches:
-        w.writerow([m["date"], m["opponent"], m["competition"], "", "unavailable", "", "", "", "", "", ""])
+        row = existing_labels.get(m["date"]) or {"date": m["date"], "opponent": m["opponent"], "competition": m["competition"], "status": "unavailable"}
+        w.writerow({k: row.get(k, "") for k in label_fields})
 print(len(matches), "matches,", len(goals), "goals")

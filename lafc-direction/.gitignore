@@ -1,0 +1,3 @@
+out/verify_cache/
+out/verify_directions.log
+scripts/__pycache__/
