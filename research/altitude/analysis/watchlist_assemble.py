@@ -20,6 +20,33 @@ def num(s):
     m = re.search(r'(\d[\d,]*)', str(s).replace('≈', '').replace('~', ''))
     return float(m.group(1).replace(',', '')) if m else None
 
+
+def render_tables(df, lib, P):
+    THR = THRESH
+    cols = '| Date | Kickoff (America/Los_Angeles) | Competition | Home team | Away team | Confirmed venue | Venue elevation | Visitor baseline elevation and basis | Net gap | Known arrival/recent altitude exposure | Verification status | Sources |'
+    sep = '|' + '---|' * 12
+    def row(r):
+        ve = f"{r.venue_elev:.0f} m ({r.venue_elev_basis})" if pd.notna(r.venue_elev) else 'unknown'
+        vb = f"{r.visitor_base} — {r.visitor_base_elev:.0f} m ({r.visitor_base_basis})" if pd.notna(r.visitor_base_elev) else f"{r.visitor_base} — unknown"
+        gap = f"{r.net_gap:.0f} m" if pd.notna(r.net_gap) else 'unknown'
+        if pd.notna(r.net_gap) and abs(r.net_gap - THR) <= 150: gap += ' (borderline)'
+        src = '; '.join(r.sources[:5]) if isinstance(r.sources, list) else str(r.sources)
+        return f"| {r.date} | {r.kickoff_pt} | {r.competition} | {r.home} | {r.away} | {r.venue} | {ve} | {vb} | {gap} | {str(r.exposure)[:220]} | {r.status} (found by live search before the cut-off; not re-verified) | {src} |"
+    md = []
+    conf = df[(df['net_gap'] > THR) & df['status'].str.startswith('confirmed') & ~df['home'].str.contains('PROVISIONAL')]
+    prov = df[((df['net_gap'] > THR) | df['net_gap'].isna()) & ~df.index.isin(conf.index)]
+    excl = df[(df['net_gap'] <= THR)]
+    for title, sub in [('Qualifying fixtures with a dated source (net gap > 2,500 m)', conf[conf['family'] != 'bolivia']), ('Bolivia: qualifying fixtures with a dated source', conf[conf['family'] == 'bolivia']), ('Provisional candidates', prov[prov['family'] != 'bolivia']), ('Bolivia: provisional candidates', prov[prov['family'] == 'bolivia']), ('Checked and excluded (net gap at or below 2,500 m)', excl)]:
+        md.append(f'### {title}\n\n' + ('\n'.join([cols, sep] + [row(r) for r in sub.itertuples(index=False)]) if len(sub) else '_None located._') + '\n')
+    open(os.path.join(OUT, 'watchlist_tables.md'), 'w').write('\n'.join(md))
+    notes = ['### CONMEBOL knockout calendar (dates only; pairings not yet in the dataset)\n', 'From `openfootball/south-america` (auto-updated 2026-09-21), the 2026 Copa Libertadores lists semifinal match dates of Tue 13 Oct and Tue 20 Oct 2026 (legs in those weeks) and the final on Sat 28 Nov 2026; the round-of-16 and quarter-final pairings and results were not yet filled in the mirror, so which clubs remain, and whether a highland club (for example LDU de Quito, which reached the round of 16 against Mirassol) hosts a semifinal, could not be determined. A single-venue final makes both finalists visitors; it would not qualify. The 2026 Copa Sudamericana file was not present in the mirror.\n']
+    for x in lib: notes.append(f"```\n{x['stage']}\n{x['text']}\n```\n")
+    notes.append('\n### Structural pairing matrix for competitions whose 2026 schedules could not be retrieved\n\nPairs of host and visitor (both in the latest season of the data) whose usual venues differ by more than 2,350 m, with DEM elevations. Apply the official Peru Liga 1 Clausura, Ecuador LigaPro, Colombia Liga BetPlay 2026-II, Bolivia and Liga MX schedules to this table: a listed pair playing at the host\'s usual venue in the window is a qualifying fixture; a pair marked borderline needs a venue-level check. Clubs promoted for 2026 are absent, relegated clubs may still be listed (last season shown).\n')
+    notes.append('| Country | Host | Host venue (DEM m) | Visitor | Visitor usual venue (DEM m) | Net gap | Status | Last season in data (host / visitor) |\n|---|---|---|---|---|---|---|---|')
+    for r in P.itertuples(index=False):
+        notes.append(f"| {r.country} | {r.host} | {r.host_venue} ({r.host_elev}) | {r.visitor} | {r.visitor_base} ({r.visitor_elev}) | {r.net_gap} | {r.status} | {r.host_last_season} / {r.visitor_last_season} |")
+    open(os.path.join(OUT, 'watchlist_notes.md'), 'w').write('\n'.join(notes))
+
 def main():
     reg = load_registry(); lut = reg.set_index('venue_fbref_name')['elev'].to_dict()
     sal = json.load(open(os.path.join(OUT, 'salvaged', 'workflow_partial_results.json')))
@@ -63,6 +90,7 @@ def main():
                     pairs.append(dict(country=c, host=h.Home, host_venue=h.Venue, host_elev=round(h.elev), visitor=a.Home, visitor_base=a.Venue, visitor_elev=round(a.elev), net_gap=round(gap), status=('qualifies' if gap > THRESH else 'borderline'), host_last_season=int(h.Season_End_Year), visitor_last_season=int(a.Season_End_Year)))
     P = pd.DataFrame(pairs).sort_values(['country', 'net_gap'], ascending=[True, False])
     P.to_csv(os.path.join(OUT, 'structural_pairing_matrix.csv'), index=False)
+    render_tables(df, lib, P[(P['host_last_season'] >= 2025) & (P['visitor_last_season'] >= 2025)])
     print(df[['date', 'kickoff_pt', 'home', 'away', 'venue_elev', 'visitor_base_elev', 'net_gap', 'status', 'qualifies']].to_string(index=False))
     print(P.groupby(['country', 'status']).size())
 

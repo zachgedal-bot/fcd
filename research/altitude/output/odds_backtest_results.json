@@ -1,0 +1,769 @@
+{
+ "join": {
+  "odds_rows": 4080,
+  "fbref_rows": 3509,
+  "joined": 2069,
+  "unmatched_fbref_names": [],
+  "score_agreement": 0.9971
+ },
+ "sample": {
+  "all_joined": 2063,
+  "qualifying": 16,
+  "seasons": "2015-2025",
+  "qualifying_hosts": {
+   "Toluca": 16
+  },
+  "qualifying_visitors": {
+   "Tijuana": 9,
+   "Veracruz": 4,
+   "Mazatl\u00e1n": 2,
+   "Sinaloa": 1
+  },
+  "avg_overround_b365": 1.0731
+ },
+ "market_vs_actual": {
+  "qualifying": {
+   "n": 16,
+   "actual": {
+    "H": 0.875,
+    "D": 0.062,
+    "A": 0.062
+   },
+   "implied_Odd_mult": {
+    "H": 0.56,
+    "D": 0.243,
+    "A": 0.196
+   },
+   "implied_Odd_pow": {
+    "H": 0.578,
+    "D": 0.235,
+    "A": 0.187
+   },
+   "implied_Max_mult": {
+    "H": 0.57,
+    "D": 0.243,
+    "A": 0.187
+   },
+   "implied_Max_pow": {
+    "H": 0.569,
+    "D": 0.243,
+    "A": 0.187
+   },
+   "roi_bet365": {
+    "home_win": 0.4675,
+    "home_win_se": 0.1568,
+    "double_chance_1x_synth": 0.1229,
+    "dnb_synth": 0.2093,
+    "avg_home_odds": 1.708,
+    "avg_synth_1x_odds": 1.207,
+    "avg_synth_dnb_odds": 1.329
+   },
+   "roi_best_price": {
+    "home_win": 0.5556,
+    "home_win_se": 0.1665,
+    "double_chance_1x_synth": 0.1521,
+    "dnb_synth": 0.2336,
+    "avg_home_odds": 1.817,
+    "avg_synth_1x_odds": 1.24,
+    "avg_synth_dnb_odds": 1.36
+   }
+  },
+  "qualifying_league_phase_only": {
+   "n": 15,
+   "actual": {
+    "H": 0.867,
+    "D": 0.067,
+    "A": 0.067
+   },
+   "implied_Odd_mult": {
+    "H": 0.564,
+    "D": 0.242,
+    "A": 0.194
+   },
+   "implied_Odd_pow": {
+    "H": 0.583,
+    "D": 0.233,
+    "A": 0.185
+   },
+   "implied_Max_mult": {
+    "H": 0.575,
+    "D": 0.241,
+    "A": 0.184
+   },
+   "implied_Max_pow": {
+    "H": 0.573,
+    "D": 0.242,
+    "A": 0.185
+   },
+   "roi_bet365": {
+    "home_win": 0.4413,
+    "home_win_se": 0.1653,
+    "double_chance_1x_synth": 0.1146,
+    "dnb_synth": 0.1965,
+    "avg_home_odds": 1.698,
+    "avg_synth_1x_odds": 1.204,
+    "avg_synth_dnb_odds": 1.324
+   },
+   "roi_best_price": {
+    "home_win": 0.5287,
+    "home_win_se": 0.1756,
+    "double_chance_1x_synth": 0.1435,
+    "dnb_synth": 0.2201,
+    "avg_home_odds": 1.807,
+    "avg_synth_1x_odds": 1.238,
+    "avg_synth_dnb_odds": 1.355
+   }
+  },
+  "all_matches": {
+   "n": 2063,
+   "actual": {
+    "H": 0.459,
+    "D": 0.261,
+    "A": 0.281
+   },
+   "implied_Odd_mult": {
+    "H": 0.44,
+    "D": 0.271,
+    "A": 0.288
+   },
+   "implied_Odd_pow": {
+    "H": 0.448,
+    "D": 0.266,
+    "A": 0.285
+   },
+   "implied_Max_mult": {
+    "H": 0.445,
+    "D": 0.272,
+    "A": 0.283
+   },
+   "implied_Max_pow": {
+    "H": 0.445,
+    "D": 0.272,
+    "A": 0.283
+   },
+   "roi_bet365": {
+    "home_win": -0.0372,
+    "home_win_se": 0.0246,
+    "double_chance_1x_synth": -0.0259,
+    "dnb_synth": -0.0118,
+    "avg_home_odds": 2.286,
+    "avg_synth_1x_odds": 1.386,
+    "avg_synth_dnb_odds": 1.716
+   },
+   "roi_best_price": {
+    "home_win": 0.0249,
+    "home_win_se": 0.0264,
+    "double_chance_1x_synth": 0.0027,
+    "dnb_synth": 0.0082,
+    "avg_home_odds": 2.448,
+    "avg_synth_1x_odds": 1.428,
+    "avg_synth_dnb_odds": 1.773
+   }
+  },
+  "toluca_home_all": {
+   "n": 119,
+   "actual": {
+    "H": 0.513,
+    "D": 0.227,
+    "A": 0.261
+   },
+   "implied_Odd_mult": {
+    "H": 0.459,
+    "D": 0.264,
+    "A": 0.277
+   },
+   "implied_Odd_pow": {
+    "H": 0.468,
+    "D": 0.258,
+    "A": 0.273
+   },
+   "implied_Max_mult": {
+    "H": 0.465,
+    "D": 0.264,
+    "A": 0.271
+   },
+   "implied_Max_pow": {
+    "H": 0.465,
+    "D": 0.264,
+    "A": 0.271
+   },
+   "roi_bet365": {
+    "home_win": 0.061,
+    "home_win_se": 0.1039,
+    "double_chance_1x_synth": -0.0016,
+    "dnb_synth": 0.0371,
+    "avg_home_odds": 2.171,
+    "avg_synth_1x_odds": 1.361,
+    "avg_synth_dnb_odds": 1.647
+   },
+   "roi_best_price": {
+    "home_win": 0.1325,
+    "home_win_se": 0.1124,
+    "double_chance_1x_synth": 0.0275,
+    "dnb_synth": 0.0603,
+    "avg_home_odds": 2.312,
+    "avg_synth_1x_odds": 1.4,
+    "avg_synth_dnb_odds": 1.692
+   }
+  },
+  "toluca_home_vs_non_qualifying": {
+   "n": 103,
+   "actual": {
+    "H": 0.456,
+    "D": 0.252,
+    "A": 0.291
+   },
+   "implied_Odd_mult": {
+    "H": 0.443,
+    "D": 0.267,
+    "A": 0.29
+   },
+   "implied_Odd_pow": {
+    "H": 0.451,
+    "D": 0.262,
+    "A": 0.287
+   },
+   "implied_Max_mult": {
+    "H": 0.449,
+    "D": 0.267,
+    "A": 0.284
+   },
+   "implied_Max_pow": {
+    "H": 0.449,
+    "D": 0.267,
+    "A": 0.284
+   },
+   "roi_bet365": {
+    "home_win": -0.0021,
+    "home_win_se": 0.1166,
+    "double_chance_1x_synth": -0.021,
+    "dnb_synth": 0.0104,
+    "avg_home_odds": 2.243,
+    "avg_synth_1x_odds": 1.385,
+    "avg_synth_dnb_odds": 1.696
+   },
+   "roi_best_price": {
+    "home_win": 0.0668,
+    "home_win_se": 0.1263,
+    "double_chance_1x_synth": 0.0081,
+    "dnb_synth": 0.0334,
+    "avg_home_odds": 2.388,
+    "avg_synth_1x_odds": 1.425,
+    "avg_synth_dnb_odds": 1.744
+   }
+  },
+  "mexico_city_hosts_vs_sea_level_visitors_gap2000_2500": {
+   "n": 70,
+   "actual": {
+    "H": 0.7,
+    "D": 0.186,
+    "A": 0.114
+   },
+   "implied_Odd_mult": {
+    "H": 0.536,
+    "D": 0.25,
+    "A": 0.214
+   },
+   "implied_Odd_pow": {
+    "H": 0.552,
+    "D": 0.242,
+    "A": 0.206
+   },
+   "implied_Max_mult": {
+    "H": 0.546,
+    "D": 0.249,
+    "A": 0.205
+   },
+   "implied_Max_pow": {
+    "H": 0.546,
+    "D": 0.249,
+    "A": 0.205
+   },
+   "roi_bet365": {
+    "home_win": 0.2249,
+    "home_win_se": 0.1038,
+    "double_chance_1x_synth": 0.0969,
+    "dnb_synth": 0.1389,
+    "avg_home_odds": 1.822,
+    "avg_synth_1x_odds": 1.242,
+    "avg_synth_dnb_odds": 1.404
+   },
+   "roi_best_price": {
+    "home_win": 0.2984,
+    "home_win_se": 0.1111,
+    "double_chance_1x_synth": 0.1264,
+    "dnb_synth": 0.1599,
+    "avg_home_odds": 1.934,
+    "avg_synth_1x_odds": 1.276,
+    "avg_synth_dnb_odds": 1.436
+   }
+  },
+  "by_season_qualifying": {
+   "2015": {
+    "n": 2,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.515,
+     "D": 0.271,
+     "A": 0.214
+    },
+    "implied_Odd_pow": {
+     "H": 0.531,
+     "D": 0.264,
+     "A": 0.205
+    },
+    "implied_Max_mult": {
+     "H": 0.54,
+     "D": 0.267,
+     "A": 0.193
+    },
+    "implied_Max_pow": {
+     "H": 0.536,
+     "D": 0.268,
+     "A": 0.195
+    },
+    "roi_bet365": {
+     "home_win": 0.815,
+     "home_win_se": 0.175,
+     "double_chance_1x_synth": 0.2283,
+     "dnb_synth": 0.3735,
+     "avg_home_odds": 1.815,
+     "avg_synth_1x_odds": 1.228,
+     "avg_synth_dnb_odds": 1.374
+    },
+    "roi_best_price": {
+     "home_win": 0.9,
+     "home_win_se": 0.2,
+     "double_chance_1x_synth": 0.2522,
+     "dnb_synth": 0.3825,
+     "avg_home_odds": 1.9,
+     "avg_synth_1x_odds": 1.252,
+     "avg_synth_dnb_odds": 1.383
+    }
+   },
+   "2016": {
+    "n": 3,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.583,
+     "D": 0.241,
+     "A": 0.176
+    },
+    "implied_Odd_pow": {
+     "H": 0.603,
+     "D": 0.232,
+     "A": 0.165
+    },
+    "implied_Max_mult": {
+     "H": 0.594,
+     "D": 0.239,
+     "A": 0.167
+    },
+    "implied_Max_pow": {
+     "H": 0.59,
+     "D": 0.241,
+     "A": 0.169
+    },
+    "roi_bet365": {
+     "home_win": 0.6,
+     "home_win_se": 0.0569,
+     "double_chance_1x_synth": 0.171,
+     "dnb_synth": 0.2581,
+     "avg_home_odds": 1.6,
+     "avg_synth_1x_odds": 1.171,
+     "avg_synth_dnb_odds": 1.258
+    },
+    "roi_best_price": {
+     "home_win": 0.71,
+     "home_win_se": 0.0231,
+     "double_chance_1x_synth": 0.2098,
+     "dnb_synth": 0.2923,
+     "avg_home_odds": 1.71,
+     "avg_synth_1x_odds": 1.21,
+     "avg_synth_dnb_odds": 1.292
+    }
+   },
+   "2017": {
+    "n": 1,
+    "actual": {
+     "H": 0.0,
+     "D": 0.0,
+     "A": 1.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.431,
+     "D": 0.285,
+     "A": 0.284
+    },
+    "implied_Odd_pow": {
+     "H": 0.438,
+     "D": 0.281,
+     "A": 0.28
+    },
+    "implied_Max_mult": {
+     "H": 0.424,
+     "D": 0.297,
+     "A": 0.279
+    },
+    "implied_Max_pow": {
+     "H": 0.421,
+     "D": 0.299,
+     "A": 0.281
+    },
+    "roi_bet365": {
+     "home_win": -1.0,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": -1.0,
+     "dnb_synth": -1.0,
+     "avg_home_odds": 2.16,
+     "avg_synth_1x_odds": 1.348,
+     "avg_synth_dnb_odds": 1.601
+    },
+    "roi_best_price": {
+     "home_win": -1.0,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": -1.0,
+     "dnb_synth": -1.0,
+     "avg_home_odds": 2.45,
+     "avg_synth_1x_odds": 1.413,
+     "avg_synth_dnb_odds": 1.69
+    }
+   },
+   "2018": {
+    "n": 3,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.541,
+     "D": 0.254,
+     "A": 0.205
+    },
+    "implied_Odd_pow": {
+     "H": 0.557,
+     "D": 0.247,
+     "A": 0.196
+    },
+    "implied_Max_mult": {
+     "H": 0.545,
+     "D": 0.256,
+     "A": 0.199
+    },
+    "implied_Max_pow": {
+     "H": 0.543,
+     "D": 0.257,
+     "A": 0.2
+    },
+    "roi_bet365": {
+     "home_win": 0.7633,
+     "home_win_se": 0.1826,
+     "double_chance_1x_synth": 0.2199,
+     "dnb_synth": 0.3552,
+     "avg_home_odds": 1.763,
+     "avg_synth_1x_odds": 1.22,
+     "avg_synth_dnb_odds": 1.355
+    },
+    "roi_best_price": {
+     "home_win": 0.88,
+     "home_win_se": 0.1721,
+     "double_chance_1x_synth": 0.2575,
+     "dnb_synth": 0.3922,
+     "avg_home_odds": 1.88,
+     "avg_synth_1x_odds": 1.257,
+     "avg_synth_dnb_odds": 1.392
+    }
+   },
+   "2019": {
+    "n": 2,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.587,
+     "D": 0.239,
+     "A": 0.173
+    },
+    "implied_Odd_pow": {
+     "H": 0.608,
+     "D": 0.229,
+     "A": 0.163
+    },
+    "implied_Max_mult": {
+     "H": 0.603,
+     "D": 0.236,
+     "A": 0.161
+    },
+    "implied_Max_pow": {
+     "H": 0.6,
+     "D": 0.238,
+     "A": 0.162
+    },
+    "roi_bet365": {
+     "home_win": 0.625,
+     "home_win_se": 0.255,
+     "double_chance_1x_synth": 0.1731,
+     "dnb_synth": 0.2718,
+     "avg_home_odds": 1.625,
+     "avg_synth_1x_odds": 1.173,
+     "avg_synth_dnb_odds": 1.272
+    },
+    "roi_best_price": {
+     "home_win": 0.71,
+     "home_win_se": 0.26,
+     "double_chance_1x_synth": 0.2031,
+     "dnb_synth": 0.2959,
+     "avg_home_odds": 1.71,
+     "avg_synth_1x_odds": 1.203,
+     "avg_synth_dnb_odds": 1.296
+    }
+   },
+   "2020": {
+    "n": 1,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.446,
+     "D": 0.273,
+     "A": 0.281
+    },
+    "implied_Odd_pow": {
+     "H": 0.454,
+     "D": 0.269,
+     "A": 0.277
+    },
+    "implied_Max_mult": {
+     "H": 0.457,
+     "D": 0.274,
+     "A": 0.269
+    },
+    "implied_Max_pow": {
+     "H": 0.456,
+     "D": 0.275,
+     "A": 0.27
+    },
+    "roi_bet365": {
+     "home_win": 1.09,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.3428,
+     "dnb_synth": 0.5743,
+     "avg_home_odds": 2.09,
+     "avg_synth_1x_odds": 1.343,
+     "avg_synth_dnb_odds": 1.574
+    },
+    "roi_best_price": {
+     "home_win": 1.21,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.3745,
+     "dnb_synth": 0.5966,
+     "avg_home_odds": 2.21,
+     "avg_synth_1x_odds": 1.374,
+     "avg_synth_dnb_odds": 1.597
+    }
+   },
+   "2021": {
+    "n": 1,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.512,
+     "D": 0.258,
+     "A": 0.23
+    },
+    "implied_Odd_pow": {
+     "H": 0.526,
+     "D": 0.251,
+     "A": 0.223
+    },
+    "implied_Max_mult": {
+     "H": 0.51,
+     "D": 0.267,
+     "A": 0.224
+    },
+    "implied_Max_pow": {
+     "H": 0.505,
+     "D": 0.269,
+     "A": 0.226
+    },
+    "roi_bet365": {
+     "home_win": 0.82,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.2543,
+     "dnb_synth": 0.3995,
+     "avg_home_odds": 1.82,
+     "avg_synth_1x_odds": 1.254,
+     "avg_synth_dnb_odds": 1.399
+    },
+    "roi_best_price": {
+     "home_win": 1.01,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.3036,
+     "dnb_synth": 0.4562,
+     "avg_home_odds": 2.01,
+     "avg_synth_1x_odds": 1.304,
+     "avg_synth_dnb_odds": 1.456
+    }
+   },
+   "2022": {
+    "n": 1,
+    "actual": {
+     "H": 0.0,
+     "D": 1.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.554,
+     "D": 0.247,
+     "A": 0.199
+    },
+    "implied_Odd_pow": {
+     "H": 0.57,
+     "D": 0.239,
+     "A": 0.19
+    },
+    "implied_Max_mult": {
+     "H": 0.563,
+     "D": 0.243,
+     "A": 0.194
+    },
+    "implied_Max_pow": {
+     "H": 0.569,
+     "D": 0.241,
+     "A": 0.19
+    },
+    "roi_bet365": {
+     "home_win": -1.0,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.2084,
+     "dnb_synth": 0.0,
+     "avg_home_odds": 1.69,
+     "avg_synth_1x_odds": 1.208,
+     "avg_synth_dnb_odds": 1.315
+    },
+    "roi_best_price": {
+     "home_win": -1.0,
+     "home_win_se": NaN,
+     "double_chance_1x_synth": 0.2238,
+     "dnb_synth": 0.0,
+     "avg_home_odds": 1.73,
+     "avg_synth_1x_odds": 1.224,
+     "avg_synth_dnb_odds": 1.326
+    }
+   },
+   "2025": {
+    "n": 2,
+    "actual": {
+     "H": 1.0,
+     "D": 0.0,
+     "A": 0.0
+    },
+    "implied_Odd_mult": {
+     "H": 0.723,
+     "D": 0.164,
+     "A": 0.114
+    },
+    "implied_Odd_pow": {
+     "H": 0.753,
+     "D": 0.148,
+     "A": 0.1
+    },
+    "implied_Max_mult": {
+     "H": 0.734,
+     "D": 0.159,
+     "A": 0.107
+    },
+    "implied_Max_pow": {
+     "H": 0.744,
+     "D": 0.154,
+     "A": 0.103
+    },
+    "roi_bet365": {
+     "home_win": 0.3,
+     "home_win_se": 0.07,
+     "double_chance_1x_synth": 0.0926,
+     "dnb_synth": 0.1223,
+     "avg_home_odds": 1.3,
+     "avg_synth_1x_odds": 1.093,
+     "avg_synth_dnb_odds": 1.122
+    },
+    "roi_best_price": {
+     "home_win": 0.34,
+     "home_win_se": 0.09,
+     "double_chance_1x_synth": 0.1094,
+     "dnb_synth": 0.1371,
+     "avg_home_odds": 1.34,
+     "avg_synth_1x_odds": 1.109,
+     "avg_synth_dnb_odds": 1.137
+    }
+   }
+  }
+ },
+ "model_vs_market_holdout": {
+  "train": "2015-2019",
+  "test": "2020-2024",
+  "n_test": 985,
+  "n_test_qualifying": 5,
+  "logloss_all": {
+   "elo_only": 1.0434,
+   "elo_plus_altitude": 1.0395,
+   "market_bet365_power_devig": 1.021
+  },
+  "logloss_qualifying": {
+   "elo_only": 0.7605,
+   "elo_plus_altitude": 0.6746,
+   "market_bet365_power_devig": 0.6867
+  },
+  "market_anchored_logit": {
+   "gap_pos_km_coef_train": 0.0142,
+   "gap_pos_km_se": 0.093,
+   "gap_pos_km_p": 0.8788,
+   "logloss_home_win_test_market_only": 0.6469,
+   "logloss_home_win_test_market_plus_altitude": 0.6465,
+   "logloss_qualifying_market_only": 0.5479,
+   "logloss_qualifying_market_plus_altitude": 0.5437
+  },
+  "qualifying_test_matches": {
+   "actual_home": 0.8,
+   "market_home": 0.611,
+   "elo_home": 0.538,
+   "elo_alt_home": 0.619
+  }
+ },
+ "value_bet_simulation_holdout": {
+  "edge_0.0": {
+   "bets": 576,
+   "roi": 0.024,
+   "bets_qualifying": 3,
+   "roi_qualifying": 0.4067
+  },
+  "edge_0.03": {
+   "bets": 450,
+   "roi": 0.0206,
+   "bets_qualifying": 2,
+   "roi_qualifying": 1.11
+  },
+  "edge_0.05": {
+   "bets": 345,
+   "roi": 0.0605,
+   "bets_qualifying": 2,
+   "roi_qualifying": 1.11
+  }
+ }
+}
