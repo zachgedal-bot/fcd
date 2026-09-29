@@ -29,9 +29,9 @@ def gap_features(df):
     X['gap_neg_km'] = (-df['net_gap'].clip(upper=0)) / 1000.0  # venue below visitor's base
     X['q2500'] = (df['net_gap'] > THRESH).astype(float)
     X['away_recent_alt'] = df['away_recent_alt'].astype(float)
-    for c in sorted(df['comp'].unique()):
-        if c != 'MEX':
-            X[f'comp_{c}'] = (df['comp'] == c).astype(float)
+    present = sorted(df['comp'].unique())
+    for c in present[1:]:   # first competition present is the reference category
+        X[f'comp_{c}'] = (df['comp'] == c).astype(float)
     return X
 
 def fit_ordered(df, cols):
@@ -98,8 +98,9 @@ def bootstrap_excess(df, exp_h, exp_pts, n=4000):
     return dict(excess_home_win=round(float((d['act_h'] - d['exp_h']).mean()), 4), ci_home_win=[round(float(x), 4) for x in np.percentile(sh, [2.5, 97.5])],
                 excess_ppg=round(float((d['act_pts'] - d['exp_pts']).mean()), 4), ci_ppg=[round(float(x), 4) for x in np.percentile(sp, [2.5, 97.5])], clusters=int(G), n=int(len(d)))
 
+import time
 def main():
-    m = load_matches(); reg = load_registry()
+    t0 = time.time(); m = load_matches(); reg = load_registry()
     m, pv = attach_elevations(m, reg)
     m = add_recent_exposure(m)
     results = {'notes': []}
@@ -210,7 +211,7 @@ def main():
     # ---- sensitivity: leave one league / host / competition type out
     results['sensitivity'] = {}
     def gap_effect(sub):
-        cs = [c for c in gap_features(sub).columns if c.startswith('comp_') and sub['comp'].eq(c.replace('comp_', '')).any()]
+        cs = [c for c in gap_features(sub).columns if c.startswith('comp_')]
         r = fit_ordered(sub, ['elo_diff100', 'gap_pos_km'] + cs); return ocoef(r, 'gap_pos_km')
     for cc in LEAGUES:
         sub = A[A['home_cc'] != cc]; results['sensitivity'][f'drop_home_country_{cc}'] = dict(n=int(len(sub)), n_qual=int((sub['net_gap'] > THRESH).sum()), gap_pos_km=gap_effect(sub))
@@ -247,6 +248,7 @@ def main():
     keep = ['match_id', 'comp', 'comp_type', 'season', 'Date', 'round', 'home', 'away', 'hg', 'ag', 'result', 'venue', 'venue_elev', 'venue_elev_basis', 'away_base_venue', 'away_base_elev', 'home_base_venue', 'home_base_elev', 'net_gap', 'home_gap', 'home_acclimatized', 'away_recent_alt', 'elo_plain_diff', 'elo_neutral_diff']
     an[keep].to_csv(os.path.join(OUT, 'matches_with_gap.csv'), index=False)
     Qacc[keep].to_csv(os.path.join(OUT, 'qualifying_matches.csv'), index=False)
+    results['runtime_s'] = round(time.time() - t0)
     json.dump(results, open(os.path.join(OUT, 'club_backtest_results.json'), 'w'), indent=1, default=str)
     print(json.dumps({k: results[k] for k in ['coverage', 'sample', 'elo']}, indent=1, default=str))
     print('raw qualifying by comp type:', json.dumps(results['raw']['qualifying_by_comp_type'], indent=1))

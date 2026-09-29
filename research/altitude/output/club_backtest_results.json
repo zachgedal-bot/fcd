@@ -1,0 +1,2422 @@
+{
+ "notes": [
+  "Matches decided after extra time were excluded because the source score includes extra-time goals."
+ ],
+ "coverage": {
+  "total_matches": 20601,
+  "with_venue_elev": 17143,
+  "with_gap": 15856,
+  "by_comp": [
+   {
+    "comp": "BOL",
+    "n": 2792,
+    "with_gap": 2524,
+    "seasons": "2015-2025"
+   },
+   {
+    "comp": "COL",
+    "n": 4752,
+    "with_gap": 4383,
+    "seasons": "2014-2025"
+   },
+   {
+    "comp": "ECU",
+    "n": 3016,
+    "with_gap": 2656,
+    "seasons": "2014-2025"
+   },
+   {
+    "comp": "LIB",
+    "n": 1512,
+    "with_gap": 125,
+    "seasons": "2014-2025"
+   },
+   {
+    "comp": "MEX",
+    "n": 3552,
+    "with_gap": 3524,
+    "seasons": "2015-2026"
+   },
+   {
+    "comp": "PER",
+    "n": 3666,
+    "with_gap": 2465,
+    "seasons": "2014-2025"
+   },
+   {
+    "comp": "SUD",
+    "n": 1311,
+    "with_gap": 179,
+    "seasons": "2014-2024"
+   }
+  ]
+ },
+ "elo": {
+  "altitude_neutral_gap_elo_points_per_km": 82.8,
+  "note": "Elo points per 1,000 m of positive net gap credited to the venue rather than the club; hfa=70 Elo points used inside the rating update"
+ },
+ "sample": {
+  "qualifying_all": 1603,
+  "qualifying_home_acclimatized": 1569,
+  "home_not_acclimatized": 34
+ },
+ "raw": {
+  "qualifying_by_comp_type": {
+   "continental": {
+    "n": 36,
+    "home_win": 0.611,
+    "draw": 0.194,
+    "away_win": 0.194,
+    "home_unbeaten": 0.806,
+    "home_ppg": 2.028,
+    "gd": 1.139,
+    "hg": 1.722,
+    "ag": 0.583,
+    "total": 2.306,
+    "over25": 0.444,
+    "btts": 0.306,
+    "hosts": 16,
+    "venues": 13,
+    "seasons": 11
+   },
+   "league": {
+    "n": 1533,
+    "home_win": 0.624,
+    "draw": 0.224,
+    "away_win": 0.152,
+    "home_unbeaten": 0.848,
+    "home_ppg": 2.097,
+    "gd": 1.135,
+    "hg": 1.986,
+    "ag": 0.851,
+    "total": 2.838,
+    "over25": 0.531,
+    "btts": 0.489,
+    "hosts": 53,
+    "venues": 36,
+    "seasons": 11
+   }
+  },
+  "qualifying_by_comp": {
+   "BOL": {
+    "n": 389,
+    "home_win": 0.792,
+    "draw": 0.126,
+    "away_win": 0.082,
+    "home_unbeaten": 0.918,
+    "home_ppg": 2.501,
+    "gd": 2.093,
+    "hg": 2.846,
+    "ag": 0.753,
+    "total": 3.599,
+    "over25": 0.704,
+    "btts": 0.478,
+    "hosts": 12,
+    "venues": 7,
+    "seasons": 9
+   },
+   "COL": {
+    "n": 176,
+    "home_win": 0.653,
+    "draw": 0.244,
+    "away_win": 0.102,
+    "home_unbeaten": 0.898,
+    "home_ppg": 2.205,
+    "gd": 0.966,
+    "hg": 1.551,
+    "ag": 0.585,
+    "total": 2.136,
+    "over25": 0.381,
+    "btts": 0.364,
+    "hosts": 10,
+    "venues": 7,
+    "seasons": 11
+   },
+   "ECU": {
+    "n": 494,
+    "home_win": 0.498,
+    "draw": 0.287,
+    "away_win": 0.215,
+    "home_unbeaten": 0.785,
+    "home_ppg": 1.781,
+    "gd": 0.611,
+    "hg": 1.615,
+    "ag": 1.004,
+    "total": 2.619,
+    "over25": 0.488,
+    "btts": 0.538,
+    "hosts": 18,
+    "venues": 11,
+    "seasons": 11
+   },
+   "LIB": {
+    "n": 19,
+    "home_win": 0.632,
+    "draw": 0.211,
+    "away_win": 0.158,
+    "home_unbeaten": 0.842,
+    "home_ppg": 2.105,
+    "gd": 1.316,
+    "hg": 1.842,
+    "ag": 0.526,
+    "total": 2.368,
+    "over25": 0.421,
+    "btts": 0.316,
+    "hosts": 9,
+    "venues": 8,
+    "seasons": 11
+   },
+   "MEX": {
+    "n": 21,
+    "home_win": 0.857,
+    "draw": 0.048,
+    "away_win": 0.095,
+    "home_unbeaten": 0.905,
+    "home_ppg": 2.619,
+    "gd": 2.0,
+    "hg": 2.714,
+    "ag": 0.714,
+    "total": 3.429,
+    "over25": 0.762,
+    "btts": 0.524,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 10
+   },
+   "PER": {
+    "n": 453,
+    "home_win": 0.596,
+    "draw": 0.238,
+    "away_win": 0.166,
+    "home_unbeaten": 0.834,
+    "home_ppg": 2.026,
+    "gd": 0.909,
+    "hg": 1.788,
+    "ag": 0.879,
+    "total": 2.667,
+    "over25": 0.477,
+    "btts": 0.49,
+    "hosts": 12,
+    "venues": 9,
+    "seasons": 10
+   },
+   "SUD": {
+    "n": 17,
+    "home_win": 0.588,
+    "draw": 0.176,
+    "away_win": 0.235,
+    "home_unbeaten": 0.765,
+    "home_ppg": 1.941,
+    "gd": 0.941,
+    "hg": 1.588,
+    "ag": 0.647,
+    "total": 2.235,
+    "over25": 0.471,
+    "btts": 0.294,
+    "hosts": 12,
+    "venues": 11,
+    "seasons": 7
+   }
+  },
+  "qualifying_by_home_country": {
+   "BOL": {
+    "n": 404,
+    "home_win": 0.785,
+    "draw": 0.126,
+    "away_win": 0.089,
+    "home_unbeaten": 0.911,
+    "home_ppg": 2.48,
+    "gd": 2.057,
+    "hg": 2.812,
+    "ag": 0.755,
+    "total": 3.567,
+    "over25": 0.698,
+    "btts": 0.478,
+    "hosts": 12,
+    "venues": 7,
+    "seasons": 11
+   },
+   "COL": {
+    "n": 183,
+    "home_win": 0.639,
+    "draw": 0.251,
+    "away_win": 0.109,
+    "home_unbeaten": 0.891,
+    "home_ppg": 2.169,
+    "gd": 0.923,
+    "hg": 1.508,
+    "ag": 0.585,
+    "total": 2.093,
+    "over25": 0.366,
+    "btts": 0.355,
+    "hosts": 10,
+    "venues": 7,
+    "seasons": 11
+   },
+   "ECU": {
+    "n": 504,
+    "home_win": 0.502,
+    "draw": 0.286,
+    "away_win": 0.212,
+    "home_unbeaten": 0.788,
+    "home_ppg": 1.792,
+    "gd": 0.633,
+    "hg": 1.627,
+    "ag": 0.994,
+    "total": 2.621,
+    "over25": 0.492,
+    "btts": 0.534,
+    "hosts": 18,
+    "venues": 11,
+    "seasons": 11
+   },
+   "MEX": {
+    "n": 21,
+    "home_win": 0.857,
+    "draw": 0.048,
+    "away_win": 0.095,
+    "home_unbeaten": 0.905,
+    "home_ppg": 2.619,
+    "gd": 2.0,
+    "hg": 2.714,
+    "ag": 0.714,
+    "total": 3.429,
+    "over25": 0.762,
+    "btts": 0.524,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 10
+   },
+   "PER": {
+    "n": 457,
+    "home_win": 0.6,
+    "draw": 0.236,
+    "away_win": 0.164,
+    "home_unbeaten": 0.836,
+    "home_ppg": 2.035,
+    "gd": 0.919,
+    "hg": 1.79,
+    "ag": 0.871,
+    "total": 2.661,
+    "over25": 0.475,
+    "btts": 0.486,
+    "hosts": 12,
+    "venues": 9,
+    "seasons": 10
+   }
+  },
+  "qualifying_by_venue_top": {
+   "Estadio Alejandro Serrano Aguilar": {
+    "n": 62,
+    "home_win": 0.484,
+    "draw": 0.258,
+    "away_win": 0.258,
+    "home_unbeaten": 0.742,
+    "home_ppg": 1.71,
+    "gd": 0.452,
+    "hg": 1.548,
+    "ag": 1.097,
+    "total": 2.645,
+    "over25": 0.516,
+    "btts": 0.548,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Estadio Bellavista de Ambato": {
+    "n": 96,
+    "home_win": 0.438,
+    "draw": 0.271,
+    "away_win": 0.292,
+    "home_unbeaten": 0.708,
+    "home_ppg": 1.583,
+    "gd": 0.354,
+    "hg": 1.469,
+    "ag": 1.115,
+    "total": 2.583,
+    "over25": 0.469,
+    "btts": 0.542,
+    "hosts": 4,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Estadio Ciudad de Cuman\u00e1": {
+    "n": 41,
+    "home_win": 0.415,
+    "draw": 0.341,
+    "away_win": 0.244,
+    "home_unbeaten": 0.756,
+    "home_ppg": 1.585,
+    "gd": 0.634,
+    "hg": 1.537,
+    "ag": 0.902,
+    "total": 2.439,
+    "over25": 0.439,
+    "btts": 0.512,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 6
+   },
+   "Estadio Gonzalo Pozo Ripalda": {
+    "n": 64,
+    "home_win": 0.531,
+    "draw": 0.281,
+    "away_win": 0.188,
+    "home_unbeaten": 0.812,
+    "home_ppg": 1.875,
+    "gd": 0.812,
+    "hg": 1.828,
+    "ag": 1.016,
+    "total": 2.844,
+    "over25": 0.547,
+    "btts": 0.594,
+    "hosts": 3,
+    "venues": 1,
+    "seasons": 11
+   },
+   "Estadio Guillermo Brice\u00f1o Rosamedina": {
+    "n": 31,
+    "home_win": 0.645,
+    "draw": 0.129,
+    "away_win": 0.226,
+    "home_unbeaten": 0.774,
+    "home_ppg": 2.065,
+    "gd": 1.194,
+    "hg": 2.258,
+    "ag": 1.065,
+    "total": 3.323,
+    "over25": 0.613,
+    "btts": 0.516,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 5
+   },
+   "Estadio Hernando Siles": {
+    "n": 157,
+    "home_win": 0.86,
+    "draw": 0.083,
+    "away_win": 0.057,
+    "home_unbeaten": 0.943,
+    "home_ppg": 2.662,
+    "gd": 2.643,
+    "hg": 3.229,
+    "ag": 0.586,
+    "total": 3.815,
+    "over25": 0.739,
+    "btts": 0.376,
+    "hosts": 3,
+    "venues": 1,
+    "seasons": 10
+   },
+   "Estadio Huancayo": {
+    "n": 85,
+    "home_win": 0.647,
+    "draw": 0.2,
+    "away_win": 0.153,
+    "home_unbeaten": 0.847,
+    "home_ppg": 2.141,
+    "gd": 0.953,
+    "hg": 1.741,
+    "ag": 0.788,
+    "total": 2.529,
+    "over25": 0.482,
+    "btts": 0.459,
+    "hosts": 3,
+    "venues": 1,
+    "seasons": 10
+   },
+   "Estadio H\u00e9roes de San Ram\u00f3n": {
+    "n": 49,
+    "home_win": 0.469,
+    "draw": 0.347,
+    "away_win": 0.184,
+    "home_unbeaten": 0.816,
+    "home_ppg": 1.755,
+    "gd": 0.612,
+    "hg": 1.673,
+    "ag": 1.061,
+    "total": 2.735,
+    "over25": 0.469,
+    "btts": 0.633,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 7
+   },
+   "Estadio Inca Garcilaso de la Vega": {
+    "n": 124,
+    "home_win": 0.653,
+    "draw": 0.218,
+    "away_win": 0.129,
+    "home_unbeaten": 0.871,
+    "home_ppg": 2.177,
+    "gd": 1.008,
+    "hg": 1.847,
+    "ag": 0.839,
+    "total": 2.685,
+    "over25": 0.468,
+    "btts": 0.427,
+    "hosts": 6,
+    "venues": 1,
+    "seasons": 10
+   },
+   "Estadio Jes\u00fas Berm\u00fadez": {
+    "n": 58,
+    "home_win": 0.655,
+    "draw": 0.155,
+    "away_win": 0.19,
+    "home_unbeaten": 0.81,
+    "home_ppg": 2.121,
+    "gd": 1.466,
+    "hg": 2.414,
+    "ag": 0.948,
+    "total": 3.362,
+    "over25": 0.655,
+    "btts": 0.483,
+    "hosts": 3,
+    "venues": 1,
+    "seasons": 8
+   },
+   "Estadio Metropolitano de Techo": {
+    "n": 41,
+    "home_win": 0.61,
+    "draw": 0.22,
+    "away_win": 0.171,
+    "home_unbeaten": 0.829,
+    "home_ppg": 2.049,
+    "gd": 0.78,
+    "hg": 1.268,
+    "ag": 0.488,
+    "total": 1.756,
+    "over25": 0.244,
+    "btts": 0.22,
+    "hosts": 7,
+    "venues": 1,
+    "seasons": 10
+   },
+   "Estadio Municipal El Alto": {
+    "n": 42,
+    "home_win": 0.929,
+    "draw": 0.071,
+    "away_win": 0.0,
+    "home_unbeaten": 1.0,
+    "home_ppg": 2.857,
+    "gd": 2.857,
+    "hg": 3.31,
+    "ag": 0.452,
+    "total": 3.762,
+    "over25": 0.714,
+    "btts": 0.357,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 7
+   },
+   "Estadio Municipal Uni\u00f3n de Tarma": {
+    "n": 25,
+    "home_win": 0.64,
+    "draw": 0.28,
+    "away_win": 0.08,
+    "home_unbeaten": 0.92,
+    "home_ppg": 2.2,
+    "gd": 1.08,
+    "hg": 1.76,
+    "ag": 0.68,
+    "total": 2.44,
+    "over25": 0.4,
+    "btts": 0.48,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 4
+   },
+   "Estadio Nemesio Camacho El Camp\u00edn": {
+    "n": 58,
+    "home_win": 0.69,
+    "draw": 0.224,
+    "away_win": 0.086,
+    "home_unbeaten": 0.914,
+    "home_ppg": 2.293,
+    "gd": 1.138,
+    "hg": 1.759,
+    "ag": 0.621,
+    "total": 2.379,
+    "over25": 0.431,
+    "btts": 0.397,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 11
+   },
+   "Estadio Ol\u00edmpico Atahualpa": {
+    "n": 156,
+    "home_win": 0.506,
+    "draw": 0.308,
+    "away_win": 0.186,
+    "home_unbeaten": 0.814,
+    "home_ppg": 1.827,
+    "gd": 0.686,
+    "hg": 1.647,
+    "ag": 0.962,
+    "total": 2.609,
+    "over25": 0.506,
+    "btts": 0.5,
+    "hosts": 8,
+    "venues": 1,
+    "seasons": 11
+   },
+   "Estadio Rodrigo Paz Delgado": {
+    "n": 34,
+    "home_win": 0.676,
+    "draw": 0.206,
+    "away_win": 0.118,
+    "home_unbeaten": 0.882,
+    "home_ppg": 2.235,
+    "gd": 1.206,
+    "hg": 1.912,
+    "ag": 0.706,
+    "total": 2.618,
+    "over25": 0.471,
+    "btts": 0.441,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 6
+   },
+   "Estadio Victor Agust\u00edn Ugarte": {
+    "n": 130,
+    "home_win": 0.731,
+    "draw": 0.162,
+    "away_win": 0.108,
+    "home_unbeaten": 0.892,
+    "home_ppg": 2.354,
+    "gd": 1.492,
+    "hg": 2.485,
+    "ag": 0.992,
+    "total": 3.477,
+    "over25": 0.708,
+    "btts": 0.646,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Estadio de Liga Deportiva Universitaria": {
+    "n": 43,
+    "home_win": 0.628,
+    "draw": 0.326,
+    "away_win": 0.047,
+    "home_unbeaten": 0.953,
+    "home_ppg": 2.209,
+    "gd": 0.977,
+    "hg": 1.721,
+    "ag": 0.744,
+    "total": 2.465,
+    "over25": 0.442,
+    "btts": 0.558,
+    "hosts": 3,
+    "venues": 1,
+    "seasons": 5
+   },
+   "Estadio de la Independencia": {
+    "n": 52,
+    "home_win": 0.615,
+    "draw": 0.308,
+    "away_win": 0.077,
+    "home_unbeaten": 0.923,
+    "home_ppg": 2.154,
+    "gd": 0.788,
+    "hg": 1.365,
+    "ag": 0.577,
+    "total": 1.942,
+    "over25": 0.346,
+    "btts": 0.365,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 11
+   },
+   "Estadio de la Universidad Nacional San A...": {
+    "n": 90,
+    "home_win": 0.611,
+    "draw": 0.222,
+    "away_win": 0.167,
+    "home_unbeaten": 0.833,
+    "home_ppg": 2.056,
+    "gd": 0.967,
+    "hg": 1.789,
+    "ag": 0.822,
+    "total": 2.611,
+    "over25": 0.456,
+    "btts": 0.467,
+    "hosts": 2,
+    "venues": 1,
+    "seasons": 10
+   }
+  },
+  "qualifying_by_host_top": {
+   "Always Ready": {
+    "n": 44,
+    "home_win": 0.955,
+    "draw": 0.045,
+    "away_win": 0.0,
+    "home_unbeaten": 1.0,
+    "home_ppg": 2.909,
+    "gd": 2.955,
+    "hg": 3.386,
+    "ag": 0.432,
+    "total": 3.818,
+    "over25": 0.75,
+    "btts": 0.318,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 7
+   },
+   "Asociaci\u00f3n Deportiva Tarma": {
+    "n": 27,
+    "home_win": 0.593,
+    "draw": 0.296,
+    "away_win": 0.111,
+    "home_unbeaten": 0.889,
+    "home_ppg": 2.074,
+    "gd": 0.963,
+    "hg": 1.593,
+    "ag": 0.63,
+    "total": 2.222,
+    "over25": 0.37,
+    "btts": 0.481,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 3
+   },
+   "Ayacucho": {
+    "n": 42,
+    "home_win": 0.429,
+    "draw": 0.333,
+    "away_win": 0.238,
+    "home_unbeaten": 0.762,
+    "home_ppg": 1.619,
+    "gd": 0.667,
+    "hg": 1.548,
+    "ag": 0.881,
+    "total": 2.429,
+    "over25": 0.429,
+    "btts": 0.5,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 6
+   },
+   "Binacional": {
+    "n": 35,
+    "home_win": 0.657,
+    "draw": 0.114,
+    "away_win": 0.229,
+    "home_unbeaten": 0.771,
+    "home_ppg": 2.086,
+    "gd": 1.343,
+    "hg": 2.314,
+    "ag": 0.971,
+    "total": 3.286,
+    "over25": 0.6,
+    "btts": 0.457,
+    "hosts": 1,
+    "venues": 3,
+    "seasons": 5
+   },
+   "Bol\u00edvar": {
+    "n": 77,
+    "home_win": 0.857,
+    "draw": 0.091,
+    "away_win": 0.052,
+    "home_unbeaten": 0.948,
+    "home_ppg": 2.662,
+    "gd": 2.532,
+    "hg": 3.026,
+    "ag": 0.494,
+    "total": 3.519,
+    "over25": 0.688,
+    "btts": 0.312,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 9
+   },
+   "Boyac\u00e1 Patriot": {
+    "n": 29,
+    "home_win": 0.69,
+    "draw": 0.276,
+    "away_win": 0.034,
+    "home_unbeaten": 0.966,
+    "home_ppg": 2.345,
+    "gd": 1.034,
+    "hg": 1.483,
+    "ag": 0.448,
+    "total": 1.931,
+    "over25": 0.31,
+    "btts": 0.345,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 9
+   },
+   "CD Cuenca": {
+    "n": 62,
+    "home_win": 0.484,
+    "draw": 0.258,
+    "away_win": 0.258,
+    "home_unbeaten": 0.742,
+    "home_ppg": 1.71,
+    "gd": 0.452,
+    "hg": 1.548,
+    "ag": 1.097,
+    "total": 2.645,
+    "over25": 0.516,
+    "btts": 0.548,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Cienciano": {
+    "n": 41,
+    "home_win": 0.634,
+    "draw": 0.244,
+    "away_win": 0.122,
+    "home_unbeaten": 0.878,
+    "home_ppg": 2.146,
+    "gd": 0.927,
+    "hg": 1.78,
+    "ag": 0.854,
+    "total": 2.634,
+    "over25": 0.439,
+    "btts": 0.439,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 6
+   },
+   "El Nacional": {
+    "n": 54,
+    "home_win": 0.537,
+    "draw": 0.278,
+    "away_win": 0.185,
+    "home_unbeaten": 0.815,
+    "home_ppg": 1.889,
+    "gd": 0.593,
+    "hg": 1.667,
+    "ag": 1.074,
+    "total": 2.741,
+    "over25": 0.519,
+    "btts": 0.556,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 9
+   },
+   "LDU de Quito": {
+    "n": 74,
+    "home_win": 0.649,
+    "draw": 0.27,
+    "away_win": 0.081,
+    "home_unbeaten": 0.919,
+    "home_ppg": 2.216,
+    "gd": 1.041,
+    "hg": 1.77,
+    "ag": 0.73,
+    "total": 2.5,
+    "over25": 0.446,
+    "btts": 0.514,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 11
+   },
+   "La Equidad": {
+    "n": 26,
+    "home_win": 0.577,
+    "draw": 0.308,
+    "away_win": 0.115,
+    "home_unbeaten": 0.885,
+    "home_ppg": 2.038,
+    "gd": 0.692,
+    "hg": 1.077,
+    "ag": 0.385,
+    "total": 1.462,
+    "over25": 0.154,
+    "btts": 0.154,
+    "hosts": 1,
+    "venues": 3,
+    "seasons": 10
+   },
+   "Macar\u00e1": {
+    "n": 45,
+    "home_win": 0.467,
+    "draw": 0.289,
+    "away_win": 0.244,
+    "home_unbeaten": 0.756,
+    "home_ppg": 1.689,
+    "gd": 0.489,
+    "hg": 1.489,
+    "ag": 1.0,
+    "total": 2.489,
+    "over25": 0.4,
+    "btts": 0.578,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 6
+   },
+   "Melgar": {
+    "n": 88,
+    "home_win": 0.614,
+    "draw": 0.227,
+    "away_win": 0.159,
+    "home_unbeaten": 0.841,
+    "home_ppg": 2.068,
+    "gd": 0.92,
+    "hg": 1.75,
+    "ag": 0.83,
+    "total": 2.58,
+    "over25": 0.455,
+    "btts": 0.477,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 10
+   },
+   "Millonarios": {
+    "n": 27,
+    "home_win": 0.704,
+    "draw": 0.185,
+    "away_win": 0.111,
+    "home_unbeaten": 0.889,
+    "home_ppg": 2.296,
+    "gd": 1.037,
+    "hg": 1.63,
+    "ag": 0.593,
+    "total": 2.222,
+    "over25": 0.333,
+    "btts": 0.407,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Mushuc Runa": {
+    "n": 34,
+    "home_win": 0.412,
+    "draw": 0.265,
+    "away_win": 0.324,
+    "home_unbeaten": 0.676,
+    "home_ppg": 1.5,
+    "gd": 0.412,
+    "hg": 1.676,
+    "ag": 1.265,
+    "total": 2.941,
+    "over25": 0.5,
+    "btts": 0.559,
+    "hosts": 1,
+    "venues": 4,
+    "seasons": 6
+   },
+   "Nacional Potos\u00ed": {
+    "n": 73,
+    "home_win": 0.781,
+    "draw": 0.164,
+    "away_win": 0.055,
+    "home_unbeaten": 0.945,
+    "home_ppg": 2.507,
+    "gd": 1.822,
+    "hg": 2.712,
+    "ag": 0.89,
+    "total": 3.603,
+    "over25": 0.74,
+    "btts": 0.63,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 9
+   },
+   "Pasto": {
+    "n": 30,
+    "home_win": 0.6,
+    "draw": 0.267,
+    "away_win": 0.133,
+    "home_unbeaten": 0.867,
+    "home_ppg": 2.067,
+    "gd": 0.933,
+    "hg": 1.633,
+    "ag": 0.7,
+    "total": 2.333,
+    "over25": 0.467,
+    "btts": 0.467,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 11
+   },
+   "Real Garcilaso": {
+    "n": 43,
+    "home_win": 0.674,
+    "draw": 0.233,
+    "away_win": 0.093,
+    "home_unbeaten": 0.907,
+    "home_ppg": 2.256,
+    "gd": 0.953,
+    "hg": 1.93,
+    "ag": 0.977,
+    "total": 2.907,
+    "over25": 0.512,
+    "btts": 0.512,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 5
+   },
+   "Real Potos\u00ed": {
+    "n": 57,
+    "home_win": 0.667,
+    "draw": 0.158,
+    "away_win": 0.175,
+    "home_unbeaten": 0.825,
+    "home_ppg": 2.158,
+    "gd": 1.07,
+    "hg": 2.193,
+    "ag": 1.123,
+    "total": 3.316,
+    "over25": 0.667,
+    "btts": 0.667,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 6
+   },
+   "SD Aucas": {
+    "n": 62,
+    "home_win": 0.532,
+    "draw": 0.29,
+    "away_win": 0.177,
+    "home_unbeaten": 0.823,
+    "home_ppg": 1.887,
+    "gd": 0.79,
+    "hg": 1.806,
+    "ag": 1.016,
+    "total": 2.823,
+    "over25": 0.548,
+    "btts": 0.613,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 10
+   },
+   "San Jos\u00e9": {
+    "n": 54,
+    "home_win": 0.667,
+    "draw": 0.148,
+    "away_win": 0.185,
+    "home_unbeaten": 0.815,
+    "home_ppg": 2.148,
+    "gd": 1.481,
+    "hg": 2.407,
+    "ag": 0.926,
+    "total": 3.333,
+    "over25": 0.667,
+    "btts": 0.463,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 7
+   },
+   "Santa Fe": {
+    "n": 33,
+    "home_win": 0.667,
+    "draw": 0.273,
+    "away_win": 0.061,
+    "home_unbeaten": 0.939,
+    "home_ppg": 2.273,
+    "gd": 1.182,
+    "hg": 1.788,
+    "ag": 0.606,
+    "total": 2.394,
+    "over25": 0.485,
+    "btts": 0.364,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 11
+   },
+   "Sport Huancayo": {
+    "n": 79,
+    "home_win": 0.658,
+    "draw": 0.19,
+    "away_win": 0.152,
+    "home_unbeaten": 0.848,
+    "home_ppg": 2.165,
+    "gd": 0.962,
+    "hg": 1.747,
+    "ag": 0.785,
+    "total": 2.532,
+    "over25": 0.481,
+    "btts": 0.456,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 10
+   },
+   "The Strongest": {
+    "n": 78,
+    "home_win": 0.846,
+    "draw": 0.09,
+    "away_win": 0.064,
+    "home_unbeaten": 0.936,
+    "home_ppg": 2.628,
+    "gd": 2.718,
+    "hg": 3.397,
+    "ag": 0.679,
+    "total": 4.077,
+    "over25": 0.782,
+    "btts": 0.449,
+    "hosts": 1,
+    "venues": 2,
+    "seasons": 10
+   },
+   "T\u00e9cnico Univ.": {
+    "n": 37,
+    "home_win": 0.432,
+    "draw": 0.297,
+    "away_win": 0.27,
+    "home_unbeaten": 0.73,
+    "home_ppg": 1.595,
+    "gd": 0.351,
+    "hg": 1.459,
+    "ag": 1.108,
+    "total": 2.568,
+    "over25": 0.541,
+    "btts": 0.541,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 6
+   },
+   "UTC": {
+    "n": 49,
+    "home_win": 0.469,
+    "draw": 0.347,
+    "away_win": 0.184,
+    "home_unbeaten": 0.816,
+    "home_ppg": 1.755,
+    "gd": 0.612,
+    "hg": 1.673,
+    "ag": 1.061,
+    "total": 2.735,
+    "over25": 0.469,
+    "btts": 0.633,
+    "hosts": 1,
+    "venues": 1,
+    "seasons": 7
+   },
+   "Univ Cat\u00f3lica": {
+    "n": 68,
+    "home_win": 0.544,
+    "draw": 0.294,
+    "away_win": 0.162,
+    "home_unbeaten": 0.838,
+    "home_ppg": 1.926,
+    "gd": 0.897,
+    "hg": 1.691,
+    "ag": 0.794,
+    "total": 2.485,
+    "over25": 0.485,
+    "btts": 0.441,
+    "hosts": 1,
+    "venues": 3,
+    "seasons": 11
+   }
+  },
+  "all_matches_by_comp": {
+   "BOL": {
+    "n": 2520,
+    "home_win": 0.554,
+    "draw": 0.216,
+    "away_win": 0.229,
+    "home_unbeaten": 0.771,
+    "home_ppg": 1.879,
+    "gd": 0.783,
+    "hg": 1.919,
+    "ag": 1.137,
+    "total": 3.056,
+    "over25": 0.579,
+    "btts": 0.554,
+    "hosts": 31,
+    "venues": 27,
+    "seasons": 9
+   },
+   "COL": {
+    "n": 4362,
+    "home_win": 0.464,
+    "draw": 0.299,
+    "away_win": 0.237,
+    "home_unbeaten": 0.763,
+    "home_ppg": 1.692,
+    "gd": 0.416,
+    "hg": 1.337,
+    "ag": 0.922,
+    "total": 2.259,
+    "over25": 0.4,
+    "btts": 0.467,
+    "hosts": 33,
+    "venues": 35,
+    "seasons": 11
+   },
+   "ECU": {
+    "n": 2388,
+    "home_win": 0.461,
+    "draw": 0.274,
+    "away_win": 0.265,
+    "home_unbeaten": 0.735,
+    "home_ppg": 1.656,
+    "gd": 0.428,
+    "hg": 1.527,
+    "ag": 1.1,
+    "total": 2.627,
+    "over25": 0.488,
+    "btts": 0.534,
+    "hosts": 32,
+    "venues": 24,
+    "seasons": 11
+   },
+   "LIB": {
+    "n": 106,
+    "home_win": 0.566,
+    "draw": 0.198,
+    "away_win": 0.236,
+    "home_unbeaten": 0.764,
+    "home_ppg": 1.896,
+    "gd": 0.858,
+    "hg": 1.774,
+    "ag": 0.915,
+    "total": 2.689,
+    "over25": 0.472,
+    "btts": 0.434,
+    "hosts": 33,
+    "venues": 35,
+    "seasons": 11
+   },
+   "MEX": {
+    "n": 3509,
+    "home_win": 0.45,
+    "draw": 0.264,
+    "away_win": 0.286,
+    "home_unbeaten": 0.714,
+    "home_ppg": 1.615,
+    "gd": 0.353,
+    "hg": 1.507,
+    "ag": 1.154,
+    "total": 2.661,
+    "over25": 0.504,
+    "btts": 0.546,
+    "hosts": 24,
+    "venues": 27,
+    "seasons": 12
+   },
+   "PER": {
+    "n": 2253,
+    "home_win": 0.472,
+    "draw": 0.278,
+    "away_win": 0.25,
+    "home_unbeaten": 0.75,
+    "home_ppg": 1.695,
+    "gd": 0.46,
+    "hg": 1.533,
+    "ag": 1.073,
+    "total": 2.606,
+    "over25": 0.477,
+    "btts": 0.513,
+    "hosts": 32,
+    "venues": 24,
+    "seasons": 11
+   },
+   "SUD": {
+    "n": 149,
+    "home_win": 0.53,
+    "draw": 0.195,
+    "away_win": 0.275,
+    "home_unbeaten": 0.725,
+    "home_ppg": 1.785,
+    "gd": 0.55,
+    "hg": 1.604,
+    "ag": 1.054,
+    "total": 2.658,
+    "over25": 0.53,
+    "btts": 0.45,
+    "hosts": 60,
+    "venues": 41,
+    "seasons": 10
+   }
+  },
+  "same_hosts_vs_similar_elevation_visitors": {
+   "n": 2286,
+   "home_win": 0.423,
+   "draw": 0.28,
+   "away_win": 0.298,
+   "home_unbeaten": 0.702,
+   "home_ppg": 1.547,
+   "gd": 0.266,
+   "hg": 1.47,
+   "ag": 1.204,
+   "total": 2.674,
+   "over25": 0.494,
+   "btts": 0.547,
+   "hosts": 52,
+   "venues": 48,
+   "seasons": 12
+  },
+  "same_hosts_all_home_matches": {
+   "n": 5747,
+   "home_win": 0.508,
+   "draw": 0.261,
+   "away_win": 0.231,
+   "home_unbeaten": 0.769,
+   "home_ppg": 1.786,
+   "gd": 0.611,
+   "hg": 1.639,
+   "ag": 1.028,
+   "total": 2.667,
+   "over25": 0.493,
+   "btts": 0.519,
+   "hosts": 53,
+   "venues": 68,
+   "seasons": 12
+  },
+  "by_gap_bin": {
+   "(-9999, -2500]": {
+    "n": 1580,
+    "home_win": 0.546,
+    "draw": 0.25,
+    "away_win": 0.204,
+    "home_unbeaten": 0.796,
+    "home_ppg": 1.887,
+    "gd": 0.734,
+    "hg": 1.708,
+    "ag": 0.974,
+    "total": 2.682,
+    "over25": 0.499,
+    "btts": 0.511,
+    "hosts": 51,
+    "venues": 50,
+    "seasons": 11
+   },
+   "(-2500, -1500]": {
+    "n": 1266,
+    "home_win": 0.47,
+    "draw": 0.288,
+    "away_win": 0.242,
+    "home_unbeaten": 0.758,
+    "home_ppg": 1.698,
+    "gd": 0.429,
+    "hg": 1.486,
+    "ag": 1.057,
+    "total": 2.543,
+    "over25": 0.464,
+    "btts": 0.516,
+    "hosts": 69,
+    "venues": 66,
+    "seasons": 12
+   },
+   "(-1500, -500]": {
+    "n": 1978,
+    "home_win": 0.448,
+    "draw": 0.286,
+    "away_win": 0.266,
+    "home_unbeaten": 0.734,
+    "home_ppg": 1.63,
+    "gd": 0.351,
+    "hg": 1.435,
+    "ag": 1.084,
+    "total": 2.519,
+    "over25": 0.469,
+    "btts": 0.52,
+    "hosts": 90,
+    "venues": 75,
+    "seasons": 12
+   },
+   "(-500, 500]": {
+    "n": 5431,
+    "home_win": 0.419,
+    "draw": 0.275,
+    "away_win": 0.306,
+    "home_unbeaten": 0.694,
+    "home_ppg": 1.533,
+    "gd": 0.234,
+    "hg": 1.42,
+    "ag": 1.185,
+    "total": 2.605,
+    "over25": 0.481,
+    "btts": 0.534,
+    "hosts": 142,
+    "venues": 122,
+    "seasons": 12
+   },
+   "(500, 1500]": {
+    "n": 1967,
+    "home_win": 0.479,
+    "draw": 0.269,
+    "away_win": 0.252,
+    "home_unbeaten": 0.748,
+    "home_ppg": 1.707,
+    "gd": 0.452,
+    "hg": 1.472,
+    "ag": 1.02,
+    "total": 2.493,
+    "over25": 0.46,
+    "btts": 0.503,
+    "hosts": 86,
+    "venues": 71,
+    "seasons": 12
+   },
+   "(1500, 2000]": {
+    "n": 602,
+    "home_win": 0.485,
+    "draw": 0.291,
+    "away_win": 0.224,
+    "home_unbeaten": 0.776,
+    "home_ppg": 1.746,
+    "gd": 0.533,
+    "hg": 1.492,
+    "ag": 0.958,
+    "total": 2.45,
+    "over25": 0.453,
+    "btts": 0.512,
+    "hosts": 45,
+    "venues": 39,
+    "seasons": 12
+   },
+   "(2000, 2500]": {
+    "n": 638,
+    "home_win": 0.583,
+    "draw": 0.251,
+    "away_win": 0.166,
+    "home_unbeaten": 0.834,
+    "home_ppg": 2.0,
+    "gd": 0.861,
+    "hg": 1.721,
+    "ag": 0.861,
+    "total": 2.582,
+    "over25": 0.464,
+    "btts": 0.486,
+    "hosts": 44,
+    "venues": 34,
+    "seasons": 12
+   },
+   "(2500, 3000]": {
+    "n": 872,
+    "home_win": 0.541,
+    "draw": 0.274,
+    "away_win": 0.185,
+    "home_unbeaten": 0.815,
+    "home_ppg": 1.898,
+    "gd": 0.751,
+    "hg": 1.636,
+    "ag": 0.885,
+    "total": 2.522,
+    "over25": 0.463,
+    "btts": 0.497,
+    "hosts": 45,
+    "venues": 31,
+    "seasons": 11
+   },
+   "(3000, 3500]": {
+    "n": 496,
+    "home_win": 0.714,
+    "draw": 0.167,
+    "away_win": 0.119,
+    "home_unbeaten": 0.881,
+    "home_ppg": 2.308,
+    "gd": 1.569,
+    "hg": 2.333,
+    "ag": 0.764,
+    "total": 3.097,
+    "over25": 0.581,
+    "btts": 0.433,
+    "hosts": 18,
+    "venues": 10,
+    "seasons": 11
+   },
+   "(3500, 9999]": {
+    "n": 201,
+    "home_win": 0.761,
+    "draw": 0.139,
+    "away_win": 0.1,
+    "home_unbeaten": 0.9,
+    "home_ppg": 2.423,
+    "gd": 1.731,
+    "hg": 2.602,
+    "ag": 0.871,
+    "total": 3.473,
+    "over25": 0.687,
+    "btts": 0.557,
+    "hosts": 8,
+    "venues": 5,
+    "seasons": 11
+   }
+  },
+  "qualifying_by_visitor_recent_altitude": {
+   "False": {
+    "n": 1074,
+    "home_win": 0.614,
+    "draw": 0.226,
+    "away_win": 0.16,
+    "home_unbeaten": 0.84,
+    "home_ppg": 2.067,
+    "gd": 1.05,
+    "hg": 1.93,
+    "ag": 0.88,
+    "total": 2.81,
+    "over25": 0.528,
+    "btts": 0.497,
+    "hosts": 52,
+    "venues": 33,
+    "seasons": 11
+   },
+   "True": {
+    "n": 495,
+    "home_win": 0.646,
+    "draw": 0.216,
+    "away_win": 0.137,
+    "home_unbeaten": 0.863,
+    "home_ppg": 2.156,
+    "gd": 1.319,
+    "hg": 2.089,
+    "ag": 0.77,
+    "total": 2.859,
+    "over25": 0.531,
+    "btts": 0.457,
+    "hosts": 48,
+    "venues": 30,
+    "seasons": 11
+   }
+  },
+  "qualifying_by_period": {
+   "2015-2019": {
+    "n": 834,
+    "home_win": 0.62,
+    "draw": 0.231,
+    "away_win": 0.149,
+    "home_unbeaten": 0.851,
+    "home_ppg": 2.091,
+    "gd": 1.137,
+    "hg": 2.008,
+    "ag": 0.872,
+    "total": 2.88,
+    "over25": 0.537,
+    "btts": 0.495,
+    "hosts": 37,
+    "venues": 28,
+    "seasons": 5
+   },
+   "2020-2025": {
+    "n": 735,
+    "home_win": 0.629,
+    "draw": 0.214,
+    "away_win": 0.158,
+    "home_unbeaten": 0.842,
+    "home_ppg": 2.099,
+    "gd": 1.133,
+    "hg": 1.948,
+    "ag": 0.815,
+    "total": 2.763,
+    "over25": 0.52,
+    "btts": 0.472,
+    "hosts": 45,
+    "venues": 31,
+    "seasons": 6
+   }
+  }
+ },
+ "adjusted": {
+  "ordered_logit": {
+   "n": 15031,
+   "continuous": {
+    "elo_diff100": {
+     "coef": 0.4548,
+     "se": 0.0138,
+     "ci": [
+      0.4277,
+      0.4818
+     ],
+     "p": 0.0
+    },
+    "gap_pos_km": {
+     "coef": 0.4228,
+     "se": 0.0186,
+     "ci": [
+      0.3863,
+      0.4593
+     ],
+     "p": 0.0
+    },
+    "gap_neg_km": {
+     "coef": 0.0785,
+     "se": 0.0177,
+     "ci": [
+      0.0439,
+      0.1131
+     ],
+     "p": 0.0
+    }
+   },
+   "indicator": {
+    "q2500": {
+     "coef": 1.1336,
+     "se": 0.0588,
+     "ci": [
+      1.0183,
+      1.2489
+     ],
+     "p": 0.0
+    }
+   },
+   "both": {
+    "gap_pos_km": {
+     "coef": 0.3319,
+     "se": 0.0269,
+     "ci": [
+      0.2791,
+      0.3846
+     ],
+     "p": 0.0
+    },
+    "q2500": {
+     "coef": 0.2673,
+     "se": 0.0916,
+     "ci": [
+      0.0878,
+      0.4468
+     ],
+     "p": 0.0035
+    }
+   },
+   "with_recent_exposure": {
+    "gap_pos_km": {
+     "coef": 0.4032,
+     "se": 0.0181,
+     "ci": [
+      0.3677,
+      0.4386
+     ],
+     "p": 0.0
+    },
+    "away_recent_alt": {
+     "coef": 0.07,
+     "se": 0.034,
+     "ci": [
+      0.0034,
+      0.1367
+     ],
+     "p": 0.0395
+    }
+   },
+   "elo_equivalent_of_2500m": 232.4
+  },
+  "ordered_logit_gap_bins": {
+   "(-1500, -500]": {
+    "coef": 0.0253,
+    "se": 0.0518,
+    "ci": [
+     -0.0762,
+     0.1268
+    ],
+    "p": 0.6252
+   },
+   "(-2500, -1500]": {
+    "coef": 0.0278,
+    "se": 0.0603,
+    "ci": [
+     -0.0905,
+     0.146
+    ],
+    "p": 0.6453
+   },
+   "(-9999, -2500]": {
+    "coef": 0.2141,
+    "se": 0.0578,
+    "ci": [
+     0.1008,
+     0.3274
+    ],
+    "p": 0.0002
+   },
+   "(1500, 2000]": {
+    "coef": 0.5413,
+    "se": 0.0835,
+    "ci": [
+     0.3776,
+     0.705
+    ],
+    "p": 0.0
+   },
+   "(2000, 2500]": {
+    "coef": 0.8044,
+    "se": 0.084,
+    "ci": [
+     0.6397,
+     0.969
+    ],
+    "p": 0.0
+   },
+   "(2500, 3000]": {
+    "coef": 1.1003,
+    "se": 0.0753,
+    "ci": [
+     0.9528,
+     1.2478
+    ],
+    "p": 0.0
+   },
+   "(3000, 3500]": {
+    "coef": 1.3878,
+    "se": 0.1076,
+    "ci": [
+     1.1768,
+     1.5988
+    ],
+    "p": 0.0
+   },
+   "(3500, 9999]": {
+    "coef": 1.9212,
+    "se": 0.173,
+    "ci": [
+     1.5821,
+     2.2602
+    ],
+    "p": 0.0
+   },
+   "(500, 1500]": {
+    "coef": 0.3286,
+    "se": 0.0526,
+    "ci": [
+     0.2255,
+     0.4318
+    ],
+    "p": 0.0
+   }
+  },
+  "logit_home_win": {
+   "gap_pos_km": {
+    "coef": 0.4129,
+    "se": 0.02,
+    "ci": [
+     0.3737,
+     0.4522
+    ],
+    "p": 0.0
+   },
+   "q2500": {
+    "coef": 1.1152,
+    "se": 0.0657,
+    "ci": [
+     0.9865,
+     1.2439
+    ],
+    "p": 0.0
+   }
+  },
+  "logit_home_or_draw": {
+   "gap_pos_km": {
+    "coef": 0.4379,
+    "se": 0.0241,
+    "ci": [
+     0.3906,
+     0.4852
+    ],
+    "p": 0.0
+   },
+   "q2500": {
+    "coef": 1.1731,
+    "se": 0.082,
+    "ci": [
+     1.0123,
+     1.3339
+    ],
+    "p": 0.0
+   }
+  },
+  "poisson_home_goals": {
+   "gap_pos_km": {
+    "coef": 0.14,
+    "se": 0.0074,
+    "ci": [
+     0.1256,
+     0.1544
+    ],
+    "p": 0.0
+   },
+   "gap_neg_km": {
+    "coef": 0.0209,
+    "se": 0.007,
+    "ci": [
+     0.0072,
+     0.0346
+    ],
+    "p": 0.0029
+   },
+   "q2500": {
+    "coef": 0.3943,
+    "se": 0.0229,
+    "ci": [
+     0.3495,
+     0.4392
+    ],
+    "p": 0.0
+   }
+  },
+  "poisson_away_goals": {
+   "gap_pos_km": {
+    "coef": -0.1637,
+    "se": 0.0095,
+    "ci": [
+     -0.1823,
+     -0.1451
+    ],
+    "p": 0.0
+   },
+   "gap_neg_km": {
+    "coef": -0.0343,
+    "se": 0.0091,
+    "ci": [
+     -0.0522,
+     -0.0164
+    ],
+    "p": 0.0002
+   },
+   "q2500": {
+    "coef": -0.4374,
+    "se": 0.0317,
+    "ci": [
+     -0.4994,
+     -0.3754
+    ],
+    "p": 0.0
+   }
+  },
+  "poisson_total_goals": {
+   "gap_pos_km": {
+    "coef": 0.0229,
+    "se": 0.006,
+    "ci": [
+     0.0111,
+     0.0347
+    ],
+    "p": 0.0001
+   },
+   "q2500": {
+    "coef": 0.0861,
+    "se": 0.0191,
+    "ci": [
+     0.0487,
+     0.1234
+    ],
+    "p": 0.0
+   }
+  },
+  "implied_probabilities_in_qualifying_sample": {
+   "n": 1569,
+   "with_altitude": {
+    "A": 0.165,
+    "D": 0.223,
+    "H": 0.612
+   },
+   "same_teams_no_altitude": {
+    "A": 0.386,
+    "D": 0.282,
+    "H": 0.331
+   },
+   "actual": {
+    "A": 0.153,
+    "D": 0.223,
+    "H": 0.624
+   },
+   "home_dnb_with": 0.778,
+   "home_dnb_without": 0.464
+  },
+  "excess_vs_no_altitude_baseline": {
+   "excess_home_win": 0.2636,
+   "ci_home_win": [
+    0.238,
+    0.2894
+   ],
+   "excess_ppg": 0.7342,
+   "ci_ppg": [
+    0.6703,
+    0.7992
+   ],
+   "clusters": 279,
+   "n": 1569
+  },
+  "excess_vs_no_altitude_baseline_plain_elo": {
+   "excess_home_win": 0.1458,
+   "ci_home_win": [
+    0.1216,
+    0.1702
+   ],
+   "excess_ppg": 0.3954,
+   "ci_ppg": [
+    0.3324,
+    0.4563
+   ],
+   "clusters": 279,
+   "n": 1569
+  },
+  "fixed_effects_poisson": {
+   "continuous": {
+    "gapH": {
+     "coef": 0.1274,
+     "se": 0.0167,
+     "ci": [
+      0.0946,
+      0.1602
+     ],
+     "p": 0.0
+    },
+    "gapA": {
+     "coef": -0.1452,
+     "se": 0.0195,
+     "ci": [
+      -0.1834,
+      -0.107
+     ],
+     "p": 0.0
+    },
+    "gapnegH": {
+     "coef": 0.0314,
+     "se": 0.0173,
+     "ci": [
+      -0.0025,
+      0.0654
+     ],
+     "p": 0.0691
+    },
+    "gapnegA": {
+     "coef": -0.0402,
+     "se": 0.0184,
+     "ci": [
+      -0.0762,
+      -0.0041
+     ],
+     "p": 0.029
+    },
+    "n_rows": 30062,
+    "n_params": 412
+   },
+   "indicator": {
+    "qH": {
+     "coef": 0.339,
+     "se": 0.0272,
+     "ci": [
+      0.2857,
+      0.3924
+     ],
+     "p": 0.0
+    },
+    "qA": {
+     "coef": -0.4045,
+     "se": 0.0398,
+     "ci": [
+      -0.4824,
+      -0.3266
+     ],
+     "p": 0.0
+    },
+    "n_rows": 30062,
+    "n_params": 410
+   }
+  }
+ },
+ "thresholds": {
+  "1500": {
+   "n": 2809,
+   "raw_home_win": 0.585,
+   "raw_ppg": 1.999,
+   "ordered_logit_indicator": {
+    "coef": 0.8943,
+    "se": 0.0437,
+    "ci": [
+     0.8086,
+     0.98
+    ],
+    "p": 0.0
+   }
+  },
+  "2000": {
+   "n": 2207,
+   "raw_home_win": 0.612,
+   "raw_ppg": 2.068,
+   "ordered_logit_indicator": {
+    "coef": 1.0204,
+    "se": 0.0498,
+    "ci": [
+     0.9229,
+     1.118
+    ],
+    "p": 0.0
+   }
+  },
+  "2250": {
+   "n": 1843,
+   "raw_home_win": 0.618,
+   "raw_ppg": 2.082,
+   "ordered_logit_indicator": {
+    "coef": 1.0793,
+    "se": 0.0545,
+    "ci": [
+     0.9725,
+     1.1862
+    ],
+    "p": 0.0
+   }
+  },
+  "2500": {
+   "n": 1569,
+   "raw_home_win": 0.624,
+   "raw_ppg": 2.095,
+   "ordered_logit_indicator": {
+    "coef": 1.1336,
+    "se": 0.0588,
+    "ci": [
+     1.0183,
+     1.2489
+    ],
+    "p": 0.0
+   }
+  },
+  "2750": {
+   "n": 1057,
+   "raw_home_win": 0.658,
+   "raw_ppg": 2.177,
+   "ordered_logit_indicator": {
+    "coef": 1.1613,
+    "se": 0.0709,
+    "ci": [
+     1.0223,
+     1.3003
+    ],
+    "p": 0.0
+   }
+  },
+  "3000": {
+   "n": 697,
+   "raw_home_win": 0.727,
+   "raw_ppg": 2.341,
+   "ordered_logit_indicator": {
+    "coef": 1.3171,
+    "se": 0.0915,
+    "ci": [
+     1.1377,
+     1.4964
+    ],
+    "p": 0.0
+   }
+  },
+  "3250": {
+   "n": 423,
+   "raw_home_win": 0.745,
+   "raw_ppg": 2.374,
+   "ordered_logit_indicator": {
+    "coef": 1.3214,
+    "se": 0.1168,
+    "ci": [
+     1.0925,
+     1.5503
+    ],
+    "p": 0.0
+   }
+  },
+  "3500": {
+   "n": 201,
+   "raw_home_win": 0.761,
+   "raw_ppg": 2.423,
+   "ordered_logit_indicator": {
+    "coef": 1.5512,
+    "se": 0.1705,
+    "ci": [
+     1.2171,
+     1.8853
+    ],
+    "p": 0.0
+   }
+  }
+ },
+ "sensitivity": {
+  "drop_home_country_MEX": {
+   "n": 11523,
+   "n_qual": 1548,
+   "gap_pos_km": {
+    "coef": 0.3927,
+    "se": 0.0185,
+    "ci": [
+     0.3565,
+     0.4289
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_home_country_PER": {
+   "n": 12861,
+   "n_qual": 1112,
+   "gap_pos_km": {
+    "coef": 0.3928,
+    "se": 0.0196,
+    "ci": [
+     0.3544,
+     0.4313
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_home_country_ECU": {
+   "n": 12591,
+   "n_qual": 1065,
+   "gap_pos_km": {
+    "coef": 0.4012,
+    "se": 0.0194,
+    "ci": [
+     0.3631,
+     0.4393
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_home_country_COL": {
+   "n": 10686,
+   "n_qual": 1386,
+   "gap_pos_km": {
+    "coef": 0.4053,
+    "se": 0.0193,
+    "ci": [
+     0.3674,
+     0.4431
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_home_country_BOL": {
+   "n": 12475,
+   "n_qual": 1165,
+   "gap_pos_km": {
+    "coef": 0.3695,
+    "se": 0.02,
+    "ci": [
+     0.3303,
+     0.4086
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Melgar": {
+   "n_qual": 1481,
+   "gap_pos_km": {
+    "coef": 0.4001,
+    "se": 0.0176,
+    "ci": [
+     0.3655,
+     0.4347
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Sport Huancayo": {
+   "n_qual": 1490,
+   "gap_pos_km": {
+    "coef": 0.3905,
+    "se": 0.0175,
+    "ci": [
+     0.3561,
+     0.4249
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_The Strongest": {
+   "n_qual": 1491,
+   "gap_pos_km": {
+    "coef": 0.3891,
+    "se": 0.0175,
+    "ci": [
+     0.3548,
+     0.4234
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Bol\u00edvar": {
+   "n_qual": 1492,
+   "gap_pos_km": {
+    "coef": 0.3882,
+    "se": 0.0175,
+    "ci": [
+     0.3539,
+     0.4226
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_LDU de Quito": {
+   "n_qual": 1495,
+   "gap_pos_km": {
+    "coef": 0.3901,
+    "se": 0.0175,
+    "ci": [
+     0.3559,
+     0.4244
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Nacional Potos\u00ed": {
+   "n_qual": 1496,
+   "gap_pos_km": {
+    "coef": 0.3859,
+    "se": 0.0176,
+    "ci": [
+     0.3514,
+     0.4204
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Univ Cat\u00f3lica": {
+   "n_qual": 1501,
+   "gap_pos_km": {
+    "coef": 0.3932,
+    "se": 0.0175,
+    "ci": [
+     0.3589,
+     0.4275
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_CD Cuenca": {
+   "n_qual": 1507,
+   "gap_pos_km": {
+    "coef": 0.3925,
+    "se": 0.0174,
+    "ci": [
+     0.3584,
+     0.4267
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_SD Aucas": {
+   "n_qual": 1507,
+   "gap_pos_km": {
+    "coef": 0.3937,
+    "se": 0.0175,
+    "ci": [
+     0.3594,
+     0.4279
+    ],
+    "p": 0.0
+   }
+  },
+  "drop_host_Real Potos\u00ed": {
+   "n_qual": 1512,
+   "gap_pos_km": {
+    "coef": 0.3878,
+    "se": 0.0175,
+    "ci": [
+     0.3535,
+     0.4221
+    ],
+    "p": 0.0
+   }
+  },
+  "only_league": {
+   "n": 14786,
+   "n_qual": 1533,
+   "gap_pos_km": {
+    "coef": 0.394,
+    "se": 0.0175,
+    "ci": [
+     0.3598,
+     0.4282
+    ],
+    "p": 0.0
+   }
+  },
+  "only_continental": {
+   "n": 245,
+   "n_qual": 36,
+   "gap_pos_km": {
+    "coef": 0.3131,
+    "se": 0.1233,
+    "ci": [
+     0.0713,
+     0.5549
+    ],
+    "p": 0.0111
+   }
+  },
+  "only_home_country_MEX": {
+   "n": 3508,
+   "n_qual": 21,
+   "gap_pos_km": {
+    "coef": 0.4155,
+    "se": 0.0506,
+    "ci": [
+     0.3163,
+     0.5146
+    ],
+    "p": 0.0
+   }
+  },
+  "only_home_country_PER": {
+   "n": 2170,
+   "n_qual": 457,
+   "gap_pos_km": {
+    "coef": 0.3985,
+    "se": 0.0372,
+    "ci": [
+     0.3255,
+     0.4715
+    ],
+    "p": 0.0
+   }
+  },
+  "only_home_country_ECU": {
+   "n": 2440,
+   "n_qual": 504,
+   "gap_pos_km": {
+    "coef": 0.3628,
+    "se": 0.0384,
+    "ci": [
+     0.2876,
+     0.438
+    ],
+    "p": 0.0
+   }
+  },
+  "only_home_country_COL": {
+   "n": 4345,
+   "n_qual": 183,
+   "gap_pos_km": {
+    "coef": 0.3368,
+    "se": 0.0394,
+    "ci": [
+     0.2595,
+     0.414
+    ],
+    "p": 0.0
+   }
+  },
+  "only_home_country_BOL": {
+   "n": 2556,
+   "n_qual": 404,
+   "gap_pos_km": {
+    "coef": 0.4557,
+    "se": 0.0352,
+    "ci": [
+     0.3866,
+     0.5248
+    ],
+    "p": 0.0
+   }
+  },
+  "seasons_2015_2019": {
+   "n_qual": 834,
+   "gap_pos_km": {
+    "coef": 0.3967,
+    "se": 0.0245,
+    "ci": [
+     0.3486,
+     0.4447
+    ],
+    "p": 0.0
+   }
+  },
+  "seasons_2020_2025": {
+   "n_qual": 735,
+   "gap_pos_km": {
+    "coef": 0.3875,
+    "se": 0.0246,
+    "ci": [
+     0.3392,
+     0.4358
+    ],
+    "p": 0.0
+   }
+  }
+ },
+ "holdout": {
+  "train_seasons": "2015-2020",
+  "test_seasons": "2021-2025",
+  "n_test": 6577,
+  "n_test_qualifying": 613,
+  "all_matches": {
+   "logloss_baseline": 1.0081,
+   "logloss_altitude": 0.9988,
+   "brier_baseline": 0.6033,
+   "brier_altitude": 0.5973
+  },
+  "qualifying_matches": {
+   "logloss_baseline": 0.8771,
+   "logloss_altitude": 0.8412,
+   "pred_home_baseline": 0.521,
+   "pred_home_altitude": 0.625,
+   "actual_home": 0.636,
+   "pred_hd_baseline": 0.772,
+   "pred_hd_altitude": 0.842,
+   "actual_hd": 0.847
+  },
+  "note": "plain Elo (no altitude neutralisation) used here so the baseline is a realistic naive model; ordered logit on result",
+  "calibration_by_gap_bin": [
+   {
+    "gb": "(-1500, -500]",
+    "n": 953,
+    "actual_home": 0.426,
+    "pred_baseline": 0.463,
+    "pred_altitude": 0.445
+   },
+   {
+    "gb": "(-2500, -1500]",
+    "n": 536,
+    "actual_home": 0.448,
+    "pred_baseline": 0.452,
+    "pred_altitude": 0.478
+   },
+   {
+    "gb": "(-500, 500]",
+    "n": 2410,
+    "actual_home": 0.423,
+    "pred_baseline": 0.482,
+    "pred_altitude": 0.415
+   },
+   {
+    "gb": "(-9999, -2500]",
+    "n": 611,
+    "actual_home": 0.534,
+    "pred_baseline": 0.464,
+    "pred_altitude": 0.529
+   },
+   {
+    "gb": "(1500, 2000]",
+    "n": 256,
+    "actual_home": 0.508,
+    "pred_baseline": 0.488,
+    "pred_altitude": 0.534
+   },
+   {
+    "gb": "(2000, 2500]",
+    "n": 271,
+    "actual_home": 0.583,
+    "pred_baseline": 0.554,
+    "pred_altitude": 0.622
+   },
+   {
+    "gb": "(2500, 3000]",
+    "n": 330,
+    "actual_home": 0.545,
+    "pred_baseline": 0.478,
+    "pred_altitude": 0.575
+   },
+   {
+    "gb": "(3000, 3500]",
+    "n": 208,
+    "actual_home": 0.716,
+    "pred_baseline": 0.573,
+    "pred_altitude": 0.678
+   },
+   {
+    "gb": "(3500, 9999]",
+    "n": 75,
+    "actual_home": 0.813,
+    "pred_baseline": 0.565,
+    "pred_altitude": 0.698
+   },
+   {
+    "gb": "(500, 1500]",
+    "n": 927,
+    "actual_home": 0.478,
+    "pred_baseline": 0.496,
+    "pred_altitude": 0.494
+   }
+  ]
+ },
+ "runtime_s": 92
+}

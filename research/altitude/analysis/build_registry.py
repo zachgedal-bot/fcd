@@ -9,7 +9,7 @@ import numpy as np, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import REG, RAW
 WF = '/root/.claude/projects/-home-user-fcd/cacd5560-8166-516b-9c45-bff66f5c1d5a/subagents/workflows'
-RUNS = ['wf_3975905a-6df', 'wf_07f80511-6be']
+RUNS = ['wf_3975905a-6df', 'wf_07f80511-6be', 'wf_6a47b318-994', 'wf_7353399e-adc', 'wf_b9b9ffd5-3f9', 'wf_ce12df4d-fc6', 'wf_70153d43-694', 'wf_cf8ca3af-fba']
 
 def load_journal(run):
     lab = {}; venues = []; clubs = []; rechecks = []
