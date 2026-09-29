@@ -1,0 +1,42 @@
+## Data, methods and what could not be done in this session
+
+### Environment constraints that shaped the research (read first)
+- **Live web research was cut off part-way.** This session had a hard cap of 200 web-search calls, shared by every research agent; the cap was reached roughly 25 minutes into the fixture and literature sweeps. All page fetching (Wikipedia, PubMed, journals, league sites, ESPN, Flashscore, OddsPortal, etc.) was blocked by the environment's network egress policy for the whole session. Only GitHub-hosted files, PyPI and the public AWS terrain-tile bucket were reachable.
+- Consequences, stated per section below: (a) the historical club backtest, the national-team analysis and the venue elevations rest on downloadable datasets and a digital elevation model, so they are complete and reproducible; (b) the literature section combines search results obtained before the cap (two lenses) with model recall cross-checked by three independent agents, and every citation is labelled accordingly; (c) the fixture watchlist contains only fixtures that were located and sourced before the cap (Liga MX, Bolivia) plus the CONMEBOL knockout calendar from a dated public dataset; Peru, Ecuador and Colombia fixtures could not be retrieved and are covered by a structural pairing matrix instead.
+- To complete the watchlist and re-verify citations, rerun the fixture and literature stages in a session with a higher search allowance (`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`) or with network egress enabled for the league and reference sites.
+
+### Data sources actually used
+| Dataset | Content used | Coverage | Access route |
+|---|---|---|---|
+| FBref match results mirrored by `JaseZiv/worldfootballR_data` (GitHub releases) | Domestic top flights of Mexico, Peru, Ecuador, Colombia, Bolivia: date, teams, score, **actual venue per match**, round | 2014/15 to Sept 2025 (Bolivia 2024 season mostly missing in the mirror) | raw GitHub download |
+| Same mirror, cup files | Copa Libertadores 2014-2025 (partial 2025), Copa Sudamericana 2014-2024 with venues and extra-time notes | 2014-2025 | raw GitHub download |
+| `xgabora/Club-Football-Match-Data-2000-2025` (mirror of Football-Data.co.uk) | Liga MX 1X2 prices: Bet365 and the cross-book maximum; Over/Under 2.5 where present | Liga MX 2012-2024 (4,080 matches) | raw GitHub download |
+| `martj42/international_results` | All senior men's internationals with city and neutral flag; goal minutes; shootouts | 1872 to Aug 2026 | raw GitHub download |
+| AWS Terrain Tiles (`elevation-tiles-prod`, SRTM-derived 1 arc-second HGT) | Ground elevation at each stadium coordinate | global | S3 public bucket |
+| `openfootball/south-america` (auto-updated 2026-09-21) | 2026 Copa Libertadores calendar (dates of semifinals and final; pairings not filled) | 2026 | git clone |
+
+### Elevation registry method
+1. Every venue string in the match data (187 domestic, 139 additional continental) was resolved to a stadium, city and coordinates by research agents; where web search was unavailable the identification came from model recall and is labelled as such.
+2. Every coordinate was checked against the SRTM digital elevation model. A record is accepted when the DEM elevation lies within 80 m of the published figure (or no published figure exists and the identification is confident). Disagreements were re-derived by a second agent, and the analyst's own provisional coordinates served as a third candidate. All candidates are kept in `data/registry/venue_registry_candidates.csv`; the chosen record and its basis are in `data/registry/venue_registry.csv`.
+3. The DEM value is used as the venue elevation in all analyses; published figures are reported alongside.
+4. **Visitor baseline** = elevation of the visiting club's principal home venue in that season (its modal venue across all competitions in the data). This is a **proxy for training elevation**, labelled as such; a separate club training-ground table (`data/registry/club_training_bases.csv`) records where the training ground is confirmed to differ.
+5. **Home acclimatization check**: a host is treated as acclimatized only if the match venue is within 500 m of the host's own principal venue that season; relocated 'home' matches far from the host's usual elevation are excluded from the main sample and counted separately.
+6. **Recent altitude exposure**: from the match data itself, whether the visitor played any match at 2,000 m or higher in the previous 14 days.
+
+### Statistical method (club matches)
+- Regulation-time results only: cup matches decided after extra time are excluded because the source score includes extra-time goals; league matches have no extra time.
+- Raw tables: home win, draw, away win, home unbeaten, goal difference, home goals, away goals, total goals, over 2.5, for the qualifying sample (net gap > 2,500 m, host acclimatized), for the same hosts against visitors from similar elevation, for every 500 m gap bin, and by competition, country, venue and host.
+- Team strength: an Elo rating computed chronologically from all matches in the data (domestic and continental pooled), using only matches before each fixture. Two variants: a plain Elo (which credits a host's altitude wins to the club and therefore understates the altitude effect) and an 'altitude-neutral' Elo in which part of the expected result at a high venue is credited to the venue; the gap coefficient used for that credit is estimated jointly by iteration.
+- Adjusted models on seasons 2015-2025: ordered logit on the match result with Elo difference, competition dummies and the net gap (continuous in km above the visitor's base, a >2,500 m indicator, and 500 m bins); cluster-robust logits for 'home win' and 'home or draw'; cluster-robust Poisson models for home goals, away goals and total goals; a fixed-effects Poisson model with attack and defence effects per team, a **home-advantage effect per host**, competition and season effects, which identifies the altitude effect from variation in visitor elevation *within* the same host and so separates altitude from stadium identity and club quality. Standard errors are clustered by host-season; the excess of actual over expected results is bootstrapped by host-season clusters.
+- Robustness: alternative thresholds 1,500-3,500 m (labelled as robustness only), leave-one-league-out, leave-one-host-out, league vs continental, early vs late seasons, visitor recent-exposure split.
+- Out-of-sample test: models fitted on 2015-2020 and scored on 2021-2025 by log-loss and Brier score, with and without altitude terms; for Liga MX, also against the bookmaker's de-vigged probabilities.
+
+### Practical verification checklist before backing any fixture
+1. **Actual venue**: confirm on the day that the match is at the expected stadium (sanctions, works, neutral grounds and municipal disputes move games; e.g. Always Ready's tenure at Villa Ingenio was reported as uncertain in September 2026). Recompute the gap from the DEM value of the confirmed venue.
+2. **Host acclimatization**: confirm the host trains and normally plays at that elevation; a nominal 'home' team using a temporary highland ground gets no altitude benefit.
+3. **Visitor baseline and exposure**: check the visitor's actual base (training ground, not only the registered city) and whether it has played at 2,000 m+ in the previous two weeks or held a pre-acclimatization camp; a visitor arriving from another highland match is not 'unacclimatized'.
+4. **Arrival timing**: same-day or previous-evening arrival (the strategy most visiting clubs use) versus 3-7 days at altitude (usually the worst window); note anything the club announces.
+5. **Lineup strength, rest and incentives**: injuries, suspensions, rotation (continental visitors often rotate for highland league trips), fixture congestion, cup ties, and whether the host has anything to play for.
+6. **Weather**: cold, rain or hail at 3,000 m+ affects both sides; check the forecast.
+7. **Market price**: take the best available price, remove the margin, and compare with a model estimate that already includes ordinary home advantage; only a positive expected value after margin, fees and liquidity is a bet. For draw-no-bet, evaluate the void-on-draw payoff, not the home-win payoff.
+8. **Market type**: regulation-time result markets only; 'to qualify' or 'to lift the trophy' markets settle on different events.

@@ -1,0 +1,975 @@
+[
+ {
+  "country":"ar",
+  "venue_fbref_name":"El Gigante de Arroyito",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Rosario Central (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio 15 de Abril",
+  "matches":8,
+  "seasons":"2019-2022",
+  "main_home_teams":"CA Unión (8)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Alberto José Armando",
+  "matches":52,
+  "seasons":"2015-2023",
+  "main_home_teams":"Boca Juniors (43)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Ciudad de La Plata",
+  "matches":18,
+  "seasons":"2015-2018",
+  "main_home_teams":"Estudiantes–LP (12)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Ciudad de Lanús",
+  "matches":39,
+  "seasons":"2014-2017",
+  "main_home_teams":"Lanús (13)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Diego Armando Maradona",
+  "matches":15,
+  "seasons":"2021-2023",
+  "main_home_teams":"Arg Juniors (8)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Florencio Solá",
+  "matches":7,
+  "seasons":"2016-2023",
+  "main_home_teams":"Banfield (6), Defensa y Just (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Gigante de Arroyito",
+  "matches":5,
+  "seasons":"2024-2024",
+  "main_home_teams":"Rosario Central (3)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Jorge Luis Hirschi",
+  "matches":17,
+  "seasons":"2022-2025",
+  "main_home_teams":"Estudiantes–LP (11)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio José Amalfitani",
+  "matches":22,
+  "seasons":"2014-2025",
+  "main_home_teams":"Vélez Sarsfield (17)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Juan Carmelo Zerillo",
+  "matches":6,
+  "seasons":"2014-2023",
+  "main_home_teams":"Gimnasia ELP (5), Defensa y Just (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Juan Domingo Perón",
+  "matches":3,
+  "seasons":"2018-2018",
+  "main_home_teams":"Racing Club (2)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Julio César Villagra",
+  "matches":1,
+  "seasons":"2015-2015",
+  "main_home_teams":"Belgrano (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Malvinas Argentinas",
+  "matches":9,
+  "seasons":"2017-2019",
+  "main_home_teams":"Godoy Cruz (8)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Marcelo Alberto Bielsa",
+  "matches":11,
+  "seasons":"2014-2014",
+  "main_home_teams":"Newell's OB (3)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Monumental Presidente José Fierr...",
+  "matches":11,
+  "seasons":"2017-2018",
+  "main_home_teams":"Atlé Tucumán (8)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Mâs Monumental",
+  "matches":13,
+  "seasons":"2023-2025",
+  "main_home_teams":"River Plate (13)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Pedro Bidegaín",
+  "matches":41,
+  "seasons":"2014-2024",
+  "main_home_teams":"San Lorenzo (26)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Presbítero Bartolomé Grella",
+  "matches":1,
+  "seasons":"2023-2023",
+  "main_home_teams":"Patronato (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Presidente Juan Domingo Perón",
+  "matches":39,
+  "seasons":"2015-2025",
+  "main_home_teams":"Racing Club (29)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Santiago Bernabéu (Neutral Site)",
+  "matches":1,
+  "seasons":"2018-2018",
+  "main_home_teams":"River Plate (1)"
+ },
+ {
+  "country":"ar",
+  "venue_fbref_name":"Estadio Único Madre de Ciudades",
+  "matches":3,
+  "seasons":"2025-2025",
+  "main_home_teams":"Cen. Córdoba–SdE (3)"
+ },
+ {
+  "country":"ar,br",
+  "venue_fbref_name":"Estadio Jornalista Mário Filho",
+  "matches":85,
+  "seasons":"2014-2025",
+  "main_home_teams":"Flamengo (43), Fluminense (16), Botafogo (RJ) (4)"
+ },
+ {
+  "country":"ar,br",
+  "venue_fbref_name":"Estadio Libertadores de América",
+  "matches":35,
+  "seasons":"2018-2020",
+  "main_home_teams":"Independiente (5), River Plate (3)"
+ },
+ {
+  "country":"ar,br",
+  "venue_fbref_name":"Estadio Mario Alberto Kempes",
+  "matches":23,
+  "seasons":"2022-2025",
+  "main_home_teams":"Talleres (12)"
+ },
+ {
+  "country":"ar,br",
+  "venue_fbref_name":"Estadio Norberto Tito Tomaghello",
+  "matches":26,
+  "seasons":"2020-2021",
+  "main_home_teams":"Defensa y Just (7)"
+ },
+ {
+  "country":"ar,co",
+  "venue_fbref_name":"Estadio Brigadier General Estanislao Lóp...",
+  "matches":16,
+  "seasons":"2022-2023",
+  "main_home_teams":"Colón (4), Patronato (3)"
+ },
+ {
+  "country":"ar,ec",
+  "venue_fbref_name":"Estadio Julio Humberto Grondona",
+  "matches":13,
+  "seasons":"2014-2014",
+  "main_home_teams":"Arsenal (5)"
+ },
+ {
+  "country":"ar,pe,py",
+  "venue_fbref_name":"Estadio Monumental Antonio Vespucio Libe...",
+  "matches":52,
+  "seasons":"2014-2022",
+  "main_home_teams":"River Plate (41), Universitario (1), Guaraní (1)"
+ },
+ {
+  "country":"ar,uy",
+  "venue_fbref_name":"Estadio José Dellagiovanna",
+  "matches":9,
+  "seasons":"2020-2020",
+  "main_home_teams":"Tigre (3)"
+ },
+ {
+  "country":"ar,uy",
+  "venue_fbref_name":"Estadio Tomás Adolfo Ducó",
+  "matches":24,
+  "seasons":"2015-2019",
+  "main_home_teams":"Huracán (12)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Allianz Parque",
+  "matches":49,
+  "seasons":"2016-2025",
+  "main_home_teams":"Palmeiras (49)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena Barueri",
+  "matches":1,
+  "seasons":"2024-2024",
+  "main_home_teams":"Internacional (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena Condá",
+  "matches":12,
+  "seasons":"2017-2017",
+  "main_home_teams":"Chapecoense (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena Corinthians",
+  "matches":21,
+  "seasons":"2015-2018",
+  "main_home_teams":"Corinthians (13)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena Joinville",
+  "matches":1,
+  "seasons":"2015-2015",
+  "main_home_teams":"Joinville (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena MRV",
+  "matches":6,
+  "seasons":"2024-2024",
+  "main_home_teams":"Atlético Mineiro (6)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena Pantanal",
+  "matches":8,
+  "seasons":"2016-2024",
+  "main_home_teams":"Cuiabá (8)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Arena do Grêmio",
+  "matches":37,
+  "seasons":"2014-2024",
+  "main_home_teams":"Grêmio (33)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Casa de Apostas Arena Fonte Nova",
+  "matches":3,
+  "seasons":"2025-2025",
+  "main_home_teams":"Bahia (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estadio Domingo Burgueño Miguel (Neutral Site)",
+  "matches":1,
+  "seasons":"2023-2023",
+  "main_home_teams":"Fortaleza (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estadio Monumental (Neutral Site)",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Flamengo (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estadio Monumental Isidro Romero Carbo (Neutral Site)",
+  "matches":1,
+  "seasons":"2022-2022",
+  "main_home_teams":"Flamengo (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estadio Mâs Monumental (Neutral Site)",
+  "matches":1,
+  "seasons":"2024-2024",
+  "main_home_teams":"Atlético Mineiro (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Adelmar da Costa Carvalho",
+  "matches":7,
+  "seasons":"2014-2017",
+  "main_home_teams":"Sport Recife (7)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Alfredo Jaconi",
+  "matches":1,
+  "seasons":"2024-2024",
+  "main_home_teams":"Internacional (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Antônio Accioly",
+  "matches":7,
+  "seasons":"2021-2022",
+  "main_home_teams":"Atl Goianiense (7)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Castelão",
+  "matches":26,
+  "seasons":"2022-2025",
+  "main_home_teams":"Fortaleza (7)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Club de Regatas Vasco da Gama",
+  "matches":7,
+  "seasons":"2018-2018",
+  "main_home_teams":"Vasco da Gama (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Coronel José Bezerra",
+  "matches":1,
+  "seasons":"2015-2015",
+  "main_home_teams":"Brasilia (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Durival de Brito e Silva",
+  "matches":4,
+  "seasons":"2014-2014",
+  "main_home_teams":"Ath Paranaense (4)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Governador Magalhães Pinto",
+  "matches":45,
+  "seasons":"2014-2023",
+  "main_home_teams":"Cruzeiro (19), Atlético Mineiro (19)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Governador Roberto Santos",
+  "matches":2,
+  "seasons":"2021-2021",
+  "main_home_teams":"Bahia (2)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Heriberto Hülse",
+  "matches":1,
+  "seasons":"2014-2014",
+  "main_home_teams":"Criciúma (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Joaquim Américo Guimarães",
+  "matches":38,
+  "seasons":"2017-2023",
+  "main_home_teams":"Ath Paranaense (22), Atlético Mineiro (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio José Pinheiro Borba",
+  "matches":33,
+  "seasons":"2015-2023",
+  "main_home_teams":"Internacional (25)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio José Pinheiro Borda",
+  "matches":3,
+  "seasons":"2025-2025",
+  "main_home_teams":"Internacional (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Jóse do Rego Maciel",
+  "matches":1,
+  "seasons":"2016-2016",
+  "main_home_teams":"Santa Cruz (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Kleber José de Andrade",
+  "matches":2,
+  "seasons":"2016-2016",
+  "main_home_teams":"Flamengo (2)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Luso-Brasileiro",
+  "matches":2,
+  "seasons":"2018-2018",
+  "main_home_teams":"Flamengo (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Major Antônio Couto Pereira",
+  "matches":6,
+  "seasons":"2024-2024",
+  "main_home_teams":"Grêmio (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Manoel Barradas",
+  "matches":2,
+  "seasons":"2014-2014",
+  "main_home_teams":"Vitória (2)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Moisés Lucarelli",
+  "matches":4,
+  "seasons":"2015-2017",
+  "main_home_teams":"Ponte Preta (4)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Nabi Abi Chedid",
+  "matches":16,
+  "seasons":"2022-2022",
+  "main_home_teams":"RB Bragantino (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Nilton Santos",
+  "matches":26,
+  "seasons":"2017-2025",
+  "main_home_teams":"Botafogo (RJ) (14)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Orlando Scarpelli",
+  "matches":1,
+  "seasons":"2016-2016",
+  "main_home_teams":"Figueirense (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Raimundo Sampaio",
+  "matches":28,
+  "seasons":"2014-2022",
+  "main_home_teams":"Atlético Mineiro (15), América (MG) (3)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Santa Cruz",
+  "matches":1,
+  "seasons":"2024-2024",
+  "main_home_teams":"Red Bull Bragantino (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Urbano Caldeira",
+  "matches":25,
+  "seasons":"2017-2021",
+  "main_home_teams":"Santos (17)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio Walmir Campelo Bezerra",
+  "matches":1,
+  "seasons":"2015-2015",
+  "main_home_teams":"Brasilia (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio de Hailé Pinheiro",
+  "matches":4,
+  "seasons":"2014-2023",
+  "main_home_teams":"Goiás (4)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio do Governo do Estado de Goiás",
+  "matches":6,
+  "seasons":"2014-2023",
+  "main_home_teams":"Goiás (4), Atl Goianiense (2)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio do Morumbi",
+  "matches":45,
+  "seasons":"2015-2025",
+  "main_home_teams":"São Paulo (25)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Estádio do Pacaembú",
+  "matches":3,
+  "seasons":"2016-2018",
+  "main_home_teams":"São Paulo (2), Santos (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Itaipava Arena Fonte Nova",
+  "matches":13,
+  "seasons":"2014-2020",
+  "main_home_teams":"Bahia (12), Vitória (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Itaipava Arena Pernambuco",
+  "matches":2,
+  "seasons":"2016-2016",
+  "main_home_teams":"Santa Cruz (1), Sport Recife (1)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Ligga Arena",
+  "matches":5,
+  "seasons":"2024-2024",
+  "main_home_teams":"Ath Paranaense (5)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Neo Química Arena",
+  "matches":20,
+  "seasons":"2022-2023",
+  "main_home_teams":"Corinthians (8)"
+ },
+ {
+  "country":"br",
+  "venue_fbref_name":"Parque Maracaná",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Fluminense (1)"
+ },
+ {
+  "country":"br,cl",
+  "venue_fbref_name":"Estadio Regional Calvo y Bascuñán",
+  "matches":7,
+  "seasons":"2019-2022",
+  "main_home_teams":"Antofagasta (6), Santos (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Bicentenario Francisco Sánchez R...",
+  "matches":10,
+  "seasons":"2024-2024",
+  "main_home_teams":"Palestino (2)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Bicentenario Municipal Nelson Oy...",
+  "matches":1,
+  "seasons":"2022-2022",
+  "main_home_teams":"Ñublense (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Bicentenario Municipal de La Flo...",
+  "matches":1,
+  "seasons":"2018-2018",
+  "main_home_teams":"Audax Italiano (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio CAP",
+  "matches":10,
+  "seasons":"2024-2024",
+  "main_home_teams":"Huachipato (3)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio CODELCO-El Teniente",
+  "matches":18,
+  "seasons":"2014-2024",
+  "main_home_teams":"O'Higgins (1), Palestino (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio El Cobre",
+  "matches":6,
+  "seasons":"2016-2016",
+  "main_home_teams":"Cobresal (3)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Elías Figueroa Brander",
+  "matches":2,
+  "seasons":"2015-2024",
+  "main_home_teams":"Wanderers (1), La Calera (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Monumental David Arellano",
+  "matches":38,
+  "seasons":"2014-2025",
+  "main_home_teams":"Colo-Colo (28), O'Higgins (2)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Municipal Alcaldesa Ester Roa Re...",
+  "matches":15,
+  "seasons":"2019-2023",
+  "main_home_teams":"U Concepción (3), Ñublense (3)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Municipal Bicentenario Germán Be...",
+  "matches":2,
+  "seasons":"2018-2018",
+  "main_home_teams":"CD Temuco (2)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Municipal Nicolás Chahuán Nazar",
+  "matches":8,
+  "seasons":"2021-2021",
+  "main_home_teams":"La Calera (3)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Municipal de La Cisterna",
+  "matches":2,
+  "seasons":"2019-2019",
+  "main_home_teams":"Palestino (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Nacional Julio Martínez Prádanos",
+  "matches":18,
+  "seasons":"2014-2025",
+  "main_home_teams":"U de Chile (13), Univ Católica (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio San Carlos de Apoquindo",
+  "matches":29,
+  "seasons":"2017-2022",
+  "main_home_teams":"Univ Católica (15), Palestino (2)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Santa Laura-Universidad SEK",
+  "matches":13,
+  "seasons":"2014-2015",
+  "main_home_teams":"Unión Española (4), Palestino (4), U de Chile (1)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Tierra de Campeones",
+  "matches":4,
+  "seasons":"2017-2017",
+  "main_home_teams":"Iquique (2)"
+ },
+ {
+  "country":"cl",
+  "venue_fbref_name":"Estadio Zorros del Desierto",
+  "matches":4,
+  "seasons":"2017-2024",
+  "main_home_teams":"Cobresal (3), Iquique (1)"
+ },
+ {
+  "country":"cl,ve",
+  "venue_fbref_name":"Estadio Sausalito",
+  "matches":14,
+  "seasons":"2017-2024",
+  "main_home_teams":"CD Everton (5), Huachipato (4), La Calera (4)"
+ },
+ {
+  "country":"ec",
+  "venue_fbref_name":"Estádio Municipal de Figueira de Castelo...",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"LDU de Quito (1)"
+ },
+ {
+  "country":"ec,py",
+  "venue_fbref_name":"Estadio General Pablo Rojas",
+  "matches":34,
+  "seasons":"2014-2023",
+  "main_home_teams":"Cerro Porteño (24), Guaraní (3), Libertad (1)"
+ },
+ {
+  "country":"ec,ve",
+  "venue_fbref_name":"Estadio Polideportivo Misael Delgado",
+  "matches":10,
+  "seasons":"2019-2025",
+  "main_home_teams":"Carabobo (3), LDU de Quito (1)"
+ },
+ {
+  "country":"pe,uy",
+  "venue_fbref_name":"Estadio Luis Franzini",
+  "matches":23,
+  "seasons":"2014-2018",
+  "main_home_teams":"Defensor (6), Danubio (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Antonio Aranda",
+  "matches":1,
+  "seasons":"2014-2014",
+  "main_home_teams":"Nacional (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Arsenio Erico",
+  "matches":2,
+  "seasons":"2015-2015",
+  "main_home_teams":"Nacional (2)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Dr. Nicolás Leoz",
+  "matches":25,
+  "seasons":"2015-2019",
+  "main_home_teams":"Libertad (12)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Feliciano Cáceres",
+  "matches":14,
+  "seasons":"2014-2018",
+  "main_home_teams":"Sport Luqueño (9), General Díaz (3), Capiatá (2)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio General Adrián Jara",
+  "matches":1,
+  "seasons":"2018-2018",
+  "main_home_teams":"General Díaz (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Lic. Erico Galeano Segovia",
+  "matches":1,
+  "seasons":"2014-2014",
+  "main_home_teams":"Capiatá (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Luis Alberto Salinas Tanasio",
+  "matches":3,
+  "seasons":"2021-2021",
+  "main_home_teams":"12 de Octubre (3)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Luís Alfonso Giagni",
+  "matches":16,
+  "seasons":"2016-2021",
+  "main_home_teams":"Sol de América (11), Sport Luqueño (2), River Plate (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Manuel Ferreira",
+  "matches":16,
+  "seasons":"2016-2023",
+  "main_home_teams":"Olimpia (13)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Ricardo Gregor",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Independiente (1)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Rogelio Lorenzo Livieres",
+  "matches":5,
+  "seasons":"2014-2017",
+  "main_home_teams":"Guaraní (4)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio Tigo La Huerta",
+  "matches":6,
+  "seasons":"2024-2025",
+  "main_home_teams":"Libertad (5)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio UENO Osvaldo Domínguez Dibb",
+  "matches":2,
+  "seasons":"2025-2025",
+  "main_home_teams":"Olimpia (2)"
+ },
+ {
+  "country":"py",
+  "venue_fbref_name":"Estadio ueno La Nueva Olla",
+  "matches":9,
+  "seasons":"2024-2025",
+  "main_home_teams":"Cerro Porteño (6)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Complejo Deportivo Rentistas",
+  "matches":1,
+  "seasons":"2018-2018",
+  "main_home_teams":"Boston River (1)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Campeón del Siglo",
+  "matches":37,
+  "seasons":"2016-2025",
+  "main_home_teams":"Peñarol (22)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Gran Parque Central",
+  "matches":56,
+  "seasons":"2014-2025",
+  "main_home_teams":"Nacional (42), Wanderers (4)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Jardines del Hipódromo",
+  "matches":2,
+  "seasons":"2015-2018",
+  "main_home_teams":"Danubio (2)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Monumental Luis Tróccoli",
+  "matches":4,
+  "seasons":"2018-2019",
+  "main_home_teams":"Cerro (4)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Municipal Parque Artigas",
+  "matches":2,
+  "seasons":"2015-2015",
+  "main_home_teams":"Juventud (2)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Estadio Profesor Alberto Suppici",
+  "matches":3,
+  "seasons":"2016-2020",
+  "main_home_teams":"Plaza Colonia (3)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Parque Alfredo Víctor Viera",
+  "matches":16,
+  "seasons":"2019-2024",
+  "main_home_teams":"Wanderers (4), Fénix (4), River Plate (4)"
+ },
+ {
+  "country":"uy",
+  "venue_fbref_name":"Parque Federico Omar Saroldi",
+  "matches":3,
+  "seasons":"2016-2016",
+  "main_home_teams":"River Plate (2)"
+ },
+ {
+  "country":"uy,ve",
+  "venue_fbref_name":"Estadio Olímpico",
+  "matches":49,
+  "seasons":"2014-2024",
+  "main_home_teams":"Caracas (10), Dep La Guaira (3), Metropolitanos (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Centro Total de Entretenimiento Cachamay",
+  "matches":7,
+  "seasons":"2015-2015",
+  "main_home_teams":"Mineros (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Alexander Comanche Bottini",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Monagas (1)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio José Alberto Pérez",
+  "matches":4,
+  "seasons":"2016-2016",
+  "main_home_teams":"Trujillanos (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio José Encarnación Pachencho Romer...",
+  "matches":6,
+  "seasons":"2017-2017",
+  "main_home_teams":"Zulia (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Monumental de Maturín",
+  "matches":6,
+  "seasons":"2018-2023",
+  "main_home_teams":"Monagas (6)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Nacional Brígido Iriarte",
+  "matches":5,
+  "seasons":"2017-2024",
+  "main_home_teams":"Deportivo Rayo Zuliano (4), Atlé Venezuela (1)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Olímpico General José Antonio An...",
+  "matches":7,
+  "seasons":"2014-2014",
+  "main_home_teams":"Anzoátegui (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Olímpico Guillermo Soto Rosa",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Estud Mérida (1)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Olímpico Hermanos Ghersi Páez",
+  "matches":2,
+  "seasons":"2020-2021",
+  "main_home_teams":"Aragua (2)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Olímpico Metropolitano de Mérida",
+  "matches":10,
+  "seasons":"2020-2020",
+  "main_home_teams":"Estud Mérida (3)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Olímpico de La Vega",
+  "matches":1,
+  "seasons":"2019-2019",
+  "main_home_teams":"Caracas (1)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Polideportivo de Pueblo Nuevo",
+  "matches":23,
+  "seasons":"2015-2025",
+  "main_home_teams":"Dep Táchira (20)"
+ },
+ {
+  "country":"ve",
+  "venue_fbref_name":"Estadio Rafael Agustín Tovar",
+  "matches":19,
+  "seasons":"2014-2019",
+  "main_home_teams":"Zamora (12)"
+ }
+]

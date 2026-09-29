@@ -1,0 +1,3184 @@
+{
+ "MEX": {
+  "teams": [
+   "América",
+   "Atlas",
+   "Atlético",
+   "Chiapas",
+   "Cruz Azul",
+   "FC Juárez",
+   "Guadalajara",
+   "León",
+   "Lobos BUAP",
+   "Mazatlán",
+   "Monterrey",
+   "Morelia",
+   "Necaxa",
+   "Pachuca",
+   "Puebla",
+   "Querétaro",
+   "Santos",
+   "Sinaloa",
+   "Tijuana",
+   "Toluca",
+   "UANL",
+   "UNAM",
+   "UdeG",
+   "Veracruz"
+  ],
+  "team_venues": [
+   {
+    "Home": "América",
+    "Venue": "Estadio Azteca",
+    "n": 193
+   },
+   {
+    "Home": "América",
+    "Venue": "Estadio de la Ciudad de los Deportes",
+    "n": 25
+   },
+   {
+    "Home": "América",
+    "Venue": "Estadio Cuauhtémoc",
+    "n": 2
+   },
+   {
+    "Home": "América",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 2
+   },
+   {
+    "Home": "Atlas",
+    "Venue": "Estadio Jalisco",
+    "n": 191
+   },
+   {
+    "Home": "Atlético",
+    "Venue": "Estadio Alfonso Lastras Ramírez",
+    "n": 102
+   },
+   {
+    "Home": "Chiapas",
+    "Venue": "Estadio Zoque VMR",
+    "n": 52
+   },
+   {
+    "Home": "Chiapas",
+    "Venue": "StubHub Center",
+    "n": 1
+   },
+   {
+    "Home": "Cruz Azul",
+    "Venue": "Estadio Azteca",
+    "n": 93
+   },
+   {
+    "Home": "Cruz Azul",
+    "Venue": "Estadio Azul",
+    "n": 78
+   },
+   {
+    "Home": "Cruz Azul",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 15
+   },
+   {
+    "Home": "Cruz Azul",
+    "Venue": "Estadio de la Ciudad de los Deportes",
+    "n": 12
+   },
+   {
+    "Home": "Cruz Azul",
+    "Venue": "Estadio Cuauhtémoc",
+    "n": 1
+   },
+   {
+    "Home": "FC Juárez",
+    "Venue": "Estadio Olímpico Benito Juárez",
+    "n": 95
+   },
+   {
+    "Home": "Guadalajara",
+    "Venue": "Estadio Akron",
+    "n": 194
+   },
+   {
+    "Home": "Guadalajara",
+    "Venue": "Estadio Jalisco",
+    "n": 2
+   },
+   {
+    "Home": "León",
+    "Venue": "Estadio León",
+    "n": 202
+   },
+   {
+    "Home": "Lobos BUAP",
+    "Venue": "Estadio Universitario BUAP",
+    "n": 34
+   },
+   {
+    "Home": "Mazatlán",
+    "Venue": "Estadio de Mazatlán",
+    "n": 60
+   },
+   {
+    "Home": "Mazatlán",
+    "Venue": "Estadio El Encanto",
+    "n": 21
+   },
+   {
+    "Home": "Monterrey",
+    "Venue": "Estadio BBVA Bancomer",
+    "n": 190
+   },
+   {
+    "Home": "Monterrey",
+    "Venue": "Estadio Tecnológico",
+    "n": 19
+   },
+   {
+    "Home": "Monterrey",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 1
+   },
+   {
+    "Home": "Morelia",
+    "Venue": "Estadio Generalísimo José María Morelos ...",
+    "n": 106
+   },
+   {
+    "Home": "Necaxa",
+    "Venue": "Estadio Victoria de Aguascalientes",
+    "n": 151
+   },
+   {
+    "Home": "Pachuca",
+    "Venue": "Estadio Hidalgo",
+    "n": 198
+   },
+   {
+    "Home": "Pachuca",
+    "Venue": "Estadio Azul",
+    "n": 1
+   },
+   {
+    "Home": "Puebla",
+    "Venue": "Estadio Cuauhtémoc",
+    "n": 189
+   },
+   {
+    "Home": "Puebla",
+    "Venue": "Estadio Universitario de Nuevo León",
+    "n": 1
+   },
+   {
+    "Home": "Querétaro",
+    "Venue": "Estadio La Corregidora",
+    "n": 183
+   },
+   {
+    "Home": "Santos",
+    "Venue": "Estadio Nuevo Corona",
+    "n": 195
+   },
+   {
+    "Home": "Santos",
+    "Venue": "Estadio Corona",
+    "n": 5
+   },
+   {
+    "Home": "Sinaloa",
+    "Venue": "Estadio Banorte",
+    "n": 17
+   },
+   {
+    "Home": "Tijuana",
+    "Venue": "Estadio Caliente",
+    "n": 190
+   },
+   {
+    "Home": "Toluca",
+    "Venue": "Estadio Nemesio Díez",
+    "n": 193
+   },
+   {
+    "Home": "Toluca",
+    "Venue": "Estadio Universitario Alberto Chivo Córd...",
+    "n": 7
+   },
+   {
+    "Home": "Toluca",
+    "Venue": "Estadio Azteca",
+    "n": 1
+   },
+   {
+    "Home": "Toluca",
+    "Venue": "Estadio Victoria de Aguascalientes",
+    "n": 1
+   },
+   {
+    "Home": "UANL",
+    "Venue": "Estadio Universitario de Nuevo León",
+    "n": 219
+   },
+   {
+    "Home": "UANL",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 1
+   },
+   {
+    "Home": "UANL",
+    "Venue": "Estadio Universitario BUAP",
+    "n": 1
+   },
+   {
+    "Home": "UNAM",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 172
+   },
+   {
+    "Home": "UNAM",
+    "Venue": "Estadio Olímpico Universitario de Colima",
+    "n": 22
+   },
+   {
+    "Home": "UNAM",
+    "Venue": "Estadio Jalisco",
+    "n": 1
+   },
+   {
+    "Home": "UdeG",
+    "Venue": "Estadio Jalisco",
+    "n": 15
+   },
+   {
+    "Home": "UdeG",
+    "Venue": "Estadio Olímpico de Universitario",
+    "n": 2
+   },
+   {
+    "Home": "Veracruz",
+    "Venue": "Estadio Luis de la Fuente",
+    "n": 96
+   }
+  ]
+ },
+ "PER": {
+  "teams": [
+   "ADT Tarma",
+   "Alianza Atlético",
+   "Alianza Lima",
+   "Alianza Univ",
+   "Asociación Deportiva Tarma",
+   "Atlético Grau",
+   "Ayacucho",
+   "Binacional",
+   "CDC Santa Rosa",
+   "Cantolao",
+   "Carlos Stein",
+   "Cienciano",
+   "Comerciantes",
+   "Comerciantes Unidos",
+   "Cusco",
+   "Dep Municipal",
+   "Deportivo Garcilaso",
+   "Juan Aurich",
+   "Juan Pablo II",
+   "La Bocana",
+   "León Huánuco",
+   "Llacuabamba",
+   "Los Caimanes",
+   "Mannucci",
+   "Melgar",
+   "Pirata",
+   "Real Garcilaso",
+   "San Simón",
+   "Sport Boys",
+   "Sport Huancayo",
+   "Sport Loreto",
+   "Sport Rosario",
+   "Sporting Cristal",
+   "U César Vallejo",
+   "USMP",
+   "UTC",
+   "Universitario",
+   "Unión Comercio"
+  ],
+  "team_venues": [
+   {
+    "Home": "ADT Tarma",
+    "Venue": "Estadio Municipal Unión de Tarma",
+    "n": 13
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Municipal Melanio Coloma Calderó...",
+    "n": 60
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Campeones del 36",
+    "n": 46
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Municipal El Coloso de la Fronte...",
+    "n": 7
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 6
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Sesquicentenario",
+    "n": 5
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 4
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 3
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Municipal Bernales",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Heraclio Tapia León",
+    "n": 1
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio Monumental",
+    "n": 1
+   },
+   {
+    "Home": "Alianza Atlético",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 190
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 7
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio Nacional",
+    "n": 7
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 5
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 3
+   },
+   {
+    "Home": "Alianza Lima",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Heraclio Tapia León",
+    "n": 42
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 4
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 3
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Monumental",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 1
+   },
+   {
+    "Home": "Alianza Univ",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Asociación Deportiva Tarma",
+    "Venue": "Estadio Municipal Unión de Tarma",
+    "n": 43
+   },
+   {
+    "Home": "Asociación Deportiva Tarma",
+    "Venue": "Estadio Huancayo",
+    "n": 10
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Campeones del 36",
+    "n": 31
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Municipal Bernales",
+    "n": 31
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Miguel Grau",
+    "n": 9
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 1
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Municipal Francisco Mendoza Piza...",
+    "n": 1
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Estadio Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Atlético Grau",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Ciudad de Cumaná",
+    "n": 132
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Manuel Eloy Molina Robles",
+    "n": 22
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 6
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Monumental",
+    "n": 3
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "",
+    "n": 1
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Huancayo",
+    "n": 1
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Ayacucho",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Guillermo Briceño Rosamedina",
+    "n": 73
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio 25 de Noviembre",
+    "n": 14
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio de la Universidad Nacional San A...",
+    "n": 11
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 4
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Monumental",
+    "n": 3
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 2
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 1
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Estadio Mariano Melgar",
+    "n": 1
+   },
+   {
+    "Home": "Binacional",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "CDC Santa Rosa",
+    "Venue": "Estadio Los Chankas",
+    "n": 28
+   },
+   {
+    "Home": "CDC Santa Rosa",
+    "Venue": "Estadio El Prado",
+    "n": 1
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 83
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 16
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 5
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Municipal Segundo Aranda Torres",
+    "n": 5
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Municipal de Barranca",
+    "n": 5
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Monumental",
+    "n": 3
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio Víctor Montoya Segura",
+    "n": 1
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Cantolao",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Víctor Montoya Segura",
+    "n": 13
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Municipal Francisco Mendoza Piza...",
+    "n": 9
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio César Flores Marigorda",
+    "n": 4
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 1
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Monumental",
+    "n": 1
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio Municipal de Guadalupe Carlos A....",
+    "n": 1
+   },
+   {
+    "Home": "Carlos Stein",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 108
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 5
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 3
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Monumental",
+    "n": 1
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Estadio Víctor Montoya Segura",
+    "n": 1
+   },
+   {
+    "Home": "Cienciano",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Comerciantes",
+    "Venue": "Estadio Juan Maldonado Gamarra",
+    "n": 44
+   },
+   {
+    "Home": "Comerciantes",
+    "Venue": "Estadio Municipal de Guadalupe Carlos A....",
+    "n": 15
+   },
+   {
+    "Home": "Comerciantes",
+    "Venue": "Estadio Cristo es el Señor",
+    "n": 6
+   },
+   {
+    "Home": "Comerciantes",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Comerciantes Unidos",
+    "Venue": "Estadio Municipal Germán Contreras Jara",
+    "n": 16
+   },
+   {
+    "Home": "Comerciantes Unidos",
+    "Venue": "Estadio Juan Maldonado Gamarra",
+    "n": 13
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 50
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Túpac Amaru",
+    "n": 8
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 5
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 4
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 3
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Estadio Monumental",
+    "n": 2
+   },
+   {
+    "Home": "Cusco",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 97
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 21
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Municipal Segundo Aranda Torres",
+    "n": 19
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Nacional",
+    "n": 8
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 5
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Monumental",
+    "n": 5
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Estadio Municipal El Coloso de la Fronte...",
+    "n": 1
+   },
+   {
+    "Home": "Dep Municipal",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Deportivo Garcilaso",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 48
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio Elías Aguirre",
+    "n": 40
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio César Flores Marigorda",
+    "n": 16
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio Municipal Francisco Mendoza Piza...",
+    "n": 7
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio Municipal de Guadalupe Carlos A....",
+    "n": 7
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio Mansiche",
+    "n": 5
+   },
+   {
+    "Home": "Juan Aurich",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 1
+   },
+   {
+    "Home": "Juan Pablo II",
+    "Venue": "Estadio de la Juventud",
+    "n": 9
+   },
+   {
+    "Home": "Juan Pablo II",
+    "Venue": "Estadio Mansiche",
+    "n": 2
+   },
+   {
+    "Home": "Juan Pablo II",
+    "Venue": "",
+    "n": 1
+   },
+   {
+    "Home": "Juan Pablo II",
+    "Venue": "Estadio Nacional",
+    "n": 1
+   },
+   {
+    "Home": "La Bocana",
+    "Venue": "Estadio Municipal Bernales",
+    "n": 16
+   },
+   {
+    "Home": "La Bocana",
+    "Venue": "Estadio Sesquicentenario",
+    "n": 6
+   },
+   {
+    "Home": "León Huánuco",
+    "Venue": "Estadio Heraclio Tapia León",
+    "n": 31
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Estadio Municipal Germán Contreras Jara",
+    "n": 9
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 1
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Estadio Héroes de San Ramón",
+    "n": 1
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Llacuabamba",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Los Caimanes",
+    "Venue": "Estadio Elías Aguirre",
+    "n": 9
+   },
+   {
+    "Home": "Los Caimanes",
+    "Venue": "Estadio Municipal Francisco Mendoza Piza...",
+    "n": 6
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Mansiche",
+    "n": 81
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Monumental",
+    "n": 5
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 4
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio César Flores Marigorda",
+    "n": 1
+   },
+   {
+    "Home": "Mannucci",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 1
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio de la Universidad Nacional San A...",
+    "n": 191
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 5
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 5
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Monumental",
+    "n": 5
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Mariano Melgar",
+    "n": 4
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Nacional",
+    "n": 2
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 1
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 1
+   },
+   {
+    "Home": "Melgar",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Pirata",
+    "Venue": "Estadio César Flores Marigorda",
+    "n": 9
+   },
+   {
+    "Home": "Pirata",
+    "Venue": "Estadio Municipal Francisco Mendoza Piza...",
+    "n": 8
+   },
+   {
+    "Home": "Real Garcilaso",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 103
+   },
+   {
+    "Home": "Real Garcilaso",
+    "Venue": "Estadio Túpac Amaru",
+    "n": 10
+   },
+   {
+    "Home": "Real Garcilaso",
+    "Venue": "Estadio Municipal de Urcos",
+    "n": 2
+   },
+   {
+    "Home": "Real Garcilaso",
+    "Venue": "Estadio Huancayo",
+    "n": 1
+   },
+   {
+    "Home": "San Simón",
+    "Venue": "Estadio 25 de Noviembre",
+    "n": 15
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 92
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 15
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 6
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Monumental",
+    "n": 5
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Miguel Grau",
+    "n": 4
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 3
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Nacional",
+    "n": 3
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Huancayo",
+    "n": 188
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 5
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 5
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Monumental",
+    "n": 3
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Guillermo Briceño Rosamedina",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Heraclio Tapia León",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Julio Lores Colán (Neutral Site)",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "Sport Huancayo",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Sport Loreto",
+    "Venue": "Estadio Aliardo Soria Pérez",
+    "n": 15
+   },
+   {
+    "Home": "Sport Loreto",
+    "Venue": "Estadio Huancayo",
+    "n": 1
+   },
+   {
+    "Home": "Sport Rosario",
+    "Venue": "Estadio Rosas Pampa",
+    "n": 44
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 179
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Nacional",
+    "n": 24
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Monumental",
+    "n": 6
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 5
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 2
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 2
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Inca Garcilaso de la Vega",
+    "n": 1
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio Mansiche (Neutral Site)",
+    "n": 1
+   },
+   {
+    "Home": "Sporting Cristal",
+    "Venue": "Estadio de la Universidad Nacional San A... (Neutral Site)",
+    "n": 1
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Mansiche",
+    "n": 133
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Monumental",
+    "n": 5
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 3
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 3
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 3
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 3
+   },
+   {
+    "Home": "U César Vallejo",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 1
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 74
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 54
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Monumental",
+    "n": 10
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Nacional",
+    "n": 6
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 5
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 5
+   },
+   {
+    "Home": "USMP",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 4
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Héroes de San Ramón",
+    "n": 142
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Municipal Germán Contreras Jara",
+    "n": 41
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Cristo es el Señor",
+    "n": 5
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 5
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Monumental",
+    "n": 4
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 3
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 2
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Municipal de Guadalupe Carlos A....",
+    "n": 2
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Huancayo",
+    "n": 1
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Miguel Grau",
+    "n": 1
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 1
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 1
+   },
+   {
+    "Home": "UTC",
+    "Venue": "Villa Deportiva Nacional",
+    "n": 1
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Monumental",
+    "n": 148
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Monumental U Marathon",
+    "n": 29
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Nacional",
+    "n": 12
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Miguel Grau del Callao",
+    "n": 7
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Alberto Gallardo",
+    "n": 6
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Iván Elías Moreno",
+    "n": 4
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio de la Universidad Nacional Mayor...",
+    "n": 2
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Alejandro Villanueva",
+    "n": 1
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Mansiche",
+    "n": 1
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Nacional del Perú",
+    "n": 1
+   },
+   {
+    "Home": "Unión Comercio",
+    "Venue": "Estadio del IPD",
+    "n": 77
+   },
+   {
+    "Home": "Unión Comercio",
+    "Venue": "Estadio Municipal de Nueva Cajamarca",
+    "n": 42
+   },
+   {
+    "Home": "Unión Comercio",
+    "Venue": "Estadio Municipal Carlos Vidaurre García",
+    "n": 29
+   },
+   {
+    "Home": "Unión Comercio",
+    "Venue": "Estadio Inca Pachacútec",
+    "n": 1
+   }
+  ]
+ },
+ "ECU": {
+  "teams": [
+   "Amarilla SC",
+   "América Quito",
+   "Barcelona",
+   "Barcelona SC",
+   "CD Cuenca",
+   "CD Olmedo",
+   "CS Emelec",
+   "Clan Juvenil",
+   "Club 9 de Octubre",
+   "Cumbayá FC",
+   "Delfín",
+   "Delfín SC",
+   "Deportivo Cuenca",
+   "El Nacional",
+   "Gualaceo Sporting Club",
+   "Guayaquil City",
+   "Imbabura Sporting Club",
+   "Independiente",
+   "LDU Portoviejo",
+   "LDU de Loja",
+   "LDU de Quito",
+   "Libertad",
+   "Libertad FC",
+   "Macará",
+   "Manta FC",
+   "Manta Fútbol Club",
+   "Mushuc Runa",
+   "Orense",
+   "River Ecuador",
+   "SD Aucas",
+   "SD Quito",
+   "Técnico Univ.",
+   "Univ Católica",
+   "Vinotinto"
+  ],
+  "team_venues": [
+   {
+    "Home": "Amarilla SC",
+    "Venue": "Estadio 9 de Mayo",
+    "n": 58
+   },
+   {
+    "Home": "Amarilla SC",
+    "Venue": "Estadio 7 de Octubre",
+    "n": 1
+   },
+   {
+    "Home": "América Quito",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 15
+   },
+   {
+    "Home": "Barcelona",
+    "Venue": "Estadio Monumental Banco Pichincha",
+    "n": 29
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Monumental Isidro Romero Carbo",
+    "n": 180
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Los Chirijos",
+    "n": 2
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio 7 de Octubre",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio 9 de Mayo",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Alejandro Ponce Noboa",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Banco del Pacífico",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Christian Benítez Betancourt",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Jocay",
+    "n": 1
+   },
+   {
+    "Home": "Barcelona SC",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 1
+   },
+   {
+    "Home": "CD Cuenca",
+    "Venue": "Estadio Alejandro Serrano Aguilar",
+    "n": 184
+   },
+   {
+    "Home": "CD Cuenca",
+    "Venue": "Estadio Olímpico de Riobamba",
+    "n": 1
+   },
+   {
+    "Home": "CD Olmedo",
+    "Venue": "Estadio Olímpico de Riobamba",
+    "n": 66
+   },
+   {
+    "Home": "CD Olmedo",
+    "Venue": "Estadio Alejandro Serrano Aguilar",
+    "n": 1
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Banco del Pacífico",
+    "n": 158
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio George Capwell Banco del Austro",
+    "n": 29
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Modelo Alberto Spencer Herrera",
+    "n": 17
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Los Chirijos",
+    "n": 6
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Jocay",
+    "n": 5
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Christian Benítez Betancourt",
+    "n": 2
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio Reales Tamarindos",
+    "n": 2
+   },
+   {
+    "Home": "CS Emelec",
+    "Venue": "Estadio 7 de Octubre",
+    "n": 1
+   },
+   {
+    "Home": "Clan Juvenil",
+    "Venue": "Estadio General Rumiñahui del Valle de L...",
+    "n": 18
+   },
+   {
+    "Home": "Clan Juvenil",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 2
+   },
+   {
+    "Home": "Clan Juvenil",
+    "Venue": "Estadio Olímpico Etho Vega Baquero",
+    "n": 1
+   },
+   {
+    "Home": "Clan Juvenil",
+    "Venue": "Estadio Reales Tamarindos",
+    "n": 1
+   },
+   {
+    "Home": "Club 9 de Octubre",
+    "Venue": "Estadio Modelo Alberto Spencer Herrera",
+    "n": 28
+   },
+   {
+    "Home": "Club 9 de Octubre",
+    "Venue": "Estadio Los Chirijos",
+    "n": 2
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 38
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Municipal La Cocha",
+    "n": 2
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Universitario Dr. Xavier Fernánd...",
+    "n": 2
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Bellavista de Ambato",
+    "n": 1
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Gerardo León Pozo",
+    "n": 1
+   },
+   {
+    "Home": "Cumbayá FC",
+    "Venue": "Estadio Prof. Javier Cruz",
+    "n": 1
+   },
+   {
+    "Home": "Delfín",
+    "Venue": "Estadio Jocay",
+    "n": 29
+   },
+   {
+    "Home": "Delfín SC",
+    "Venue": "Estadio Jocay",
+    "n": 134
+   },
+   {
+    "Home": "Delfín SC",
+    "Venue": "Estadio Reales Tamarindos",
+    "n": 9
+   },
+   {
+    "Home": "Delfín SC",
+    "Venue": "Estadio 7 de Octubre",
+    "n": 1
+   },
+   {
+    "Home": "Delfín SC",
+    "Venue": "Estadio Modelo Alberto Spencer Herrera",
+    "n": 1
+   },
+   {
+    "Home": "Deportivo Cuenca",
+    "Venue": "Estadio Alejandro Serrano Aguilar Banco ...",
+    "n": 29
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 164
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Gonzalo Pozo Ripalda",
+    "n": 8
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Municipal La Cocha",
+    "n": 5
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio General Rumiñahui del Valle de L...",
+    "n": 4
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Centenario de Guaranda",
+    "n": 1
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Dr. Lisandro de la Torre",
+    "n": 1
+   },
+   {
+    "Home": "El Nacional",
+    "Venue": "Estadio Los Chirijos",
+    "n": 1
+   },
+   {
+    "Home": "Gualaceo Sporting Club",
+    "Venue": "Estadio Municipal Jorge Andrade Cantos",
+    "n": 21
+   },
+   {
+    "Home": "Gualaceo Sporting Club",
+    "Venue": "Estadio Gerardo León Pozo",
+    "n": 8
+   },
+   {
+    "Home": "Gualaceo Sporting Club",
+    "Venue": "Estadio Alejandro Serrano Aguilar",
+    "n": 1
+   },
+   {
+    "Home": "Guayaquil City",
+    "Venue": "Estadio Christian Benítez Betancourt",
+    "n": 110
+   },
+   {
+    "Home": "Guayaquil City",
+    "Venue": "Estadio Monumental Isidro Romero Carbo",
+    "n": 6
+   },
+   {
+    "Home": "Guayaquil City",
+    "Venue": "Estadio Banco del Pacífico",
+    "n": 3
+   },
+   {
+    "Home": "Imbabura Sporting Club",
+    "Venue": "Estadio Olímpico de Ibarra",
+    "n": 15
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio General Rumiñahui del Valle de L...",
+    "n": 117
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio banco Guayaquil",
+    "n": 71
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 26
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Folke Anderson",
+    "n": 2
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Banco del Pacífico",
+    "n": 1
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Gonzalo Pozo Ripalda",
+    "n": 1
+   },
+   {
+    "Home": "LDU Portoviejo",
+    "Venue": "Estadio Reales Tamarindos",
+    "n": 14
+   },
+   {
+    "Home": "LDU Portoviejo",
+    "Venue": "Estadio Gonzalo Pozo Ripalda",
+    "n": 1
+   },
+   {
+    "Home": "LDU de Loja",
+    "Venue": "Estadio Federativo Reina del Cisne",
+    "n": 41
+   },
+   {
+    "Home": "LDU de Loja",
+    "Venue": "Estadio 9 de Mayo",
+    "n": 2
+   },
+   {
+    "Home": "LDU de Loja",
+    "Venue": "Estadio Reales Tamarindos",
+    "n": 1
+   },
+   {
+    "Home": "LDU de Quito",
+    "Venue": "Estadio de Liga Deportiva Universitaria",
+    "n": 129
+   },
+   {
+    "Home": "LDU de Quito",
+    "Venue": "Estadio Rodrigo Paz Delgado",
+    "n": 91
+   },
+   {
+    "Home": "LDU de Quito",
+    "Venue": "Estadio 9 de Mayo",
+    "n": 1
+   },
+   {
+    "Home": "LDU de Quito",
+    "Venue": "Estadio Federativo Reina del Cisne",
+    "n": 1
+   },
+   {
+    "Home": "Libertad",
+    "Venue": "Estadio Federativo Reina del Cisne",
+    "n": 13
+   },
+   {
+    "Home": "Libertad",
+    "Venue": "Estadio Alejandro Serrano Aguilar Banco ...",
+    "n": 1
+   },
+   {
+    "Home": "Libertad FC",
+    "Venue": "Estadio Federativo Reina del Cisne",
+    "n": 30
+   },
+   {
+    "Home": "Macará",
+    "Venue": "Estadio Bellavista de Ambato",
+    "n": 106
+   },
+   {
+    "Home": "Macará",
+    "Venue": "Estadio Bellavista Universidad Indoaméri...",
+    "n": 29
+   },
+   {
+    "Home": "Manta FC",
+    "Venue": "Estadio Jocay",
+    "n": 22
+   },
+   {
+    "Home": "Manta Fútbol Club",
+    "Venue": "Estadio Jocay",
+    "n": 29
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio Bellavista de Ambato",
+    "n": 67
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio del Mushuc Runa Sporting Club",
+    "n": 45
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio Cooperativa de Ahorro y Crédito ...",
+    "n": 44
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio Olímpico de Riobamba",
+    "n": 8
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio Bellavista Universidad Indoaméri...",
+    "n": 3
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio Centenario de Guaranda",
+    "n": 2
+   },
+   {
+    "Home": "Mushuc Runa",
+    "Venue": "Estadio de Liga Deportiva Universitaria",
+    "n": 1
+   },
+   {
+    "Home": "Orense",
+    "Venue": "Estadio 9 de Mayo",
+    "n": 60
+   },
+   {
+    "Home": "Orense",
+    "Venue": "Estadio 9 de Mayo Banco de Machala",
+    "n": 29
+   },
+   {
+    "Home": "River Ecuador",
+    "Venue": "Estadio Christian Benítez Betancourt",
+    "n": 37
+   },
+   {
+    "Home": "River Ecuador",
+    "Venue": "Estadio Modelo Alberto Spencer Herrera",
+    "n": 6
+   },
+   {
+    "Home": "River Ecuador",
+    "Venue": "Estadio La Fortaleza",
+    "n": 1
+   },
+   {
+    "Home": "SD Aucas",
+    "Venue": "Estadio Gonzalo Pozo Ripalda",
+    "n": 170
+   },
+   {
+    "Home": "SD Aucas",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 2
+   },
+   {
+    "Home": "SD Aucas",
+    "Venue": "Estadio Municipal La Cocha",
+    "n": 1
+   },
+   {
+    "Home": "SD Quito",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 44
+   },
+   {
+    "Home": "Técnico Univ.",
+    "Venue": "Estadio Bellavista de Ambato",
+    "n": 97
+   },
+   {
+    "Home": "Técnico Univ.",
+    "Venue": "Estadio Bellavista Universidad Indoaméri...",
+    "n": 29
+   },
+   {
+    "Home": "Univ Católica",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 210
+   },
+   {
+    "Home": "Univ Católica",
+    "Venue": "Estadio Municipal La Cocha",
+    "n": 2
+   },
+   {
+    "Home": "Univ Católica",
+    "Venue": "Estadio Rodrigo Paz Delgado",
+    "n": 1
+   },
+   {
+    "Home": "Univ Católica",
+    "Venue": "Estadio banco Guayaquil",
+    "n": 1
+   },
+   {
+    "Home": "Univ Católica",
+    "Venue": "Estadio de Liga Deportiva Universitaria",
+    "n": 1
+   },
+   {
+    "Home": "Vinotinto",
+    "Venue": "Estadio Olímpico Atahualpa",
+    "n": 11
+   },
+   {
+    "Home": "Vinotinto",
+    "Venue": "Estadio Gonzalo Pozo Ripalda",
+    "n": 2
+   },
+   {
+    "Home": "Vinotinto",
+    "Venue": "Estadio banco Guayaquil",
+    "n": 1
+   }
+  ]
+ },
+ "COL": {
+  "teams": [
+   "AD Cali",
+   "ADU Magdalena",
+   "Alianza",
+   "Atlético Huila",
+   "Boyacá Chicó",
+   "Boyacá Patriot",
+   "CA Bucaramanga",
+   "CD América",
+   "Cortuluá",
+   "Cúcuta",
+   "Deportes Quindío",
+   "Deportivo Cali",
+   "Envigado",
+   "Expreso Rojo",
+   "Fortaleza CEIF",
+   "Fortaleza FC",
+   "Huila",
+   "Independiente",
+   "Jaguares",
+   "Junior",
+   "La Equidad",
+   "Leones FC",
+   "Llaneros",
+   "Millonarios",
+   "Nacional",
+   "Once Caldas",
+   "Pasto",
+   "Pereira",
+   "Rionegro",
+   "Santa Fe",
+   "Tolima",
+   "Uniautónoma",
+   "Unión Magdalena"
+  ],
+  "team_venues": [
+   {
+    "Home": "AD Cali",
+    "Venue": "Estadio Deportivo Cali",
+    "n": 209
+   },
+   {
+    "Home": "AD Cali",
+    "Venue": "",
+    "n": 21
+   },
+   {
+    "Home": "AD Cali",
+    "Venue": "Estadio Olímpico Pascual Guerrero",
+    "n": 14
+   },
+   {
+    "Home": "AD Cali",
+    "Venue": "Estadio Alfonso López",
+    "n": 1
+   },
+   {
+    "Home": "ADU Magdalena",
+    "Venue": "Estadio Sierra Nevada",
+    "n": 23
+   },
+   {
+    "Home": "Alianza",
+    "Venue": "Estadio Daniel Villa Zapata",
+    "n": 174
+   },
+   {
+    "Home": "Alianza",
+    "Venue": "Estadio Armando Maestre Pavajeau",
+    "n": 29
+   },
+   {
+    "Home": "Alianza",
+    "Venue": "",
+    "n": 19
+   },
+   {
+    "Home": "Alianza",
+    "Venue": "Estadio Álvaro Gómez Hurtado",
+    "n": 6
+   },
+   {
+    "Home": "Atlético Huila",
+    "Venue": "Estadio Guillermo Plazas Alcid",
+    "n": 30
+   },
+   {
+    "Home": "Boyacá Chicó",
+    "Venue": "Estadio de la Independencia",
+    "n": 130
+   },
+   {
+    "Home": "Boyacá Chicó",
+    "Venue": "",
+    "n": 18
+   },
+   {
+    "Home": "Boyacá Chicó",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 2
+   },
+   {
+    "Home": "Boyacá Chicó",
+    "Venue": "Estadio Bello Horizonte",
+    "n": 1
+   },
+   {
+    "Home": "Boyacá Patriot",
+    "Venue": "Estadio de la Independencia",
+    "n": 168
+   },
+   {
+    "Home": "Boyacá Patriot",
+    "Venue": "",
+    "n": 18
+   },
+   {
+    "Home": "Boyacá Patriot",
+    "Venue": "Estadio Guillermo Plazas Alcid",
+    "n": 1
+   },
+   {
+    "Home": "Boyacá Patriot",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 1
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "Estadio Alfonso López",
+    "n": 84
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "Estadio Américo Montanini",
+    "n": 77
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "Estadio Álvaro Gómez Hurtado",
+    "n": 26
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "Estadio Daniel Villa Zapata",
+    "n": 2
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "",
+    "n": 1
+   },
+   {
+    "Home": "CA Bucaramanga",
+    "Venue": "Estadio Alfonso Lastras Ramírez",
+    "n": 1
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Olímpico Pascual Guerrero",
+    "n": 185
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Bello Horizonte",
+    "n": 2
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Centenario",
+    "n": 1
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Doce de Octubre",
+    "n": 1
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Francisco Rivera Escobar",
+    "n": 1
+   },
+   {
+    "Home": "CD América",
+    "Venue": "Estadio Romelio Martínez",
+    "n": 1
+   },
+   {
+    "Home": "Cortuluá",
+    "Venue": "Estadio Doce de Octubre",
+    "n": 63
+   },
+   {
+    "Home": "Cortuluá",
+    "Venue": "Estadio Olímpico Pascual Guerrero",
+    "n": 18
+   },
+   {
+    "Home": "Cortuluá",
+    "Venue": "Estadio Francisco Rivera Escobar",
+    "n": 1
+   },
+   {
+    "Home": "Cúcuta",
+    "Venue": "Estadio General Santander",
+    "n": 49
+   },
+   {
+    "Home": "Cúcuta",
+    "Venue": "Estadio Centenario",
+    "n": 4
+   },
+   {
+    "Home": "Deportes Quindío",
+    "Venue": "Estadio Centenario",
+    "n": 11
+   },
+   {
+    "Home": "Deportivo Cali",
+    "Venue": "Estadio Deportivo Cali",
+    "n": 1
+   },
+   {
+    "Home": "Envigado",
+    "Venue": "Estadio Polideportivo Sur",
+    "n": 201
+   },
+   {
+    "Home": "Envigado",
+    "Venue": "",
+    "n": 20
+   },
+   {
+    "Home": "Envigado",
+    "Venue": "Estadio Metropolitano de Itagüí",
+    "n": 2
+   },
+   {
+    "Home": "Envigado",
+    "Venue": "Estadio Departamental Libertad",
+    "n": 1
+   },
+   {
+    "Home": "Envigado",
+    "Venue": "Estadio Deportivo Cali",
+    "n": 1
+   },
+   {
+    "Home": "Expreso Rojo",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 19
+   },
+   {
+    "Home": "Expreso Rojo",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 1
+   },
+   {
+    "Home": "Fortaleza CEIF",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 20
+   },
+   {
+    "Home": "Fortaleza CEIF",
+    "Venue": "",
+    "n": 18
+   },
+   {
+    "Home": "Fortaleza FC",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 25
+   },
+   {
+    "Home": "Fortaleza FC",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 3
+   },
+   {
+    "Home": "Fortaleza FC",
+    "Venue": "Parque Estadio Olaya Herrera",
+    "n": 3
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Guillermo Plazas Alcid",
+    "n": 78
+   },
+   {
+    "Home": "Huila",
+    "Venue": "",
+    "n": 21
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Manuel Murillo Toro",
+    "n": 10
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Centenario",
+    "n": 9
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 2
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Luis Antonio Duque Peña",
+    "n": 1
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 1
+   },
+   {
+    "Home": "Huila",
+    "Venue": "Estadio de la Independencia",
+    "n": 1
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 229
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "",
+    "n": 21
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Metropolitano de Itagüí",
+    "n": 2
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 2
+   },
+   {
+    "Home": "Independiente",
+    "Venue": "Estadio Luis Antonio Duque Peña",
+    "n": 1
+   },
+   {
+    "Home": "Jaguares",
+    "Venue": "Estadio de Fútbol Jaraguay de Montería",
+    "n": 188
+   },
+   {
+    "Home": "Jaguares",
+    "Venue": "Estadio Armando Tuirán Paternina",
+    "n": 1
+   },
+   {
+    "Home": "Jaguares",
+    "Venue": "Estadio Olímpico Jaime Morón León",
+    "n": 1
+   },
+   {
+    "Home": "Junior",
+    "Venue": "Estadio Metropolitano Roberto Meléndez",
+    "n": 237
+   },
+   {
+    "Home": "Junior",
+    "Venue": "",
+    "n": 21
+   },
+   {
+    "Home": "Junior",
+    "Venue": "Estadio Romelio Martínez",
+    "n": 4
+   },
+   {
+    "Home": "Junior",
+    "Venue": "Estadio Olímpico Jaime Morón León",
+    "n": 2
+   },
+   {
+    "Home": "Junior",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 1
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 195
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "",
+    "n": 19
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 10
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Parque Estadio Olaya Herrera",
+    "n": 3
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 1
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio Héctor El Zipa González",
+    "n": 1
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio Metropolitano de Fútbol de Lara",
+    "n": 1
+   },
+   {
+    "Home": "La Equidad",
+    "Venue": "Estadio de Fútbol Jaraguay de Montería",
+    "n": 1
+   },
+   {
+    "Home": "Leones FC",
+    "Venue": "Estadio Metropolitano de Itagüí",
+    "n": 19
+   },
+   {
+    "Home": "Llaneros",
+    "Venue": "Estadio Bello Horizonte",
+    "n": 12
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 237
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "",
+    "n": 20
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 2
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "Estadio Bello Horizonte",
+    "n": 1
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "Estadio Héctor El Zipa González",
+    "n": 1
+   },
+   {
+    "Home": "Millonarios",
+    "Venue": "Estadio Palogrande",
+    "n": 1
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 237
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "",
+    "n": 24
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "Estadio Metropolitano de Itagüí",
+    "n": 2
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "Estadio Polideportivo Sur",
+    "n": 2
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "Estadio Metropolitano Roberto Meléndez",
+    "n": 1
+   },
+   {
+    "Home": "Nacional",
+    "Venue": "Stadio Zosimades",
+    "n": 1
+   },
+   {
+    "Home": "Once Caldas",
+    "Venue": "Estadio Palogrande",
+    "n": 213
+   },
+   {
+    "Home": "Once Caldas",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Pasto",
+    "Venue": "Estadio Departamental Libertad",
+    "n": 189
+   },
+   {
+    "Home": "Pasto",
+    "Venue": "Estadio Municipal de Ipiales",
+    "n": 23
+   },
+   {
+    "Home": "Pasto",
+    "Venue": "",
+    "n": 18
+   },
+   {
+    "Home": "Pasto",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 1
+   },
+   {
+    "Home": "Pereira",
+    "Venue": "Estadio Hernán Ramírez Villegas",
+    "n": 112
+   },
+   {
+    "Home": "Rionegro",
+    "Venue": "Estadio Alberto Grisales",
+    "n": 200
+   },
+   {
+    "Home": "Rionegro",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Rionegro",
+    "Venue": "Estadio Arturo Cumplido Sierra",
+    "n": 7
+   },
+   {
+    "Home": "Rionegro",
+    "Venue": "Estadio Hernán Ramírez Villegas",
+    "n": 4
+   },
+   {
+    "Home": "Rionegro",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 1
+   },
+   {
+    "Home": "Santa Fe",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 219
+   },
+   {
+    "Home": "Santa Fe",
+    "Venue": "",
+    "n": 23
+   },
+   {
+    "Home": "Santa Fe",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 7
+   },
+   {
+    "Home": "Santa Fe",
+    "Venue": "Estadio Atanasio Girardot",
+    "n": 3
+   },
+   {
+    "Home": "Tolima",
+    "Venue": "Estadio Manuel Murillo Toro",
+    "n": 209
+   },
+   {
+    "Home": "Tolima",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 32
+   },
+   {
+    "Home": "Tolima",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Tolima",
+    "Venue": "Estadio Guillermo Plazas Alcid",
+    "n": 1
+   },
+   {
+    "Home": "Tolima",
+    "Venue": "Estadio Nemesio Camacho El Campín",
+    "n": 1
+   },
+   {
+    "Home": "Uniautónoma",
+    "Venue": "Estadio Metropolitano Roberto Meléndez",
+    "n": 20
+   },
+   {
+    "Home": "Uniautónoma",
+    "Venue": "",
+    "n": 18
+   },
+   {
+    "Home": "Uniautónoma",
+    "Venue": "Estadio Metropolitano de Techo",
+    "n": 1
+   },
+   {
+    "Home": "Unión Magdalena",
+    "Venue": "Estadio Sierra Nevada",
+    "n": 51
+   },
+   {
+    "Home": "Unión Magdalena",
+    "Venue": "Estadio Armando Maestre Pavajeau",
+    "n": 1
+   }
+  ]
+ },
+ "BOL": {
+  "teams": [
+   "ABB",
+   "Always Ready",
+   "Atlético Palmaflor",
+   "Aurora",
+   "Avilés Industrial",
+   "Bermejo",
+   "Blooming",
+   "Bolívar",
+   "Ciclón",
+   "Club Vaca Díez",
+   "Destroyers",
+   "FC Universitario",
+   "GV San José",
+   "Guabirá",
+   "Indep Petrolero",
+   "Libertad Gran Mamoré FC",
+   "Nacional Potosí",
+   "Oriente Petrolero",
+   "Petrolero",
+   "Real Oruro",
+   "Real Potosí",
+   "Real Santa Cruz",
+   "Real Tomayapo",
+   "Royal Parí",
+   "San Antonio Bulo Bulo",
+   "San José",
+   "Sport Boys",
+   "The Strongest",
+   "Univ de Sucre",
+   "Universitario",
+   "Universitario (B)",
+   "Universitario (P)",
+   "Wilstermann"
+  ],
+  "team_venues": [
+   {
+    "Home": "ABB",
+    "Venue": "Estadio Municipal El Alto",
+    "n": 11
+   },
+   {
+    "Home": "Always Ready",
+    "Venue": "Estadio Municipal El Alto",
+    "n": 91
+   },
+   {
+    "Home": "Always Ready",
+    "Venue": "Estadio Hernando Siles",
+    "n": 8
+   },
+   {
+    "Home": "Always Ready",
+    "Venue": "Estadio Félix Capriles",
+    "n": 1
+   },
+   {
+    "Home": "Atlético Palmaflor",
+    "Venue": "Estadio Félix Capriles",
+    "n": 45
+   },
+   {
+    "Home": "Atlético Palmaflor",
+    "Venue": "Estadio Bicentenario de Villa Tunari",
+    "n": 12
+   },
+   {
+    "Home": "Atlético Palmaflor",
+    "Venue": "Estadio Municipal de Quillacollo",
+    "n": 7
+   },
+   {
+    "Home": "Atlético Palmaflor",
+    "Venue": "Estadio Municipal de Colcapirhua",
+    "n": 2
+   },
+   {
+    "Home": "Aurora",
+    "Venue": "Estadio Félix Capriles",
+    "n": 111
+   },
+   {
+    "Home": "Aurora",
+    "Venue": "Estadio Municipal de Sacaba",
+    "n": 8
+   },
+   {
+    "Home": "Aurora",
+    "Venue": "Estadio Municipal de Colcapirhua",
+    "n": 1
+   },
+   {
+    "Home": "Avilés Industrial",
+    "Venue": "Estadio IV Centenario",
+    "n": 1
+   },
+   {
+    "Home": "Bermejo",
+    "Venue": "",
+    "n": 1
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 167
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Gilberto Parada",
+    "n": 7
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Juan Carlos Durán",
+    "n": 1
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 1
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Real Santa Cruz",
+    "n": 1
+   },
+   {
+    "Home": "Blooming",
+    "Venue": "Estadio Victor Agustín Ugarte",
+    "n": 1
+   },
+   {
+    "Home": "Bolívar",
+    "Venue": "Estadio Hernando Siles",
+    "n": 178
+   },
+   {
+    "Home": "Bolívar",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Bolívar",
+    "Venue": "Estadio Libertador Simón Bolívar",
+    "n": 3
+   },
+   {
+    "Home": "Ciclón",
+    "Venue": "Estadio La Bombonera",
+    "n": 14
+   },
+   {
+    "Home": "Ciclón",
+    "Venue": "Estadio IV Centenario",
+    "n": 5
+   },
+   {
+    "Home": "Ciclón",
+    "Venue": "Estadio Huancayo",
+    "n": 2
+   },
+   {
+    "Home": "Ciclón",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 1
+   },
+   {
+    "Home": "Club Vaca Díez",
+    "Venue": "Estadio Roberto Jordan Cuellár",
+    "n": 16
+   },
+   {
+    "Home": "Destroyers",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 46
+   },
+   {
+    "Home": "Destroyers",
+    "Venue": "Estadio Edgar Peña Gutierrez",
+    "n": 1
+   },
+   {
+    "Home": "Destroyers",
+    "Venue": "Estadio Samuel Vaca Jimenez",
+    "n": 1
+   },
+   {
+    "Home": "Destroyers",
+    "Venue": "Merkur Arena",
+    "n": 1
+   },
+   {
+    "Home": "FC Universitario",
+    "Venue": "Estadio Félix Capriles",
+    "n": 39
+   },
+   {
+    "Home": "FC Universitario",
+    "Venue": "Estadio Municipal de Quillacollo",
+    "n": 4
+   },
+   {
+    "Home": "FC Universitario",
+    "Venue": "Estadio Municipal de Sacaba",
+    "n": 3
+   },
+   {
+    "Home": "GV San José",
+    "Venue": "Estadio Jesús Bermúdez",
+    "n": 10
+   },
+   {
+    "Home": "Guabirá",
+    "Venue": "Estadio Gilberto Parada",
+    "n": 152
+   },
+   {
+    "Home": "Guabirá",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 2
+   },
+   {
+    "Home": "Guabirá",
+    "Venue": "Estadio Samuel Vaca Jimenez",
+    "n": 1
+   },
+   {
+    "Home": "Indep Petrolero",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 60
+   },
+   {
+    "Home": "Libertad Gran Mamoré FC",
+    "Venue": "Estadio Gran Mamoré",
+    "n": 16
+   },
+   {
+    "Home": "Nacional Potosí",
+    "Venue": "Estadio Victor Agustín Ugarte",
+    "n": 176
+   },
+   {
+    "Home": "Nacional Potosí",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Nacional Potosí",
+    "Venue": "Estadio Hernando Siles",
+    "n": 1
+   },
+   {
+    "Home": "Oriente Petrolero",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 169
+   },
+   {
+    "Home": "Oriente Petrolero",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Oriente Petrolero",
+    "Venue": "Estadio Gilberto Parada",
+    "n": 6
+   },
+   {
+    "Home": "Oriente Petrolero",
+    "Venue": "Estadio Hernando Siles",
+    "n": 1
+   },
+   {
+    "Home": "Oriente Petrolero",
+    "Venue": "Estadio Real Santa Cruz",
+    "n": 1
+   },
+   {
+    "Home": "Petrolero",
+    "Venue": "Estadio Provincial de Yacuiba",
+    "n": 29
+   },
+   {
+    "Home": "Petrolero",
+    "Venue": "Estadio Federico Ibarra Olarte",
+    "n": 27
+   },
+   {
+    "Home": "Petrolero",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Petrolero",
+    "Venue": "Estadio Defensores del Chaco",
+    "n": 1
+   },
+   {
+    "Home": "Real Oruro",
+    "Venue": "Estadio Jesús Bermúdez",
+    "n": 10
+   },
+   {
+    "Home": "Real Potosí",
+    "Venue": "Estadio Victor Agustín Ugarte",
+    "n": 132
+   },
+   {
+    "Home": "Real Potosí",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Real Potosí",
+    "Venue": "Estadio Félix Capriles",
+    "n": 1
+   },
+   {
+    "Home": "Real Santa Cruz",
+    "Venue": "Estadio Real Santa Cruz",
+    "n": 41
+   },
+   {
+    "Home": "Real Santa Cruz",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 10
+   },
+   {
+    "Home": "Real Santa Cruz",
+    "Venue": "Estadio Juan Carlos Durán",
+    "n": 9
+   },
+   {
+    "Home": "Real Santa Cruz",
+    "Venue": "Estadio Gilberto Parada",
+    "n": 4
+   },
+   {
+    "Home": "Real Tomayapo",
+    "Venue": "Estadio IV Centenario",
+    "n": 61
+   },
+   {
+    "Home": "Royal Parí",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 103
+   },
+   {
+    "Home": "Royal Parí",
+    "Venue": "Estadio Gilberto Parada",
+    "n": 6
+   },
+   {
+    "Home": "Royal Parí",
+    "Venue": "Estadio Edgar Peña Gutierrez",
+    "n": 2
+   },
+   {
+    "Home": "Royal Parí",
+    "Venue": "Estadio Juan Carlos Durán",
+    "n": 1
+   },
+   {
+    "Home": "San Antonio Bulo Bulo",
+    "Venue": "Estadio Dr. Carlos Villegas",
+    "n": 7
+   },
+   {
+    "Home": "San Antonio Bulo Bulo",
+    "Venue": "Estadio Félix Capriles",
+    "n": 3
+   },
+   {
+    "Home": "San José",
+    "Venue": "Estadio Jesús Bermúdez",
+    "n": 130
+   },
+   {
+    "Home": "San José",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "San José",
+    "Venue": "Estadio Félix Capriles",
+    "n": 1
+   },
+   {
+    "Home": "San José",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 1
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Samuel Vaca Jimenez",
+    "n": 79
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "",
+    "n": 23
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Edgar Peña Gutierrez",
+    "n": 21
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 1
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Ramón Aguilera Costas",
+    "n": 1
+   },
+   {
+    "Home": "Sport Boys",
+    "Venue": "Estadio Victor Agustín Ugarte",
+    "n": 1
+   },
+   {
+    "Home": "The Strongest",
+    "Venue": "Estadio Hernando Siles",
+    "n": 172
+   },
+   {
+    "Home": "The Strongest",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "The Strongest",
+    "Venue": "Estadio Rafael Mendoza Castellón",
+    "n": 8
+   },
+   {
+    "Home": "Univ de Sucre",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 21
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 74
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Municipal de Sacaba",
+    "n": 2
+   },
+   {
+    "Home": "Universitario",
+    "Venue": "Estadio Olímpico Pascual Guerrero",
+    "n": 1
+   },
+   {
+    "Home": "Universitario (B)",
+    "Venue": "Estadio Gran Mamoré",
+    "n": 1
+   },
+   {
+    "Home": "Universitario (P)",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Wilstermann",
+    "Venue": "Estadio Félix Capriles",
+    "n": 161
+   },
+   {
+    "Home": "Wilstermann",
+    "Venue": "",
+    "n": 22
+   },
+   {
+    "Home": "Wilstermann",
+    "Venue": "Estadio Municipal de Sacaba",
+    "n": 18
+   },
+   {
+    "Home": "Wilstermann",
+    "Venue": "Estadio Olímpico Patria",
+    "n": 1
+   }
+  ]
+ }
+}

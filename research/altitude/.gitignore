@@ -1,0 +1,7 @@
+# large or re-downloadable files
+data/dem/*.hgt
+data/dem/*.hgt.gz
+data/dem/*.tmp
+data/raw/xgabora_Matches.csv
+*.log
+__pycache__/

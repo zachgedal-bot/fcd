@@ -1,0 +1,494 @@
+{
+ "coverage": {
+  "matches_since_1990_in_five_countries": 32429,
+  "with_gap": 1922,
+  "host_cities_with_elev": [
+   "Ambato",
+   "Arequipa",
+   "Armenia",
+   "Barranquilla",
+   "Bogot\u00e1",
+   "Cali",
+   "Chiclayo",
+   "Cochabamba",
+   "Cuenca",
+   "Cusco",
+   "El Alto",
+   "Guadalajara",
+   "Guadalupe",
+   "Guayaquil",
+   "La Paz",
+   "Lima",
+   "Machala",
+   "Manizales",
+   "Medell\u00edn",
+   "Mexico City",
+   "Monterrey",
+   "Oruro",
+   "Pereira",
+   "Piura",
+   "Portoviejo",
+   "Potos\u00ed",
+   "Puebla",
+   "Quer\u00e9taro",
+   "Quito",
+   "San Luis Potos\u00ed",
+   "Santa Cruz",
+   "Sucre",
+   "Tacna",
+   "Toluca",
+   "Torre\u00f3n",
+   "Trujillo",
+   "Tuxtla Guti\u00e9rrez",
+   "Veracruz",
+   "Zapopan"
+  ],
+  "visitor_nations_with_baseline": 25
+ },
+ "raw": {
+  "qualifying_all": {
+   "n": 133,
+   "home_win": 0.571,
+   "draw": 0.248,
+   "away_win": 0.18,
+   "unbeaten": 0.82,
+   "gd": 0.97,
+   "hg": 1.872,
+   "ag": 0.902,
+   "total": 2.774
+  },
+  "qualifying_without_host_acclimatization_filter": {
+   "n": 144,
+   "home_win": 0.569,
+   "draw": 0.243,
+   "away_win": 0.188,
+   "unbeaten": 0.812,
+   "gd": 0.965,
+   "hg": 1.854,
+   "ag": 0.889,
+   "total": 2.743
+  },
+  "qualifying_without_filter_by_home": {
+   "Bolivia": {
+    "n": 83,
+    "home_win": 0.554,
+    "draw": 0.253,
+    "away_win": 0.193,
+    "unbeaten": 0.807,
+    "gd": 1.012,
+    "hg": 1.964,
+    "ag": 0.952,
+    "total": 2.916
+   },
+   "Colombia": {
+    "n": 7,
+    "home_win": 0.429,
+    "draw": 0.286,
+    "away_win": 0.286,
+    "unbeaten": 0.714,
+    "gd": 0.286,
+    "hg": 1.0,
+    "ag": 0.714,
+    "total": 1.714
+   },
+   "Ecuador": {
+    "n": 52,
+    "home_win": 0.596,
+    "draw": 0.231,
+    "away_win": 0.173,
+    "unbeaten": 0.827,
+    "gd": 0.904,
+    "hg": 1.75,
+    "ag": 0.846,
+    "total": 2.596
+   },
+   "Mexico": {
+    "n": 2,
+    "home_win": 1.0,
+    "draw": 0.0,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 3.0,
+    "hg": 3.0,
+    "ag": 0.0,
+    "total": 3.0
+   }
+  },
+  "qualifying_by_era": {
+   "1990-2007": {
+    "n": 62,
+    "home_win": 0.645,
+    "draw": 0.242,
+    "away_win": 0.113,
+    "unbeaten": 0.887,
+    "gd": 1.355,
+    "hg": 2.065,
+    "ag": 0.71,
+    "total": 2.774
+   },
+   "2008-2026": {
+    "n": 71,
+    "home_win": 0.507,
+    "draw": 0.254,
+    "away_win": 0.239,
+    "unbeaten": 0.761,
+    "gd": 0.634,
+    "hg": 1.704,
+    "ag": 1.07,
+    "total": 2.775
+   }
+  },
+  "qualifying_competitive": {
+   "n": 116,
+   "home_win": 0.543,
+   "draw": 0.267,
+   "away_win": 0.19,
+   "unbeaten": 0.81,
+   "gd": 0.819,
+   "hg": 1.716,
+   "ag": 0.897,
+   "total": 2.612
+  },
+  "qualifying_friendly": {
+   "n": 17,
+   "home_win": 0.765,
+   "draw": 0.118,
+   "away_win": 0.118,
+   "unbeaten": 0.882,
+   "gd": 2.0,
+   "hg": 2.941,
+   "ag": 0.941,
+   "total": 3.882
+  },
+  "qualifying_by_home": {
+   "Bolivia": {
+    "n": 79,
+    "home_win": 0.544,
+    "draw": 0.266,
+    "away_win": 0.19,
+    "unbeaten": 0.81,
+    "gd": 0.962,
+    "hg": 1.924,
+    "ag": 0.962,
+    "total": 2.886
+   },
+   "Ecuador": {
+    "n": 52,
+    "home_win": 0.596,
+    "draw": 0.231,
+    "away_win": 0.173,
+    "unbeaten": 0.827,
+    "gd": 0.904,
+    "hg": 1.75,
+    "ag": 0.846,
+    "total": 2.596
+   },
+   "Mexico": {
+    "n": 2,
+    "home_win": 1.0,
+    "draw": 0.0,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 3.0,
+    "hg": 3.0,
+    "ag": 0.0,
+    "total": 3.0
+   }
+  },
+  "qualifying_by_city": {
+   "Ambato": {
+    "n": 2,
+    "home_win": 1.0,
+    "draw": 0.0,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 1.5,
+    "hg": 2.0,
+    "ag": 0.5,
+    "total": 2.5
+   },
+   "El Alto": {
+    "n": 6,
+    "home_win": 0.667,
+    "draw": 0.333,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 1.333,
+    "hg": 1.667,
+    "ag": 0.333,
+    "total": 2.0
+   },
+   "La Paz": {
+    "n": 72,
+    "home_win": 0.528,
+    "draw": 0.264,
+    "away_win": 0.208,
+    "unbeaten": 0.792,
+    "gd": 0.861,
+    "hg": 1.889,
+    "ag": 1.028,
+    "total": 2.917
+   },
+   "Oruro": {
+    "n": 1,
+    "home_win": 1.0,
+    "draw": 0.0,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 6.0,
+    "hg": 6.0,
+    "ag": 0.0,
+    "total": 6.0
+   },
+   "Quito": {
+    "n": 50,
+    "home_win": 0.58,
+    "draw": 0.24,
+    "away_win": 0.18,
+    "unbeaten": 0.82,
+    "gd": 0.88,
+    "hg": 1.74,
+    "ag": 0.86,
+    "total": 2.6
+   },
+   "Toluca": {
+    "n": 2,
+    "home_win": 1.0,
+    "draw": 0.0,
+    "away_win": 0.0,
+    "unbeaten": 1.0,
+    "gd": 3.0,
+    "hg": 3.0,
+    "ag": 0.0,
+    "total": 3.0
+   }
+  },
+  "same_hosts_low_gap": {
+   "n": 37,
+   "home_win": 0.541,
+   "draw": 0.27,
+   "away_win": 0.189,
+   "unbeaten": 0.811,
+   "gd": 0.703,
+   "hg": 1.405,
+   "ag": 0.703,
+   "total": 2.108
+  },
+  "same_hosts_competitive_low_gap": {
+   "n": 12,
+   "home_win": 0.417,
+   "draw": 0.25,
+   "away_win": 0.333,
+   "unbeaten": 0.667,
+   "gd": 0.5,
+   "hg": 1.25,
+   "ag": 0.75,
+   "total": 2.0
+  },
+  "by_gap_bin": {
+   "(-9999, -2500]": {
+    "n": 147,
+    "home_win": 0.653,
+    "draw": 0.252,
+    "away_win": 0.095,
+    "unbeaten": 0.905,
+    "gd": 1.293,
+    "hg": 1.959,
+    "ag": 0.667,
+    "total": 2.626
+   },
+   "(-2500, -1500]": {
+    "n": 89,
+    "home_win": 0.416,
+    "draw": 0.315,
+    "away_win": 0.27,
+    "unbeaten": 0.73,
+    "gd": 0.225,
+    "hg": 1.303,
+    "ag": 1.079,
+    "total": 2.382
+   },
+   "(-1500, -500]": {
+    "n": 274,
+    "home_win": 0.536,
+    "draw": 0.285,
+    "away_win": 0.179,
+    "unbeaten": 0.821,
+    "gd": 0.788,
+    "hg": 1.544,
+    "ag": 0.755,
+    "total": 2.299
+   },
+   "(-500, 500]": {
+    "n": 819,
+    "home_win": 0.519,
+    "draw": 0.249,
+    "away_win": 0.232,
+    "unbeaten": 0.768,
+    "gd": 0.648,
+    "hg": 1.558,
+    "ag": 0.91,
+    "total": 2.468
+   },
+   "(500, 1500]": {
+    "n": 328,
+    "home_win": 0.5,
+    "draw": 0.247,
+    "away_win": 0.253,
+    "unbeaten": 0.747,
+    "gd": 0.689,
+    "hg": 1.64,
+    "ag": 0.951,
+    "total": 2.591
+   },
+   "(1500, 2500]": {
+    "n": 121,
+    "home_win": 0.678,
+    "draw": 0.223,
+    "away_win": 0.099,
+    "unbeaten": 0.901,
+    "gd": 1.57,
+    "hg": 2.157,
+    "ag": 0.587,
+    "total": 2.744
+   },
+   "(2500, 3500]": {
+    "n": 103,
+    "home_win": 0.612,
+    "draw": 0.204,
+    "away_win": 0.184,
+    "unbeaten": 0.816,
+    "gd": 1.029,
+    "hg": 1.845,
+    "ag": 0.816,
+    "total": 2.66
+   },
+   "(3500, 9999]": {
+    "n": 41,
+    "home_win": 0.463,
+    "draw": 0.341,
+    "away_win": 0.195,
+    "unbeaten": 0.805,
+    "gd": 0.805,
+    "hg": 1.878,
+    "ag": 1.073,
+    "total": 2.951
+   }
+  }
+ },
+ "adjusted": {
+  "n": 1715,
+  "ordered_logit": {
+   "elo_diff100": {
+    "coef": 0.4297,
+    "se": 0.0283,
+    "ci": [
+     0.3741,
+     0.4852
+    ],
+    "p": 0.0
+   },
+   "gap_pos_km": {
+    "coef": 0.3134,
+    "se": 0.0557,
+    "ci": [
+     0.2043,
+     0.4225
+    ],
+    "p": 0.0
+   },
+   "gap_neg_km": {
+    "coef": 0.1123,
+    "se": 0.0567,
+    "ci": [
+     0.0012,
+     0.2235
+    ],
+    "p": 0.0475
+   },
+   "q2500": {
+    "coef": 0.8674,
+    "se": 0.1903,
+    "ci": [
+     0.4943,
+     1.2404
+    ],
+    "p": 0.0
+   }
+  },
+  "note": "Elo computed from all internationals since 1980 with 100-point home advantage; the home nation Elo already embeds its altitude wins, so the gap coefficient is conservative",
+  "poisson_home_score": {
+   "gap_pos_km": {
+    "coef": 0.1396,
+    "se": 0.0203,
+    "ci": [
+     0.0998,
+     0.1794
+    ],
+    "p": 0.0
+   },
+   "gap_neg_km": {
+    "coef": 0.0177,
+    "se": 0.0208,
+    "ci": [
+     -0.0232,
+     0.0585
+    ],
+    "p": 0.3962
+   }
+  },
+  "poisson_away_score": {
+   "gap_pos_km": {
+    "coef": -0.1016,
+    "se": 0.0294,
+    "ci": [
+     -0.1592,
+     -0.044
+    ],
+    "p": 0.0005
+   },
+   "gap_neg_km": {
+    "coef": -0.0529,
+    "se": 0.0316,
+    "ci": [
+     -0.1148,
+     0.0091
+    ],
+    "p": 0.0945
+   }
+  }
+ },
+ "goal_timing": {
+  "qualifying": {
+   "goals": 305,
+   "home_goals": 199,
+   "away_goals": 106,
+   "home_share_1st_half": 0.417,
+   "home_share_2nd_half": 0.583,
+   "away_share_2nd_half": 0.547,
+   "home_share_after_75": 0.251,
+   "away_share_after_75": 0.264
+  },
+  "low_gap_same_hosts": {
+   "goals": 21,
+   "home_goals": 15,
+   "away_goals": 6,
+   "home_share_1st_half": 0.133,
+   "home_share_2nd_half": 0.867,
+   "away_share_2nd_half": 0.5,
+   "home_share_after_75": 0.333,
+   "away_share_after_75": 0.167
+  },
+  "all_five_countries": {
+   "goals": 2935,
+   "home_goals": 1914,
+   "away_goals": 1021,
+   "home_share_1st_half": 0.445,
+   "home_share_2nd_half": 0.555,
+   "away_share_2nd_half": 0.579,
+   "home_share_after_75": 0.226,
+   "away_share_after_75": 0.231
+  },
+  "note": "Secondary analysis; goal minutes from martj42 goalscorers.csv; shares are of each side own goals scored"
+ }
+}

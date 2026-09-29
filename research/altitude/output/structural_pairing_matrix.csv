@@ -1,0 +1,513 @@
+country,host,host_venue,host_elev,visitor,visitor_base,visitor_elev,net_gap,status,host_last_season,visitor_last_season
+BOL,ABB,Estadio Municipal El Alto,4079,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3957,qualifies,2025,2023
+BOL,Always Ready,Estadio Municipal El Alto,4079,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3957,qualifies,2025,2023
+BOL,ABB,Estadio Municipal El Alto,4079,Universitario (B),Estadio Gran Mamoré,157,3922,qualifies,2025,2016
+BOL,ABB,Estadio Municipal El Alto,4079,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3922,qualifies,2025,2023
+BOL,Always Ready,Estadio Municipal El Alto,4079,Universitario (B),Estadio Gran Mamoré,157,3922,qualifies,2025,2016
+BOL,Always Ready,Estadio Municipal El Alto,4079,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3922,qualifies,2025,2023
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3899,qualifies,2021,2023
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3899,qualifies,2025,2023
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Universitario (B),Estadio Gran Mamoré,157,3864,qualifies,2021,2016
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3864,qualifies,2021,2023
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Universitario (B),Estadio Gran Mamoré,157,3864,qualifies,2025,2016
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3864,qualifies,2025,2023
+BOL,ABB,Estadio Municipal El Alto,4079,Blooming,Estadio Gilberto Parada,298,3781,qualifies,2025,2025
+BOL,ABB,Estadio Municipal El Alto,4079,Guabirá,Estadio Gilberto Parada,298,3781,qualifies,2025,2025
+BOL,Always Ready,Estadio Municipal El Alto,4079,Blooming,Estadio Gilberto Parada,298,3781,qualifies,2025,2025
+BOL,Always Ready,Estadio Municipal El Alto,4079,Guabirá,Estadio Gilberto Parada,298,3781,qualifies,2025,2025
+BOL,ABB,Estadio Municipal El Alto,4079,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3770,qualifies,2025,2023
+BOL,Always Ready,Estadio Municipal El Alto,4079,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3770,qualifies,2025,2023
+BOL,ABB,Estadio Municipal El Alto,4079,Sport Boys,Estadio Samuel Vaca Jimenez,339,3740,qualifies,2025,2019
+BOL,Always Ready,Estadio Municipal El Alto,4079,Sport Boys,Estadio Samuel Vaca Jimenez,339,3740,qualifies,2025,2019
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Blooming,Estadio Gilberto Parada,298,3723,qualifies,2021,2025
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Guabirá,Estadio Gilberto Parada,298,3723,qualifies,2021,2025
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Blooming,Estadio Gilberto Parada,298,3723,qualifies,2025,2025
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Guabirá,Estadio Gilberto Parada,298,3723,qualifies,2025,2025
+BOL,ABB,Estadio Municipal El Alto,4079,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3722,qualifies,2025,2025
+BOL,Always Ready,Estadio Municipal El Alto,4079,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3722,qualifies,2025,2025
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3712,qualifies,2021,2023
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3712,qualifies,2025,2023
+BOL,ABB,Estadio Municipal El Alto,4079,Petrolero,Estadio Federico Ibarra Olarte,389,3690,qualifies,2025,2017
+BOL,Always Ready,Estadio Municipal El Alto,4079,Petrolero,Estadio Federico Ibarra Olarte,389,3690,qualifies,2025,2017
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Sport Boys,Estadio Samuel Vaca Jimenez,339,3682,qualifies,2021,2019
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Sport Boys,Estadio Samuel Vaca Jimenez,339,3682,qualifies,2025,2019
+BOL,ABB,Estadio Municipal El Alto,4079,Real Santa Cruz,Estadio Real Santa Cruz,405,3674,qualifies,2025,2023
+BOL,Always Ready,Estadio Municipal El Alto,4079,Real Santa Cruz,Estadio Real Santa Cruz,405,3674,qualifies,2025,2023
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3664,qualifies,2021,2025
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3664,qualifies,2025,2025
+BOL,ABB,Estadio Municipal El Alto,4079,Destroyers,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2019
+BOL,ABB,Estadio Municipal El Alto,4079,Royal Parí,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2023
+BOL,ABB,Estadio Municipal El Alto,4079,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2025
+BOL,Always Ready,Estadio Municipal El Alto,4079,Destroyers,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2019
+BOL,Always Ready,Estadio Municipal El Alto,4079,Royal Parí,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2023
+BOL,Always Ready,Estadio Municipal El Alto,4079,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3656,qualifies,2025,2025
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Petrolero,Estadio Federico Ibarra Olarte,389,3632,qualifies,2021,2017
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Petrolero,Estadio Federico Ibarra Olarte,389,3632,qualifies,2025,2017
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Real Santa Cruz,Estadio Real Santa Cruz,405,3616,qualifies,2021,2023
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Real Santa Cruz,Estadio Real Santa Cruz,405,3616,qualifies,2025,2023
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Destroyers,Estadio Ramón Aguilera Costas,423,3598,qualifies,2021,2019
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Royal Parí,Estadio Ramón Aguilera Costas,423,3598,qualifies,2021,2023
+BOL,Real Potosí,Estadio Victor Agustín Ugarte,4021,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3598,qualifies,2021,2025
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Destroyers,Estadio Ramón Aguilera Costas,423,3598,qualifies,2025,2019
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Royal Parí,Estadio Ramón Aguilera Costas,423,3598,qualifies,2025,2023
+BOL,Nacional Potosí,Estadio Victor Agustín Ugarte,4021,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3598,qualifies,2025,2025
+BOL,San José,Estadio Jesús Bermúdez,3718,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3596,qualifies,2021,2023
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3596,qualifies,2025,2023
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3596,qualifies,2025,2023
+BOL,San José,Estadio Jesús Bermúdez,3718,Universitario (B),Estadio Gran Mamoré,157,3561,qualifies,2021,2016
+BOL,San José,Estadio Jesús Bermúdez,3718,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3561,qualifies,2021,2023
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Universitario (B),Estadio Gran Mamoré,157,3561,qualifies,2025,2016
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3561,qualifies,2025,2023
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Universitario (B),Estadio Gran Mamoré,157,3561,qualifies,2025,2016
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3561,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3474,qualifies,2025,2023
+BOL,The Strongest,Estadio Hernando Siles,3596,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,3474,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Universitario (B),Estadio Gran Mamoré,157,3439,qualifies,2025,2016
+BOL,Bolívar,Estadio Hernando Siles,3596,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3439,qualifies,2025,2023
+BOL,The Strongest,Estadio Hernando Siles,3596,Universitario (B),Estadio Gran Mamoré,157,3439,qualifies,2025,2016
+BOL,The Strongest,Estadio Hernando Siles,3596,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,3439,qualifies,2025,2023
+BOL,San José,Estadio Jesús Bermúdez,3718,Blooming,Estadio Gilberto Parada,298,3420,qualifies,2021,2025
+BOL,San José,Estadio Jesús Bermúdez,3718,Guabirá,Estadio Gilberto Parada,298,3420,qualifies,2021,2025
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Blooming,Estadio Gilberto Parada,298,3420,qualifies,2025,2025
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Guabirá,Estadio Gilberto Parada,298,3420,qualifies,2025,2025
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Blooming,Estadio Gilberto Parada,298,3420,qualifies,2025,2025
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Guabirá,Estadio Gilberto Parada,298,3420,qualifies,2025,2025
+BOL,San José,Estadio Jesús Bermúdez,3718,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3409,qualifies,2021,2023
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3409,qualifies,2025,2023
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3409,qualifies,2025,2023
+BOL,San José,Estadio Jesús Bermúdez,3718,Sport Boys,Estadio Samuel Vaca Jimenez,339,3379,qualifies,2021,2019
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Sport Boys,Estadio Samuel Vaca Jimenez,339,3379,qualifies,2025,2019
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Sport Boys,Estadio Samuel Vaca Jimenez,339,3379,qualifies,2025,2019
+BOL,San José,Estadio Jesús Bermúdez,3718,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3361,qualifies,2021,2025
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3361,qualifies,2025,2025
+BOL,GV San José,Estadio Jesús Bermúdez,3718,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3361,qualifies,2025,2025
+BOL,San José,Estadio Jesús Bermúdez,3718,Petrolero,Estadio Federico Ibarra Olarte,389,3329,qualifies,2021,2017
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Petrolero,Estadio Federico Ibarra Olarte,389,3329,qualifies,2025,2017
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Petrolero,Estadio Federico Ibarra Olarte,389,3329,qualifies,2025,2017
+BOL,San José,Estadio Jesús Bermúdez,3718,Real Santa Cruz,Estadio Real Santa Cruz,405,3313,qualifies,2021,2023
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Real Santa Cruz,Estadio Real Santa Cruz,405,3313,qualifies,2025,2023
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Real Santa Cruz,Estadio Real Santa Cruz,405,3313,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Blooming,Estadio Gilberto Parada,298,3298,qualifies,2025,2025
+BOL,Bolívar,Estadio Hernando Siles,3596,Guabirá,Estadio Gilberto Parada,298,3298,qualifies,2025,2025
+BOL,The Strongest,Estadio Hernando Siles,3596,Blooming,Estadio Gilberto Parada,298,3298,qualifies,2025,2025
+BOL,The Strongest,Estadio Hernando Siles,3596,Guabirá,Estadio Gilberto Parada,298,3298,qualifies,2025,2025
+BOL,San José,Estadio Jesús Bermúdez,3718,Destroyers,Estadio Ramón Aguilera Costas,423,3295,qualifies,2021,2019
+BOL,San José,Estadio Jesús Bermúdez,3718,Royal Parí,Estadio Ramón Aguilera Costas,423,3295,qualifies,2021,2023
+BOL,San José,Estadio Jesús Bermúdez,3718,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3295,qualifies,2021,2025
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Destroyers,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2019
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Royal Parí,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2023
+BOL,Real Oruro,Estadio Jesús Bermúdez,3718,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2025
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Destroyers,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2019
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Royal Parí,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2023
+BOL,GV San José,Estadio Jesús Bermúdez,3718,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3295,qualifies,2025,2025
+BOL,Bolívar,Estadio Hernando Siles,3596,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3287,qualifies,2025,2023
+BOL,The Strongest,Estadio Hernando Siles,3596,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,3287,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Sport Boys,Estadio Samuel Vaca Jimenez,339,3257,qualifies,2025,2019
+BOL,The Strongest,Estadio Hernando Siles,3596,Sport Boys,Estadio Samuel Vaca Jimenez,339,3257,qualifies,2025,2019
+BOL,Bolívar,Estadio Hernando Siles,3596,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3239,qualifies,2025,2025
+BOL,The Strongest,Estadio Hernando Siles,3596,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,3239,qualifies,2025,2025
+BOL,Bolívar,Estadio Hernando Siles,3596,Petrolero,Estadio Federico Ibarra Olarte,389,3207,qualifies,2025,2017
+BOL,The Strongest,Estadio Hernando Siles,3596,Petrolero,Estadio Federico Ibarra Olarte,389,3207,qualifies,2025,2017
+BOL,Bolívar,Estadio Hernando Siles,3596,Real Santa Cruz,Estadio Real Santa Cruz,405,3191,qualifies,2025,2023
+BOL,The Strongest,Estadio Hernando Siles,3596,Real Santa Cruz,Estadio Real Santa Cruz,405,3191,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Destroyers,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2019
+BOL,Bolívar,Estadio Hernando Siles,3596,Royal Parí,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2023
+BOL,Bolívar,Estadio Hernando Siles,3596,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2025
+BOL,The Strongest,Estadio Hernando Siles,3596,Destroyers,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2019
+BOL,The Strongest,Estadio Hernando Siles,3596,Royal Parí,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2023
+BOL,The Strongest,Estadio Hernando Siles,3596,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,3173,qualifies,2025,2025
+BOL,Universitario,Estadio Olímpico Patria,2824,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2702,qualifies,2018,2023
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2702,qualifies,2022,2023
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2702,qualifies,2025,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Universitario (B),Estadio Gran Mamoré,157,2667,qualifies,2018,2016
+BOL,Universitario,Estadio Olímpico Patria,2824,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2667,qualifies,2018,2023
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Universitario (B),Estadio Gran Mamoré,157,2667,qualifies,2022,2016
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2667,qualifies,2022,2023
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Universitario (B),Estadio Gran Mamoré,157,2667,qualifies,2025,2016
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2667,qualifies,2025,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Blooming,Estadio Gilberto Parada,298,2526,qualifies,2018,2025
+BOL,Universitario,Estadio Olímpico Patria,2824,Guabirá,Estadio Gilberto Parada,298,2526,qualifies,2018,2025
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Blooming,Estadio Gilberto Parada,298,2526,qualifies,2022,2025
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Guabirá,Estadio Gilberto Parada,298,2526,qualifies,2022,2025
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Blooming,Estadio Gilberto Parada,298,2526,qualifies,2025,2025
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Guabirá,Estadio Gilberto Parada,298,2526,qualifies,2025,2025
+BOL,Universitario,Estadio Olímpico Patria,2824,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,2515,qualifies,2018,2023
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,2515,qualifies,2022,2023
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Atlético Palmaflor,Estadio Bicentenario de Villa Tunari,309,2515,qualifies,2025,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Sport Boys,Estadio Samuel Vaca Jimenez,339,2485,borderline,2018,2019
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Sport Boys,Estadio Samuel Vaca Jimenez,339,2485,borderline,2022,2019
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Sport Boys,Estadio Samuel Vaca Jimenez,339,2485,borderline,2025,2019
+BOL,Universitario,Estadio Olímpico Patria,2824,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,2467,borderline,2018,2025
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,2467,borderline,2022,2025
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,San Antonio Bulo Bulo,Estadio Dr. Carlos Villegas,357,2467,borderline,2025,2025
+BOL,FC Universitario,Estadio Félix Capriles,2574,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2452,borderline,2025,2023
+BOL,Wilstermann,Estadio Félix Capriles,2574,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2452,borderline,2025,2023
+BOL,Aurora,Estadio Félix Capriles,2574,Club Vaca Díez,Estadio Roberto Jordan Cuellár,122,2452,borderline,2025,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Petrolero,Estadio Federico Ibarra Olarte,389,2435,borderline,2018,2017
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Petrolero,Estadio Federico Ibarra Olarte,389,2435,borderline,2022,2017
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Petrolero,Estadio Federico Ibarra Olarte,389,2435,borderline,2025,2017
+BOL,Universitario,Estadio Olímpico Patria,2824,Real Santa Cruz,Estadio Real Santa Cruz,405,2419,borderline,2018,2023
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Real Santa Cruz,Estadio Real Santa Cruz,405,2419,borderline,2022,2023
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Real Santa Cruz,Estadio Real Santa Cruz,405,2419,borderline,2025,2023
+BOL,FC Universitario,Estadio Félix Capriles,2574,Universitario (B),Estadio Gran Mamoré,157,2417,borderline,2025,2016
+BOL,FC Universitario,Estadio Félix Capriles,2574,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2417,borderline,2025,2023
+BOL,Wilstermann,Estadio Félix Capriles,2574,Universitario (B),Estadio Gran Mamoré,157,2417,borderline,2025,2016
+BOL,Wilstermann,Estadio Félix Capriles,2574,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2417,borderline,2025,2023
+BOL,Aurora,Estadio Félix Capriles,2574,Universitario (B),Estadio Gran Mamoré,157,2417,borderline,2025,2016
+BOL,Aurora,Estadio Félix Capriles,2574,Libertad Gran Mamoré FC,Estadio Gran Mamoré,157,2417,borderline,2025,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Destroyers,Estadio Ramón Aguilera Costas,423,2401,borderline,2018,2019
+BOL,Universitario,Estadio Olímpico Patria,2824,Royal Parí,Estadio Ramón Aguilera Costas,423,2401,borderline,2018,2023
+BOL,Universitario,Estadio Olímpico Patria,2824,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,2401,borderline,2018,2025
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Destroyers,Estadio Ramón Aguilera Costas,423,2401,borderline,2022,2019
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Royal Parí,Estadio Ramón Aguilera Costas,423,2401,borderline,2022,2023
+BOL,Univ de Sucre,Estadio Olímpico Patria,2824,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,2401,borderline,2022,2025
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Destroyers,Estadio Ramón Aguilera Costas,423,2401,borderline,2025,2019
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Royal Parí,Estadio Ramón Aguilera Costas,423,2401,borderline,2025,2023
+BOL,Indep Petrolero,Estadio Olímpico Patria,2824,Oriente Petrolero,Estadio Ramón Aguilera Costas,423,2401,borderline,2025,2025
+COL,Boyacá Patriot,Estadio de la Independencia,2684,ADU Magdalena,Estadio Sierra Nevada,17,2667,qualifies,2024,2019
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Unión Magdalena,Estadio Sierra Nevada,17,2667,qualifies,2024,2025
+COL,Boyacá Chicó,Estadio de la Independencia,2684,ADU Magdalena,Estadio Sierra Nevada,17,2667,qualifies,2025,2019
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Unión Magdalena,Estadio Sierra Nevada,17,2667,qualifies,2025,2025
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2665,qualifies,2024,2024
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2665,qualifies,2025,2024
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2655,qualifies,2024,2015
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Junior,Estadio Metropolitano Roberto Meléndez,29,2655,qualifies,2024,2025
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2655,qualifies,2025,2015
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Junior,Estadio Metropolitano Roberto Meléndez,29,2655,qualifies,2025,2025
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2016,2019
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2016,2025
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2017,2019
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2017,2025
+COL,La Equidad,Estadio Metropolitano de Techo,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2019
+COL,La Equidad,Estadio Metropolitano de Techo,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2025
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2019
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2025
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2019
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2025
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,ADU Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2019
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,Unión Magdalena,Estadio Sierra Nevada,17,2536,qualifies,2025,2025
+COL,Pasto,Estadio Departamental Libertad,2552,ADU Magdalena,Estadio Sierra Nevada,17,2535,qualifies,2025,2019
+COL,Pasto,Estadio Departamental Libertad,2552,Unión Magdalena,Estadio Sierra Nevada,17,2535,qualifies,2025,2025
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2016,2024
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2017,2024
+COL,La Equidad,Estadio Metropolitano de Techo,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2025,2024
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2025,2024
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2025,2024
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2534,qualifies,2025,2024
+COL,Pasto,Estadio Departamental Libertad,2552,Jaguares,Estadio de Fútbol Jaraguay de Montería,19,2533,qualifies,2025,2024
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2016,2015
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2016,2025
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2017,2015
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2017,2025
+COL,La Equidad,Estadio Metropolitano de Techo,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2015
+COL,La Equidad,Estadio Metropolitano de Techo,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2025
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2015
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2025
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2015
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2025
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2015
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,Junior,Estadio Metropolitano Roberto Meléndez,29,2524,qualifies,2025,2025
+COL,Pasto,Estadio Departamental Libertad,2552,Uniautónoma,Estadio Metropolitano Roberto Meléndez,29,2523,qualifies,2025,2015
+COL,Pasto,Estadio Departamental Libertad,2552,Junior,Estadio Metropolitano Roberto Meléndez,29,2523,qualifies,2025,2025
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Alianza,Estadio Armando Maestre Pavajeau,167,2517,qualifies,2024,2025
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Alianza,Estadio Armando Maestre Pavajeau,167,2517,qualifies,2025,2025
+COL,Fortaleza CEIF,Estadio Metropolitano de Techo,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2016,2025
+COL,Expreso Rojo,Estadio Metropolitano de Techo,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2017,2025
+COL,La Equidad,Estadio Metropolitano de Techo,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2025,2025
+COL,Santa Fe,Estadio Nemesio Camacho El Campín,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2025,2025
+COL,Millonarios,Estadio Nemesio Camacho El Campín,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2025,2025
+COL,Fortaleza FC,Estadio Metropolitano de Techo,2553,Alianza,Estadio Armando Maestre Pavajeau,167,2386,borderline,2025,2025
+COL,Pasto,Estadio Departamental Libertad,2552,Alianza,Estadio Armando Maestre Pavajeau,167,2385,borderline,2025,2025
+COL,Boyacá Patriot,Estadio de la Independencia,2684,Cúcuta,Estadio General Santander,303,2381,borderline,2024,2020
+COL,Boyacá Chicó,Estadio de la Independencia,2684,Cúcuta,Estadio General Santander,303,2381,borderline,2025,2020
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,3833,qualifies,2024,2022
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,CS Emelec,Estadio George Capwell Banco del Austro,6,3827,qualifies,2024,2025
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Amarilla SC,Estadio 9 de Mayo,10,3823,qualifies,2024,2019
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Manta FC,Estadio Jocay,11,3822,qualifies,2024,2014
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Delfín SC,Estadio Jocay,11,3822,qualifies,2024,2023
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Manta Fútbol Club,Estadio Jocay,11,3822,qualifies,2024,2025
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Delfín,Estadio Jocay,11,3822,qualifies,2024,2025
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,River Ecuador,Estadio Christian Benítez Betancourt,15,3818,qualifies,2024,2016
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Guayaquil City,Estadio Christian Benítez Betancourt,15,3818,qualifies,2024,2023
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,3810,qualifies,2024,2023
+ECU,Imbabura Sporting Club,Estadio Olímpico de Ibarra,3833,LDU Portoviejo,Estadio Reales Tamarindos,37,3796,qualifies,2024,2020
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2878,qualifies,2025,2022
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,CS Emelec,Estadio George Capwell Banco del Austro,6,2872,qualifies,2025,2025
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Amarilla SC,Estadio 9 de Mayo,10,2868,qualifies,2025,2019
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Manta FC,Estadio Jocay,11,2867,qualifies,2025,2014
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Delfín SC,Estadio Jocay,11,2867,qualifies,2025,2023
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Manta Fútbol Club,Estadio Jocay,11,2867,qualifies,2025,2025
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Delfín,Estadio Jocay,11,2867,qualifies,2025,2025
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,River Ecuador,Estadio Christian Benítez Betancourt,15,2863,qualifies,2025,2016
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Guayaquil City,Estadio Christian Benítez Betancourt,15,2863,qualifies,2025,2023
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2855,qualifies,2025,2023
+ECU,SD Aucas,Estadio Gonzalo Pozo Ripalda,2878,LDU Portoviejo,Estadio Reales Tamarindos,37,2841,qualifies,2025,2020
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2015,2022
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2019,2022
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2024,2022
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2025,2022
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2025,2022
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2787,qualifies,2025,2022
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2015,2025
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2019,2025
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2024,2025
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2025,2025
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2025,2025
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,CS Emelec,Estadio George Capwell Banco del Austro,6,2781,qualifies,2025,2025
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2015,2019
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2019,2019
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2777,qualifies,2021,2022
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2024,2019
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2777,qualifies,2025,2022
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2025,2019
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2025,2019
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Amarilla SC,Estadio 9 de Mayo,10,2777,qualifies,2025,2019
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2015,2014
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2015,2023
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2015,2025
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2015,2025
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2019,2014
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2019,2023
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2019,2025
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2019,2025
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2024,2014
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2024,2023
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2024,2025
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2024,2025
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2025,2014
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2025,2023
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2025,2014
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2025,2023
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Manta FC,Estadio Jocay,11,2776,qualifies,2025,2014
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Delfín SC,Estadio Jocay,11,2776,qualifies,2025,2023
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Manta Fútbol Club,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Delfín,Estadio Jocay,11,2776,qualifies,2025,2025
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2015,2016
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2015,2023
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2019,2016
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2019,2023
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2024,2016
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2024,2023
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2016
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2023
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2016
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2023
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,River Ecuador,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2016
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Guayaquil City,Estadio Christian Benítez Betancourt,15,2772,qualifies,2025,2023
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,CS Emelec,Estadio George Capwell Banco del Austro,6,2771,qualifies,2021,2025
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,CS Emelec,Estadio George Capwell Banco del Austro,6,2771,qualifies,2025,2025
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Amarilla SC,Estadio 9 de Mayo,10,2767,qualifies,2021,2019
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Amarilla SC,Estadio 9 de Mayo,10,2767,qualifies,2025,2019
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Manta FC,Estadio Jocay,11,2766,qualifies,2021,2014
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Delfín SC,Estadio Jocay,11,2766,qualifies,2021,2023
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Manta Fútbol Club,Estadio Jocay,11,2766,qualifies,2021,2025
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Delfín,Estadio Jocay,11,2766,qualifies,2021,2025
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Manta FC,Estadio Jocay,11,2766,qualifies,2025,2014
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Delfín SC,Estadio Jocay,11,2766,qualifies,2025,2023
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Manta Fútbol Club,Estadio Jocay,11,2766,qualifies,2025,2025
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Delfín,Estadio Jocay,11,2766,qualifies,2025,2025
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2015,2023
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2019,2023
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2024,2023
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2025,2023
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2025,2023
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2764,qualifies,2025,2023
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,River Ecuador,Estadio Christian Benítez Betancourt,15,2762,qualifies,2021,2016
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Guayaquil City,Estadio Christian Benítez Betancourt,15,2762,qualifies,2021,2023
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,River Ecuador,Estadio Christian Benítez Betancourt,15,2762,qualifies,2025,2016
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Guayaquil City,Estadio Christian Benítez Betancourt,15,2762,qualifies,2025,2023
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2757,qualifies,2025,2022
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2754,qualifies,2021,2023
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2754,qualifies,2025,2023
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,CS Emelec,Estadio George Capwell Banco del Austro,6,2751,qualifies,2025,2025
+ECU,SD Quito,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2015,2020
+ECU,América Quito,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2019,2020
+ECU,Cumbayá FC,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2024,2020
+ECU,El Nacional,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2025,2020
+ECU,Univ Católica,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2025,2020
+ECU,Vinotinto,Estadio Olímpico Atahualpa,2787,LDU Portoviejo,Estadio Reales Tamarindos,37,2750,qualifies,2025,2020
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Amarilla SC,Estadio 9 de Mayo,10,2747,qualifies,2025,2019
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Manta FC,Estadio Jocay,11,2746,qualifies,2025,2014
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Delfín SC,Estadio Jocay,11,2746,qualifies,2025,2023
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Manta Fútbol Club,Estadio Jocay,11,2746,qualifies,2025,2025
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Delfín,Estadio Jocay,11,2746,qualifies,2025,2025
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,River Ecuador,Estadio Christian Benítez Betancourt,15,2742,qualifies,2025,2016
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Guayaquil City,Estadio Christian Benítez Betancourt,15,2742,qualifies,2025,2023
+ECU,CD Olmedo,Estadio Olímpico de Riobamba,2777,LDU Portoviejo,Estadio Reales Tamarindos,37,2740,qualifies,2021,2020
+ECU,Mushuc Runa,Estadio Olímpico de Riobamba,2777,LDU Portoviejo,Estadio Reales Tamarindos,37,2740,qualifies,2025,2020
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2734,qualifies,2025,2023
+ECU,LDU de Quito,Estadio Rodrigo Paz Delgado,2757,LDU Portoviejo,Estadio Reales Tamarindos,37,2720,qualifies,2025,2020
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2528,qualifies,2023,2022
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2528,qualifies,2025,2022
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,CS Emelec,Estadio George Capwell Banco del Austro,6,2522,qualifies,2023,2025
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,CS Emelec,Estadio George Capwell Banco del Austro,6,2522,qualifies,2025,2025
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Amarilla SC,Estadio 9 de Mayo,10,2518,qualifies,2023,2019
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Amarilla SC,Estadio 9 de Mayo,10,2518,qualifies,2025,2019
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Manta FC,Estadio Jocay,11,2517,qualifies,2023,2014
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Delfín SC,Estadio Jocay,11,2517,qualifies,2023,2023
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Manta Fútbol Club,Estadio Jocay,11,2517,qualifies,2023,2025
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Delfín,Estadio Jocay,11,2517,qualifies,2023,2025
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Manta FC,Estadio Jocay,11,2517,qualifies,2025,2014
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Delfín SC,Estadio Jocay,11,2517,qualifies,2025,2023
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Manta Fútbol Club,Estadio Jocay,11,2517,qualifies,2025,2025
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Delfín,Estadio Jocay,11,2517,qualifies,2025,2025
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,River Ecuador,Estadio Christian Benítez Betancourt,15,2513,qualifies,2023,2016
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Guayaquil City,Estadio Christian Benítez Betancourt,15,2513,qualifies,2023,2023
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,River Ecuador,Estadio Christian Benítez Betancourt,15,2513,qualifies,2025,2016
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Guayaquil City,Estadio Christian Benítez Betancourt,15,2513,qualifies,2025,2023
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2505,qualifies,2023,2023
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2505,qualifies,2025,2023
+ECU,Independiente,Estadio banco Guayaquil,2500,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2500,borderline,2025,2022
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Club 9 de Octubre,Estadio Modelo Alberto Spencer Herrera,0,2498,borderline,2017,2022
+ECU,Independiente,Estadio banco Guayaquil,2500,CS Emelec,Estadio George Capwell Banco del Austro,6,2494,borderline,2025,2025
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,CS Emelec,Estadio George Capwell Banco del Austro,6,2492,borderline,2017,2025
+ECU,CD Cuenca,Estadio Alejandro Serrano Aguilar,2528,LDU Portoviejo,Estadio Reales Tamarindos,37,2491,borderline,2023,2020
+ECU,Deportivo Cuenca,Estadio Alejandro Serrano Aguilar Banco ...,2528,LDU Portoviejo,Estadio Reales Tamarindos,37,2491,borderline,2025,2020
+ECU,Independiente,Estadio banco Guayaquil,2500,Amarilla SC,Estadio 9 de Mayo,10,2490,borderline,2025,2019
+ECU,Independiente,Estadio banco Guayaquil,2500,Manta FC,Estadio Jocay,11,2489,borderline,2025,2014
+ECU,Independiente,Estadio banco Guayaquil,2500,Delfín SC,Estadio Jocay,11,2489,borderline,2025,2023
+ECU,Independiente,Estadio banco Guayaquil,2500,Manta Fútbol Club,Estadio Jocay,11,2489,borderline,2025,2025
+ECU,Independiente,Estadio banco Guayaquil,2500,Delfín,Estadio Jocay,11,2489,borderline,2025,2025
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Amarilla SC,Estadio 9 de Mayo,10,2488,borderline,2017,2019
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Manta FC,Estadio Jocay,11,2487,borderline,2017,2014
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Delfín SC,Estadio Jocay,11,2487,borderline,2017,2023
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Manta Fútbol Club,Estadio Jocay,11,2487,borderline,2017,2025
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Delfín,Estadio Jocay,11,2487,borderline,2017,2025
+ECU,Independiente,Estadio banco Guayaquil,2500,River Ecuador,Estadio Christian Benítez Betancourt,15,2485,borderline,2025,2016
+ECU,Independiente,Estadio banco Guayaquil,2500,Guayaquil City,Estadio Christian Benítez Betancourt,15,2485,borderline,2025,2023
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,River Ecuador,Estadio Christian Benítez Betancourt,15,2483,borderline,2017,2016
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Guayaquil City,Estadio Christian Benítez Betancourt,15,2483,borderline,2017,2023
+ECU,Independiente,Estadio banco Guayaquil,2500,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2477,borderline,2025,2023
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,Barcelona SC,Estadio Monumental Isidro Romero Carbo,23,2475,borderline,2017,2023
+ECU,Independiente,Estadio banco Guayaquil,2500,LDU Portoviejo,Estadio Reales Tamarindos,37,2463,borderline,2025,2020
+ECU,Clan Juvenil,Estadio General Rumiñahui del Valle de L...,2498,LDU Portoviejo,Estadio Reales Tamarindos,37,2461,borderline,2017,2020
+MEX,Toluca,Estadio Nemesio Díez,2678,Veracruz,Estadio Luis de la Fuente,16,2662,qualifies,2026,2020
+MEX,Toluca,Estadio Nemesio Díez,2678,Mazatlán,Estadio El Encanto,38,2640,qualifies,2026,2026
+MEX,Toluca,Estadio Nemesio Díez,2678,Sinaloa,Estadio Banorte,39,2639,qualifies,2026,2016
+MEX,Toluca,Estadio Nemesio Díez,2678,Tijuana,Estadio Caliente,167,2511,qualifies,2026,2026
+MEX,Pachuca,Estadio Hidalgo,2376,Veracruz,Estadio Luis de la Fuente,16,2360,borderline,2026,2020
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Sport Boys,Estadio Miguel Grau del Callao,12,3821,qualifies,2025,2025
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,La Bocana,Estadio Municipal Bernales,32,3801,qualifies,2025,2016
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Los Caimanes,Estadio Elías Aguirre,34,3799,qualifies,2025,2014
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Mannucci,Estadio Mansiche,38,3795,qualifies,2025,2024
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,U César Vallejo,Estadio Mansiche,38,3795,qualifies,2025,2024
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Atlético Grau,Estadio Campeones del 36,63,3770,qualifies,2025,2025
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Alianza Atlético,Estadio Campeones del 36,63,3770,qualifies,2025,2025
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,USMP,Estadio Alberto Gallardo,128,3705,qualifies,2025,2022
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Sporting Cristal,Estadio Alberto Gallardo,128,3705,qualifies,2025,2025
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Alianza Lima,Estadio Alejandro Villanueva,147,3686,qualifies,2025,2025
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Dep Municipal,Estadio Iván Elías Moreno,193,3640,qualifies,2025,2023
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,Cantolao,Estadio Iván Elías Moreno,193,3640,qualifies,2025,2023
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Sport Boys,Estadio Miguel Grau del Callao,12,3344,qualifies,2019,2025
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Sport Boys,Estadio Miguel Grau del Callao,12,3344,qualifies,2025,2025
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Sport Boys,Estadio Miguel Grau del Callao,12,3344,qualifies,2025,2025
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Sport Boys,Estadio Miguel Grau del Callao,12,3344,qualifies,2025,2025
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,La Bocana,Estadio Municipal Bernales,32,3324,qualifies,2019,2016
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,La Bocana,Estadio Municipal Bernales,32,3324,qualifies,2025,2016
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,La Bocana,Estadio Municipal Bernales,32,3324,qualifies,2025,2016
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,La Bocana,Estadio Municipal Bernales,32,3324,qualifies,2025,2016
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Sport Boys,Estadio Miguel Grau del Callao,12,3324,qualifies,2025,2025
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Los Caimanes,Estadio Elías Aguirre,34,3322,qualifies,2019,2014
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Los Caimanes,Estadio Elías Aguirre,34,3322,qualifies,2025,2014
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Los Caimanes,Estadio Elías Aguirre,34,3322,qualifies,2025,2014
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Los Caimanes,Estadio Elías Aguirre,34,3322,qualifies,2025,2014
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Mannucci,Estadio Mansiche,38,3318,qualifies,2019,2024
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,U César Vallejo,Estadio Mansiche,38,3318,qualifies,2019,2024
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Mannucci,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,U César Vallejo,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Mannucci,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,U César Vallejo,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Mannucci,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,U César Vallejo,Estadio Mansiche,38,3318,qualifies,2025,2024
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,La Bocana,Estadio Municipal Bernales,32,3304,qualifies,2025,2016
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Los Caimanes,Estadio Elías Aguirre,34,3302,qualifies,2025,2014
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Mannucci,Estadio Mansiche,38,3298,qualifies,2025,2024
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,U César Vallejo,Estadio Mansiche,38,3298,qualifies,2025,2024
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Atlético Grau,Estadio Campeones del 36,63,3293,qualifies,2019,2025
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Alianza Atlético,Estadio Campeones del 36,63,3293,qualifies,2019,2025
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Atlético Grau,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Alianza Atlético,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Atlético Grau,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Alianza Atlético,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Atlético Grau,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Alianza Atlético,Estadio Campeones del 36,63,3293,qualifies,2025,2025
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Atlético Grau,Estadio Campeones del 36,63,3273,qualifies,2025,2025
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Alianza Atlético,Estadio Campeones del 36,63,3273,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,Sport Boys,Estadio Miguel Grau del Callao,12,3240,qualifies,2025,2025
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,USMP,Estadio Alberto Gallardo,128,3228,qualifies,2019,2022
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Sporting Cristal,Estadio Alberto Gallardo,128,3228,qualifies,2019,2025
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,USMP,Estadio Alberto Gallardo,128,3228,qualifies,2025,2022
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Sporting Cristal,Estadio Alberto Gallardo,128,3228,qualifies,2025,2025
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,USMP,Estadio Alberto Gallardo,128,3228,qualifies,2025,2022
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Sporting Cristal,Estadio Alberto Gallardo,128,3228,qualifies,2025,2025
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,USMP,Estadio Alberto Gallardo,128,3228,qualifies,2025,2022
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Sporting Cristal,Estadio Alberto Gallardo,128,3228,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,La Bocana,Estadio Municipal Bernales,32,3220,qualifies,2025,2016
+PER,Sport Huancayo,Estadio Huancayo,3252,Los Caimanes,Estadio Elías Aguirre,34,3218,qualifies,2025,2014
+PER,Sport Huancayo,Estadio Huancayo,3252,Mannucci,Estadio Mansiche,38,3214,qualifies,2025,2024
+PER,Sport Huancayo,Estadio Huancayo,3252,U César Vallejo,Estadio Mansiche,38,3214,qualifies,2025,2024
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Alianza Lima,Estadio Alejandro Villanueva,147,3209,qualifies,2019,2025
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Alianza Lima,Estadio Alejandro Villanueva,147,3209,qualifies,2025,2025
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Alianza Lima,Estadio Alejandro Villanueva,147,3209,qualifies,2025,2025
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Alianza Lima,Estadio Alejandro Villanueva,147,3209,qualifies,2025,2025
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,USMP,Estadio Alberto Gallardo,128,3208,qualifies,2025,2022
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Sporting Cristal,Estadio Alberto Gallardo,128,3208,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,Atlético Grau,Estadio Campeones del 36,63,3189,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,Alianza Atlético,Estadio Campeones del 36,63,3189,qualifies,2025,2025
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Alianza Lima,Estadio Alejandro Villanueva,147,3189,qualifies,2025,2025
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Dep Municipal,Estadio Iván Elías Moreno,193,3163,qualifies,2019,2023
+PER,Real Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Cantolao,Estadio Iván Elías Moreno,193,3163,qualifies,2019,2023
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Dep Municipal,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Cusco,Estadio Inca Garcilaso de la Vega,3356,Cantolao,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Dep Municipal,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Cienciano,Estadio Inca Garcilaso de la Vega,3356,Cantolao,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Dep Municipal,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Deportivo Garcilaso,Estadio Inca Garcilaso de la Vega,3356,Cantolao,Estadio Iván Elías Moreno,193,3163,qualifies,2025,2023
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Dep Municipal,Estadio Iván Elías Moreno,193,3143,qualifies,2025,2023
+PER,Melgar,Estadio de la Universidad Nacional San A...,3336,Cantolao,Estadio Iván Elías Moreno,193,3143,qualifies,2025,2023
+PER,Sport Huancayo,Estadio Huancayo,3252,USMP,Estadio Alberto Gallardo,128,3124,qualifies,2025,2022
+PER,Sport Huancayo,Estadio Huancayo,3252,Sporting Cristal,Estadio Alberto Gallardo,128,3124,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,Alianza Lima,Estadio Alejandro Villanueva,147,3105,qualifies,2025,2025
+PER,Sport Huancayo,Estadio Huancayo,3252,Dep Municipal,Estadio Iván Elías Moreno,193,3059,qualifies,2025,2023
+PER,Sport Huancayo,Estadio Huancayo,3252,Cantolao,Estadio Iván Elías Moreno,193,3059,qualifies,2025,2023
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Sport Boys,Estadio Miguel Grau del Callao,12,3049,qualifies,2024,2025
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Sport Boys,Estadio Miguel Grau del Callao,12,3049,qualifies,2025,2025
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,La Bocana,Estadio Municipal Bernales,32,3029,qualifies,2024,2016
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,La Bocana,Estadio Municipal Bernales,32,3029,qualifies,2025,2016
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Los Caimanes,Estadio Elías Aguirre,34,3027,qualifies,2024,2014
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Los Caimanes,Estadio Elías Aguirre,34,3027,qualifies,2025,2014
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Mannucci,Estadio Mansiche,38,3023,qualifies,2024,2024
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,U César Vallejo,Estadio Mansiche,38,3023,qualifies,2024,2024
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Mannucci,Estadio Mansiche,38,3023,qualifies,2025,2024
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,U César Vallejo,Estadio Mansiche,38,3023,qualifies,2025,2024
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Atlético Grau,Estadio Campeones del 36,63,2998,qualifies,2024,2025
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Alianza Atlético,Estadio Campeones del 36,63,2998,qualifies,2024,2025
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Atlético Grau,Estadio Campeones del 36,63,2998,qualifies,2025,2025
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Alianza Atlético,Estadio Campeones del 36,63,2998,qualifies,2025,2025
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,USMP,Estadio Alberto Gallardo,128,2933,qualifies,2024,2022
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Sporting Cristal,Estadio Alberto Gallardo,128,2933,qualifies,2024,2025
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,USMP,Estadio Alberto Gallardo,128,2933,qualifies,2025,2022
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Sporting Cristal,Estadio Alberto Gallardo,128,2933,qualifies,2025,2025
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Alianza Lima,Estadio Alejandro Villanueva,147,2914,qualifies,2024,2025
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Alianza Lima,Estadio Alejandro Villanueva,147,2914,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Sport Boys,Estadio Miguel Grau del Callao,12,2893,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,La Bocana,Estadio Municipal Bernales,32,2873,qualifies,2025,2016
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Los Caimanes,Estadio Elías Aguirre,34,2871,qualifies,2025,2014
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Dep Municipal,Estadio Iván Elías Moreno,193,2868,qualifies,2024,2023
+PER,Asociación Deportiva Tarma,Estadio Municipal Unión de Tarma,3061,Cantolao,Estadio Iván Elías Moreno,193,2868,qualifies,2024,2023
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Dep Municipal,Estadio Iván Elías Moreno,193,2868,qualifies,2025,2023
+PER,ADT Tarma,Estadio Municipal Unión de Tarma,3061,Cantolao,Estadio Iván Elías Moreno,193,2868,qualifies,2025,2023
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Mannucci,Estadio Mansiche,38,2867,qualifies,2025,2024
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,U César Vallejo,Estadio Mansiche,38,2867,qualifies,2025,2024
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Atlético Grau,Estadio Campeones del 36,63,2842,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Alianza Atlético,Estadio Campeones del 36,63,2842,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,USMP,Estadio Alberto Gallardo,128,2777,qualifies,2025,2022
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Sporting Cristal,Estadio Alberto Gallardo,128,2777,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Alianza Lima,Estadio Alejandro Villanueva,147,2758,qualifies,2025,2025
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Dep Municipal,Estadio Iván Elías Moreno,193,2712,qualifies,2025,2023
+PER,CDC Santa Rosa,Estadio Los Chankas,2905,Cantolao,Estadio Iván Elías Moreno,193,2712,qualifies,2025,2023
+PER,Binacional,Estadio Guillermo Briceño Rosamedina,3833,San Simón,Estadio 25 de Noviembre,1465,2368,borderline,2025,2014

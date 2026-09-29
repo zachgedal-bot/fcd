@@ -1,0 +1,210 @@
+country,venue_fbref_name,canonical_name,city,lat,lon,coordinate_source,reported_elevation_m,elevation_source,dem_elevation_m,dem_window_min_max,confidence,notes
+MEX,Estadio Nemesio Díez,Estadio Nemesio Díez,,19.2856,-99.6636,"PROVISIONAL (analyst memory, unverified)",,,2678.0,2675-2683,provisional,provisional for pipeline debugging
+MEX,Estadio Caliente,Estadio Caliente,,32.4926,-116.9963,"PROVISIONAL (analyst memory, unverified)",,,167.0,127-193,provisional,provisional for pipeline debugging
+MEX,Estadio Luis de la Fuente,Estadio Luis de la Fuente,,19.165,-96.133,"PROVISIONAL (analyst memory, unverified)",,,16.0,12-19,provisional,provisional for pipeline debugging
+MEX,Estadio de Mazatlán,Estadio de Mazatlán,,23.242,-106.375,"PROVISIONAL (analyst memory, unverified)",,,38.0,26-47,provisional,provisional for pipeline debugging
+MEX,Estadio El Encanto,Estadio El Encanto,,23.242,-106.375,"PROVISIONAL (analyst memory, unverified)",,,38.0,26-47,provisional,provisional for pipeline debugging
+MEX,Estadio Banorte,Estadio Banorte,,24.801,-107.425,"PROVISIONAL (analyst memory, unverified)",,,39.0,27-41,provisional,provisional for pipeline debugging
+MEX,Estadio Azteca,Estadio Azteca,,19.3029,-99.1505,"PROVISIONAL (analyst memory, unverified)",,,2281.0,2250-2296,provisional,provisional for pipeline debugging
+MEX,Estadio Azul,Estadio Azul,,19.3789,-99.1856,"PROVISIONAL (analyst memory, unverified)",,,2270.0,2263-2275,provisional,provisional for pipeline debugging
+MEX,Estadio Olímpico de Universitario,Estadio Olímpico de Universitario,,19.3325,-99.1922,"PROVISIONAL (analyst memory, unverified)",,,2295.0,2284-2309,provisional,provisional for pipeline debugging
+MEX,Estadio de la Ciudad de los Deportes,Estadio de la Ciudad de los Deportes,,19.3878,-99.185,"PROVISIONAL (analyst memory, unverified)",,,2269.0,2262-2277,provisional,provisional for pipeline debugging
+MEX,Estadio Hidalgo,Estadio Hidalgo,,20.109,-98.758,"PROVISIONAL (analyst memory, unverified)",,,2376.0,2373-2383,provisional,provisional for pipeline debugging
+MEX,Estadio BBVA Bancomer,Estadio BBVA Bancomer,,25.669,-100.2445,"PROVISIONAL (analyst memory, unverified)",,,496.0,489-502,provisional,provisional for pipeline debugging
+MEX,Estadio Universitario de Nuevo León,Estadio Universitario de Nuevo León,,25.724,-100.312,"PROVISIONAL (analyst memory, unverified)",,,524.0,516-529,provisional,provisional for pipeline debugging
+MEX,Estadio Tecnológico,Estadio Tecnológico,,25.652,-100.289,"PROVISIONAL (analyst memory, unverified)",,,541.0,528-559,provisional,provisional for pipeline debugging
+MEX,Estadio Akron,Estadio Akron,,20.682,-103.4625,"PROVISIONAL (analyst memory, unverified)",,,1668.0,1663-1676,provisional,provisional for pipeline debugging
+MEX,Estadio Jalisco,Estadio Jalisco,,20.701,-103.333,"PROVISIONAL (analyst memory, unverified)",,,1520.0,1512-1528,provisional,provisional for pipeline debugging
+MEX,Estadio León,Estadio León,,21.13,-101.675,"PROVISIONAL (analyst memory, unverified)",,,1808.0,1803-1811,provisional,provisional for pipeline debugging
+MEX,Estadio Cuauhtémoc,Estadio Cuauhtémoc,,19.0765,-98.1735,"PROVISIONAL (analyst memory, unverified)",,,2211.0,2205-2216,provisional,provisional for pipeline debugging
+MEX,Estadio La Corregidora,Estadio La Corregidora,,20.552,-100.427,"PROVISIONAL (analyst memory, unverified)",,,1810.0,1807-1818,provisional,provisional for pipeline debugging
+MEX,Estadio Nuevo Corona,Estadio Nuevo Corona,,25.576,-103.373,"PROVISIONAL (analyst memory, unverified)",,,1124.0,1113-1134,provisional,provisional for pipeline debugging
+MEX,Estadio Victoria de Aguascalientes,Estadio Victoria de Aguascalientes,,21.836,-102.257,"PROVISIONAL (analyst memory, unverified)",,,1951.0,1940-1969,provisional,provisional for pipeline debugging
+MEX,Estadio Generalísimo José María Morelos ...,Estadio Generalísimo José María Morelos ...,,19.73,-101.156,"PROVISIONAL (analyst memory, unverified)",,,1887.0,1881-1897,provisional,provisional for pipeline debugging
+MEX,Estadio Alfonso Lastras Ramírez,Estadio Alfonso Lastras Ramírez,,22.165,-100.916,"PROVISIONAL (analyst memory, unverified)",,,1848.0,1845-1850,provisional,provisional for pipeline debugging
+MEX,Estadio Olímpico Benito Juárez,Estadio Olímpico Benito Juárez,,31.665,-106.423,"PROVISIONAL (analyst memory, unverified)",,,1154.0,1151-1160,provisional,provisional for pipeline debugging
+MEX,Estadio Zoque VMR,Estadio Zoque VMR,,16.783,-93.155,"PROVISIONAL (analyst memory, unverified)",,,937.0,896-958,provisional,provisional for pipeline debugging
+MEX,Estadio Universitario BUAP,Estadio Universitario BUAP,,19.0,-98.203,"PROVISIONAL (analyst memory, unverified)",,,2132.0,2120-2137,provisional,provisional for pipeline debugging
+MEX,Estadio Universitario Alberto Chivo Córd...,Estadio Universitario Alberto Chivo Córd...,,19.267,-99.669,"PROVISIONAL (analyst memory, unverified)",,,2710.0,2705-2715,provisional,provisional for pipeline debugging
+PER,Estadio Alejandro Villanueva,Estadio Alejandro Villanueva,,-12.068,-77.023,"PROVISIONAL (analyst memory, unverified)",,,147.0,143-156,provisional,provisional for pipeline debugging
+PER,Estadio Monumental,Estadio Monumental,,-11.9868,-76.9748,"PROVISIONAL (analyst memory, unverified)",,,418.0,389-494,provisional,provisional for pipeline debugging
+PER,Estadio Nacional,Estadio Nacional,,-12.0672,-77.0336,"PROVISIONAL (analyst memory, unverified)",,,136.0,132-142,provisional,provisional for pipeline debugging
+PER,Estadio Alberto Gallardo,Estadio Alberto Gallardo,,-12.035,-77.045,"PROVISIONAL (analyst memory, unverified)",,,128.0,117-133,provisional,provisional for pipeline debugging
+PER,Estadio Miguel Grau del Callao,Estadio Miguel Grau del Callao,,-12.058,-77.133,"PROVISIONAL (analyst memory, unverified)",,,12.0,7-15,provisional,provisional for pipeline debugging
+PER,Estadio Iván Elías Moreno,Estadio Iván Elías Moreno,,-12.21,-76.935,"PROVISIONAL (analyst memory, unverified)",,,193.0,183-201,provisional,provisional for pipeline debugging
+PER,Estadio Inca Garcilaso de la Vega,Estadio Inca Garcilaso de la Vega,,-13.522,-71.96,"PROVISIONAL (analyst memory, unverified)",,,3356.0,3342-3360,provisional,provisional for pipeline debugging
+PER,Estadio de la Universidad Nacional San A...,Estadio de la Universidad Nacional San A...,,-13.528,-71.964,"PROVISIONAL (analyst memory, unverified)",,,3336.0,3329-3358,provisional,provisional for pipeline debugging
+PER,Estadio Huancayo,Estadio Huancayo,,-12.072,-75.2094,"PROVISIONAL (analyst memory, unverified)",,,3252.0,3244-3255,provisional,provisional for pipeline debugging
+PER,Estadio Ciudad de Cumaná,Estadio Ciudad de Cumaná,,-13.143,-74.22,"PROVISIONAL (analyst memory, unverified)",,,2787.0,2731-2793,provisional,provisional for pipeline debugging
+PER,Estadio Guillermo Briceño Rosamedina,Estadio Guillermo Briceño Rosamedina,,-15.49,-70.132,"PROVISIONAL (analyst memory, unverified)",,,3833.0,3829-3836,provisional,provisional for pipeline debugging
+PER,Estadio Héroes de San Ramón,Estadio Héroes de San Ramón,,-7.162,-78.518,"PROVISIONAL (analyst memory, unverified)",,,2764.0,2744-2799,provisional,provisional for pipeline debugging
+PER,Estadio Municipal Unión de Tarma,Estadio Municipal Unión de Tarma,,-11.42,-75.689,"PROVISIONAL (analyst memory, unverified)",,,3061.0,3052-3073,provisional,provisional for pipeline debugging
+PER,Estadio Los Chankas,Estadio Los Chankas,,-13.657,-73.381,"PROVISIONAL (analyst memory, unverified)",,,2905.0,2896-2942,provisional,provisional for pipeline debugging
+PER,Estadio Mansiche,Estadio Mansiche,,-8.108,-79.033,"PROVISIONAL (analyst memory, unverified)",,,38.0,32-41,provisional,provisional for pipeline debugging
+PER,Estadio Elías Aguirre,Estadio Elías Aguirre,,-6.77,-79.84,"PROVISIONAL (analyst memory, unverified)",,,34.0,30-36,provisional,provisional for pipeline debugging
+PER,Estadio Campeones del 36,Estadio Campeones del 36,,-4.89,-80.685,"PROVISIONAL (analyst memory, unverified)",,,63.0,56-69,provisional,provisional for pipeline debugging
+PER,Estadio Municipal Bernales,Estadio Municipal Bernales,,-5.19,-80.63,"PROVISIONAL (analyst memory, unverified)",,,32.0,30-39,provisional,provisional for pipeline debugging
+PER,Estadio Miguel Grau,Estadio Miguel Grau,,-5.193,-80.625,"PROVISIONAL (analyst memory, unverified)",,,35.0,24-45,provisional,provisional for pipeline debugging
+PER,Estadio Heraclio Tapia León,Estadio Heraclio Tapia León,,-9.933,-76.243,"PROVISIONAL (analyst memory, unverified)",,,1901.0,1898-1904,provisional,provisional for pipeline debugging
+PER,Estadio Mariano Melgar,Estadio Mariano Melgar,,-16.404,-71.535,"PROVISIONAL (analyst memory, unverified)",,,2342.0,2333-2350,provisional,provisional for pipeline debugging
+PER,Estadio 25 de Noviembre,Estadio 25 de Noviembre,,-17.197,-70.933,"PROVISIONAL (analyst memory, unverified)",,,1465.0,1439-1496,provisional,provisional for pipeline debugging
+PER,Estadio Municipal de Urcos,Estadio Municipal de Urcos,,-13.687,-71.628,"PROVISIONAL (analyst memory, unverified)",,,3166.0,3153-3196,provisional,provisional for pipeline debugging
+PER,Villa Deportiva Nacional,Villa Deportiva Nacional,,-12.033,-77.013,"PROVISIONAL (analyst memory, unverified)",,,191.0,179-241,provisional,provisional for pipeline debugging
+ECU,Estadio Rodrigo Paz Delgado,Estadio Rodrigo Paz Delgado,,-0.1116,-78.4884,"PROVISIONAL (analyst memory, unverified)",,,2757.0,2745-2773,provisional,provisional for pipeline debugging
+ECU,Estadio de Liga Deportiva Universitaria,Estadio de Liga Deportiva Universitaria,,-0.1116,-78.4884,"PROVISIONAL (analyst memory, unverified)",,,2757.0,2745-2773,provisional,provisional for pipeline debugging
+ECU,Estadio Olímpico Atahualpa,Estadio Olímpico Atahualpa,,-0.177,-78.476,"PROVISIONAL (analyst memory, unverified)",,,2787.0,2764-2811,provisional,provisional for pipeline debugging
+ECU,Estadio Gonzalo Pozo Ripalda,Estadio Gonzalo Pozo Ripalda,,-0.275,-78.551,"PROVISIONAL (analyst memory, unverified)",,,2878.0,2862-2884,provisional,provisional for pipeline debugging
+ECU,Estadio General Rumiñahui del Valle de L...,Estadio General Rumiñahui del Valle de L...,,-0.3323,-78.4488,"PROVISIONAL (analyst memory, unverified)",,,2498.0,2494-2513,provisional,provisional for pipeline debugging
+ECU,Estadio banco Guayaquil,Estadio banco Guayaquil,,-0.329,-78.445,"PROVISIONAL (analyst memory, unverified)",,,2500.0,2495-2519,provisional,provisional for pipeline debugging
+ECU,Estadio Monumental Isidro Romero Carbo,Estadio Monumental Isidro Romero Carbo,,-2.1858,-79.9247,"PROVISIONAL (analyst memory, unverified)",,,23.0,14-51,provisional,provisional for pipeline debugging
+ECU,Estadio Banco del Pacífico,Estadio Banco del Pacífico,,-2.2003,-79.893,"PROVISIONAL (analyst memory, unverified)",,,6.0,1-14,provisional,provisional for pipeline debugging
+ECU,Estadio George Capwell Banco del Austro,Estadio George Capwell Banco del Austro,,-2.2003,-79.893,"PROVISIONAL (analyst memory, unverified)",,,6.0,1-14,provisional,provisional for pipeline debugging
+ECU,Estadio Christian Benítez Betancourt,Estadio Christian Benítez Betancourt,,-2.112,-79.92,"PROVISIONAL (analyst memory, unverified)",,,15.0,10-34,provisional,provisional for pipeline debugging
+ECU,Estadio Modelo Alberto Spencer Herrera,Estadio Modelo Alberto Spencer Herrera,,-2.178,-79.907,"PROVISIONAL (analyst memory, unverified)",,,0.0,0-38,provisional,provisional for pipeline debugging
+ECU,Estadio Jocay,Estadio Jocay,,-0.956,-80.718,"PROVISIONAL (analyst memory, unverified)",,,11.0,7-12,provisional,provisional for pipeline debugging
+ECU,Estadio Reales Tamarindos,Estadio Reales Tamarindos,,-1.051,-80.456,"PROVISIONAL (analyst memory, unverified)",,,37.0,33-43,provisional,provisional for pipeline debugging
+ECU,Estadio 9 de Mayo,Estadio 9 de Mayo,,-3.259,-79.953,"PROVISIONAL (analyst memory, unverified)",,,10.0,4-11,provisional,provisional for pipeline debugging
+ECU,Estadio Alejandro Serrano Aguilar,Estadio Alejandro Serrano Aguilar,,-2.9046,-79.0069,"PROVISIONAL (analyst memory, unverified)",,,2528.0,2516-2531,provisional,provisional for pipeline debugging
+ECU,Estadio Alejandro Serrano Aguilar Banco ...,Estadio Alejandro Serrano Aguilar Banco ...,,-2.9046,-79.0069,"PROVISIONAL (analyst memory, unverified)",,,2528.0,2516-2531,provisional,provisional for pipeline debugging
+ECU,Estadio Bellavista de Ambato,Estadio Bellavista de Ambato,,-1.2565,-78.6183,"PROVISIONAL (analyst memory, unverified)",,,2671.0,2650-2679,provisional,provisional for pipeline debugging
+ECU,Estadio Olímpico de Riobamba,Estadio Olímpico de Riobamba,,-1.66,-78.656,"PROVISIONAL (analyst memory, unverified)",,,2777.0,2774-2788,provisional,provisional for pipeline debugging
+ECU,Estadio Federativo Reina del Cisne,Estadio Federativo Reina del Cisne,,-3.983,-79.203,"PROVISIONAL (analyst memory, unverified)",,,2048.0,2043-2054,provisional,provisional for pipeline debugging
+ECU,Estadio Municipal La Cocha,Estadio Municipal La Cocha,,-0.937,-78.618,"PROVISIONAL (analyst memory, unverified)",,,2747.0,2742-2767,provisional,provisional for pipeline debugging
+ECU,Estadio del Mushuc Runa Sporting Club,Estadio del Mushuc Runa Sporting Club,,-1.1717,-78.5343,"PROVISIONAL (analyst memory, unverified)",,,2864.0,2844-2868,provisional,provisional for pipeline debugging
+ECU,Estadio Los Chirijos,Estadio Los Chirijos,,-2.13,-79.599,"PROVISIONAL (analyst memory, unverified)",,,11.0,6-20,provisional,provisional for pipeline debugging
+ECU,Estadio 7 de Octubre,Estadio 7 de Octubre,,-1.033,-79.47,"PROVISIONAL (analyst memory, unverified)",,,52.0,51-57,provisional,provisional for pipeline debugging
+ECU,Estadio Olímpico de Ibarra,Estadio Olímpico de Ibarra,,-0.344,-78.13,"PROVISIONAL (analyst memory, unverified)",,,3833.0,3731-3903,provisional,provisional for pipeline debugging
+COL,Estadio Nemesio Camacho El Campín,Estadio Nemesio Camacho El Campín,,4.6458,-74.0778,"PROVISIONAL (analyst memory, unverified)",,,2553.0,2547-2563,provisional,provisional for pipeline debugging
+COL,Estadio Metropolitano de Techo,Estadio Metropolitano de Techo,,4.6326,-74.1372,"PROVISIONAL (analyst memory, unverified)",,,2553.0,2549-2572,provisional,provisional for pipeline debugging
+COL,Estadio de la Independencia,Estadio de la Independencia,,5.5516,-73.3527,"PROVISIONAL (analyst memory, unverified)",,,2684.0,2682-2703,provisional,provisional for pipeline debugging
+COL,Estadio Departamental Libertad,Estadio Departamental Libertad,,1.2128,-77.2825,"PROVISIONAL (analyst memory, unverified)",,,2552.0,2544-2567,provisional,provisional for pipeline debugging
+COL,Estadio Municipal de Ipiales,Estadio Municipal de Ipiales,,0.832,-77.642,"PROVISIONAL (analyst memory, unverified)",,,2886.0,2871-2903,provisional,provisional for pipeline debugging
+COL,Estadio Metropolitano Roberto Meléndez,Estadio Metropolitano Roberto Meléndez,,10.924,-74.786,"PROVISIONAL (analyst memory, unverified)",,,29.0,26-37,provisional,provisional for pipeline debugging
+COL,Estadio Romelio Martínez,Estadio Romelio Martínez,,10.995,-74.793,"PROVISIONAL (analyst memory, unverified)",,,36.0,28-40,provisional,provisional for pipeline debugging
+COL,Estadio Sierra Nevada,Estadio Sierra Nevada,,11.2325,-74.195,"PROVISIONAL (analyst memory, unverified)",,,17.0,12-19,provisional,provisional for pipeline debugging
+COL,Estadio Olímpico Jaime Morón León,Estadio Olímpico Jaime Morón León,,10.399,-75.484,"PROVISIONAL (analyst memory, unverified)",,,9.0,5-17,provisional,provisional for pipeline debugging
+COL,Estadio de Fútbol Jaraguay de Montería,Estadio de Fútbol Jaraguay de Montería,,8.7386,-75.872,"PROVISIONAL (analyst memory, unverified)",,,19.0,12-19,provisional,provisional for pipeline debugging
+COL,Estadio Atanasio Girardot,Estadio Atanasio Girardot,,6.2568,-75.5904,"PROVISIONAL (analyst memory, unverified)",,,1475.0,1469-1509,provisional,provisional for pipeline debugging
+COL,Estadio Metropolitano de Itagüí,Estadio Metropolitano de Itagüí,,6.17,-75.605,"PROVISIONAL (analyst memory, unverified)",,,1549.0,1544-1564,provisional,provisional for pipeline debugging
+COL,Estadio Polideportivo Sur,Estadio Polideportivo Sur,,6.172,-75.592,"PROVISIONAL (analyst memory, unverified)",,,1532.0,1531-1563,provisional,provisional for pipeline debugging
+COL,Estadio Olímpico Pascual Guerrero,Estadio Olímpico Pascual Guerrero,,3.43,-76.543,"PROVISIONAL (analyst memory, unverified)",,,967.0,966-982,provisional,provisional for pipeline debugging
+COL,Estadio Deportivo Cali,Estadio Deportivo Cali,,3.5507,-76.4144,"PROVISIONAL (analyst memory, unverified)",,,954.0,950-962,provisional,provisional for pipeline debugging
+COL,Estadio Palogrande,Estadio Palogrande,,5.056,-75.495,"PROVISIONAL (analyst memory, unverified)",,,2103.0,2066-2121,provisional,provisional for pipeline debugging
+COL,Estadio Hernán Ramírez Villegas,Estadio Hernán Ramírez Villegas,,4.81,-75.744,"PROVISIONAL (analyst memory, unverified)",,,1313.0,1286-1334,provisional,provisional for pipeline debugging
+COL,Estadio Centenario,Estadio Centenario,,4.5297,-75.696,"PROVISIONAL (analyst memory, unverified)",,,1412.0,1394-1422,provisional,provisional for pipeline debugging
+COL,Estadio Manuel Murillo Toro,Estadio Manuel Murillo Toro,,4.44,-75.244,"PROVISIONAL (analyst memory, unverified)",,,1199.0,1189-1278,provisional,provisional for pipeline debugging
+COL,Estadio Alfonso López,Estadio Alfonso López,,7.1226,-73.1198,"PROVISIONAL (analyst memory, unverified)",,,986.0,975-1005,provisional,provisional for pipeline debugging
+COL,Estadio Américo Montanini,Estadio Américo Montanini,,7.116,-73.105,"PROVISIONAL (analyst memory, unverified)",,,1014.0,989-1049,provisional,provisional for pipeline debugging
+COL,Estadio Daniel Villa Zapata,Estadio Daniel Villa Zapata,,7.0633,-73.8514,"PROVISIONAL (analyst memory, unverified)",,,82.0,82-90,provisional,provisional for pipeline debugging
+COL,Estadio General Santander,Estadio General Santander,,7.8946,-72.5045,"PROVISIONAL (analyst memory, unverified)",,,303.0,300-313,provisional,provisional for pipeline debugging
+COL,Estadio Guillermo Plazas Alcid,Estadio Guillermo Plazas Alcid,,2.9398,-75.2879,"PROVISIONAL (analyst memory, unverified)",,,447.0,444-458,provisional,provisional for pipeline debugging
+COL,Estadio Bello Horizonte,Estadio Bello Horizonte,,4.1355,-73.6222,"PROVISIONAL (analyst memory, unverified)",,,429.0,423-438,provisional,provisional for pipeline debugging
+COL,Estadio Doce de Octubre,Estadio Doce de Octubre,,4.087,-76.2,"PROVISIONAL (analyst memory, unverified)",,,975.0,971-982,provisional,provisional for pipeline debugging
+COL,Estadio Alberto Grisales,Estadio Alberto Grisales,,6.154,-75.3808,"PROVISIONAL (analyst memory, unverified)",,,2108.0,2095-2139,provisional,provisional for pipeline debugging
+COL,Estadio Armando Maestre Pavajeau,Estadio Armando Maestre Pavajeau,,10.4735,-73.2434,"PROVISIONAL (analyst memory, unverified)",,,167.0,161-175,provisional,provisional for pipeline debugging
+COL,Estadio Álvaro Gómez Hurtado,Estadio Álvaro Gómez Hurtado,,7.07,-73.088,"PROVISIONAL (analyst memory, unverified)",,,915.0,899-962,provisional,provisional for pipeline debugging
+COL,Estadio Héctor El Zipa González,Estadio Héctor El Zipa González,,5.027,-74.005,"PROVISIONAL (analyst memory, unverified)",,,2627.0,2618-2642,provisional,provisional for pipeline debugging
+COL,Parque Estadio Olaya Herrera,Parque Estadio Olaya Herrera,,4.587,-74.105,"PROVISIONAL (analyst memory, unverified)",,,2571.0,2568-2575,provisional,provisional for pipeline debugging
+COL,Estadio Luis Antonio Duque Peña,Estadio Luis Antonio Duque Peña,,4.307,-74.8,"PROVISIONAL (analyst memory, unverified)",,,283.0,277-291,provisional,provisional for pipeline debugging
+COL,Estadio Arturo Cumplido Sierra,Estadio Arturo Cumplido Sierra,,9.296,-75.39,"PROVISIONAL (analyst memory, unverified)",,,214.0,198-223,provisional,provisional for pipeline debugging
+COL,Estadio Francisco Rivera Escobar,Estadio Francisco Rivera Escobar,,3.53,-76.3,"PROVISIONAL (analyst memory, unverified)",,,1008.0,1002-1016,provisional,provisional for pipeline debugging
+BOL,Estadio Hernando Siles,Estadio Hernando Siles,,-16.4989,-68.1219,"PROVISIONAL (analyst memory, unverified)",,,3596.0,3589-3612,provisional,provisional for pipeline debugging
+BOL,Estadio Municipal El Alto,Estadio Municipal El Alto,,-16.4903,-68.1861,"PROVISIONAL (analyst memory, unverified)",,,4079.0,4073-4083,provisional,provisional for pipeline debugging
+BOL,Estadio Rafael Mendoza Castellón,Estadio Rafael Mendoza Castellón,,-16.535,-68.078,"PROVISIONAL (analyst memory, unverified)",,,3330.0,3320-3373,provisional,provisional for pipeline debugging
+BOL,Estadio Libertador Simón Bolívar,Estadio Libertador Simón Bolívar,,-16.51,-68.15,"PROVISIONAL (analyst memory, unverified)",,,3902.0,3873-3970,provisional,provisional for pipeline debugging
+BOL,Estadio Jesús Bermúdez,Estadio Jesús Bermúdez,,-17.9668,-67.1085,"PROVISIONAL (analyst memory, unverified)",,,3718.0,3715-3722,provisional,provisional for pipeline debugging
+BOL,Estadio Victor Agustín Ugarte,Estadio Victor Agustín Ugarte,,-19.5847,-65.747,"PROVISIONAL (analyst memory, unverified)",,,4021.0,4003-4042,provisional,provisional for pipeline debugging
+BOL,Estadio Olímpico Patria,Estadio Olímpico Patria,,-19.0367,-65.252,"PROVISIONAL (analyst memory, unverified)",,,2824.0,2814-2842,provisional,provisional for pipeline debugging
+BOL,Estadio Félix Capriles,Estadio Félix Capriles,,-17.3904,-66.1612,"PROVISIONAL (analyst memory, unverified)",,,2574.0,2571-2581,provisional,provisional for pipeline debugging
+BOL,Estadio Municipal de Sacaba,Estadio Municipal de Sacaba,,-17.403,-66.04,"PROVISIONAL (analyst memory, unverified)",,,2715.0,2709-2724,provisional,provisional for pipeline debugging
+BOL,Estadio Municipal de Quillacollo,Estadio Municipal de Quillacollo,,-17.4,-66.28,"PROVISIONAL (analyst memory, unverified)",,,2551.0,2550-2557,provisional,provisional for pipeline debugging
+BOL,Estadio Municipal de Colcapirhua,Estadio Municipal de Colcapirhua,,-17.41,-66.23,"PROVISIONAL (analyst memory, unverified)",,,2548.0,2545-2553,provisional,provisional for pipeline debugging
+BOL,Estadio Bicentenario de Villa Tunari,Estadio Bicentenario de Villa Tunari,,-16.972,-65.42,"PROVISIONAL (analyst memory, unverified)",,,309.0,308-314,provisional,provisional for pipeline debugging
+BOL,Estadio Ramón Aguilera Costas,Estadio Ramón Aguilera Costas,,-17.797,-63.1876,"PROVISIONAL (analyst memory, unverified)",,,423.0,421-437,provisional,provisional for pipeline debugging
+BOL,Estadio Real Santa Cruz,Estadio Real Santa Cruz,,-17.75,-63.15,"PROVISIONAL (analyst memory, unverified)",,,405.0,404-411,provisional,provisional for pipeline debugging
+BOL,Estadio Juan Carlos Durán,Estadio Juan Carlos Durán,,-17.79,-63.16,"PROVISIONAL (analyst memory, unverified)",,,418.0,411-425,provisional,provisional for pipeline debugging
+BOL,Estadio Edgar Peña Gutierrez,Estadio Edgar Peña Gutierrez,,-17.77,-63.21,"PROVISIONAL (analyst memory, unverified)",,,418.0,414-423,provisional,provisional for pipeline debugging
+BOL,Estadio Samuel Vaca Jimenez,Estadio Samuel Vaca Jimenez,,-17.51,-63.166,"PROVISIONAL (analyst memory, unverified)",,,339.0,335-341,provisional,provisional for pipeline debugging
+BOL,Estadio Gilberto Parada,Estadio Gilberto Parada,,-17.34,-63.256,"PROVISIONAL (analyst memory, unverified)",,,298.0,297-304,provisional,provisional for pipeline debugging
+BOL,Estadio IV Centenario,Estadio IV Centenario,,-21.5347,-64.7297,"PROVISIONAL (analyst memory, unverified)",,,1869.0,1869-1873,provisional,provisional for pipeline debugging
+BOL,Estadio La Bombonera,Estadio La Bombonera,,-21.533,-64.723,"PROVISIONAL (analyst memory, unverified)",,,1868.0,1864-1871,provisional,provisional for pipeline debugging
+BOL,Estadio Provincial de Yacuiba,Estadio Provincial de Yacuiba,,-22.017,-63.68,"PROVISIONAL (analyst memory, unverified)",,,631.0,628-634,provisional,provisional for pipeline debugging
+BOL,Estadio Federico Ibarra Olarte,Estadio Federico Ibarra Olarte,,-21.26,-63.47,"PROVISIONAL (analyst memory, unverified)",,,389.0,383-394,provisional,provisional for pipeline debugging
+BOL,Estadio Gran Mamoré,Estadio Gran Mamoré,,-14.825,-64.9,"PROVISIONAL (analyst memory, unverified)",,,157.0,156-160,provisional,provisional for pipeline debugging
+BOL,Estadio Roberto Jordan Cuellár,Estadio Roberto Jordan Cuellár,,-10.99,-66.07,"PROVISIONAL (analyst memory, unverified)",,,122.0,120-137,provisional,provisional for pipeline debugging
+BOL,Estadio Dr. Carlos Villegas,Estadio Dr. Carlos Villegas,,-17.27,-64.4,"PROVISIONAL (analyst memory, unverified)",,,357.0,301-389,provisional,provisional for pipeline debugging
+NT,NT:La Paz,"main international stadium, La Paz",La Paz,-16.4989,-68.1219,PROVISIONAL (analyst),,,3596.0,3589-3612,provisional,
+NT,NT:El Alto,"main international stadium, El Alto",El Alto,-16.4903,-68.1861,PROVISIONAL (analyst),,,4079.0,4073-4083,provisional,
+NT,NT:Santa Cruz,"main international stadium, Santa Cruz",Santa Cruz,-17.797,-63.1876,PROVISIONAL (analyst),,,423.0,421-437,provisional,
+NT,NT:Cochabamba,"main international stadium, Cochabamba",Cochabamba,-17.3904,-66.1612,PROVISIONAL (analyst),,,2574.0,2571-2581,provisional,
+NT,NT:Sucre,"main international stadium, Sucre",Sucre,-19.0367,-65.252,PROVISIONAL (analyst),,,2824.0,2814-2842,provisional,
+NT,NT:Oruro,"main international stadium, Oruro",Oruro,-17.9668,-67.1085,PROVISIONAL (analyst),,,3718.0,3715-3722,provisional,
+NT,NT:Potosí,"main international stadium, Potosí",Potosí,-19.5847,-65.747,PROVISIONAL (analyst),,,4021.0,4003-4042,provisional,
+NT,NT:Barranquilla,"main international stadium, Barranquilla",Barranquilla,10.924,-74.786,PROVISIONAL (analyst),,,29.0,26-37,provisional,
+NT,NT:Bogotá,"main international stadium, Bogotá",Bogotá,4.6458,-74.0778,PROVISIONAL (analyst),,,2553.0,2547-2563,provisional,
+NT,NT:Medellín,"main international stadium, Medellín",Medellín,6.2568,-75.5904,PROVISIONAL (analyst),,,1475.0,1469-1509,provisional,
+NT,NT:Cali,"main international stadium, Cali",Cali,3.43,-76.543,PROVISIONAL (analyst),,,967.0,966-982,provisional,
+NT,NT:Pereira,"main international stadium, Pereira",Pereira,4.81,-75.744,PROVISIONAL (analyst),,,1313.0,1286-1334,provisional,
+NT,NT:Armenia,"main international stadium, Armenia",Armenia,4.5297,-75.696,PROVISIONAL (analyst),,,1412.0,1394-1422,provisional,
+NT,NT:Manizales,"main international stadium, Manizales",Manizales,5.056,-75.495,PROVISIONAL (analyst),,,2103.0,2066-2121,provisional,
+NT,NT:Quito,"main international stadium, Quito",Quito,-0.177,-78.476,PROVISIONAL (analyst),,,2787.0,2764-2811,provisional,
+NT,NT:Guayaquil,"main international stadium, Guayaquil",Guayaquil,-2.1858,-79.9247,PROVISIONAL (analyst),,,23.0,14-51,provisional,
+NT,NT:Cuenca,"main international stadium, Cuenca",Cuenca,-2.9046,-79.0069,PROVISIONAL (analyst),,,2528.0,2516-2531,provisional,
+NT,NT:Ambato,"main international stadium, Ambato",Ambato,-1.2565,-78.6183,PROVISIONAL (analyst),,,2671.0,2650-2679,provisional,
+NT,NT:Portoviejo,"main international stadium, Portoviejo",Portoviejo,-1.051,-80.456,PROVISIONAL (analyst),,,37.0,33-43,provisional,
+NT,NT:Machala,"main international stadium, Machala",Machala,-3.259,-79.953,PROVISIONAL (analyst),,,10.0,4-11,provisional,
+NT,NT:Mexico City,"main international stadium, Mexico City",Mexico City,19.3029,-99.1505,PROVISIONAL (analyst),,,2281.0,2250-2296,provisional,
+NT,NT:Guadalajara,"main international stadium, Guadalajara",Guadalajara,20.701,-103.333,PROVISIONAL (analyst),,,1520.0,1512-1528,provisional,
+NT,NT:Zapopan,"main international stadium, Zapopan",Zapopan,20.682,-103.4625,PROVISIONAL (analyst),,,1668.0,1663-1676,provisional,
+NT,NT:Monterrey,"main international stadium, Monterrey",Monterrey,25.669,-100.2445,PROVISIONAL (analyst),,,496.0,489-502,provisional,
+NT,NT:Guadalupe,"main international stadium, Guadalupe",Guadalupe,25.669,-100.2445,PROVISIONAL (analyst),,,496.0,489-502,provisional,
+NT,NT:Puebla,"main international stadium, Puebla",Puebla,19.0765,-98.1735,PROVISIONAL (analyst),,,2211.0,2205-2216,provisional,
+NT,NT:Torreón,"main international stadium, Torreón",Torreón,25.576,-103.373,PROVISIONAL (analyst),,,1124.0,1113-1134,provisional,
+NT,NT:Querétaro,"main international stadium, Querétaro",Querétaro,20.552,-100.427,PROVISIONAL (analyst),,,1810.0,1807-1818,provisional,
+NT,NT:San Luis Potosí,"main international stadium, San Luis Potosí",San Luis Potosí,22.165,-100.916,PROVISIONAL (analyst),,,1848.0,1845-1850,provisional,
+NT,NT:Toluca,"main international stadium, Toluca",Toluca,19.2856,-99.6636,PROVISIONAL (analyst),,,2678.0,2675-2683,provisional,
+NT,NT:Tuxtla Gutiérrez,"main international stadium, Tuxtla Gutiérrez",Tuxtla Gutiérrez,16.783,-93.155,PROVISIONAL (analyst),,,937.0,896-958,provisional,
+NT,NT:Veracruz,"main international stadium, Veracruz",Veracruz,19.165,-96.133,PROVISIONAL (analyst),,,16.0,12-19,provisional,
+NT,NT:Lima,"main international stadium, Lima",Lima,-12.0672,-77.0336,PROVISIONAL (analyst),,,136.0,132-142,provisional,
+NT,NT:Arequipa,"main international stadium, Arequipa",Arequipa,-16.382,-71.524,PROVISIONAL (analyst),,,2451.0,2441-2471,provisional,
+NT,NT:Tacna,"main international stadium, Tacna",Tacna,-18.01,-70.25,PROVISIONAL (analyst),,,581.0,575-587,provisional,
+NT,NT:Chiclayo,"main international stadium, Chiclayo",Chiclayo,-6.77,-79.84,PROVISIONAL (analyst),,,34.0,30-36,provisional,
+NT,NT:Trujillo,"main international stadium, Trujillo",Trujillo,-8.108,-79.033,PROVISIONAL (analyst),,,38.0,32-41,provisional,
+NT,NT:Piura,"main international stadium, Piura",Piura,-5.193,-80.625,PROVISIONAL (analyst),,,35.0,24-45,provisional,
+NT,NT:Cusco,"main international stadium, Cusco",Cusco,-13.522,-71.96,PROVISIONAL (analyst),,,3356.0,3342-3360,provisional,
+NTV,NTV:Argentina:Buenos Aires,usual home stadium of Argentina in Buenos Aires,Buenos Aires,-34.5453,-58.4494,PROVISIONAL (analyst),,,7.0,1-22,provisional,
+NTV,NTV:Argentina:Córdoba,usual home stadium of Argentina in Córdoba,Córdoba,-31.369,-64.246,PROVISIONAL (analyst),,,419.0,409-437,provisional,
+NTV,NTV:Argentina:Mendoza,usual home stadium of Argentina in Mendoza,Mendoza,-32.8896,-68.88,PROVISIONAL (analyst),,,839.0,836-861,provisional,
+NTV,NTV:Brazil:Rio de Janeiro,usual home stadium of Brazil in Rio de Janeiro,Rio de Janeiro,-22.9122,-43.2302,PROVISIONAL (analyst),,,10.0,8-33,provisional,
+NTV,NTV:Brazil:São Paulo,usual home stadium of Brazil in São Paulo,São Paulo,-23.6,-46.72,PROVISIONAL (analyst),,,748.0,743-765,provisional,
+NTV,NTV:Brazil:Porto Alegre,usual home stadium of Brazil in Porto Alegre,Porto Alegre,-30.065,-51.236,PROVISIONAL (analyst),,,10.0,3-13,provisional,
+NTV,NTV:Chile:Santiago,usual home stadium of Chile in Santiago,Santiago,-33.4647,-70.6106,PROVISIONAL (analyst),,,567.0,567-583,provisional,
+NTV,NTV:Uruguay:Montevideo,usual home stadium of Uruguay in Montevideo,Montevideo,-34.8944,-56.1528,PROVISIONAL (analyst),,,24.0,13-44,provisional,
+NTV,NTV:Paraguay:Asunción,usual home stadium of Paraguay in Asunción,Asunción,-25.29,-57.63,PROVISIONAL (analyst),,,112.0,105-120,provisional,
+NTV,NTV:Venezuela:San Cristóbal,usual home stadium of Venezuela in San Cristóbal,San Cristóbal,7.79,-72.23,PROVISIONAL (analyst),,,869.0,839-880,provisional,
+NTV,NTV:Venezuela:Maracaibo,usual home stadium of Venezuela in Maracaibo,Maracaibo,10.66,-71.63,PROVISIONAL (analyst),,,42.0,35-52,provisional,
+NTV,NTV:Venezuela:Caracas,usual home stadium of Venezuela in Caracas,Caracas,10.49,-66.887,PROVISIONAL (analyst),,,870.0,859-873,provisional,
+NTV,NTV:Peru:Lima,usual home stadium of Peru in Lima,Lima,-12.0672,-77.0336,PROVISIONAL (analyst),,,136.0,132-142,provisional,
+NTV,NTV:Colombia:Barranquilla,usual home stadium of Colombia in Barranquilla,Barranquilla,10.924,-74.786,PROVISIONAL (analyst),,,29.0,26-37,provisional,
+NTV,NTV:Colombia:Bogotá,usual home stadium of Colombia in Bogotá,Bogotá,4.6458,-74.0778,PROVISIONAL (analyst),,,2553.0,2547-2563,provisional,
+NTV,NTV:Ecuador:Quito,usual home stadium of Ecuador in Quito,Quito,-0.177,-78.476,PROVISIONAL (analyst),,,2787.0,2764-2811,provisional,
+NTV,NTV:Ecuador:Guayaquil,usual home stadium of Ecuador in Guayaquil,Guayaquil,-2.1858,-79.9247,PROVISIONAL (analyst),,,23.0,14-51,provisional,
+NTV,NTV:Bolivia:La Paz,usual home stadium of Bolivia in La Paz,La Paz,-16.4989,-68.1219,PROVISIONAL (analyst),,,3596.0,3589-3612,provisional,
+NTV,NTV:Mexico:Mexico City,usual home stadium of Mexico in Mexico City,Mexico City,19.3029,-99.1505,PROVISIONAL (analyst),,,2281.0,2250-2296,provisional,
+NTV,NTV:United States:Foxborough,usual home stadium of United States in Foxborough,Foxborough,42.0909,-71.2643,PROVISIONAL (analyst),,,79.0,75-94,provisional,
+NTV,"NTV:United States:Washington, D.C.","usual home stadium of United States in Washington, D.C.","Washington, D.C.",38.89,-76.97,PROVISIONAL (analyst),,,5.0,2-8,provisional,
+NTV,NTV:United States:Chicago,usual home stadium of United States in Chicago,Chicago,41.8623,-87.6167,PROVISIONAL (analyst),,,180.0,180-181,provisional,
+NTV,NTV:Canada:Toronto,usual home stadium of Canada in Toronto,Toronto,43.6332,-79.4186,PROVISIONAL (analyst),,,86.0,82-89,provisional,
+NTV,NTV:Costa Rica:San José,usual home stadium of Costa Rica in San José,San José,9.94,-84.1,PROVISIONAL (analyst),,,1130.0,1119-1140,provisional,
+NTV,NTV:Honduras:San Pedro Sula,usual home stadium of Honduras in San Pedro Sula,San Pedro Sula,15.5,-88.03,PROVISIONAL (analyst),,,97.0,90-104,provisional,
+NTV,NTV:Honduras:Tegucigalpa,usual home stadium of Honduras in Tegucigalpa,Tegucigalpa,14.09,-87.2,PROVISIONAL (analyst),,,980.0,959-1030,provisional,
+NTV,NTV:Panama:Panama City,usual home stadium of Panama in Panama City,Panama City,9.04,-79.51,PROVISIONAL (analyst),,,50.0,43-81,provisional,
+NTV,NTV:Jamaica:Kingston,usual home stadium of Jamaica in Kingston,Kingston,17.99,-76.78,PROVISIONAL (analyst),,,61.0,56-67,provisional,
+NTV,NTV:El Salvador:San Salvador,usual home stadium of El Salvador in San Salvador,San Salvador,13.69,-89.22,PROVISIONAL (analyst),,,723.0,717-737,provisional,
+NTV,NTV:Guatemala:Guatemala City,usual home stadium of Guatemala in Guatemala City,Guatemala City,14.6,-90.53,PROVISIONAL (analyst),,,1520.0,1512-1530,provisional,
+NTV,NTV:Trinidad and Tobago:Port of Spain,usual home stadium of Trinidad and Tobago in Port of Spain,Port of Spain,10.66,-61.53,PROVISIONAL (analyst),,,3.0,1-10,provisional,
+NTV,NTV:Haiti:Port-au-Prince,usual home stadium of Haiti in Port-au-Prince,Port-au-Prince,18.54,-72.33,PROVISIONAL (analyst),,,58.0,52-68,provisional,
+NTV,NTV:Cuba:Havana,usual home stadium of Cuba in Havana,Havana,23.1,-82.4,PROVISIONAL (analyst),,,32.0,26-39,provisional,
+NTV,NTV:Nicaragua:Managua,usual home stadium of Nicaragua in Managua,Managua,12.14,-86.26,PROVISIONAL (analyst),,,82.0,77-88,provisional,
+NTV,NTV:Curaçao:Willemstad,usual home stadium of Curaçao in Willemstad,Willemstad,12.1,-68.93,PROVISIONAL (analyst),,,5.0,0-16,provisional,
+NTV,NTV:Suriname:Paramaribo,usual home stadium of Suriname in Paramaribo,Paramaribo,5.83,-55.17,PROVISIONAL (analyst),,,6.0,2-11,provisional,
