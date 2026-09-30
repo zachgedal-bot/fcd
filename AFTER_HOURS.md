@@ -3,8 +3,10 @@
 The members-only back room of AthleMix: `after-hours.html`. Three desks
 and a calculator, all client-side, all illustrative until backtested.
 
-Open it: serve the folder over HTTP (`python3 -m http.server`) and visit
-`after-hours.html`. Invite code at the rope: the height in metres of the highest
+Run it: `npm start` (Node 18+, no dependencies) and open http://localhost:8080.
+The server gates the room, serves the desks and proxies the odds provider;
+see `DEPLOY.md` for hosting and `.env.example` for configuration. For a quick
+static look, `python3 -m http.server` and open `after-hours.html` instead. Invite code at the rope: the height in metres of the highest
 ground in the book. `after-hours.html?code=4090` is a shareable invite link.
 The rope is cosmetic; nothing behind it is protected.
 
@@ -60,6 +62,15 @@ Full notes with sources: `altitude_edge/PARAMETERS.md` and
   prices seen lagging Kalshi by up to 5 s after scores), but NWSL live depth is
   tens to low hundreds of dollars against a break-even of one to four thousand
   per goal. Negative EV with travel in the base case.
+
+## Live data
+
+`server/server.js` exposes `/api/fixtures` (1X2 and 2.5 totals for the
+altitude leagues, Pinnacle preferred, consensus fallback) and `/api/props`
+(player shots, shots on target, anytime scorer per event) from The Odds API,
+cached server-side to protect the quota. Without `ODDS_API_KEY` both answer
+503 and the book shows "Lines unavailable". `npm test` runs the adapter tests;
+`node server/test/mock_provider.js` stands in for the provider locally.
 
 ## Not advice
 

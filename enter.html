@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Athlemix After Hours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/after-hours.css" />
+  </head>
+  <body>
+    <div class="gate" style="position:static;min-height:100vh">
+      <form class="gate__card" method="post" action="/enter" style="display:grid;gap:12px">
+        <div class="gate__brand">ATHLEMIX</div>
+        <div class="gate__sub">After Hours · members only · 18+</div>
+        <input name="code" placeholder="INVITE CODE" autocomplete="off" required />
+        <label style="display:flex;gap:10px;align-items:flex-start;text-align:left;font-size:0.8rem;color:var(--muted)">
+          <input type="checkbox" name="adult" required style="width:auto;margin-top:3px" />
+          <span>I am 18 or older. I understand this room shows market listings and model output, not predictions or bets, and that nothing here places a wager.</span>
+        </label>
+        <button class="btn" type="submit">Enter</button>
+        <div class="gate__err" id="err"></div>
+        <div class="gate__hint">Invites come from the house. Lost yours? Ask whoever sat you down.</div>
+      </form>
+    </div>
+    <script>
+      const e = new URLSearchParams(location.search).get('err');
+      document.getElementById('err').textContent = e === 'code' ? 'Not on the list.' : e === 'adult' ? 'You must confirm you are 18 or older.' : '';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "athlemix-after-hours",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Athlemix After Hours: altitude, match-card and props desks with a server-side odds adapter",
+  "main": "server/server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node --test server/test/*.test.js"
+  }
+}

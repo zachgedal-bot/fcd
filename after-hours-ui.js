@@ -5,6 +5,7 @@
   const CFG = Object.assign({ gate: true, fixturesUrl: 'altitude_edge/fixtures_demo.json', dataBase: '', homeUrl: 'index.html', labUrl: 'altitude_fc/altitude_fc_cards.html' }, window.AFTER_HOURS_CONFIG || {});
   document.querySelectorAll('a[data-home]').forEach(a => a.href = CFG.homeUrl);
   document.querySelectorAll('a[data-lab]').forEach(a => a.href = CFG.labUrl);
+  if (CFG.serverGated) document.querySelectorAll('a[data-leave]').forEach(a => a.hidden = false);
   const $ = id => document.getElementById(id);
   const fmtP = p => (p * 100).toFixed(1);
   const fmtEV = ev => `<span class="${ev >= 0 ? 'pos' : 'neg'}">${ev >= 0 ? '+' : ''}${(ev * 100).toFixed(1)}%</span>`;
@@ -24,8 +25,8 @@
   });
 
   // ---------- data ----------
-  let venues = null, lookup = null, fixtures = [], added = store.get('ah.added', []);
-  async function loadJSON(path) { const r = await fetch(path); if (!r.ok) throw new Error(r.status); return r.json(); }
+  let venues = null, lookup = null, fixtures = [], feedMeta = null, added = store.get('ah.added', []);
+  async function loadJSON(path) { const r = await fetch(path, { credentials: 'same-origin' }); if (!r.ok) { let msg = String(r.status); try { const j = await r.json(); if (j && j.message) msg = `${r.status}: ${j.message}`; } catch (e) {} throw new Error(msg); } return r.json(); }
 
   function params() {
     return Object.assign({}, M.DEFAULT_PARAMS, {
@@ -75,6 +76,7 @@
       body.appendChild(tr);
     }
     if (skipped.length) { const tr = document.createElement('tr'); tr.className = 'details'; tr.innerHTML = `<td colspan="11">skipped: ${skipped.map(s => s.skip).join(' · ')}</td>`; body.appendChild(tr); }
+    if (feedMeta) { const tr = document.createElement('tr'); tr.className = 'details'; const q = feedMeta.quota && feedMeta.quota.remaining != null ? ` · quota remaining ${feedMeta.quota.remaining}` : ''; tr.innerHTML = `<td colspan="11">feed: ${feedMeta.provider || 'live'} · ${(feedMeta.leagues || []).map(l => l.title || l.key).join(', ') || 'no leagues matched'} · fetched ${feedMeta.fetched_at || ''}${feedMeta.cached ? ' (cached)' : ''}${q}${(feedMeta.errors || []).length ? ' · errors: ' + feedMeta.errors.map(e => e.league + ' ' + e.error).join(', ') : ''}</td>`; body.appendChild(tr); }
   }
 
   function parseCSV(text) {
@@ -90,7 +92,7 @@
   }
   $('p-days').addEventListener('input', renderAltitude); $('p-mindiff').addEventListener('input', renderAltitude);
   $('fx-file').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { fixtures = parseCSV(t); renderAltitude(); }); });
-  function loadFixtures() { return loadJSON(CFG.fixturesUrl).then(d => { fixtures = Array.isArray(d) ? d : (d.fixtures || []); renderAltitude(); }).catch(err => { fixtures = []; renderAltitude(); $('altitude-body').innerHTML = `<tr><td colspan="11">Lines unavailable: ${CFG.fixturesUrl} returned ${err.message}. No odds are being simulated. Drop a CSV or add a line below.</td></tr>`; }); }
+  function loadFixtures() { return loadJSON(CFG.fixturesUrl).then(d => { fixtures = Array.isArray(d) ? d : (d.fixtures || []); feedMeta = Array.isArray(d) ? null : (d.meta || null); renderAltitude(); }).catch(err => { fixtures = []; renderAltitude(); $('altitude-body').innerHTML = `<tr><td colspan="11">Lines unavailable: ${CFG.fixturesUrl} returned ${err.message}. No odds are being simulated. Drop a CSV or add a line below.</td></tr>`; }); }
   $('fx-reload').addEventListener('click', loadFixtures);
   $('fx-clear').addEventListener('click', () => { added = []; store.set('ah.added', added); renderAltitude(); });
   $('al-add').addEventListener('click', () => {

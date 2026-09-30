@@ -35,6 +35,7 @@
           <a href="#rules">House rules</a>
           <a href="altitude_fc/altitude_fc_cards.html" data-lab>The lab ↗</a>
           <a href="index.html" data-home>← AthleMix</a>
+          <a href="/leave" data-leave hidden>Leave</a>
         </nav>
       </header>
 
@@ -191,16 +192,7 @@
       </footer>
     </div>
 
-    <script>
-      // Port configuration. Change these when mounting inside another app; nothing else needs editing.
-      window.AFTER_HOURS_CONFIG = {
-        gate: true,                                   // false when the host app already guards the route (recommended)
-        fixturesUrl: 'altitude_edge/fixtures_demo.json', // endpoint returning the fixtures JSON shape in INTEGRATION.md
-        dataBase: '',                                 // prefix for altitude_edge/*.json if the data folder moves, e.g. '/after-hours/'
-        homeUrl: 'index.html',                        // where the "← AthleMix" links go
-        labUrl: 'altitude_fc/altitude_fc_cards.html'
-      };
-    </script>
+    <script src="config.js"></script>
     <script src="after-hours.js"></script>
     <script src="after-hours-ui.js"></script>
   </body>

@@ -1,4 +1,16 @@
-# Porting After Hours into the AthleMix app
+# Getting After Hours onto Athlemix
+
+Two routes. The first needs nothing from the Sites workspace.
+
+**Route A (recommended): run After Hours as its own service and link to it.**
+`server/server.js` serves the desks, gates them server-side, and holds the
+odds key. Deploy it with `DEPLOY.md`, then add a nav link on athlemix.com (or a
+CNAME such as afterhours.athlemix.com). Done.
+
+**Route B: copy the static files into the Sites app.** Only possible from
+inside the ChatGPT Sites editor. The rest of this document covers that route.
+
+# Porting After Hours into the AthleMix app (Route B)
 
 Source of truth: branch `claude/serene-wozniak-48yawh` of the public repo
 https://github.com/zachgedal-bot/fcd (pull request #4). Everything After Hours
