@@ -141,7 +141,10 @@
         <div class="row" style="margin-top:10px">
           <button class="btn" id="pr-run">Price it</button>
           <button class="btn btn--ghost" id="pr-sample">Load illustrative sample</button>
+          <select id="pr-feed-event" hidden><option value="">Pull player lines from the feed…</option></select>
+          <button class="btn btn--ghost" id="pr-feed" hidden>Pull from feed</button>
         </div>
+        <p class="lede" id="pr-feed-msg" style="margin-top:8px"></p>
         <div id="pr-out"></div>
       </section>
 
@@ -188,7 +191,7 @@
 
       <footer class="foot">
         <span>Athlemix After Hours · illustrative scenario pricing</span>
-        <span>Model source: <a href="altitude_edge/">altitude_edge/</a> · <a href="index.html" data-home>AthleMix</a></span>
+        <span>Model source: <a href="https://github.com/zachgedal-bot/fcd/tree/claude/serene-wozniak-48yawh/altitude_edge" target="_blank" rel="noopener">altitude_edge/</a> · <a href="index.html" data-home>AthleMix</a></span>
       </footer>
     </div>
 

@@ -92,7 +92,7 @@
   }
   $('p-days').addEventListener('input', renderAltitude); $('p-mindiff').addEventListener('input', renderAltitude);
   $('fx-file').addEventListener('change', e => { const f = e.target.files[0]; if (!f) return; f.text().then(t => { fixtures = parseCSV(t); renderAltitude(); }); });
-  function loadFixtures() { return loadJSON(CFG.fixturesUrl).then(d => { fixtures = Array.isArray(d) ? d : (d.fixtures || []); feedMeta = Array.isArray(d) ? null : (d.meta || null); renderAltitude(); }).catch(err => { fixtures = []; renderAltitude(); $('altitude-body').innerHTML = `<tr><td colspan="11">Lines unavailable: ${CFG.fixturesUrl} returned ${err.message}. No odds are being simulated. Drop a CSV or add a line below.</td></tr>`; }); }
+  function loadFixtures() { return loadJSON(CFG.fixturesUrl).then(d => { fixtures = Array.isArray(d) ? d : (d.fixtures || []); feedMeta = Array.isArray(d) ? null : (d.meta || null); renderAltitude(); refreshPropsEvents(); }).catch(err => { fixtures = []; renderAltitude(); $('altitude-body').innerHTML = `<tr><td colspan="11">Lines unavailable: ${CFG.fixturesUrl} returned ${err.message}. No odds are being simulated. Drop a CSV or add a line below.</td></tr>`; }); }
   $('fx-reload').addEventListener('click', loadFixtures);
   $('fx-clear').addEventListener('click', () => { added = []; store.set('ah.added', added); renderAltitude(); });
   $('al-add').addEventListener('click', () => {
@@ -186,6 +186,24 @@
     o.line = parseFloat(p[2]); o.o_over = parseFloat(p[3]); o.o_under = parseFloat(p[4]); if (p[5]) scorers[o.name] = parseFloat(p[5]); return o;
   }).filter(o => Number.isFinite(o.shots) || (Number.isFinite(o.line) && Number.isFinite(o.o_over) && Number.isFinite(o.o_under)));
   $('pr-blend').addEventListener('input', () => $('o-blend').textContent = (+$('pr-blend').value).toFixed(2));
+  // Props from the live feed. The provider does not tag players by team, so all lines land in the home box with a
+  // note to move the away side's lines across. Empty answers are reported, not padded.
+  function refreshPropsEvents() {
+    if (!CFG.propsUrl) return;
+    const sel = $('pr-feed-event'); const live = fixtures.filter(f => f.id && f.sport_key);
+    sel.innerHTML = '<option value="">Pull player lines from the feed…</option>' + live.map(f => `<option value="${f.sport_key}|${f.id}">${f.date} ${f.home} v ${f.away}</option>`).join('');
+    sel.hidden = $('pr-feed').hidden = !live.length;
+  }
+  $('pr-feed').addEventListener('click', () => {
+    const v = $('pr-feed-event').value; if (!v) { $('pr-feed-msg').textContent = 'Pick a match first.'; return; }
+    const [sport, id] = v.split('|'); $('pr-feed-msg').textContent = 'Asking the provider…';
+    loadJSON(`${CFG.propsUrl}?sport=${encodeURIComponent(sport)}&event=${encodeURIComponent(id)}`).then(d => {
+      const lines = (d.players || []).filter(p => p.line != null).map(p => `${p.name}, MF, ${p.line}, ${p.o_over}, ${p.o_under}${p.scorer ? ', ' + p.scorer : ''}`);
+      if (!lines.length) { $('pr-feed-msg').textContent = `The provider posts no player shot lines for ${d.home} v ${d.away}. Nothing was filled in.`; return; }
+      $('pr-h').value = lines.join('\n'); $('pr-a').value = '';
+      $('pr-feed-msg').textContent = `${lines.length} player line(s) loaded into the home box. The provider does not tag players by team: move ${d.away}'s players to the away box and set positions before pricing.`;
+    }).catch(e => { $('pr-feed-msg').textContent = `Could not load props: ${e.message}`; });
+  });
   $('pr-run').addEventListener('click', () => {
     const scorers = {}; const hp = parseProps($('pr-h').value, scorers), ap = parseProps($('pr-a').value, scorers);
     if (!hp.length || !ap.length) { $('pr-out').innerHTML = '<p class="lede">Need at least one line a side.</p>'; return; }

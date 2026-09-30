@@ -18,7 +18,7 @@ test('prefers Pinnacle h2h over a US book when both post the market', () => {
   assert.equal(row.odds_h, 1.98); assert.equal(row.odds_d, 3.55); assert.equal(row.odds_a, 3.85);
   assert.match(row.note, /^pinnacle/);
   assert.equal(row.odds_over25, 1.87); assert.equal(row.odds_under25, 1.95); // totals only at DraftKings
-  assert.equal(row.date, '2026-09-27'); assert.equal(row.days_since_arrival, 1);
+  assert.equal(row.date, '2026-09-27'); assert.equal(row.days_since_arrival, '');
 });
 
 test('falls back to the first preferred book, then consensus median', () => {
@@ -50,4 +50,30 @@ test('player props: shots line, shots on target, anytime scorer per player', () 
 test('quota headers parse from a Headers-like object', () => {
   const q = A.quotaFromHeaders(new Map([['x-requests-remaining', '480'], ['x-requests-used', '20'], ['x-requests-last', '2']]));
   assert.deepEqual(q, { remaining: 480, used: 20, last_cost: 2 });
+});
+
+test('totals: a preferred book without the 2.5 line does not hide another book that posts it', () => {
+  const books = [
+    { key: 'pinnacle', markets: [{ key: 'totals', outcomes: [{ name: 'Over', price: 1.8, point: 2.75 }, { name: 'Under', price: 2.0, point: 2.75 }] }] },
+    { key: 'draftkings', markets: [{ key: 'totals', outcomes: [{ name: 'Over', price: 1.9, point: 2.5 }, { name: 'Under', price: 1.9, point: 2.5 }] }] },
+    { key: 'nopoint', markets: [{ key: 'totals', outcomes: [{ name: 'Over', price: 1.5 }, { name: 'Under', price: 2.5 }] }] },
+  ];
+  assert.deepEqual(A.pickTotals(books), { odds_over25: 1.9, odds_under25: 1.9, book: 'draftkings' });
+  assert.equal(A.totalsFromBook(books[2]), null);   // a missing point is never treated as the 2.5 line
+});
+
+test('normaliseEvents drops events that have already kicked off', () => {
+  const now = Date.parse('2026-09-27T02:00:00Z');
+  const rows = A.normaliseEvents(odds, now);
+  assert.deepEqual(rows.map(r => r.id), ['evt2', 'evt3']);
+  assert.equal(A.normaliseEvents([{ id: 'x', home_team: 'A', away_team: 'B', bookmakers: [] }], now).length, 1); // unparseable time is kept
+});
+
+test('player props never pair an Over from one line with an Under from another', () => {
+  const ev = { id: 'e', home_team: 'H', away_team: 'A', bookmakers: [
+    { key: 'draftkings', markets: [{ key: 'player_shots', outcomes: [{ name: 'Over', description: 'P', price: 1.9, point: 2.5 }] }] },
+    { key: 'fanduel', markets: [{ key: 'player_shots', outcomes: [{ name: 'Over', description: 'P', price: 1.7, point: 1.5 }, { name: 'Under', description: 'P', price: 2.1, point: 1.5 }] }] },
+  ] };
+  const p = A.normalisePlayerProps(ev).players.find(x => x.name === 'P');
+  assert.deepEqual({ line: p.line, o_over: p.o_over, o_under: p.o_under, book: p.book }, { line: 1.5, o_over: 1.7, o_under: 2.1, book: 'fanduel' });
 });

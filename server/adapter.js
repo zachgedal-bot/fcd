@@ -68,10 +68,18 @@ function consensusH2h(bookmakers, homeTeam, awayTeam) {
 function totalsFromBook(book, line = 2.5) {
   const m = (book.markets || []).find(x => x.key === 'totals');
   if (!m) return null;
-  const over = m.outcomes.find(o => /^over$/i.test(o.name) && Math.abs((o.point ?? line) - line) < 1e-9);
-  const under = m.outcomes.find(o => /^under$/i.test(o.name) && Math.abs((o.point ?? line) - line) < 1e-9);
+  const at = re => (m.outcomes || []).find(o => re.test(o.name) && Number.isFinite(o.point) && Math.abs(o.point - line) < 1e-9);
+  const over = at(/^over$/i), under = at(/^under$/i);
   if (!over || !under) return null;
-  return { odds_over25: over.price, odds_under25: under.price };
+  return { odds_over25: over.price, odds_under25: under.price, book: book.key };
+}
+
+/** First book in preference order that actually posts Over/Under at `line`; then any book that does. */
+function pickTotals(bookmakers, line = 2.5, preference = BOOK_PREFERENCE) {
+  const books = bookmakers || [];
+  for (const key of preference) { const b = books.find(x => x.key === key); const t = b && totalsFromBook(b, line); if (t) return t; }
+  for (const b of books) { const t = totalsFromBook(b, line); if (t) return t; }
+  return null;
 }
 
 /** Normalise one provider event into the fixtures row the Altitude Book reads. */
@@ -79,8 +87,7 @@ function normaliseEvent(ev, opts = {}) {
   const preferSharp = opts.preferSharp !== false;
   const h2hBook = preferSharp ? pickBook(ev.bookmakers, 'h2h') : null;
   const h2h = (h2hBook && h2hFromBook(h2hBook, ev.home_team, ev.away_team)) || consensusH2h(ev.bookmakers, ev.home_team, ev.away_team);
-  const totBook = pickBook(ev.bookmakers, 'totals');
-  const tot = totBook ? totalsFromBook(totBook) : null;
+  const tot = pickTotals(ev.bookmakers, 2.5);
   return {
     id: ev.id,
     date: (ev.commence_time || '').slice(0, 10),
@@ -90,37 +97,52 @@ function normaliseEvent(ev, opts = {}) {
     home: ev.home_team, away: ev.away_team,
     odds_h: h2h ? h2h.odds_h : '', odds_d: h2h ? h2h.odds_d : '', odds_a: h2h ? h2h.odds_a : '',
     odds_over25: tot ? tot.odds_over25 : '', odds_under25: tot ? tot.odds_under25 : '',
-    days_since_arrival: 1, venue_alt: '',
+    days_since_arrival: '', venue_alt: '',   // unknown: the page falls back to its 'default days since arrival' control
     note: h2h ? `${h2h.book}${h2h.updated ? ' ' + h2h.updated : ''}` : 'no h2h market posted',
   };
 }
 
-function normaliseEvents(events) {
-  return (Array.isArray(events) ? events : []).map(normaliseEvent);
+/** Pre-match rows only: events whose commence_time has passed carry in-play prices and are dropped. */
+function normaliseEvents(events, now = Date.now()) {
+  return (Array.isArray(events) ? events : [])
+    .filter(ev => { const t = Date.parse(ev.commence_time); return !Number.isFinite(t) || t > now; })
+    .map(normaliseEvent);
 }
 
-/** Player props from the event-odds endpoint -> Props Desk lines per side. */
-function normalisePlayerProps(ev) {
-  const players = new Map(); // player -> {name, line, o_over, o_under, scorer}
+/** Player props from the event-odds endpoint -> Props Desk lines per side.
+ *  A shots line is accepted only when ONE bookmaker posts both Over and Under at the SAME point, so the pair is a real
+ *  two-way line; books are tried in BOOK_PREFERENCE order (then provider order) independently per player and market.
+ *  The provider does not tag players by team, so `players` is one list; the desk asks the user to split sides. */
+function normalisePlayerProps(ev, preference = BOOK_PREFERENCE) {
+  const books = (ev.bookmakers || []).slice().sort((x, y) => { const ix = preference.indexOf(x.key), iy = preference.indexOf(y.key); return (ix < 0 ? 1e9 : ix) - (iy < 0 ? 1e9 : iy); });
+  const players = new Map();
   const get = name => { if (!players.has(name)) players.set(name, { name, pos: 'MF' }); return players.get(name); };
-  for (const b of ev.bookmakers || []) {
-    for (const m of b.markets || []) {
-      if (m.key === 'player_shots' || m.key === 'player_shots_on_target') {
-        for (const o of m.outcomes || []) {
-          const p = get(o.description || o.name);
-          const bucket = m.key === 'player_shots' ? p : (p.sot = p.sot || {});
-          if (/^over$/i.test(o.name) && bucket.o_over == null) { bucket.line = o.point; bucket.o_over = o.price; bucket.book = b.key; }
-          if (/^under$/i.test(o.name) && bucket.o_under == null) { bucket.line = o.point; bucket.o_under = o.price; }
-        }
+  const bestLine = marketKey => {
+    const out = new Map(); // player -> {line, o_over, o_under, book}
+    for (const b of books) {
+      const m = (b.markets || []).find(x => x.key === marketKey); if (!m) continue;
+      const byPlayerPoint = new Map();
+      for (const o of m.outcomes || []) {
+        if (!Number.isFinite(o.point)) continue;
+        const k = `${o.description || o.name}\u0000${o.point}`;
+        const e = byPlayerPoint.get(k) || { player: o.description || o.name, point: o.point };
+        if (/^over$/i.test(o.name)) e.over = o.price; else if (/^under$/i.test(o.name)) e.under = o.price;
+        byPlayerPoint.set(k, e);
       }
-      if (m.key === 'player_goal_scorer_anytime') {
-        for (const o of m.outcomes || []) {
-          if (/^yes$/i.test(o.name) || !/^(no)$/i.test(o.name)) { const p = get(o.description || o.name); if (p.scorer == null) p.scorer = o.price; }
-        }
+      for (const e of byPlayerPoint.values()) {
+        if (e.over == null || e.under == null || out.has(e.player)) continue;   // first (most preferred) complete pair wins
+        out.set(e.player, { line: e.point, o_over: e.over, o_under: e.under, book: b.key });
       }
     }
+    return out;
+  };
+  for (const [player, v] of bestLine('player_shots')) Object.assign(get(player), v);
+  for (const [player, v] of bestLine('player_shots_on_target')) get(player).sot = v;
+  for (const b of books) {
+    const m = (b.markets || []).find(x => x.key === 'player_goal_scorer_anytime'); if (!m) continue;
+    for (const o of m.outcomes || []) { if (/^yes$/i.test(o.name) || !/^no$/i.test(o.name)) { const p = get(o.description || o.name); if (p.scorer == null) p.scorer = o.price; } }
   }
-  return { id: ev.id, home: ev.home_team, away: ev.away_team, kickoff: ev.commence_time, players: [...players.values()] };
+  return { id: ev.id, home: ev.home_team, away: ev.away_team, kickoff: ev.commence_time, players: [...players.values()].filter(p => p.line != null || p.sot || p.scorer != null) };
 }
 
 function quotaFromHeaders(h) {
@@ -128,4 +150,4 @@ function quotaFromHeaders(h) {
   return { remaining: g('x-requests-remaining'), used: g('x-requests-used'), last_cost: g('x-requests-last') };
 }
 
-module.exports = { BOOK_PREFERENCE, DEFAULT_LEAGUE_PATTERNS, selectSoccerSports, pickBook, h2hFromBook, consensusH2h, totalsFromBook, normaliseEvent, normaliseEvents, normalisePlayerProps, quotaFromHeaders, median };
+module.exports = { BOOK_PREFERENCE, DEFAULT_LEAGUE_PATTERNS, selectSoccerSports, pickBook, h2hFromBook, consensusH2h, totalsFromBook, pickTotals, normaliseEvent, normaliseEvents, normalisePlayerProps, quotaFromHeaders, median };

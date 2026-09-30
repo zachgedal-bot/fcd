@@ -67,12 +67,13 @@ Reload button use it:
   {"date": "2026-09-26", "league": "Liga MX", "home": "Cruz Azul", "away": "Toluca",
    "odds_h": "1.95", "odds_d": "3.40", "odds_a": "3.90",
    "odds_over25": "1.85", "odds_under25": "1.95",
-   "days_since_arrival": "1", "venue_alt": "", "note": "provider name, timestamp"}
+   "days_since_arrival": "", "venue_alt": "", "note": "provider name, timestamp"}
 ]
 ```
 
 Decimal odds as strings or numbers; empty odds are allowed (the row shows
-"needs odds"). Team names are matched against `venues.json` with alias and
+"needs odds"). An empty `days_since_arrival` defers to the page's default-days
+control; only set it when the arrival day is actually known. Team names are matched against `venues.json` with alias and
 substring fallback; add missing clubs to `altitude_edge/venues.py` and
 regenerate `venues.json` (`python3 -c "import venues"` block at the bottom of
 `venues.py` shows how), or extend the `aliases` map in the JSON directly.
