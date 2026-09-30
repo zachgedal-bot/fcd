@@ -36,3 +36,10 @@
 .feat { font-size:.78rem; padding:5px 0; display:flex; gap:8px } .feat::before { content:"✓"; color:var(--green); font-weight:800 }
 .fine { font-size:.62rem; color:var(--muted); line-height:1.4; margin-top:8px }
 @media (max-width:420px) { .screen { flex-basis:calc(100vw - 32px) } .phone { width:100% } }
+
+.sheet { position:absolute; inset:0; background:rgba(0,0,0,.55); display:flex; align-items:flex-end; z-index:4 }
+.sheet__card { width:100%; background:var(--card); border-top:1px solid var(--green-dim); border-radius:22px 22px 0 0; padding:10px 16px 18px; max-height:80%; overflow:auto }
+.sheet__grab { width:40px; height:4px; border-radius:2px; background:var(--line); margin:0 auto 10px }
+.sheet h3 { margin:0 0 8px; font-size:.95rem } .sheet textarea { width:100%; min-height:110px; background:#0a1510; border:1px solid var(--line); color:var(--text); border-radius:10px; padding:8px; font-family:var(--sans); font-size:.8rem }
+.rc { border:1px solid var(--green-dim); border-radius:12px; padding:10px; font-size:.82rem; line-height:1.5; background:linear-gradient(135deg,#0d1a13,#123326) }
+button.btn { font-family:var(--sans); cursor:pointer } button.r.btn { font-family:var(--mono); color:var(--green); background:transparent; border-color:var(--green-dim) }

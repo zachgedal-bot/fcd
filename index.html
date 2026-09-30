@@ -82,8 +82,8 @@
               <div class="hero__stat-value">2,148</div>
             </div>
             <div class="hero__actions">
-              <button class="btn btn--green">Create profile</button>
-              <button class="btn btn--red">Find athletes</button>
+              <a class="btn btn--green" id="cta-create" href="premium/index.html">Create profile</a>
+              <a class="btn btn--red" id="cta-find" href="premium/index.html?tier=plus#scout">Find athletes</a>
             </div>
           </div>
         </section>
@@ -183,8 +183,8 @@
           <div class="prediction">
             <div class="prediction__title">Inbound coach outreach today</div>
             <div class="prediction__actions">
-              <button class="btn btn--green">Approve 12</button>
-              <button class="btn btn--red">Hold 4</button>
+              <button class="btn btn--green" id="req-approve">Approve 12</button>
+              <button class="btn btn--red" id="req-hold">Hold 4</button>
             </div>
           </div>
         </section>
@@ -221,6 +221,7 @@
       </aside>
     </div>
 
+    <div id="toast" class="toast" hidden></div>
     <script src="app.js"></script>
   </body>
 </html>

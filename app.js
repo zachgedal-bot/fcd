@@ -117,9 +117,37 @@ async function loadStatsBombCompetitions() {
   }
 }
 
+function drawFallbackChart(canvas) {
+  // Same series as the Chart.js config, drawn by hand so the panel never sits empty if the CDN is blocked.
+  const labels = ["2019", "2020", "2021", "2022", "2023", "2024"];
+  const series = [
+    { data: [22, 40, 45, 60, 72, 88], color: "#38f0c7", fill: "rgba(56, 240, 199, 0.12)", dash: [] },
+    { data: [null, 30, 38, 52, 63, 74], color: "rgba(62, 168, 255, 0.8)", fill: null, dash: [6, 6] },
+  ];
+  const dpr = window.devicePixelRatio || 1;
+  const w = canvas.clientWidth || 600, hgt = canvas.clientHeight || 220;
+  canvas.width = Math.round(w * dpr); canvas.height = Math.round(hgt * dpr);
+  canvas.style.width = w + 'px'; canvas.style.height = hgt + 'px';
+  const g = canvas.getContext("2d"); g.scale(dpr, dpr);
+  const pad = { l: 42, r: 12, t: 12, b: 26 };
+  const x = (i) => pad.l + (i / (labels.length - 1)) * (w - pad.l - pad.r);
+  const y = (v) => pad.t + (1 - v / 100) * (hgt - pad.t - pad.b);
+  g.strokeStyle = "rgba(30, 43, 59, 0.6)"; g.fillStyle = "#8b98aa"; g.font = "11px sans-serif"; g.textAlign = "right";
+  for (let v = 0; v <= 100; v += 25) { g.beginPath(); g.moveTo(pad.l, y(v)); g.lineTo(w - pad.r, y(v)); g.stroke(); g.fillText(`${v}%`, pad.l - 6, y(v) + 4); }
+  g.textAlign = "center"; labels.forEach((l, i) => g.fillText(l, x(i), hgt - 8));
+  for (const s of series) {
+    g.beginPath(); g.setLineDash(s.dash); g.strokeStyle = s.color; g.lineWidth = 2;
+    let started = false;
+    s.data.forEach((v, i) => { if (v == null) return; if (!started) { g.moveTo(x(i), y(v)); started = true; } else g.lineTo(x(i), y(v)); });
+    g.stroke(); g.setLineDash([]);
+    if (s.fill) { const first = s.data.findIndex((v) => v != null); g.lineTo(x(labels.length - 1), y(0)); g.lineTo(x(first), y(0)); g.closePath(); g.fillStyle = s.fill; g.fill(); }
+  }
+}
+
 function initChart() {
   const ctx = document.getElementById("valuationChart");
   if (!ctx) return;
+  if (typeof Chart === "undefined") { drawFallbackChart(ctx); window.addEventListener("resize", () => drawFallbackChart(ctx)); return; }
 
   new Chart(ctx, {
     type: "line",
@@ -184,6 +212,42 @@ fetch("sources.json")
 
 loadSportsDbBtn.addEventListener("click", loadSportsDbPlayers);
 loadStatsBombBtn.addEventListener("click", loadStatsBombCompetitions);
+
+// Coach requests: the counts are demo state, but the buttons act on it so nothing on the page is a dead end.
+const requests = { pending: 12, held: 4 };
+const toastEl = document.getElementById("toast");
+let toastTimer = null;
+function toast(message) {
+  if (!toastEl) return;
+  toastEl.textContent = message; toastEl.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 2600);
+}
+function renderRequests() {
+  const approve = document.getElementById("req-approve"), hold = document.getElementById("req-hold");
+  if (!approve || !hold) return;
+  approve.textContent = requests.pending ? `Approve ${requests.pending}` : "All approved";
+  hold.textContent = requests.held ? `Hold ${requests.held}` : "Nothing held";
+  approve.disabled = !requests.pending; hold.disabled = !requests.held;
+}
+function logLedger(event, impact) {
+  const now = new Date();
+  ledgerData.unshift({ time: `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}`, event, impact });
+  ledgerData.length = Math.min(ledgerData.length, 8);
+  renderLedger();
+}
+document.getElementById("req-approve")?.addEventListener("click", () => {
+  if (!requests.pending) return;
+  const n = requests.pending; requests.pending = 0;
+  logLedger(`Approved ${n} coach requests`, "Coaches can now message");
+  toast(`${n} coach requests approved.`); renderRequests();
+});
+document.getElementById("req-hold")?.addEventListener("click", () => {
+  if (!requests.held) return;
+  const n = requests.held; requests.held = 0;
+  logLedger(`Released ${n} held requests for review`, "Moved to inbox");
+  toast(`${n} held requests moved to your inbox.`); renderRequests();
+});
+renderRequests();
 
 renderLedger();
 initChart();

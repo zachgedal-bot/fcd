@@ -121,3 +121,9 @@ table.book tr.details td { white-space: normal; color: var(--muted); font-size: 
 .fccard .ovr { font-family: var(--serif); font-size: 2.2rem; color: var(--gold); line-height: 1; }
 .fccard .ovr small { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); margin-left: 8px; }
 .fccard .phys { margin-top: 8px; font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
+.fccard { overflow-x: auto; }
+@media (max-width: 640px) {
+  .fccard table { font-size: 0.66rem; }
+  .fccard td, .fccard th { padding: 4px 3px; }
+  .fccard .meta { white-space: normal; }
+}

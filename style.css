@@ -411,3 +411,32 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* toast */
+.toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: #0b1020; border: 1px solid #34d399; color: #e6edf3; padding: 10px 16px; border-radius: 10px; font-size: 0.85rem; z-index: 50; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.btn:disabled { opacity: 0.55; cursor: default; }
+a.btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+
+/* phones */
+@media (max-width: 640px) {
+  html, body { overflow-x: hidden; }
+  .layout { padding: 12px; gap: 12px; }
+  .hero { flex-direction: column; align-items: stretch; gap: 14px; }
+  .hero__stats { flex-wrap: wrap; gap: 12px; }
+  .hero__price { font-size: 1.6rem; }
+  .grid { grid-template-columns: 1fr; }
+  .panel--wide { grid-column: auto; }
+  .panel { min-width: 0; overflow: hidden; }
+  .table { display: block; overflow-x: auto; white-space: nowrap; }
+  .kv > div { grid-template-columns: 1fr auto; }
+  .ticker { padding: 8px 12px; }
+  .ticker__label { display: none; }
+}
+
+/* chart canvas: fixed box so a raw-canvas fallback never dictates layout */
+.panel canvas { width: 100% !important; height: 220px !important; display: block; }
+@media (max-width: 640px) {
+  .table { white-space: normal; font-size: 0.78rem; }
+  .table th, .table td { padding: 6px 4px; }
+  .panel canvas { height: 180px !important; }
+}

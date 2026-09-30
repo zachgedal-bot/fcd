@@ -4,17 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root{--bg:#0f1420;--panel:#171e2e;--gold:#e0b84a;--muted:#98a2b3;--text:#f3f4f6;--red:#f06a6a;--green:#5cd68a;--grey:#556070}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box}html,body{overflow-x:hidden}.card,.note{min-width:0}details{overflow-x:auto}.presets button{white-space:normal;text-align:left}@media(max-width:640px){header,.banner,.wrap{padding-left:14px;padding-right:14px}.banner{margin:12px 14px}}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
 header{padding:20px 28px 8px}h1{margin:0 0 4px;font-size:26px}h2{font-size:17px;margin:18px 0 8px}
 .sub{color:var(--muted);font-size:14px;max-width:1000px}
 .banner{background:#3a2c0c;border:1px solid var(--gold);color:#ffe9a8;padding:10px 14px;border-radius:8px;margin:12px 28px;font-size:14px;font-weight:600}
 .wrap{padding:0 28px 40px}
-.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;background:var(--panel);padding:16px;border-radius:12px}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:14px;background:var(--panel);padding:16px;border-radius:12px}
 .ctl label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}.ctl input[type=range]{width:100%}
 .ctl .val{font-weight:700;font-size:15px}
 .presets button{margin:4px 6px 0 0;background:#232c40;color:var(--text);border:1px solid #33405c;border-radius:6px;padding:5px 9px;font-size:12px;cursor:pointer}
 .presets button:hover{border-color:var(--gold)}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:22px;margin-top:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:22px;margin-top:18px}
 .card{background:linear-gradient(160deg,#2a2f45,#141a2a);border:2px solid var(--gold);border-radius:16px;padding:16px 18px;position:relative}
 .card h3{margin:0;font-size:20px}.card .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
 .card .disc{font-size:11px;color:#ffe9a8;background:#3a2c0c;border-radius:6px;padding:5px 8px;margin:8px 0 10px;font-weight:600}
