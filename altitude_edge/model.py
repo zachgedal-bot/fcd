@@ -165,13 +165,18 @@ def price_fixture(oh, od, oa, match_alt, home_res_alt, away_res_alt, days_since_
                               home_habitual, away_habitual, params)
     lh2 = max(0.05, lh + adj["d_lambda_home"])
     la2 = max(0.05, la + adj["d_lambda_away"])
-    pm = outcome_probs(lh2, la2, rho)
+    p_base = outcome_probs(lh, la, rho)      # market-implied lambdas, no altitude
+    p_adj = outcome_probs(lh2, la2, rho)     # with altitude
     mkt = {"home": ph, "draw": pd, "away": pa}
     odds = {"home": oh, "draw": od, "away": oa}
     if o_over25 and o_under25:
         odds["over25"], odds["under25"] = o_over25, o_under25
         q = [1 / o_over25, 1 / o_under25]
         mkt["over25"], mkt["under25"] = q[0] / sum(q), q[1] / sum(q)
+    # Model probability = market price + the altitude-attributable shift. With no
+    # adjustment every edge is exactly zero, so a totals price is never "beaten"
+    # merely because it disagrees with the 1X2-implied goal expectancies.
+    pm = {k: min(0.999, max(0.001, mkt[k] + (p_adj[k] - p_base[k]))) for k in odds}
     edges = {}
     for k, o in odds.items():
         ev = pm[k] * o - 1

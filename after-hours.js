@@ -112,9 +112,11 @@
     const [lh, la] = impliedLambdas(ph, pd, pa, P.rho);
     const adj = altitudeAdjustment(matchAlt, homeRes, awayRes, days, homeHab, awayHab, P);
     const lh2 = Math.max(0.05, lh + adj.d_lambda_home), la2 = Math.max(0.05, la + adj.d_lambda_away);
-    const pm = outcomeProbs(lh2, la2, P.rho);
+    const pBase = outcomeProbs(lh, la, P.rho), pAdj = outcomeProbs(lh2, la2, P.rho);
     const mkt = { home: ph, draw: pd, away: pa }, odds = { home: oh, draw: od, away: oa };
     if (o25 && u25) { odds.over25 = o25; odds.under25 = u25; const q = [1 / o25, 1 / u25], s = q[0] + q[1]; mkt.over25 = q[0] / s; mkt.under25 = q[1] / s; }
+    // model probability = market price + altitude-attributable shift; zero adjustment => zero edge on every market
+    const pm = {}; for (const k of Object.keys(odds)) pm[k] = Math.min(0.999, Math.max(0.001, mkt[k] + (pAdj[k] - pBase[k])));
     const edges = {};
     for (const k of Object.keys(odds)) { const o = odds[k]; const ev = pm[k] * o - 1; edges[k] = { model_p: pm[k], market_p: mkt[k], odds: o, ev, kelly: o > 1 ? Math.max(0, ev / (o - 1)) : 0 }; }
     return { market_lambda_home: lh, market_lambda_away: la, model_lambda_home: lh2, model_lambda_away: la2, model_probs: pm, market_probs: mkt, edges, adjustment: adj };
