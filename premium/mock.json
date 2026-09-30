@@ -1,0 +1,37 @@
+{
+  "player": {
+    "handle": "ava.reyes.2028", "name": "Ava Reyes", "class": 2028, "position": "CM", "alt": "CAM",
+    "club": "SoCal Blues ECNL", "hs": "Mater Dei HS", "city": "Irvine, CA", "height": "5'6\"", "foot": "Right",
+    "gpa": 3.9, "sat": null, "verified": true,
+    "followers": 1240, "following": 312, "coach_follows": 9,
+    "film": [{"title": "Spring 2026 highlights", "len": "3:12", "views": 1240}, {"title": "vs Slammers FC", "len": "1:48", "views": 610}, {"title": "Set pieces", "len": "0:57", "views": 288}],
+    "stats30": {"profile_views": 212, "coach_views": 37, "program_saves": 6, "film_completion": 0.62, "search_appearances": 89}
+  },
+  "viewers": [
+    {"role": "Assistant coach", "program": "Pacific Coast University", "div": "D1", "region": "West", "when": "2h", "repeat": true},
+    {"role": "Head coach", "program": "Sierra State", "div": "D2", "region": "West", "when": "yesterday", "repeat": false},
+    {"role": "Recruiting coordinator", "program": "Cascade College", "div": "D3", "region": "Northwest", "when": "2d", "repeat": true},
+    {"role": "Assistant coach", "program": "Great Lakes University", "div": "D1", "region": "Midwest", "when": "3d", "repeat": false},
+    {"role": "Head coach", "program": "Redwood Tech", "div": "NAIA", "region": "West", "when": "5d", "repeat": false}
+  ],
+  "rank": {
+    "pool": "2028 · CM · West", "pool_size": 418, "percentile": 84, "d1_pct": 12,
+    "factors": [{"k": "Film", "v": 0.9, "note": "3 reels, 62% completion"}, {"k": "Academics", "v": 0.8, "note": "3.9 GPA, no test score yet"}, {"k": "Exposure", "v": 0.7, "note": "37 coach views / 30d"}, {"k": "Verified stats", "v": 0.4, "note": "club stats unverified"}, {"k": "Activity", "v": 0.6, "note": "last post 9 days ago"}],
+    "moves": [{"do": "Add a verified test score", "gain": "+6 pts"}, {"do": "Get club coach to verify 2026 stats", "gain": "+9 pts"}, {"do": "Post a reel this week", "gain": "+3 pts"}]
+  },
+  "outreach": {
+    "sent": 14, "opened": 9, "replied": 3, "benchmark_reply": 0.18, "your_reply": 0.21,
+    "threads": [{"program": "Sierra State", "status": "Replied", "last": "Send your spring schedule"}, {"program": "Pacific Coast University", "status": "Opened", "last": "—"}, {"program": "Cascade College", "status": "Replied", "last": "Come to our June ID camp"}],
+    "warm": [{"via": "Coach Martinez (SoCal Blues)", "to": "Pacific Coast University", "how": "played for HC 2015-18"}, {"via": "Jordan K. (teammate, 2027)", "to": "Sierra State", "how": "committed"}]
+  },
+  "program": {
+    "name": "Pacific Coast University", "div": "D1", "conf": "West Coast", "record": "11-6-3",
+    "roster": {"seniors_2027": 6, "cm_graduating": 2, "commits_2028": 3, "commits_2028_cm": 0},
+    "timeline": "Most 2028 commits announced Jan–Apr of junior year",
+    "activity": "Viewed 4 players from SoCal Blues this month", "camps": [{"name": "June ID Camp", "date": "Jun 14", "spots": "12 left"}]
+  },
+  "plans": {
+    "plus": {"name": "Athlemix Plus", "for": "Players & parents", "month": 14.99, "year": 99, "features": ["See which programs viewed you", "Your rank in your class + position pool", "What moves your rank, and by how much", "Coach reply-rate benchmarks", "Program roster & commit insights", "Warm paths to programs", "Recruit card export (PDF/IG story)"]},
+    "scout": {"name": "Athlemix Scout", "for": "Coaches & clubs", "month": 49, "year": 399, "features": ["Unlimited player search with filters", "Pool rankings by class/position/region", "Watchlists with change alerts", "Message players (contact rules enforced)", "Club-level pipelines"]}
+  }
+}

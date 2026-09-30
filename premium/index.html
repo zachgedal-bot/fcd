@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Athlemix Plus screens</title>
+<meta name="description" content="Premium screens for Athlemix: profile, who viewed you, class rank, coach reach, program insights, paywall." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="premium.css" />
+</head>
+<body class="free">
+<header class="top">
+  <h1><b>athlemix</b> Plus · screens</h1>
+  <span class="sub">Player-side premium. Toggle to see what the free tier blurs.</span>
+  <div class="toggle"><button id="t-free" class="on">Free</button><button id="t-plus">Plus</button></div>
+</header>
+<main class="rail" id="rail"></main>
+<script>
+(function () {
+  const $ = s => document.querySelector(s);
+  const bar = `<div class="bar"><span>9:41</span><span>●●● ▮</span></div>`;
+  const nav = on => `<div class="nav">${['Home','Scout','Post','Inbox','Me'].map(n => `<div class="${n === on ? 'on' : ''}"><span class="ic">${{Home:'⌂',Scout:'⌕',Post:'＋',Inbox:'✉',Me:'◯'}[n]}</span>${n}</div>`).join('')}</div>`;
+  const phone = (title, on, html) => `<section class="screen"><h2>${title}</h2><div class="phone">${bar}<div class="body">${html}</div>${nav(on)}</div></section>`;
+  const lock = (what) => `<div class="lock prem-only">🔒 <b>Plus</b> shows ${what}<a class="btn p" href="#paywall">See Plus · $14.99/mo</a></div>`;
+  const pct = x => Math.round(x * 100) + '%';
+
+  fetch('mock.json').then(r => r.json()).then(D => {
+    const P = D.player, S = P.stats30;
+    const screens = [];
+
+    // 1. Profile (the Instagram-style recruiting profile)
+    screens.push(phone('01 · Player profile <span>public</span>', 'Me', `
+      <div class="hdr"><div class="h">@${P.handle}</div><div>≡</div></div>
+      <div class="prof"><div class="avatar">${P.name.split(' ').map(w => w[0]).join('')}</div>
+        <div class="nums"><div><b>${P.film.length}</b><span>reels</span></div><div><b>${P.followers.toLocaleString()}</b><span>followers</span></div><div><b>${P.coach_follows}</b><span>coaches</span></div></div></div>
+      <div class="name">${P.name}<span class="v">✓ verified</span></div>
+      <div class="bio">Class of ${P.class} · ${P.position}/${P.alt} · ${P.club}<br>${P.hs} · ${P.city} · ${P.height} · ${P.foot} foot · GPA ${P.gpa}</div>
+      <div class="tags"><span class="tag g">${P.class}</span><span class="tag">${P.position}</span><span class="tag">ECNL</span><span class="tag">Uncommitted</span><span class="tag">Open to D1–D3</span></div>
+      <div class="btns"><div class="btn p">Follow</div><div class="btn">Message</div><div class="btn">Recruit card ↗</div></div>
+      <div class="card"><h3>Last 30 days <span class="lk prem">PLUS</span></h3>
+        <div class="tiles"><div class="tile"><b>${S.profile_views}</b><span>profile views</span></div><div class="tile"><b>${S.coach_views}</b><span>coach views</span></div><div class="tile"><b>${S.program_saves}</b><span>program saves</span></div></div>
+        <div class="tiles" style="margin-top:8px"><div class="tile prem"><b>${pct(S.film_completion)}</b><span>film completion</span></div><div class="tile prem"><b>${S.search_appearances}</b><span>search appearances</span></div><div class="tile prem"><b>Top ${D.rank.d1_pct}%</b><span>D1 West · CM</span></div></div>
+        ${lock('film completion, search appearances and your pool rank')}</div>
+      <div class="reels">${P.film.map(f => `<div class="reel"><span class="len">${f.len}</span><b>${f.title}</b>${f.views.toLocaleString()} views</div>`).join('')}</div>`));
+
+    // 2. Who viewed you
+    const V = D.viewers;
+    screens.push(phone('02 · Who viewed you <span>the hook</span>', 'Me', `
+      <div class="hdr"><div class="h">Coach views<small>30 days</small></div></div>
+      <div class="card"><div class="pct">${S.coach_views}<small> coaches</small></div><div class="bio">viewed your profile · ${V.filter(v => v.repeat).length} came back twice</div></div>
+      <div class="card"><h3>Who they are <span class="lk prem">PLUS</span></h3>
+        ${V.map(v => `<div class="row"><div class="dot">${v.div}</div><div class="t"><span class="prem">${v.program}</span><span class="prem-only blur">Pacific Coast University</span><small>${v.role} · ${v.region}${v.repeat ? ' · repeat visit' : ''}</small></div><div class="r">${v.when}</div></div>`).join('')}
+        ${lock('every program and role that viewed you, for 90 days')}</div>
+      <div class="card prem"><h3>What to do with it</h3><div class="bio">2 D1 programs viewed you twice this week. Plus members who message a repeat viewer within 48h get a reply 2.4× more often.</div><div class="btns"><div class="btn p">Message Pacific Coast</div></div></div>`));
+
+    // 3. Class rank
+    const R = D.rank;
+    screens.push(phone('03 · Your rank <span>class · position · region</span>', 'Scout', `
+      <div class="hdr"><div class="h">Your pool<small>${R.pool}</small></div></div>
+      <div class="card"><div class="pct"><span class="prem">${R.percentile}th</span><span class="prem-only">Top ~<span class="blur">16</span>%</span><small> of ${R.pool_size} players</small></div>
+        <div class="meter"><i style="width:${R.percentile}%"></i></div>
+        <div class="bio prem">Top ${R.d1_pct}% for D1 West coaches' saved searches</div>
+        ${lock('your exact percentile and what D1 programs are filtering on')}</div>
+      <div class="card"><h3>What makes the number <span class="lk prem">PLUS</span></h3>
+        ${R.factors.map(f => `<div class="fact"><span>${f.k}</span><div class="meter"><i style="width:${f.v * 100}%"></i></div><small class="prem">${f.note}</small><small class="prem-only blur">xxxxxxxx</small></div>`).join('')}</div>
+      <div class="card prem"><h3>Moves that change it</h3>${R.moves.map(m => `<div class="move"><span>${m.do}</span><b>${m.gain}</b></div>`).join('')}</div>`));
+
+    // 4. Coach reach
+    const O = D.outreach;
+    screens.push(phone('04 · Coach reach <span>outreach that gets answered</span>', 'Inbox', `
+      <div class="hdr"><div class="h">Outreach<small>this season</small></div></div>
+      <div class="card"><div class="tiles"><div class="tile"><b>${O.sent}</b><span>sent</span></div><div class="tile"><b>${O.opened}</b><span>opened</span></div><div class="tile"><b>${O.replied}</b><span>replied</span></div></div>
+        <div class="bio prem" style="margin-top:8px">Your reply rate ${pct(O.your_reply)} vs ${pct(O.benchmark_reply)} for 2028 CMs. Messages with a reel link and a schedule reply 3× more.</div>
+        ${lock('reply-rate benchmarks and what the answered messages had in common')}</div>
+      <div class="card"><h3>Threads</h3>${O.threads.map(t => `<div class="row"><div class="dot">${t.program.split(' ').map(w => w[0]).join('').slice(0, 2)}</div><div class="t">${t.program}<small>${t.last}</small></div><span class="pill ${t.status === 'Replied' ? 'ok' : 'wait'}">${t.status}</span></div>`).join('')}</div>
+      <div class="card"><h3>Warm paths <span class="lk prem">PLUS</span></h3>
+        ${O.warm.map(w => `<div class="row"><div class="dot">→</div><div class="t"><span class="prem">${w.via}</span><span class="prem-only blur">Coach Martinez (SoCal Blues)</span><small>to ${w.to} · ${w.how}</small></div><div class="r prem">ask intro</div></div>`).join('')}
+        ${lock('who in your network can introduce you, and one-tap intro requests')}</div>`));
+
+    // 5. Program insights
+    const G = D.program;
+    screens.push(phone('05 · Program page <span>due diligence</span>', 'Scout', `
+      <div class="hdr"><div class="h">${G.name}<small>${G.div} · ${G.conf}</small></div></div>
+      <div class="card"><div class="tiles"><div class="tile"><b>${G.record}</b><span>2026 record</span></div><div class="tile"><b>${G.roster.seniors_2027}</b><span>seniors leaving</span></div><div class="tile"><b>${G.roster.commits_2028}</b><span>2028 commits</span></div></div></div>
+      <div class="card"><h3>Need at your position <span class="lk prem">PLUS</span></h3>
+        <div class="bio prem">${G.roster.cm_graduating} CMs graduate in 2027 and the program has ${G.roster.commits_2028_cm} CM commits for 2028. ${G.timeline}.</div>
+        <div class="bio prem" style="margin-top:6px">${G.activity}.</div>
+        ${lock('roster turnover by position, commit timing and which clubs this program is watching')}</div>
+      <div class="card"><h3>Camps</h3>${G.camps.map(c => `<div class="row"><div class="dot">${c.date.split(' ')[1]}</div><div class="t">${c.name}<small>${c.date} · ${c.spots}</small></div><div class="btn" style="flex:0;padding:6px 10px">Register</div></div>`).join('')}</div>`));
+
+    // 6. Paywall
+    const L = D.plans.plus, C = D.plans.scout;
+    screens.push(phone('06 · Paywall <span>bottom sheet</span>', 'Me', `
+      <div id="paywall" class="card" style="margin-top:40px;border-color:var(--green-dim)"><h3>${L.name} <span class="lk">FOR ${L.for.toUpperCase()}</span></h3>
+        <div class="price"><b>$${L.month}</b><span>/month · or $${L.year}/year (save ${Math.round((1 - L.year / (L.month * 12)) * 100)}%)</span></div>
+        ${L.features.map(f => `<div class="feat">${f}</div>`).join('')}
+        <div class="btns"><div class="btn p">Start 7-day free trial</div></div>
+        <div class="fine">Cancel anytime. Under 18? A parent or guardian must start the subscription. Coach identities are shown only for verified college staff. Athlemix never lets a coach contact you before NCAA rules allow.</div></div>
+      <div class="card"><h3>${C.name} <span class="lk">FOR ${C.for.toUpperCase()}</span></h3><div class="price"><b>$${C.month}</b><span>/month · $${C.year}/year</span></div>${C.features.map(f => `<div class="feat">${f}</div>`).join('')}</div>`));
+
+    $('#rail').innerHTML = screens.join('');
+  });
+
+  const setTier = plus => { document.body.classList.toggle('free', !plus); document.body.classList.toggle('plus', plus); $('#t-free').classList.toggle('on', !plus); $('#t-plus').classList.toggle('on', plus); };
+  $('#t-free').addEventListener('click', () => setTier(false)); $('#t-plus').addEventListener('click', () => setTier(true));
+  if (new URLSearchParams(location.search).get('tier') === 'plus') setTier(true);
+})();
+</script>
+</body>
+</html>
