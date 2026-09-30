@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: athlemix-after-hours
+    runtime: node
+    plan: starter
+    buildCommand: "true"
+    startCommand: node server/server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: ODDS_API_KEY
+        sync: false
+      - key: AFTER_HOURS_INVITE_CODES
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: HOME_URL
+        value: https://athlemix.com
+      - key: TRUST_PROXY
+        value: "1"
+      - key: ODDS_REGIONS
+        value: us,eu
+      - key: ODDS_CACHE_SECONDS
+        value: "300"

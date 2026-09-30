@@ -1,0 +1,13 @@
+[
+ {"id":"evt1","sport_key":"soccer_mexico_ligamx","sport_title":"Liga MX","commence_time":"2026-09-27T01:00:00Z","home_team":"Cruz Azul","away_team":"Toluca",
+  "bookmakers":[
+   {"key":"draftkings","title":"DraftKings","last_update":"2026-09-26T20:00:00Z","markets":[{"key":"h2h","last_update":"2026-09-26T20:00:00Z","outcomes":[{"name":"Cruz Azul","price":2.05},{"name":"Toluca","price":3.6},{"name":"Draw","price":3.5}]},{"key":"totals","last_update":"2026-09-26T20:00:00Z","outcomes":[{"name":"Over","price":1.87,"point":2.5},{"name":"Under","price":1.95,"point":2.5}]}]},
+   {"key":"pinnacle","title":"Pinnacle","last_update":"2026-09-26T20:05:00Z","markets":[{"key":"h2h","last_update":"2026-09-26T20:05:00Z","outcomes":[{"name":"Cruz Azul","price":1.98},{"name":"Toluca","price":3.85},{"name":"Draw","price":3.55}]}]}
+  ]},
+ {"id":"evt2","sport_key":"soccer_mexico_ligamx","sport_title":"Liga MX","commence_time":"2026-09-27T03:00:00Z","home_team":"Tigres UANL","away_team":"Puebla",
+  "bookmakers":[
+   {"key":"fanduel","title":"FanDuel","last_update":"2026-09-26T20:00:00Z","markets":[{"key":"h2h","outcomes":[{"name":"Tigres UANL","price":1.4},{"name":"Puebla","price":7.5},{"name":"Draw","price":4.8}]}]},
+   {"key":"betmgm","title":"BetMGM","last_update":"2026-09-26T20:00:00Z","markets":[{"key":"h2h","outcomes":[{"name":"Tigres UANL","price":1.42},{"name":"Puebla","price":7.0},{"name":"Draw","price":4.75}]}]}
+  ]},
+ {"id":"evt3","sport_key":"soccer_mexico_ligamx","sport_title":"Liga MX","commence_time":"2026-09-28T01:00:00Z","home_team":"Santos Laguna","away_team":"Pachuca","bookmakers":[]}
+]

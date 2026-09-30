@@ -1,0 +1,6 @@
+{"id":"evt1","sport_key":"soccer_mexico_ligamx","sport_title":"Liga MX","commence_time":"2026-09-27T01:00:00Z","home_team":"Cruz Azul","away_team":"Toluca",
+ "bookmakers":[{"key":"draftkings","title":"DraftKings","markets":[
+   {"key":"player_shots","outcomes":[{"name":"Over","description":"Paulinho","price":1.9,"point":2.5},{"name":"Under","description":"Paulinho","price":1.85,"point":2.5},{"name":"Over","description":"Angel Sepulveda","price":2.0,"point":1.5},{"name":"Under","description":"Angel Sepulveda","price":1.75,"point":1.5}]},
+   {"key":"player_shots_on_target","outcomes":[{"name":"Over","description":"Paulinho","price":2.1,"point":1.5},{"name":"Under","description":"Paulinho","price":1.7,"point":1.5}]},
+   {"key":"player_goal_scorer_anytime","outcomes":[{"name":"Yes","description":"Paulinho","price":2.75},{"name":"Yes","description":"Angel Sepulveda","price":2.4}]}
+ ]}]}
