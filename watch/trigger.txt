@@ -1,0 +1,2 @@
+run=1 2026-10-05T05:17:07Z
+EVENT_SLUG=highest-temperature-in-singapore-on-october-5-2026

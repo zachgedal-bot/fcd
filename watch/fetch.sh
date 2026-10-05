@@ -3,6 +3,7 @@
 # Research-only data collection for the daily-temperature market watch; no trading.
 set -u
 OUT=watch/latest
+EVENT_SLUG=${EVENT_SLUG:-}; ICAO=${ICAO:-}; LAT=${LAT:-}; LON=${LON:-}; TZN=${TZN:-}; SG_DATE=${SG_DATE:-}; WU_DATE=${WU_DATE:-}
 rm -rf "$OUT"; mkdir -p "$OUT/books" "$OUT/clobmkts"
 UA="Mozilla/5.0 (X11; Linux x86_64) research-watch"
 get() { curl -sS -L --max-time 40 -A "$UA" "$1" -o "$2" || echo "FAILED $1" >> "$OUT/errors.txt"; }

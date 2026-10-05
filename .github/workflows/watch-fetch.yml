@@ -1,5 +1,8 @@
 name: watch-fetch
 on:
+  push:
+    branches: [claude/elegant-dirac-g21kpz]
+    paths: [watch/trigger.txt]
   workflow_dispatch:
     inputs:
       event_slug:
@@ -38,7 +41,10 @@ jobs:
           TZN: ${{ inputs.tzn }}
           SG_DATE: ${{ inputs.sg_date }}
           WU_DATE: ${{ inputs.wu_date }}
-        run: bash watch/fetch.sh
+        run: |
+          # On push events inputs are empty; the trigger file may carry KEY=VALUE overrides.
+          if [ -f watch/trigger.txt ]; then set -a; . <(grep -E '^[A-Z_]+=' watch/trigger.txt || true); set +a; fi
+          bash watch/fetch.sh
       - name: Commit results
         run: |
           git config user.name "watch-fetch[bot]"
